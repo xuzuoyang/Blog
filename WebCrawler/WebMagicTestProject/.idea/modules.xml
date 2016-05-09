@@ -1,0 +1,19 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<project version="4">
+  <component name="ProjectModuleManager">
+    <modules>
+      <module fileurl="file://$PROJECT_DIR$/../webmagic/webmagic-avalon/forger/forger.iml" filepath="$PROJECT_DIR$/../webmagic/webmagic-avalon/forger/forger.iml" />
+      <module fileurl="file://$PROJECT_DIR$/../webmagic/webmagic-avalon/webmagic-admin/webmagic-admin.iml" filepath="$PROJECT_DIR$/../webmagic/webmagic-avalon/webmagic-admin/webmagic-admin.iml" />
+      <module fileurl="file://$PROJECT_DIR$/../webmagic/webmagic-avalon/webmagic-avalon.iml" filepath="$PROJECT_DIR$/../webmagic/webmagic-avalon/webmagic-avalon.iml" />
+      <module fileurl="file://$PROJECT_DIR$/../webmagic/webmagic-avalon/webmagic-avalon-common/webmagic-avalon-common.iml" filepath="$PROJECT_DIR$/../webmagic/webmagic-avalon/webmagic-avalon-common/webmagic-avalon-common.iml" />
+      <module fileurl="file://$PROJECT_DIR$/../webmagic/webmagic-core/webmagic-core.iml" filepath="$PROJECT_DIR$/../webmagic/webmagic-core/webmagic-core.iml" />
+      <module fileurl="file://$PROJECT_DIR$/../webmagic/webmagic-extension/webmagic-extension.iml" filepath="$PROJECT_DIR$/../webmagic/webmagic-extension/webmagic-extension.iml" />
+      <module fileurl="file://$PROJECT_DIR$/../webmagic/webmagic-parent.iml" filepath="$PROJECT_DIR$/../webmagic/webmagic-parent.iml" />
+      <module fileurl="file://$PROJECT_DIR$/../webmagic/webmagic-samples/webmagic-samples.iml" filepath="$PROJECT_DIR$/../webmagic/webmagic-samples/webmagic-samples.iml" />
+      <module fileurl="file://$PROJECT_DIR$/../webmagic/webmagic-saxon/webmagic-saxon.iml" filepath="$PROJECT_DIR$/../webmagic/webmagic-saxon/webmagic-saxon.iml" />
+      <module fileurl="file://$PROJECT_DIR$/../webmagic/webmagic-scripts/webmagic-scripts.iml" filepath="$PROJECT_DIR$/../webmagic/webmagic-scripts/webmagic-scripts.iml" />
+      <module fileurl="file://$PROJECT_DIR$/../webmagic/webmagic-selenium/webmagic-selenium.iml" filepath="$PROJECT_DIR$/../webmagic/webmagic-selenium/webmagic-selenium.iml" />
+      <module fileurl="file://$PROJECT_DIR$/../webmagic/webmagic-avalon/webmagic-worker/webmagic-worker.iml" filepath="$PROJECT_DIR$/../webmagic/webmagic-avalon/webmagic-worker/webmagic-worker.iml" />
+    </modules>
+  </component>
+</project>
