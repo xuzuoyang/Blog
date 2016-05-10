@@ -1,2 +1,3 @@
 test new branch for my git
 test non-fastforward branch merge
+difference between fastforward and non-fastforward
