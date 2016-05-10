@@ -1,0 +1,8 @@
+<component name="ArtifactManager">
+  <artifact type="war" name="webmagic-worker:war">
+    <output-path>$PROJECT_DIR$/../webmagic/webmagic-avalon/webmagic-worker/target</output-path>
+    <root id="archive" name="webmagic-worker-0.5.3-SNAPSHOT.war">
+      <element id="artifact" artifact-name="webmagic-worker:war exploded" />
+    </root>
+  </artifact>
+</component>
