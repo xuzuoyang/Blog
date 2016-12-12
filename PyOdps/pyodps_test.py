@@ -90,6 +90,6 @@ if __name__ == '__main__':
 
 	html = start + t_head + t_data + end
 
-	#print(t_data)
+	# print(t_data)
 	et = EmailTool('data@daokoudai.com', 'Data20160626')
 	et.send_with_html('ODPS table test', ['xuzuoyang@daokoudai.com'], html)

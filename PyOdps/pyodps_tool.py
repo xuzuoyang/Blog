@@ -26,7 +26,7 @@ class PyODPSTool:
 
 		return result
 
-	def get_data_by_sql(self, table_name, sql):
+	def get_data_by_sql(self, sql):
 		odps_portal = ODPS(self.__access_id, self.__access_key, self.project_name, self.end_point)
 
 		result = []
@@ -37,5 +37,10 @@ class PyODPSTool:
 		return result
 
 if __name__ == '__main__':
-	records = PyODPSTool().get_data_by_io('core_enterprise_loan_stat_accum', 'dt=20161130', 0)
-	print([record['core_enterprise_shortname'] for record in records])
+	record1 = PyODPSTool().get_data_by_io('finance_stat', 'dt=20161201', 0)
+	record2 = PyODPSTool().get_data_by_io('finance_stat', 'dt=20161202', 0)
+	records = record1 + record2
+	for item in record1[0]:
+		for el in item:
+			print(type(el))
+	# print([record['core_enterprise_shortname'] for record in records])
