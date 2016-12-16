@@ -3,6 +3,22 @@ from pyodps_tool import PyODPSTool
 from email_tool import EmailTool
 
 
+def daily_user_stat():
+	start = '<html><head>' \
+			'<meta charset="utf-8"><title>ODPS table--test</title></head>' \
+			'</br><body text="#000000"><center>每日用户统计<font color="#dd0000"></font></center>' \
+			'</br><p>当前用户累计情况:</p>' \
+			'<table border="1" cellspacing="0" cellpadding="2" bordercolor="#000000" width="90%" align="center" ' \
+			' style="border-collapse:collapse;">'
+
+	t_head = '<tr><th>注册用户数</th><th>新上行用户数</th><th>绑卡用户数</th><th>投资用户数</th></tr>'
+
+	t_data = '<tr><td>99211</td><td>12842</td><td>6301</td><td>12120</td></tr>'
+
+	f_data = '</br><p>近7日新增用户情况:</p></br><p><img src="cid:0"></p></br>' \
+			 '</br><p>新增用户渠道分布:</p></br><p><img src="cid:1"></p></br>'
+
+
 def core_enterprise_loan_stat_accum():
 	records = PyODPSTool().get_data_by_io('core_enterprise_loan_stat_accum', 'dt=20161130', 0)
 
@@ -13,8 +29,8 @@ def core_enterprise_loan_stat_accum():
 		' style="border-collapse:collapse;">'
 
 	t_head = '<tr><th>核心企业</th><th>月份</th><th>项目数</th>' \
-		'<th>融资额</th><th>已还项目数</th><th>已还金额</th>' \
-		'<th>平均融资额</th><th>平均融资期限</th><th>平均满标时间</th></tr>'
+			 '<th>融资额</th><th>已还项目数</th><th>已还金额</th>' \
+			 '<th>平均融资额</th><th>平均融资期限</th><th>平均满标时间</th></tr>'
 
 	t_data = ''
 
