@@ -15,8 +15,16 @@ def daily_user_stat():
 
 	t_data = '<tr><td>99211</td><td>12842</td><td>6301</td><td>12120</td></tr>'
 
-	f_data = '</br><p>近7日新增用户情况:</p></br><p><img src="cid:0"></p></br>' \
+	t_end = '</br></table><center><b>说明:</b></center>'
+
+	p_data = '</br><p>近7日新增用户情况:</p></br><p><img src="cid:0"></p></br>' \
 			 '</br><p>新增用户渠道分布:</p></br><p><img src="cid:1"></p></br>'
+
+	p_end = '</body></html>'
+
+	html = start + t_head + t_data + t_end + p_data + p_end
+
+	return html
 
 
 def core_enterprise_loan_stat_accum():
@@ -177,5 +185,9 @@ def project_stat_by_core_enterprise_and_amount():
 
 if __name__ == '__main__':
 	et = EmailTool('data@daokoudai.com', 'Data20160626')
-	et.send_with_html('ODPS统计表邮件测试', ['lidingyu@daokoudai.com', 'xuzuoyang@daokoudai.com', 'wangnan@daokoudai.com'],
-					core_enterprise_loan_stat_accum()+finance_stat()+project_stat_by_core_enterprise_and_amount())
+	# et.send_with_html('ODPS统计表邮件测试', ['lidingyu@daokoudai.com', 'xuzuoyang@daokoudai.com', 'wangnan@daokoudai.com'],
+	# 				core_enterprise_loan_stat_accum()+finance_stat()+project_stat_by_core_enterprise_and_amount())
+	et.send_with_image('ImageContentTest', ['xuzuoyang@daokoudai.com', 'wangnan@daokoudai.com', ],
+					   daily_user_stat(),
+					   '/Users/zuoyangxu/stat_plot/user_stat/user_stat_weekly/20161216.png',
+					   '/Users/zuoyangxu/stat_plot/user_stat/user_stat_by_channel/20161216.png')

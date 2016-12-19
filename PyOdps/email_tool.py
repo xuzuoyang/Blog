@@ -49,6 +49,8 @@ class EmailTool:
 			print('Error sending email!')
 
 	def send_with_file(self, subject, to_addr, content, file_path, file_name, cc_addr=[]):
+		"""send email with one file attachment, need to be optimized for multi attachments
+		"""
 		receivers = ','.join(to_addr)
 		ccers = ','.join(cc_addr)
 
@@ -94,7 +96,11 @@ class EmailTool:
 		except smtplib.SMTPException:
 			print('Error sending email!')
 
-	def send_with_image(self, subject, to_addr, content, file_path, file_name, cc_addr=[]):
+	def send_with_image(self, subject, to_addr, content, *files, cc_addr=[]):
+		"""send email with one or more images in the content, each as an attached file
+		when use the method, should make sure in the content there have enough <img> tag
+		to use the image files in the attachment
+		"""
 		receivers = ','.join(to_addr)
 		ccers = ','.join(cc_addr)
 
@@ -107,26 +113,27 @@ class EmailTool:
 
 		# one way to attach files
 
-		# for file in files: 可循环加入附件
-		# att = MIMEText(open('/Users/zuoyangxu/Downloads/eproduct.xlsx', 'rb').read(), 'base64', 'gb2312')
-		# att['Content-Type'] = 'application/octet-stream'
-		# att["Content-Disposition"] = 'attachment; filename="123.txt'
-		# att.add_header('Content-Disposition', 'attachment', filename='eproduct.xlsx')
-		# message.attach(att)
+		for index, file in enumerate(files):
+			att = MIMEText(open(file, 'rb').read(), 'base64', 'gb2312')
+			att['Content-Type'] = 'application/octet-stream'
+			# att["Content-Disposition"] = 'attachment; filename=123.txt'
+			att.add_header('Content-Disposition', 'attachment')
+			att.add_header('Content-ID', '<' + str(index) + '>')
+			message.attach(att)
 
 		# another way to attach files
 
-		with open(file_path, 'rb') as f:
-			mime = MIMEBase('application', 'octet-stream')
-			# 把附件的内容读进来:
-			mime.set_payload(f.read())
-			# 用Base64编码:
-			encoders.encode_base64(mime)
-			mime.add_header('Content-Disposition', 'attachment', filename=file_name)
-			mime.add_header('Content-ID', '<0>')
-			mime.add_header('X-Attachment-Id', '0')
-			# 添加到MIMEMultipart:
-			message.attach(mime)
+		# with open(file_path, 'rb') as f:
+		# 	mime = MIMEBase('application', 'octet-stream')
+		# 	# 把附件的内容读进来:
+		# 	mime.set_payload(f.read())
+		# 	# 用Base64编码:
+		# 	encoders.encode_base64(mime)
+		# 	mime.add_header('Content-Disposition', 'attachment', filename=file_name)
+		# 	mime.add_header('Content-ID', '<20161216>')
+		# 	# mime.add_header('X-Attachment-Id', '0')
+		# 	# 添加到MIMEMultipart:
+		# 	message.attach(mime)
 
 		message.attach(MIMEText(content, 'html', 'utf-8'))  # attach也可以 message = MIMEText()也可以
 
@@ -149,10 +156,9 @@ if __name__ == '__main__':
 	# et.send_with_file('SendWithExcelFileTest', ['xuzuoyang@daokoudai.com'],
 	# 					'Hello', '/Users/zuoyangxu/Downloads/eproduct.xlsx', 'eproduct.xlsx')
 	et.send_with_image('ImageContentTest', ['xuzuoyang@daokoudai.com', ],
-					   '<html><body><h1>Hello</h1>' +
-					   '<p><img src="cid:0"></p>' +
-					   '</body></html>'
-					   , '/Users/zuoyangxu/Downloads/test.png', 'test.png')
+					'<html><body><h1>Hello</h1><p><img src="cid:0"></p></br><p><img src="cid:1"></p></body></html>',
+					'/Users/zuoyangxu/stat_plot/user_stat/user_stat_by_channel/20161216.png',
+					'/Users/zuoyangxu/stat_plot/user_stat/user_stat_weekly/20161216.png')
 
 
 

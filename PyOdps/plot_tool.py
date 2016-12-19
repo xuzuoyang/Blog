@@ -2,11 +2,16 @@
 import numpy as np
 import matplotlib as mlb
 import matplotlib.pyplot as plt
+import datetime
 
 
 def user_stat_plot(stat_date, user_register, user_open_account, stock_user_activate, stock_user_bindcard):
 	"""plot user statistic of the most recent 7 days
 	"""
+	fontpath = '/Library/Fonts/华文细黑.ttf'
+	properties = mlb.font_manager.FontProperties(fname=fontpath)
+	mlb.rcParams['font.family'] = properties.get_name()
+
 	y_pos = np.arange(len(stat_date))
 
 	plt.figure(figsize=(10, 7))
@@ -44,12 +49,20 @@ def user_stat_plot(stat_date, user_register, user_open_account, stock_user_activ
 	plt.xlabel('日期')
 	plt.title('投资用户')
 
-	plt.show()
+	#plt.show()
+
+
+	today = datetime.datetime.now().strftime('%Y%m%d')
+	plt.savefig('/Users/zuoyangxu/stat_plot/user_stat/user_stat_weekly/' + today + '.png')
 
 
 def user_stat_by_channel_plot(channel_name, user_register, user_open_account, user_bind_card, user_first_invest):
 	"""plot user statistic by different channels
 	"""
+	fontpath = '/Library/Fonts/华文细黑.ttf'
+	properties = mlb.font_manager.FontProperties(fname=fontpath)
+	mlb.rcParams['font.family'] = properties.get_name()
+
 	y_pos = range(len(channel_name))
 
 	plt.figure(figsize=(10, 7))
@@ -83,7 +96,9 @@ def user_stat_by_channel_plot(channel_name, user_register, user_open_account, us
 	plt.xlim(0, int(np.max(user_first_invest) * 3 / 2))
 	plt.title('投资用户')
 
-	plt.show()
+	# plt.show()
+	today = datetime.datetime.now().strftime('%Y%m%d')
+	plt.savefig('/Users/zuoyangxu/stat_plot/user_stat/user_stat_by_channel/' + today + '.png')
 
 if __name__ == '__main__':
 	# stat_date = ['11-21', '11-22', '11-23', '11-24', '11-25', '11-26', '11-27']
