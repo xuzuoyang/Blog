@@ -1,28 +1,123 @@
 # -*- coding: utf-8 -*-
 from pyodps_tool import PyODPSTool
 from email_tool import EmailTool
+import datetime
 
 
 def daily_user_stat():
+	"""function for content of daily user statistics
+	"""
+	# sql to get data
+	sql1 = 'select sum(register_user_num) as register_total, sum(open_account_user_num)+11549 as open_account_total, \
+				sum(first_invest_user_num) as invest_total from user_type_stat'
+	sql2 = 'select substr(stat_date, 1, 10), register_user_num, open_account_user_num, \
+				(bindcard_user_num-open_account_user_num) as bindcard_stock_user_num, \
+				first_invest_user_num from user_type_stat order by _c0 desc limit 7'
+	sql3 = 'select channel, register_user_num, open_account_user_num, bindcard_user_num, first_invest_user \
+				from user_type_stat_by_channel where substr(stat_date, 1, 10)="' + \
+				(datetime.date.today() - datetime.timedelta(days=1)).strftime('%Y-%m-%d') + \
+				'" order by register_user_num desc limit 1000'
+
+	# for bindcard user total
+	sql4 = 'select count(distinct user_id) as bindcard_total from user_bindcard'
+	tool = PyODPSTool()
+	data1, data2, data3 = tool.get_data_by_sql(sql1), tool.get_data_by_sql(sql2), tool.get_data_by_sql(sql3)
+	data4 = tool.get_data_by_sql(sql4)
+
+	# assemble html code
 	start = '<html><head>' \
 			'<meta charset="utf-8"><title>ODPS table--test</title></head>' \
-			'</br><body text="#000000"><center>每日用户统计<font color="#dd0000"></font></center>' \
-			'</br><p>当前用户累计情况:</p>' \
-			'<table border="1" cellspacing="0" cellpadding="2" bordercolor="#000000" width="90%" align="center" ' \
-			' style="border-collapse:collapse;">'
+			'</br><body text="#000000"><center>每日用户统计 ' + datetime.date.today().strftime('%Y-%m-%d') + \
+			'<font color="#dd0000"></font></center>'
 
-	t_head = '<tr><th>注册用户数</th><th>新上行用户数</th><th>绑卡用户数</th><th>投资用户数</th></tr>'
+	t1_title = '</br><p>当前用户累计情况:</p>' \
+		'<table border="1" cellspacing="0" cellpadding="2" bordercolor="#000000" width="90%" align="center" ' \
+		' style="border-collapse:collapse;">'
+	t1_head = '<tr><th>注册用户数</th><th>上行开户数</th><th>绑卡用户数</th><th>投资用户数</th></tr>'
+	t1_data = ''
+	for data in data1:
+		t1_data += '<tr>'
+		if data['register_total'] is None:
+			t1_data += '<td>0</td>'
+		else:
+			t1_data += '<td>' + data['register_total'] + '</td>'
+		if data['open_account_total'] is None:
+			t1_data += '<td>0</td>'
+		else:
+			t1_data += '<td>' + data['open_account_total'] + '</td>'
+		if data4[0]['bindcard_total'] is None:
+			t1_data += '<td>0</td>'
+		else:
+			t1_data += '<td>' + data4[0]['bindcard_total'] + '</td>'
+		if data['invest_total'] is None:
+			t1_data += '<td>0</td>'
+		else:
+			t1_data += '<td>' + data['invest_total'] + '</td>'
+		t1_data += '</tr>'
+	t1_tail = '</br></table><center></center>'
+	t1 = t1_title + t1_head + t1_data + t1_tail
 
-	t_data = '<tr><td>99211</td><td>12842</td><td>6301</td><td>12120</td></tr>'
+	t2_title = '</br><p>近7日新增用户情况:</p>' \
+		'<table border="1" cellspacing="0" cellpadding="2" bordercolor="#000000" width="90%" align="center" ' \
+		' style="border-collapse:collapse;">'
+	t2_head = '<tr><th>日期</th><th>注册人数</th><th>开户人数</th><th>存量用户绑卡人数</th><th>首投人数</th>'
+	t2_data = ''
+	for data in data2:
+		t2_data += '<tr>'
+		t2_data += '<td>' + data['_c0'] + '</td>'
+		if data['register_user_num'] is None:
+			t2_data += '<td>0</td>'
+		else:
+			t2_data += '<td>' + data['register_user_num'] + '</td>'
+		if data['open_account_user_num'] is None:
+			t2_data += '<td>0</td>'
+		else:
+			t2_data += '<td>' + data['open_account_user_num'] + '</td>'
+		if data['bindcard_stock_user_num'] is None:
+			t2_data += '<td>0</td>'
+		else:
+			t2_data += '<td>' + data['bindcard_stock_user_num'] + '</td>'
+		if data['first_invest_user_num'] is None:
+			t2_data += '<td>0</td>'
+		else:
+			t2_data += '<td>' + data['first_invest_user_num'] + '</td>'
+		t2_data += '</tr>'
+	t2_tail = '</br></table><center></center>'
+	t2 = t2_title + t2_head + t2_data + t2_tail
 
-	t_end = '</br></table><center><b>说明:</b></center>'
+	t3_title = '</br><p>新增用户渠道分布:</p>' \
+		'<table border="1" cellspacing="0" cellpadding="2" bordercolor="#000000" width="90%" align="center" ' \
+		' style="border-collapse:collapse;">'
+	t3_head = '<tr><th>渠道</th><th>注册人数</th><th>开户人数</th><th>绑卡人数</th><th>首投人数</th>'
+	t3_data = ''
+	for data in data3:
+		t3_data += '<tr>'
+		if data['channel'] is None:
+			t3_data += '<td>0</td>'
+		else:
+			t3_data += '<td>' + data['channel'] + '</td>'
+		if data['register_user_num'] is None:
+			t3_data += '<td>0</td>'
+		else:
+			t3_data += '<td>' + data['register_user_num'] + '</td>'
+		if data['open_account_user_num'] is None:
+			t3_data += '<td>0</td>'
+		else:
+			t3_data += '<td>' + data['open_account_user_num'] + '</td>'
+		if data['bindcard_user_num'] is None:
+			t3_data += '<td>0</td>'
+		else:
+			t3_data += '<td>' + data['bindcard_user_num'] + '</td>'
+		if data['first_invest_user'] is None:
+			t3_data += '<td>0</td>'
+		else:
+			t3_data += '<td>' + data['first_invest_user'] + '</td>'
+		t3_data += '</tr>'
+	t3_tail = '</br></table><center></center>'
+	t3 = t3_title + t3_head + t3_data + t3_tail
 
-	p_data = '</br><p>近7日新增用户情况:</p></br><p><img src="cid:0"></p></br>' \
-			 '</br><p>新增用户渠道分布:</p></br><p><img src="cid:1"></p></br>'
-
-	p_end = '</body></html>'
-
-	html = start + t_head + t_data + t_end + p_data + p_end
+	end = '</body></html>'
+	html = start + t1 + t2 + t3 + end
 
 	return html
 
@@ -185,9 +280,9 @@ def project_stat_by_core_enterprise_and_amount():
 
 if __name__ == '__main__':
 	et = EmailTool('data@daokoudai.com', 'Data20160626')
-	# et.send_with_html('ODPS统计表邮件测试', ['lidingyu@daokoudai.com', 'xuzuoyang@daokoudai.com', 'wangnan@daokoudai.com'],
-	# 				core_enterprise_loan_stat_accum()+finance_stat()+project_stat_by_core_enterprise_and_amount())
-	et.send_with_image('ImageContentTest', ['xuzuoyang@daokoudai.com', 'wangnan@daokoudai.com', ],
-					   daily_user_stat(),
-					   '/Users/zuoyangxu/stat_plot/user_stat/user_stat_weekly/20161216.png',
-					   '/Users/zuoyangxu/stat_plot/user_stat/user_stat_by_channel/20161216.png')
+	et.send_with_html('用户统计表邮件测试',
+					['lidingyu@daokoudai.com', 'xuzuoyang@daokoudai.com', 'wangnan@daokoudai.com'], daily_user_stat())
+	# et.send_with_image('ImageContentTest', ['xuzuoyang@daokoudai.com', 'wangnan@daokoudai.com', ],
+	# 				   daily_user_stat(),
+	# 				   '/Users/zuoyangxu/stat_plot/user_stat/user_stat_weekly/20161216.png',
+	# 				   '/Users/zuoyangxu/stat_plot/user_stat/user_stat_by_channel/20161216.png')
