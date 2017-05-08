@@ -1,6 +1,6 @@
 import time
 import uuid
-from www.orm import *
+from orm import *
 
 
 def next_id():

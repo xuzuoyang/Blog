@@ -1,5 +1,5 @@
-import www.confs.config_default as config_default
-import www.confs.config_override as config_override
+import confs.config_default as config_default
+import confs.config_override as config_override
 
 
 class Dict(dict):

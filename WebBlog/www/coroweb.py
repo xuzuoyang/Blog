@@ -7,7 +7,7 @@ import asyncio
 from inspect import Parameter
 from urllib import parse
 from aiohttp import web
-from www.apis import APIError
+from apis import APIError
 
 
 def get(path):

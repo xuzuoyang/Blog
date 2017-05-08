@@ -1,46 +1,18 @@
+#!/usr/bin/env python3
+# -*- coding:utf-8 -*-
 import re
 import time
 import json
+import markdown2
 import logging
 logging.basicConfig(level=logging.INFO)
 import hashlib
 import base64
 import asyncio
-from www.apis import *
-from www.coroweb import *
-from www.models.models import *
-from www.confs.config import *
-
-
-@get('/blog')
-def handler_url_blog():
-    return web.Response(body=b'<h1>Awesome: /blog</h1>', content_type='text/html', charset='UTF-8')
-
-
-@get('/')
-def handler_url_index():
-    summary = 'Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua.'
-    blogs = [
-        Blog(id='1', name='Test Blog', summary=summary, created_at=time.time() - 120),
-        Blog(id='2', name='Something New', summary=summary, created_at=time.time() - 3600),
-        Blog(id='3', name='Learn Swift', summary=summary, created_at=time.time() - 7200)
-    ]
-    return {
-        '__template__': 'blogs.html',
-        'blogs': blogs
-    }
-
-
-@get('/register')
-def register():
-    logging.info('register handler function')
-    return {'__template__': 'register.html'}
-
-
-@get('/signin')
-def signin():
-    return {'__template__': 'signin.html'}
-
+from apis import *
+from coroweb import *
+from models.models import *
+from confs.config import *
 
 _RE_EMAIL = re.compile(r'^[a-z0-9\.\-\_]+\@[a-z0-9\-\_]+(\.[a-z0-9\-\_]+){1,4}$')
 _RE_SHA1 = re.compile(r'^[0-9a-f]{40}$')
@@ -78,11 +50,136 @@ def cookie2user(cookie):
             logging.info('invalid sha1')
             return None
         user.password = '******'
+        return user
     except Exception as e:
         logging.exception(e)
         return None
 
 
+def check_admin(request):
+    if request.__user__ is None or not request.__user__.admin == 1:
+        raise APIPermissionError()
+
+
+def get_page_index(page_str):
+    p = 1
+    try:
+        p = int(page_str)
+    except ValueError as e:
+        pass
+    if p < 1:
+        p = 1
+    return p
+
+
+def text2html(text):
+    lines = map(lambda s: '<p>%s</p>' % s.replace('&', '&amp;').replace('<', '&lt;').replace('>', '&gt;'), filter(lambda s: s.strip() != '', text.split('\n')))
+    return ''.join(lines)
+
+
+# 博客首页
+@get('/')
+def index(request):
+    summary = 'Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua.'
+    blogs = [
+        Blog(id='1', name='Test Blog', summary=summary, created_at=time.time() - 120),
+        Blog(id='2', name='Something New', summary=summary, created_at=time.time() - 3600),
+        Blog(id='3', name='Learn Swift', summary=summary, created_at=time.time() - 7200)
+    ]
+    return {
+        '__template__': 'blogs.html',
+        'blogs': blogs,
+        '__user__': request.__user__
+    }
+
+
+# 日志展示页
+@get('/blog/{id}')
+def get_blog(id):
+    blog = yield from Blog.find(id)
+    comments = yield from Comment.findAll('blog_id=?', [id], orderBy='created_at desc')
+    for c in comments:
+        c.html_content = text2html(c.content)
+    blog.html_content = markdown2.markdown(blog.content)
+    return {
+        '__template__': 'blog.html',
+        'blog': blog,
+        'comments': comments
+    }
+
+
+@get('/manage/blogs')
+def manage_blogs(*, page='1'):
+    return {
+        '__template__': 'manage_blogs.html',
+        'page_index': get_page_index(page)
+    }
+
+
+@get('/manage/blogs/create')
+def manage_create_blog():
+    return {
+        '__template__': 'manage_blog_edit.html',
+        'id': '',
+        'action': '/api/blogs'
+    }
+
+
+@get('/register')
+def register():
+    logging.info('register handler function')
+    return {'__template__': 'register.html'}
+
+
+@get('/signin')
+def signin():
+    return {'__template__': 'signin.html'}
+
+
+@get('/signout')
+def signout(request):
+    referer = request.headers.get('Referer')
+    response = web.HTTPFound(referer or '/')
+    response.set_cookie(COOKIE_NAME, '-deleted-', max_age=0, httponly=True)
+    logging.info('user signed out.')
+    return response
+
+
+# 查找某一页的所有博客API
+@get('/api/blogs')
+async def api_blogs(*, page='1'):
+    page_index = get_page_index(page)
+    num = await Blog.findNumber('count(id)')
+    p = Page(num, page_index)
+    if num == 0:
+        return dict(page=p, blogs={})
+    blogs = await Blog.findAll(orderBy='created_at desc', limit=(p.offset, p.limit))
+    return dict(page=p, blogs=blogs)
+
+
+# 查找某一篇博客API
+@get('/api/blogs/{id}')
+async def api_get_blog(*, id):
+    blog = await Blog.find(id)
+    return blog
+
+
+# 提交博客API
+@post('/api/blogs')
+async def api_create_blog(request, *, name, summary, content):
+    check_admin(request)
+    if not name or not name.strip():
+        raise APIValueError('name', 'name cannot be empty.')
+    if not summary or not summary.strip():
+        raise APIValueError('summary', 'summary cannot be empty.')
+    if not content or not content.strip():
+        raise APIValueError('content', 'content cannot be empty.')
+    blog = Blog(user_id=request.__user__.id, user_name=request.__user__.name, user_image=request.__user__.image, name=name.strip(), summary=summary.strip(), content=content.strip())
+    await blog.save()
+    return blog
+
+
+# 用户注册API
 @post('/api/users')
 async def api_register_user(*, email, name, password):
     logging.warning('invoking register api...')
@@ -111,6 +208,7 @@ async def api_register_user(*, email, name, password):
     return response
 
 
+# 验证用户API
 @post('/api/authenticate')
 async def authenticate(*, email, password):
     if not email:
@@ -134,24 +232,3 @@ async def authenticate(*, email, password):
     response.content_type = 'application/json'
     response.body = json.dumps(user, ensure_ascii=False).encode('utf-8')
     return response
-
-
-@get('/signout')
-def signout(request):
-    referer = request.headers.get('Referer')
-    response = web.HTTPFound(referer or '/')
-    response.set_cookie(COOKIE_NAME, '-deleted-', max_age=0, httponly=True)
-    logging.info('user signed out.')
-    return response
-
-
-
-
-
-
-
-
-
-
-
-
