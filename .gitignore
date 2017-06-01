@@ -1,6 +1,12 @@
 # PyCharm
 WebBlog/.idea/
 # Python
+# configuration
+WebBlog/conf/
+
+#fabricate
+fabfile.*
+
 # Byte-compiled / optimized / DLL files
 __pycache__/
 *.py[cod]
