@@ -20,23 +20,6 @@ deploy	/Users/zuoyangxu/mygit/WebBlog/fabfile.py	/^def deploy():$/;"	function	li
 RE_FILES	/Users/zuoyangxu/mygit/WebBlog/fabfile.py	/^RE_FILES = re.compile('\\r?\\n')$/;"	variable	line:77
 rollback	/Users/zuoyangxu/mygit/WebBlog/fabfile.py	/^def rollback():$/;"	function	line:79
 restore2local	/Users/zuoyangxu/mygit/WebBlog/fabfile.py	/^def restore2local():$/;"	function	line:126
-__author__	/Users/zuoyangxu/mygit/WebBlog/www/apis.py	/^__author__ = 'Michael Liao'$/;"	variable	line:4
-json	/Users/zuoyangxu/mygit/WebBlog/www/apis.py	/^import json, logging, inspect, functools$/;"	namespace	line:10
-logging	/Users/zuoyangxu/mygit/WebBlog/www/apis.py	/^import json, logging, inspect, functools$/;"	namespace	line:10
-inspect	/Users/zuoyangxu/mygit/WebBlog/www/apis.py	/^import json, logging, inspect, functools$/;"	namespace	line:10
-functools	/Users/zuoyangxu/mygit/WebBlog/www/apis.py	/^import json, logging, inspect, functools$/;"	namespace	line:10
-Page	/Users/zuoyangxu/mygit/WebBlog/www/apis.py	/^class Page(object):$/;"	class	line:13
-__init__	/Users/zuoyangxu/mygit/WebBlog/www/apis.py	/^    def __init__(self, item_count, page_index=1, page_size=10):$/;"	member	line:18	class:Page
-__str__	/Users/zuoyangxu/mygit/WebBlog/www/apis.py	/^    def __str__(self):$/;"	member	line:57	class:Page	file:
-__repr__	/Users/zuoyangxu/mygit/WebBlog/www/apis.py	/^    __repr__ = __str__$/;"	variable	line:60	class:Page
-APIError	/Users/zuoyangxu/mygit/WebBlog/www/apis.py	/^class APIError(Exception):$/;"	class	line:63
-__init__	/Users/zuoyangxu/mygit/WebBlog/www/apis.py	/^    def __init__(self, error, data='', message=''):$/;"	member	line:67	class:APIError
-APIValueError	/Users/zuoyangxu/mygit/WebBlog/www/apis.py	/^class APIValueError(APIError):$/;"	class	line:74
-__init__	/Users/zuoyangxu/mygit/WebBlog/www/apis.py	/^    def __init__(self, field, message=''):$/;"	member	line:78	class:APIValueError
-APIResourceNotFoundError	/Users/zuoyangxu/mygit/WebBlog/www/apis.py	/^class APIResourceNotFoundError(APIError):$/;"	class	line:82
-__init__	/Users/zuoyangxu/mygit/WebBlog/www/apis.py	/^    def __init__(self, field, message=''):$/;"	member	line:86	class:APIResourceNotFoundError
-APIPermissionError	/Users/zuoyangxu/mygit/WebBlog/www/apis.py	/^class APIPermissionError(APIError):$/;"	class	line:90
-__init__	/Users/zuoyangxu/mygit/WebBlog/www/apis.py	/^    def __init__(self, message=''):$/;"	member	line:94	class:APIPermissionError
 logging	/Users/zuoyangxu/mygit/WebBlog/www/app.py	/^import logging$/;"	namespace	line:3
 asyncio	/Users/zuoyangxu/mygit/WebBlog/www/app.py	/^import asyncio$/;"	namespace	line:5
 os	/Users/zuoyangxu/mygit/WebBlog/www/app.py	/^import os$/;"	namespace	line:6
@@ -64,27 +47,6 @@ configs	/Users/zuoyangxu/mygit/WebBlog/www/confs/config.py	/^    configs = merge
 configs	/Users/zuoyangxu/mygit/WebBlog/www/confs/config.py	/^configs = toDict(configs)/;"	variable	line:50
 configs	/Users/zuoyangxu/mygit/WebBlog/www/confs/config_default.py	/^configs = {$/;"	variable	line:1
 configs	/Users/zuoyangxu/mygit/WebBlog/www/confs/config_override.py	/^configs = {$/;"	variable	line:1
-os	/Users/zuoyangxu/mygit/WebBlog/www/coroweb.py	/^import os$/;"	namespace	line:1
-logging	/Users/zuoyangxu/mygit/WebBlog/www/coroweb.py	/^import logging$/;"	namespace	line:2
-functools	/Users/zuoyangxu/mygit/WebBlog/www/coroweb.py	/^import functools$/;"	namespace	line:4
-inspect	/Users/zuoyangxu/mygit/WebBlog/www/coroweb.py	/^import inspect$/;"	namespace	line:5
-asyncio	/Users/zuoyangxu/mygit/WebBlog/www/coroweb.py	/^import asyncio$/;"	namespace	line:6
-Parameter	/Users/zuoyangxu/mygit/WebBlog/www/coroweb.py	/^from inspect import Parameter$/;"	namespace	line:7
-parse	/Users/zuoyangxu/mygit/WebBlog/www/coroweb.py	/^from urllib import parse$/;"	namespace	line:8
-web	/Users/zuoyangxu/mygit/WebBlog/www/coroweb.py	/^from aiohttp import web$/;"	namespace	line:9
-APIError	/Users/zuoyangxu/mygit/WebBlog/www/coroweb.py	/^from apis import APIError$/;"	namespace	line:10
-get	/Users/zuoyangxu/mygit/WebBlog/www/coroweb.py	/^def get(path):$/;"	function	line:13
-decorator	/Users/zuoyangxu/mygit/WebBlog/www/coroweb.py	/^    def decorator(function):$/;"	function	line:19	function:get
-wrapper	/Users/zuoyangxu/mygit/WebBlog/www/coroweb.py	/^        def wrapper(*args, **kwargs):$/;"	function	line:22	function:get.decorator
-post	/Users/zuoyangxu/mygit/WebBlog/www/coroweb.py	/^def post(path):$/;"	function	line:31
-decorator	/Users/zuoyangxu/mygit/WebBlog/www/coroweb.py	/^    def decorator(function):$/;"	function	line:37	function:post
-wrapper	/Users/zuoyangxu/mygit/WebBlog/www/coroweb.py	/^        def wrapper(*args, **kwargs):$/;"	function	line:40	function:post.decorator
-RequestHandler	/Users/zuoyangxu/mygit/WebBlog/www/coroweb.py	/^class RequestHandler:$/;"	class	line:49
-__init__	/Users/zuoyangxu/mygit/WebBlog/www/coroweb.py	/^    def __init__(self, function):$/;"	member	line:51	class:RequestHandler
-__call__	/Users/zuoyangxu/mygit/WebBlog/www/coroweb.py	/^    async def __call__(self, request):$/;"	member	line:54	class:RequestHandler	file:
-add_static	/Users/zuoyangxu/mygit/WebBlog/www/coroweb.py	/^def add_static(app):$/;"	function	line:84
-add_route	/Users/zuoyangxu/mygit/WebBlog/www/coroweb.py	/^def add_route(app, function):$/;"	function	line:90
-add_routes	/Users/zuoyangxu/mygit/WebBlog/www/coroweb.py	/^def add_routes(app, module_name):$/;"	function	line:102
 logger_factory	/Users/zuoyangxu/mygit/WebBlog/www/factories.py	/^async def logger_factory(app, handler):$/;"	function	line:4
 logger	/Users/zuoyangxu/mygit/WebBlog/www/factories.py	/^    async def logger(request):$/;"	function	line:5	function:logger_factory
 auth_factory	/Users/zuoyangxu/mygit/WebBlog/www/factories.py	/^async def auth_factory(app, handler):$/;"	function	line:11
@@ -93,35 +55,6 @@ data_factory	/Users/zuoyangxu/mygit/WebBlog/www/factories.py	/^async def data_fa
 parse_data	/Users/zuoyangxu/mygit/WebBlog/www/factories.py	/^    async def parse_data(request):$/;"	function	line:27	function:data_factory
 response_factory	/Users/zuoyangxu/mygit/WebBlog/www/factories.py	/^async def response_factory(app, handler):$/;"	function	line:53
 response	/Users/zuoyangxu/mygit/WebBlog/www/factories.py	/^    async def response(request):$/;"	function	line:54	function:response_factory
-re	/Users/zuoyangxu/mygit/WebBlog/www/handlers.py	/^import re$/;"	namespace	line:3
-time	/Users/zuoyangxu/mygit/WebBlog/www/handlers.py	/^import time$/;"	namespace	line:4
-json	/Users/zuoyangxu/mygit/WebBlog/www/handlers.py	/^import json$/;"	namespace	line:5
-markdown2	/Users/zuoyangxu/mygit/WebBlog/www/handlers.py	/^import markdown2$/;"	namespace	line:6
-logging	/Users/zuoyangxu/mygit/WebBlog/www/handlers.py	/^import logging$/;"	namespace	line:7
-hashlib	/Users/zuoyangxu/mygit/WebBlog/www/handlers.py	/^import hashlib$/;"	namespace	line:9
-base64	/Users/zuoyangxu/mygit/WebBlog/www/handlers.py	/^import base64$/;"	namespace	line:10
-asyncio	/Users/zuoyangxu/mygit/WebBlog/www/handlers.py	/^import asyncio$/;"	namespace	line:11
-_RE_EMAIL	/Users/zuoyangxu/mygit/WebBlog/www/handlers.py	/^_RE_EMAIL = re.compile(r'^[a-z0-9\\.\\-\\_]+\\@[a-z0-9\\-\\_]+(\\.[a-z0-9\\-\\_]+){1,4}$')$/;"	variable	line:17
-_RE_SHA1	/Users/zuoyangxu/mygit/WebBlog/www/handlers.py	/^_RE_SHA1 = re.compile(r'^[0-9a-f]{40}$')$/;"	variable	line:18
-COOKIE_NAME	/Users/zuoyangxu/mygit/WebBlog/www/handlers.py	/^COOKIE_NAME = 'awesession'$/;"	variable	line:19
-_COOKIE_KEY	/Users/zuoyangxu/mygit/WebBlog/www/handlers.py	/^_COOKIE_KEY = configs.session.secret$/;"	variable	line:20
-user2cookie	/Users/zuoyangxu/mygit/WebBlog/www/handlers.py	/^def user2cookie(user, max_age):$/;"	function	line:23
-cookie2user	/Users/zuoyangxu/mygit/WebBlog/www/handlers.py	/^def cookie2user(cookie):$/;"	function	line:34
-check_admin	/Users/zuoyangxu/mygit/WebBlog/www/handlers.py	/^def check_admin(request):$/;"	function	line:59
-get_page_index	/Users/zuoyangxu/mygit/WebBlog/www/handlers.py	/^def get_page_index(page_str):$/;"	function	line:64
-text2html	/Users/zuoyangxu/mygit/WebBlog/www/handlers.py	/^def text2html(text):$/;"	function	line:75
-index	/Users/zuoyangxu/mygit/WebBlog/www/handlers.py	/^def index(request):$/;"	function	line:82
-get_blog	/Users/zuoyangxu/mygit/WebBlog/www/handlers.py	/^def get_blog(id):$/;"	function	line:98
-manage_blogs	/Users/zuoyangxu/mygit/WebBlog/www/handlers.py	/^def manage_blogs(*, page='1'):$/;"	function	line:112
-manage_create_blog	/Users/zuoyangxu/mygit/WebBlog/www/handlers.py	/^def manage_create_blog():$/;"	function	line:120
-register	/Users/zuoyangxu/mygit/WebBlog/www/handlers.py	/^def register():$/;"	function	line:129
-signin	/Users/zuoyangxu/mygit/WebBlog/www/handlers.py	/^def signin():$/;"	function	line:135
-signout	/Users/zuoyangxu/mygit/WebBlog/www/handlers.py	/^def signout(request):$/;"	function	line:140
-api_blogs	/Users/zuoyangxu/mygit/WebBlog/www/handlers.py	/^async def api_blogs(*, page='1'):$/;"	function	line:150
-api_get_blog	/Users/zuoyangxu/mygit/WebBlog/www/handlers.py	/^async def api_get_blog(*, id):$/;"	function	line:162
-api_create_blog	/Users/zuoyangxu/mygit/WebBlog/www/handlers.py	/^async def api_create_blog(request, *, name, summary, content):$/;"	function	line:169
-api_register_user	/Users/zuoyangxu/mygit/WebBlog/www/handlers.py	/^async def api_register_user(*, email, name, password):$/;"	function	line:184
-authenticate	/Users/zuoyangxu/mygit/WebBlog/www/handlers.py	/^async def authenticate(*, email, password):$/;"	function	line:213
 time	/Users/zuoyangxu/mygit/WebBlog/www/models/models.py	/^import time$/;"	namespace	line:1
 uuid	/Users/zuoyangxu/mygit/WebBlog/www/models/models.py	/^import uuid$/;"	namespace	line:2
 next_id	/Users/zuoyangxu/mygit/WebBlog/www/models/models.py	/^def next_id():$/;"	function	line:6
@@ -153,41 +86,6 @@ user_name	/Users/zuoyangxu/mygit/WebBlog/www/models/models.py	/^    user_name = 
 user_image	/Users/zuoyangxu/mygit/WebBlog/www/models/models.py	/^    user_image = StringField(ddl='varchar(500)')$/;"	variable	line:42	class:Comment
 content	/Users/zuoyangxu/mygit/WebBlog/www/models/models.py	/^    content = TextField()$/;"	variable	line:43	class:Comment
 created_at	/Users/zuoyangxu/mygit/WebBlog/www/models/models.py	/^    created_at = FloatField(default=time.time)/;"	variable	line:44	class:Comment
-logging	/Users/zuoyangxu/mygit/WebBlog/www/orm.py	/^import logging$/;"	namespace	line:1
-asyncio	/Users/zuoyangxu/mygit/WebBlog/www/orm.py	/^import asyncio$/;"	namespace	line:3
-aiomysql	/Users/zuoyangxu/mygit/WebBlog/www/orm.py	/^import aiomysql$/;"	namespace	line:4
-log	/Users/zuoyangxu/mygit/WebBlog/www/orm.py	/^def log(sql, args=()):$/;"	function	line:7
-create_pool	/Users/zuoyangxu/mygit/WebBlog/www/orm.py	/^async def create_pool(loop, **kwargs):$/;"	function	line:10
-select	/Users/zuoyangxu/mygit/WebBlog/www/orm.py	/^async def select(sql, args, size=None):$/;"	function	line:26
-execute	/Users/zuoyangxu/mygit/WebBlog/www/orm.py	/^async def execute(sql, args, autocommit=True):$/;"	function	line:39
-create_args_string	/Users/zuoyangxu/mygit/WebBlog/www/orm.py	/^def create_args_string(num):$/;"	function	line:58
-Field	/Users/zuoyangxu/mygit/WebBlog/www/orm.py	/^class Field(object):$/;"	class	line:65
-__init__	/Users/zuoyangxu/mygit/WebBlog/www/orm.py	/^    def __init__(self, name, column_type, primary_key, default):$/;"	member	line:66	class:Field
-__str__	/Users/zuoyangxu/mygit/WebBlog/www/orm.py	/^    def __str__(self):$/;"	member	line:72	class:Field	file:
-StringField	/Users/zuoyangxu/mygit/WebBlog/www/orm.py	/^class StringField(Field):$/;"	class	line:76
-__init__	/Users/zuoyangxu/mygit/WebBlog/www/orm.py	/^    def __init__(self, name=None, primary_key=False, default=None, ddl='varchar(100)'):$/;"	member	line:77	class:StringField
-BooleanField	/Users/zuoyangxu/mygit/WebBlog/www/orm.py	/^class BooleanField(Field):$/;"	class	line:81
-__init__	/Users/zuoyangxu/mygit/WebBlog/www/orm.py	/^    def __init__(self, name=None, default=False):$/;"	member	line:82	class:BooleanField
-IntegerField	/Users/zuoyangxu/mygit/WebBlog/www/orm.py	/^class IntegerField(Field):$/;"	class	line:86
-__init__	/Users/zuoyangxu/mygit/WebBlog/www/orm.py	/^    def __init__(self, name=None, primary_key=False, default=0):$/;"	member	line:87	class:IntegerField
-FloatField	/Users/zuoyangxu/mygit/WebBlog/www/orm.py	/^class FloatField(Field):$/;"	class	line:91
-__init__	/Users/zuoyangxu/mygit/WebBlog/www/orm.py	/^    def __init__(self, name=None, primary_key=False, default=0.0):$/;"	member	line:92	class:FloatField
-TextField	/Users/zuoyangxu/mygit/WebBlog/www/orm.py	/^class TextField(Field):$/;"	class	line:96
-__init__	/Users/zuoyangxu/mygit/WebBlog/www/orm.py	/^    def __init__(self, name=None, default=None):$/;"	member	line:97	class:TextField
-ModelMetaclass	/Users/zuoyangxu/mygit/WebBlog/www/orm.py	/^class ModelMetaclass(type):$/;"	class	line:101
-__new__	/Users/zuoyangxu/mygit/WebBlog/www/orm.py	/^    def __new__(cls, name, bases, attrs):$/;"	member	line:103	class:ModelMetaclass	file:
-Model	/Users/zuoyangxu/mygit/WebBlog/www/orm.py	/^class Model(dict, metaclass=ModelMetaclass):$/;"	class	line:140
-__init__	/Users/zuoyangxu/mygit/WebBlog/www/orm.py	/^    def __init__(self, **kwargs):$/;"	member	line:142	class:Model
-__getattr__	/Users/zuoyangxu/mygit/WebBlog/www/orm.py	/^    def __getattr__(self, key):$/;"	member	line:145	class:Model	file:
-__setattr__	/Users/zuoyangxu/mygit/WebBlog/www/orm.py	/^    def __setattr__(self, key, value):$/;"	member	line:151	class:Model	file:
-getValue	/Users/zuoyangxu/mygit/WebBlog/www/orm.py	/^    def getValue(self, key):$/;"	member	line:154	class:Model
-getValueOrDefault	/Users/zuoyangxu/mygit/WebBlog/www/orm.py	/^    def getValueOrDefault(self, key):$/;"	member	line:157	class:Model
-findAll	/Users/zuoyangxu/mygit/WebBlog/www/orm.py	/^    async def findAll(cls, where=None, args=None, **kw):$/;"	member	line:168	class:Model
-findNumber	/Users/zuoyangxu/mygit/WebBlog/www/orm.py	/^    async def findNumber(cls, selectField, where=None, args=None):$/;"	member	line:196	class:Model
-find	/Users/zuoyangxu/mygit/WebBlog/www/orm.py	/^    async def find(cls, pk):$/;"	member	line:208	class:Model
-save	/Users/zuoyangxu/mygit/WebBlog/www/orm.py	/^    async def save(self):$/;"	member	line:215	class:Model
-update	/Users/zuoyangxu/mygit/WebBlog/www/orm.py	/^    async def update(self):$/;"	member	line:222	class:Model
-remove	/Users/zuoyangxu/mygit/WebBlog/www/orm.py	/^    async def remove(self):$/;"	member	line:229	class:Model
 __author__	/Users/zuoyangxu/mygit/WebBlog/www/pymonitor.py	/^__author__ = 'Michael Liao'$/;"	variable	line:4
 os	/Users/zuoyangxu/mygit/WebBlog/www/pymonitor.py	/^import os, sys, time, subprocess$/;"	namespace	line:6
 sys	/Users/zuoyangxu/mygit/WebBlog/www/pymonitor.py	/^import os, sys, time, subprocess$/;"	namespace	line:6
@@ -363,22 +261,6 @@ a	/Users/zuoyangxu/mygit/WebBlog/www/templates/__base__.html	/^                 
 p	/Users/zuoyangxu/mygit/WebBlog/www/templates/__base__.html	/^                <p>Powered by <a href="http:\/\/awesome.liaoxuefeng.com">Awesome Python Webapp<\/a>. Copyright &copy; 2014. [<a href="\/manage\/" target="_blank">Manage<\/a>]<\/p>$/;"	function	line:82
 p	/Users/zuoyangxu/mygit/WebBlog/www/templates/__base__.html	/^                <p><a href="http:\/\/www.liaoxuefeng.com\/" target="_blank">www.liaoxuefeng.com<\/a>. All rights reserved.<\/p>$/;"	function	line:83
 a	/Users/zuoyangxu/mygit/WebBlog/www/templates/__base__.html	/^                <a target="_blank" href="http:\/\/www.w3.org\/TR\/html5\/"><i class="uk-icon-html5" style="font-size:64px; color: #444;"><\/i><\/a>$/;"	function	line:84
-script	/Users/zuoyangxu/mygit/WebBlog/www/templates/blogs.html	/^<script>$/;"	function	line:7
-div	/Users/zuoyangxu/mygit/WebBlog/www/templates/blogs.html	/^    <div class="uk-width-medium-3-4">$/;"	function	line:14
-article	/Users/zuoyangxu/mygit/WebBlog/www/templates/blogs.html	/^        <article class="uk-article">$/;"	function	line:16
-h	/Users/zuoyangxu/mygit/WebBlog/www/templates/blogs.html	/^            <h2><a href="\/blog\/{{ blog.id }}">{{ blog.name }}<\/a><\/h2>$/;"	function	line:17
-p	/Users/zuoyangxu/mygit/WebBlog/www/templates/blogs.html	/^            <p class="uk-article-meta">发表于{{ blog.created_at|datetime }}<\/p>$/;"	function	line:18
-p	/Users/zuoyangxu/mygit/WebBlog/www/templates/blogs.html	/^            <p>{{ blog.summary }}<\/p>$/;"	function	line:19
-p	/Users/zuoyangxu/mygit/WebBlog/www/templates/blogs.html	/^            <p><a href="\/blog\/{{ blog.id }}">继续阅读吧 <i class="uk-icon-angle-double-right"><\/i><\/a><\/p>$/;"	function	line:20
-hr	/Users/zuoyangxu/mygit/WebBlog/www/templates/blogs.html	/^        <hr class="uk-article-divider">$/;"	function	line:22
-div	/Users/zuoyangxu/mygit/WebBlog/www/templates/blogs.html	/^    <div class="uk-width-medium-1-4">$/;"	function	line:26
-div	/Users/zuoyangxu/mygit/WebBlog/www/templates/blogs.html	/^        <div class="uk-panel uk-panel-header">$/;"	function	line:27
-h	/Users/zuoyangxu/mygit/WebBlog/www/templates/blogs.html	/^            <h3 class="uk-panel-title">友情链接<\/h3>$/;"	function	line:28
-ul	/Users/zuoyangxu/mygit/WebBlog/www/templates/blogs.html	/^            <ul class="uk-list uk-list-line">$/;"	function	line:29
-li	/Users/zuoyangxu/mygit/WebBlog/www/templates/blogs.html	/^                <li><i class="uk-icon-thumbs-o-up"><\/i> <a target="_blank" href="http:\/\/www.liaoxuefeng.com\/category\/0013738748415562fee26e070fa4664ad926c8e30146c67000">编程<\/a><\/li>$/;"	function	line:30
-li	/Users/zuoyangxu/mygit/WebBlog/www/templates/blogs.html	/^                <li><i class="uk-icon-thumbs-o-up"><\/i> <a target="_blank" href="http:\/\/www.liaoxuefeng.com\/category\/0013738748248885ddf38d8cd1b4803aa74bcda32f853fd000">读书<\/a><\/li>$/;"	function	line:31
-li	/Users/zuoyangxu/mygit/WebBlog/www/templates/blogs.html	/^                <li><i class="uk-icon-thumbs-o-up"><\/i> <a target="_blank" href="http:\/\/www.liaoxuefeng.com\/wiki\/001374738125095c955c1e6d8bb493182103fac9270762a000">Python教程<\/a><\/li>$/;"	function	line:32
-li	/Users/zuoyangxu/mygit/WebBlog/www/templates/blogs.html	/^                <li><i class="uk-icon-thumbs-o-up"><\/i> <a target="_blank" href="http:\/\/www.liaoxuefeng.com\/wiki\/0013739516305929606dd18361248578c67b8067c8c017b000">Git教程<\/a><\/li>$/;"	function	line:33
 script	/Users/zuoyangxu/mygit/WebBlog/www/templates/manage_blog_edit.html	/^<script>$/;"	function	line:7
 initVM	/Users/zuoyangxu/mygit/WebBlog/www/templates/manage_blog_edit.html	/^function initVM(blog) {$/;"	function	line:11
 div	/Users/zuoyangxu/mygit/WebBlog/www/templates/manage_blog_edit.html	/^    <div class="uk-width-1-1 uk-margin-bottom">$/;"	function	line:57
@@ -492,3 +374,124 @@ i	/Users/zuoyangxu/mygit/WebBlog/www/templates/signin.html	/^                   
 input	/Users/zuoyangxu/mygit/WebBlog/www/templates/signin.html	/^                        <input v-model="password" name="password" type="password" placeholder="口令" maxlength="50" class="uk-width-1-1 uk-form-large">$/;"	function	line:57
 div	/Users/zuoyangxu/mygit/WebBlog/www/templates/signin.html	/^                <div class="uk-form-row">$/;"	function	line:60
 button	/Users/zuoyangxu/mygit/WebBlog/www/templates/signin.html	/^                    <button type="submit" class="uk-width-1-1 uk-button uk-button-primary uk-button-large"><i class="uk-icon-sign-in"><\/i> 登录<\/button>$/;"	function	line:61
+logging	/Users/zuoyangxu/mygit/WebBlog/www/orm.py	/^import logging$/;"	namespace	line:1
+asyncio	/Users/zuoyangxu/mygit/WebBlog/www/orm.py	/^import asyncio$/;"	namespace	line:3
+aiomysql	/Users/zuoyangxu/mygit/WebBlog/www/orm.py	/^import aiomysql$/;"	namespace	line:4
+log	/Users/zuoyangxu/mygit/WebBlog/www/orm.py	/^def log(sql, args=()):$/;"	function	line:7
+create_pool	/Users/zuoyangxu/mygit/WebBlog/www/orm.py	/^async def create_pool(loop, **kwargs):$/;"	function	line:10
+select	/Users/zuoyangxu/mygit/WebBlog/www/orm.py	/^async def select(sql, args, size=None):$/;"	function	line:26
+execute	/Users/zuoyangxu/mygit/WebBlog/www/orm.py	/^async def execute(sql, args, autocommit=True):$/;"	function	line:39
+create_args_string	/Users/zuoyangxu/mygit/WebBlog/www/orm.py	/^def create_args_string(num):$/;"	function	line:60
+Field	/Users/zuoyangxu/mygit/WebBlog/www/orm.py	/^class Field(object):$/;"	class	line:67
+__init__	/Users/zuoyangxu/mygit/WebBlog/www/orm.py	/^    def __init__(self, name, column_type, primary_key, default):$/;"	member	line:68	class:Field
+__str__	/Users/zuoyangxu/mygit/WebBlog/www/orm.py	/^    def __str__(self):$/;"	member	line:74	class:Field	file:
+StringField	/Users/zuoyangxu/mygit/WebBlog/www/orm.py	/^class StringField(Field):$/;"	class	line:78
+__init__	/Users/zuoyangxu/mygit/WebBlog/www/orm.py	/^    def __init__(self, name=None, primary_key=False, default=None, ddl='varchar(100)'):$/;"	member	line:79	class:StringField
+BooleanField	/Users/zuoyangxu/mygit/WebBlog/www/orm.py	/^class BooleanField(Field):$/;"	class	line:83
+__init__	/Users/zuoyangxu/mygit/WebBlog/www/orm.py	/^    def __init__(self, name=None, default=False):$/;"	member	line:84	class:BooleanField
+IntegerField	/Users/zuoyangxu/mygit/WebBlog/www/orm.py	/^class IntegerField(Field):$/;"	class	line:88
+__init__	/Users/zuoyangxu/mygit/WebBlog/www/orm.py	/^    def __init__(self, name=None, primary_key=False, default=0):$/;"	member	line:89	class:IntegerField
+FloatField	/Users/zuoyangxu/mygit/WebBlog/www/orm.py	/^class FloatField(Field):$/;"	class	line:93
+__init__	/Users/zuoyangxu/mygit/WebBlog/www/orm.py	/^    def __init__(self, name=None, primary_key=False, default=0.0):$/;"	member	line:94	class:FloatField
+TextField	/Users/zuoyangxu/mygit/WebBlog/www/orm.py	/^class TextField(Field):$/;"	class	line:98
+__init__	/Users/zuoyangxu/mygit/WebBlog/www/orm.py	/^    def __init__(self, name=None, default=None):$/;"	member	line:99	class:TextField
+ModelMetaclass	/Users/zuoyangxu/mygit/WebBlog/www/orm.py	/^class ModelMetaclass(type):$/;"	class	line:103
+__new__	/Users/zuoyangxu/mygit/WebBlog/www/orm.py	/^    def __new__(cls, name, bases, attrs):$/;"	member	line:105	class:ModelMetaclass	file:
+Model	/Users/zuoyangxu/mygit/WebBlog/www/orm.py	/^class Model(dict, metaclass=ModelMetaclass):$/;"	class	line:142
+__init__	/Users/zuoyangxu/mygit/WebBlog/www/orm.py	/^    def __init__(self, **kwargs):$/;"	member	line:144	class:Model
+__getattr__	/Users/zuoyangxu/mygit/WebBlog/www/orm.py	/^    def __getattr__(self, key):$/;"	member	line:147	class:Model	file:
+__setattr__	/Users/zuoyangxu/mygit/WebBlog/www/orm.py	/^    def __setattr__(self, key, value):$/;"	member	line:153	class:Model	file:
+getValue	/Users/zuoyangxu/mygit/WebBlog/www/orm.py	/^    def getValue(self, key):$/;"	member	line:156	class:Model
+getValueOrDefault	/Users/zuoyangxu/mygit/WebBlog/www/orm.py	/^    def getValueOrDefault(self, key):$/;"	member	line:159	class:Model
+findAll	/Users/zuoyangxu/mygit/WebBlog/www/orm.py	/^    async def findAll(cls, where=None, args=None, **kw):$/;"	member	line:170	class:Model
+findNumber	/Users/zuoyangxu/mygit/WebBlog/www/orm.py	/^    async def findNumber(cls, selectField, where=None, args=None):$/;"	member	line:197	class:Model
+find	/Users/zuoyangxu/mygit/WebBlog/www/orm.py	/^    async def find(cls, pk):$/;"	member	line:209	class:Model
+save	/Users/zuoyangxu/mygit/WebBlog/www/orm.py	/^    async def save(self):$/;"	member	line:216	class:Model
+update	/Users/zuoyangxu/mygit/WebBlog/www/orm.py	/^    async def update(self):$/;"	member	line:223	class:Model
+remove	/Users/zuoyangxu/mygit/WebBlog/www/orm.py	/^    async def remove(self):$/;"	member	line:230	class:Model
+__author__	/Users/zuoyangxu/mygit/WebBlog/www/apis.py	/^__author__ = 'Michael Liao'$/;"	variable	line:4
+json	/Users/zuoyangxu/mygit/WebBlog/www/apis.py	/^import json, logging, inspect, functools$/;"	namespace	line:10
+logging	/Users/zuoyangxu/mygit/WebBlog/www/apis.py	/^import json, logging, inspect, functools$/;"	namespace	line:10
+inspect	/Users/zuoyangxu/mygit/WebBlog/www/apis.py	/^import json, logging, inspect, functools$/;"	namespace	line:10
+functools	/Users/zuoyangxu/mygit/WebBlog/www/apis.py	/^import json, logging, inspect, functools$/;"	namespace	line:10
+Page	/Users/zuoyangxu/mygit/WebBlog/www/apis.py	/^class Page(object):$/;"	class	line:13
+__init__	/Users/zuoyangxu/mygit/WebBlog/www/apis.py	/^    def __init__(self, item_count, page_index=1, page_size=5):$/;"	member	line:18	class:Page
+__str__	/Users/zuoyangxu/mygit/WebBlog/www/apis.py	/^    def __str__(self):$/;"	member	line:57	class:Page	file:
+__repr__	/Users/zuoyangxu/mygit/WebBlog/www/apis.py	/^    __repr__ = __str__$/;"	variable	line:60	class:Page
+APIError	/Users/zuoyangxu/mygit/WebBlog/www/apis.py	/^class APIError(Exception):$/;"	class	line:63
+__init__	/Users/zuoyangxu/mygit/WebBlog/www/apis.py	/^    def __init__(self, error, data='', message=''):$/;"	member	line:67	class:APIError
+APIValueError	/Users/zuoyangxu/mygit/WebBlog/www/apis.py	/^class APIValueError(APIError):$/;"	class	line:74
+__init__	/Users/zuoyangxu/mygit/WebBlog/www/apis.py	/^    def __init__(self, field, message=''):$/;"	member	line:78	class:APIValueError
+APIResourceNotFoundError	/Users/zuoyangxu/mygit/WebBlog/www/apis.py	/^class APIResourceNotFoundError(APIError):$/;"	class	line:82
+__init__	/Users/zuoyangxu/mygit/WebBlog/www/apis.py	/^    def __init__(self, field, message=''):$/;"	member	line:86	class:APIResourceNotFoundError
+APIPermissionError	/Users/zuoyangxu/mygit/WebBlog/www/apis.py	/^class APIPermissionError(APIError):$/;"	class	line:90
+__init__	/Users/zuoyangxu/mygit/WebBlog/www/apis.py	/^    def __init__(self, message=''):$/;"	member	line:94	class:APIPermissionError
+os	/Users/zuoyangxu/mygit/WebBlog/www/coroweb.py	/^import os$/;"	namespace	line:1
+logging	/Users/zuoyangxu/mygit/WebBlog/www/coroweb.py	/^import logging$/;"	namespace	line:2
+functools	/Users/zuoyangxu/mygit/WebBlog/www/coroweb.py	/^import functools$/;"	namespace	line:4
+inspect	/Users/zuoyangxu/mygit/WebBlog/www/coroweb.py	/^import inspect$/;"	namespace	line:5
+asyncio	/Users/zuoyangxu/mygit/WebBlog/www/coroweb.py	/^import asyncio$/;"	namespace	line:6
+Parameter	/Users/zuoyangxu/mygit/WebBlog/www/coroweb.py	/^from inspect import Parameter$/;"	namespace	line:7
+parse	/Users/zuoyangxu/mygit/WebBlog/www/coroweb.py	/^from urllib import parse$/;"	namespace	line:8
+web	/Users/zuoyangxu/mygit/WebBlog/www/coroweb.py	/^from aiohttp import web$/;"	namespace	line:9
+APIError	/Users/zuoyangxu/mygit/WebBlog/www/coroweb.py	/^from apis import APIError$/;"	namespace	line:10
+get	/Users/zuoyangxu/mygit/WebBlog/www/coroweb.py	/^def get(path):$/;"	function	line:13
+decorator	/Users/zuoyangxu/mygit/WebBlog/www/coroweb.py	/^    def decorator(function):$/;"	function	line:19	function:get
+wrapper	/Users/zuoyangxu/mygit/WebBlog/www/coroweb.py	/^        def wrapper(*args, **kwargs):$/;"	function	line:22	function:get.decorator
+post	/Users/zuoyangxu/mygit/WebBlog/www/coroweb.py	/^def post(path):$/;"	function	line:31
+decorator	/Users/zuoyangxu/mygit/WebBlog/www/coroweb.py	/^    def decorator(function):$/;"	function	line:37	function:post
+wrapper	/Users/zuoyangxu/mygit/WebBlog/www/coroweb.py	/^        def wrapper(*args, **kwargs):$/;"	function	line:40	function:post.decorator
+RequestHandler	/Users/zuoyangxu/mygit/WebBlog/www/coroweb.py	/^class RequestHandler:$/;"	class	line:49
+__init__	/Users/zuoyangxu/mygit/WebBlog/www/coroweb.py	/^    def __init__(self, function):$/;"	member	line:51	class:RequestHandler
+__call__	/Users/zuoyangxu/mygit/WebBlog/www/coroweb.py	/^    async def __call__(self, request):$/;"	member	line:54	class:RequestHandler	file:
+add_static	/Users/zuoyangxu/mygit/WebBlog/www/coroweb.py	/^def add_static(app):$/;"	function	line:81
+add_route	/Users/zuoyangxu/mygit/WebBlog/www/coroweb.py	/^def add_route(app, function):$/;"	function	line:87
+add_routes	/Users/zuoyangxu/mygit/WebBlog/www/coroweb.py	/^def add_routes(app, module_name):$/;"	function	line:99
+script	/Users/zuoyangxu/mygit/WebBlog/www/templates/blogs.html	/^<script>$/;"	function	line:7
+div	/Users/zuoyangxu/mygit/WebBlog/www/templates/blogs.html	/^    <div class="uk-width-medium-3-4">$/;"	function	line:14
+article	/Users/zuoyangxu/mygit/WebBlog/www/templates/blogs.html	/^        <article class="uk-article">$/;"	function	line:16
+h	/Users/zuoyangxu/mygit/WebBlog/www/templates/blogs.html	/^            <h2><a href="\/blog\/{{ blog.id }}">{{ blog.name }}<\/a><\/h2>$/;"	function	line:17
+p	/Users/zuoyangxu/mygit/WebBlog/www/templates/blogs.html	/^            <p class="uk-article-meta">发表于{{ blog.created_at|datetime }}<\/p>$/;"	function	line:18
+p	/Users/zuoyangxu/mygit/WebBlog/www/templates/blogs.html	/^            <p>{{ blog.summary }}<\/p>$/;"	function	line:19
+p	/Users/zuoyangxu/mygit/WebBlog/www/templates/blogs.html	/^            <p><a href="\/blog\/{{ blog.id }}">继续阅读吧 <i class="uk-icon-angle-double-right"><\/i><\/a><\/p>$/;"	function	line:20
+hr	/Users/zuoyangxu/mygit/WebBlog/www/templates/blogs.html	/^        <hr class="uk-article-divider">$/;"	function	line:22
+div	/Users/zuoyangxu/mygit/WebBlog/www/templates/blogs.html	/^    <div class="uk-width-medium-1-4">$/;"	function	line:27
+div	/Users/zuoyangxu/mygit/WebBlog/www/templates/blogs.html	/^        <div class="uk-panel uk-panel-header">$/;"	function	line:28
+h	/Users/zuoyangxu/mygit/WebBlog/www/templates/blogs.html	/^            <h3 class="uk-panel-title">友情链接<\/h3>$/;"	function	line:29
+ul	/Users/zuoyangxu/mygit/WebBlog/www/templates/blogs.html	/^            <ul class="uk-list uk-list-line">$/;"	function	line:30
+li	/Users/zuoyangxu/mygit/WebBlog/www/templates/blogs.html	/^                <li><i class="uk-icon-thumbs-o-up"><\/i> <a target="_blank" href="http:\/\/www.liaoxuefeng.com\/category\/0013738748415562fee26e070fa4664ad926c8e30146c67000">编程<\/a><\/li>$/;"	function	line:31
+li	/Users/zuoyangxu/mygit/WebBlog/www/templates/blogs.html	/^                <li><i class="uk-icon-thumbs-o-up"><\/i> <a target="_blank" href="http:\/\/www.liaoxuefeng.com\/category\/0013738748248885ddf38d8cd1b4803aa74bcda32f853fd000">读书<\/a><\/li>$/;"	function	line:32
+li	/Users/zuoyangxu/mygit/WebBlog/www/templates/blogs.html	/^                <li><i class="uk-icon-thumbs-o-up"><\/i> <a target="_blank" href="http:\/\/www.liaoxuefeng.com\/wiki\/001374738125095c955c1e6d8bb493182103fac9270762a000">Python教程<\/a><\/li>$/;"	function	line:33
+li	/Users/zuoyangxu/mygit/WebBlog/www/templates/blogs.html	/^                <li><i class="uk-icon-thumbs-o-up"><\/i> <a target="_blank" href="http:\/\/www.liaoxuefeng.com\/wiki\/0013739516305929606dd18361248578c67b8067c8c017b000">Git教程<\/a><\/li>$/;"	function	line:34
+re	/Users/zuoyangxu/mygit/WebBlog/www/handlers.py	/^import re$/;"	namespace	line:3
+time	/Users/zuoyangxu/mygit/WebBlog/www/handlers.py	/^import time$/;"	namespace	line:4
+json	/Users/zuoyangxu/mygit/WebBlog/www/handlers.py	/^import json$/;"	namespace	line:5
+markdown2	/Users/zuoyangxu/mygit/WebBlog/www/handlers.py	/^import markdown2$/;"	namespace	line:6
+logging	/Users/zuoyangxu/mygit/WebBlog/www/handlers.py	/^import logging$/;"	namespace	line:7
+hashlib	/Users/zuoyangxu/mygit/WebBlog/www/handlers.py	/^import hashlib$/;"	namespace	line:9
+base64	/Users/zuoyangxu/mygit/WebBlog/www/handlers.py	/^import base64$/;"	namespace	line:10
+asyncio	/Users/zuoyangxu/mygit/WebBlog/www/handlers.py	/^import asyncio$/;"	namespace	line:11
+_RE_EMAIL	/Users/zuoyangxu/mygit/WebBlog/www/handlers.py	/^_RE_EMAIL = re.compile(r'^[a-z0-9\\.\\-\\_]+\\@[a-z0-9\\-\\_]+(\\.[a-z0-9\\-\\_]+){1,4}$')$/;"	variable	line:17
+_RE_SHA1	/Users/zuoyangxu/mygit/WebBlog/www/handlers.py	/^_RE_SHA1 = re.compile(r'^[0-9a-f]{40}$')$/;"	variable	line:18
+COOKIE_NAME	/Users/zuoyangxu/mygit/WebBlog/www/handlers.py	/^COOKIE_NAME = 'awesession'$/;"	variable	line:19
+_COOKIE_KEY	/Users/zuoyangxu/mygit/WebBlog/www/handlers.py	/^_COOKIE_KEY = configs.session.secret$/;"	variable	line:20
+user2cookie	/Users/zuoyangxu/mygit/WebBlog/www/handlers.py	/^def user2cookie(user, max_age):$/;"	function	line:23
+cookie2user	/Users/zuoyangxu/mygit/WebBlog/www/handlers.py	/^def cookie2user(cookie):$/;"	function	line:34
+check_admin	/Users/zuoyangxu/mygit/WebBlog/www/handlers.py	/^def check_admin(request):$/;"	function	line:59
+get_page_index	/Users/zuoyangxu/mygit/WebBlog/www/handlers.py	/^def get_page_index(page_str):$/;"	function	line:64
+text2html	/Users/zuoyangxu/mygit/WebBlog/www/handlers.py	/^def text2html(text):$/;"	function	line:75
+index	/Users/zuoyangxu/mygit/WebBlog/www/handlers.py	/^async def index(request, *, page='1'):$/;"	function	line:82
+get_blog	/Users/zuoyangxu/mygit/WebBlog/www/handlers.py	/^async def get_blog(request, *, id):$/;"	function	line:101
+manage	/Users/zuoyangxu/mygit/WebBlog/www/handlers.py	/^def manage():$/;"	function	line:116
+manage_comments	/Users/zuoyangxu/mygit/WebBlog/www/handlers.py	/^def manage_comments(*, page='1'):$/;"	function	line:121
+manage_blogs	/Users/zuoyangxu/mygit/WebBlog/www/handlers.py	/^def manage_blogs(*, page='1'):$/;"	function	line:129
+manage_create_blog	/Users/zuoyangxu/mygit/WebBlog/www/handlers.py	/^def manage_create_blog():$/;"	function	line:137
+manage_edit_blog	/Users/zuoyangxu/mygit/WebBlog/www/handlers.py	/^def manage_edit_blog(*, id):$/;"	function	line:146
+register	/Users/zuoyangxu/mygit/WebBlog/www/handlers.py	/^def register():$/;"	function	line:155
+signin	/Users/zuoyangxu/mygit/WebBlog/www/handlers.py	/^def signin():$/;"	function	line:161
+signout	/Users/zuoyangxu/mygit/WebBlog/www/handlers.py	/^def signout(request):$/;"	function	line:166
+api_blogs	/Users/zuoyangxu/mygit/WebBlog/www/handlers.py	/^async def api_blogs(*, page='1'):$/;"	function	line:176
+api_get_blog	/Users/zuoyangxu/mygit/WebBlog/www/handlers.py	/^async def api_get_blog(*, id):$/;"	function	line:188
+api_create_blog	/Users/zuoyangxu/mygit/WebBlog/www/handlers.py	/^async def api_create_blog(request, *, name, summary, content):$/;"	function	line:195
+api_register_user	/Users/zuoyangxu/mygit/WebBlog/www/handlers.py	/^async def api_register_user(*, email, name, password):$/;"	function	line:210
+authenticate	/Users/zuoyangxu/mygit/WebBlog/www/handlers.py	/^async def authenticate(*, email, password):$/;"	function	line:239

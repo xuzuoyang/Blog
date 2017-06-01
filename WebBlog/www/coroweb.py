@@ -63,9 +63,6 @@ class RequestHandler:
             kw['request'] = request
 
         for key, arg in required_args.items():
-            logging.info('start checking...')
-            logging.info(key)
-            logging.info(arg)
             if key == 'request' and arg.kind in (Parameter.VAR_POSITIONAL, Parameter.VAR_KEYWORD):
                 logging.info('bad1...')
                 return web.HTTPBadRequest(text='request parameter cannot be the var argument.')
@@ -117,30 +114,3 @@ def add_routes(app, module_name):
             path = getattr(fn, '__route__', None)
             if method and path:
                 add_route(app, fn)
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-

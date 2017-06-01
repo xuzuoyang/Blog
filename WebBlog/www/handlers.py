@@ -77,17 +77,20 @@ def text2html(text):
     return ''.join(lines)
 
 
-# 博客首页
+# 博客主页
 @get('/')
-def index(request):
-    summary = 'Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua.'
-    blogs = [
-        Blog(id='1', name='Test Blog', summary=summary, created_at=time.time() - 120),
-        Blog(id='2', name='Something New', summary=summary, created_at=time.time() - 3600),
-        Blog(id='3', name='Learn Swift', summary=summary, created_at=time.time() - 7200)
-    ]
+async def index(request, *, page='1'):
+    page_index = get_page_index(page)
+    num = await Blog.findNumber('count(id)')
+    page = Page(num, page_index=page_index)
+    logging.info(page)
+    if num == 0:
+        blogs = []
+    else:
+        blogs = await Blog.findAll(orderBy='created_at desc', limit=(page.offset, page.limit))
     return {
         '__template__': 'blogs.html',
+        'page': page,
         'blogs': blogs,
         '__user__': request.__user__
     }
@@ -95,16 +98,30 @@ def index(request):
 
 # 日志展示页
 @get('/blog/{id}')
-def get_blog(id):
-    blog = yield from Blog.find(id)
-    comments = yield from Comment.findAll('blog_id=?', [id], orderBy='created_at desc')
+async def get_blog(request, *, id):
+    blog = await Blog.find(id)
+    comments = await Comment.findAll('blog_id=?', [id], orderBy='created_at desc')
     for c in comments:
         c.html_content = text2html(c.content)
     blog.html_content = markdown2.markdown(blog.content)
     return {
         '__template__': 'blog.html',
         'blog': blog,
+        '__user__': request.__user__,
         'comments': comments
+    }
+
+
+@get('/manage/')
+def manage():
+    return 'redirect:/manage/comments'
+
+
+@get('/manage/comments')
+def manage_comments(*, page='1'):
+    return {
+        '__template__': 'manage_comments.html',
+        'page_index': get_page_index(page)
     }
 
 
@@ -122,6 +139,15 @@ def manage_create_blog():
         '__template__': 'manage_blog_edit.html',
         'id': '',
         'action': '/api/blogs'
+    }
+
+
+@get('/manage/blogs/edit')
+def manage_edit_blog(*, id):
+    return {
+        '__template__': 'manage_blog_edit.html',
+        'id': id,
+        'action': '/api/blogs/%s' % id
     }
 
 
@@ -145,7 +171,7 @@ def signout(request):
     return response
 
 
-# 查找某一页的所有博客API
+# 查找某一页的所有博客
 @get('/api/blogs')
 async def api_blogs(*, page='1'):
     page_index = get_page_index(page)
@@ -157,7 +183,7 @@ async def api_blogs(*, page='1'):
     return dict(page=p, blogs=blogs)
 
 
-# 查找某一篇博客API
+# 查找某一篇博客
 @get('/api/blogs/{id}')
 async def api_get_blog(*, id):
     blog = await Blog.find(id)

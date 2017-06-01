@@ -52,6 +52,8 @@ async def execute(sql, args, autocommit=True):
             if not autocommit:
                 await conn.rollback()
             raise
+        finally:
+            conn.close()
         return affected
 
 
@@ -188,7 +190,6 @@ class Model(dict, metaclass=ModelMetaclass):
                 args.extend(limit)
             else:
                 raise ValueError('Invalid limit value: %s' % str(limit))
-        logging.info(' '.join(sql))
         rs = await select(' '.join(sql), args)
         return [cls(**r) for r in rs]
 
@@ -231,4 +232,3 @@ class Model(dict, metaclass=ModelMetaclass):
         rows = await execute(self.__delete__, args)
         if rows != 1:
             logging.warning('failed to remove by primary key: affected rows: %s' % rows)
-
