@@ -1,5 +1,9 @@
+# Mac
+*.DS_Store
+
 # PyCharm
 WebBlog/.idea/
+
 # Python
 # configuration
 WebBlog/conf/
