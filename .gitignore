@@ -1,6 +1,10 @@
 # Mac
 *.DS_Store
 
+# tag
+*.tags
+*.tags1
+
 # PyCharm
 WebBlog/.idea/
 
