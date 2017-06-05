@@ -171,16 +171,52 @@ def signout(request):
     return response
 
 
+@get('/api/comments')
+async def api_comments(*, page='1'):
+    page_index = get_page_index(page)
+    num = await Comment.findNumber('count(id)')
+    page = Page(num, page_index)
+    if num == 0:
+        return dict(page=page, comments=())
+    comments = await Comment.findAll(orderBy='created_at desc', limit=(page.offset, page.limit))
+    return dict(page=page, comments=comments)
+
+
+@post('/api/blogs/{id}/comments')
+async def api_create_comment(request, *, id, content):
+    user = request.__user__
+    if user is None:
+        raise APIPermissionError('Please sign in first.')
+    if not content or not content.strip():
+        raise APIValueError('content', 'content cannot be empty.')
+    blog = await Blog.find(id)
+    if blog is None:
+        raise APIResourceNotFoundError('Blog does not exist.')
+    comment = Comment(blog_id=blog.id, user_id=user.id, user_name=user.name, user_image=user.image, content=content.strip())
+    await comment.save()
+    return comment
+
+
+@post('/api/comments/{id}/delete')
+async def api_delete_comment(request, *, id):
+    check_admin(request)
+    comment = await Comment.find(id)
+    if comment is None:
+        raise APIResourceNotFoundError('Comment does not exist.')
+    await comment.remove()
+    return dict(id=id)
+
+
 # 查找某一页的所有博客
 @get('/api/blogs')
 async def api_blogs(*, page='1'):
     page_index = get_page_index(page)
     num = await Blog.findNumber('count(id)')
-    p = Page(num, page_index)
+    page = Page(num, page_index)
     if num == 0:
-        return dict(page=p, blogs={})
-    blogs = await Blog.findAll(orderBy='created_at desc', limit=(p.offset, p.limit))
-    return dict(page=p, blogs=blogs)
+        return dict(page=page, blogs={})
+    blogs = await Blog.findAll(orderBy='created_at desc', limit=(page.offset, page.limit))
+    return dict(page=page, blogs=blogs)
 
 
 # 查找某一篇博客
@@ -190,7 +226,7 @@ async def api_get_blog(*, id):
     return blog
 
 
-# 提交博客API
+# 创建博客API
 @post('/api/blogs')
 async def api_create_blog(request, *, name, summary, content):
     check_admin(request)
@@ -203,6 +239,35 @@ async def api_create_blog(request, *, name, summary, content):
     blog = Blog(user_id=request.__user__.id, user_name=request.__user__.name, user_image=request.__user__.image, name=name.strip(), summary=summary.strip(), content=content.strip())
     await blog.save()
     return blog
+
+
+# 更新博客API
+@post('/api/blogs/{id}')
+async def api_update_blog(request, *, id, name, summary, content):
+    check_admin(request)
+    blog = await Blog.find(id)
+    if blog:
+        logging.info(blog.name)
+    if not name or not name.strip():
+        raise APIValueError('name', 'name cannot be empty.')
+    if not summary or not summary.strip():
+        raise APIValueError('summary', 'summary cannot be empty.')
+    if not content or not content.strip():
+        raise APIValueError('content', 'content cannot be empty.')
+    blog.name = name.strip()
+    blog.summary = summary.strip()
+    blog.content = content.strip()
+    await blog.update()
+    return blog
+
+
+# 删除博客API
+@post('/api/blogs/{id}/delete')
+async def api_delete_blog(request, *, id):
+    check_admin(request)
+    blog = await Blog.find(id)
+    await blog.remove()
+    return dict(id=id)
 
 
 # 用户注册API
@@ -220,7 +285,7 @@ async def api_register_user(*, email, name, password):
         raise APIError('register:failed', 'email', 'Email is already in use.')
     # save user to db
     uid = next_id()
-    sha1_password = '%s:%s' %(uid, password)
+    sha1_password = '%s:%s' % (uid, password)
     user = User(id=uid, name=name.strip(), email=email,
                 password=hashlib.sha1(sha1_password.encode('utf-8')).hexdigest(),
                 image='http://www.gravatar.com/avatar/%s?d=mm&s=120' % hashlib.md5(email.encode('utf-8')).hexdigest())

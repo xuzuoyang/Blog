@@ -9,6 +9,9 @@
 WebBlog/.idea/
 
 # Python
+# sql
+WebBlog/www/sqls/
+
 # configuration
 WebBlog/conf/
 

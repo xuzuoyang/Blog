@@ -5,8 +5,9 @@ async def logger_factory(app, handler):
     async def logger(request):
         logging.info('Request: %s %s' % (request.method, request.path))
         # await asyncio.sleep(0.3)
-        return (await handler(request))
+        return await handler(request)
     return logger
+
 
 async def auth_factory(app, handler):
     async def auth(request):
@@ -22,6 +23,7 @@ async def auth_factory(app, handler):
             return web.HTTPFound('/signin')
         return await handler(request)
     return auth
+
 
 async def data_factory(app, handler):
     async def parse_data(request):
@@ -49,6 +51,7 @@ async def data_factory(app, handler):
             request.__data__ = dict()
         return await handler(request)
     return parse_data
+
 
 async def response_factory(app, handler):
     async def response(request):
