@@ -2,7 +2,7 @@
 
 {% block title %}{{ blog.name }}{% endblock %}
 
-{% block beforehead %}
+{% block script_area %}
 
 <script>
 var comment_url = '/api/blogs/{{ blog.id }}/comments';
@@ -47,10 +47,10 @@ $(function () {
                 <h4 class="uk-comment-title">{{ __user__.name }}</h4>
             </header>
             <div class="uk-comment-body">
-                <form id="form-comment" class="uk-form">
+                <form v-on:submit="submit" id="form-comment" class="uk-form">
                     <div class="uk-alert uk-alert-danger uk-hidden"></div>
                     <div class="uk-form-row">
-                        <textarea rows="6" placeholder="说点什么吧" style="width:100%;resize:none;"></textarea>
+                        <textarea v-model.trim="comment" rows="6" placeholder="说点什么吧" style="width:100%;resize:none;"></textarea>
                     </div>
                     <div class="uk-form-row">
                         <button type="submit" class="uk-button uk-button-primary"><i class="uk-icon-comment"></i> 发表评论</button>

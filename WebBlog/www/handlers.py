@@ -118,34 +118,38 @@ def manage():
 
 
 @get('/manage/comments')
-def manage_comments(*, page='1'):
+def manage_comments(request, *, page='1'):
     return {
         '__template__': 'manage_comments.html',
+        '__user__': request.__user__,
         'page_index': get_page_index(page)
     }
 
 
 @get('/manage/blogs')
-def manage_blogs(*, page='1'):
+def manage_blogs(request, *, page='1'):
     return {
         '__template__': 'manage_blogs.html',
+        '__user__': request.__user__,
         'page_index': get_page_index(page)
     }
 
 
 @get('/manage/blogs/create')
-def manage_create_blog():
+def manage_create_blog(request):
     return {
         '__template__': 'manage_blog_edit.html',
+        '__user__': request.__user__,
         'id': '',
         'action': '/api/blogs'
     }
 
 
 @get('/manage/blogs/edit')
-def manage_edit_blog(*, id):
+def manage_edit_blog(request, *, id):
     return {
         '__template__': 'manage_blog_edit.html',
+        '__user__': request.__user__,
         'id': id,
         'action': '/api/blogs/%s' % id
     }

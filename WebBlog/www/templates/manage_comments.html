@@ -2,7 +2,7 @@
 
 {% block title %}评论{% endblock %}
 
-{% block beforehead %}
+{% block script_area %}
 
 <script>
 function initVM(data) {
@@ -25,7 +25,8 @@ function initVM(data) {
                     });
                 }
             }
-        }
+        },
+        components: {'pagination': pagination}
     });
 }
 $(function() {
@@ -73,7 +74,7 @@ $(function() {
                 </tr>
             </thead>
             <tbody>
-                <tr v-repeat="comment: comments" >
+                <tr v-for="comment in comments" >
                     <td>
                         <span v-text="comment.user_name"></span>
                     </td>
@@ -84,11 +85,12 @@ $(function() {
                         <span v-text="comment.created_at.toDateTime()"></span>
                     </td>
                     <td>
-                        <a href="#0" v-on="click: delete_comment(comment)"><i class="uk-icon-trash-o"></i>
+                        <a href="#0" v-on:click="delete_comment(comment)"><i class="uk-icon-trash-o"></i>
                     </td>
                 </tr>
             </tbody>
         </table>
-        <div v-component="pagination" v-with="page"></div>
+
+        <pagination v-bind:currentpage.sync="page.page_index" v-bind:totalpage.sync="page.page_count" v-bind:visiblepage.sync="visiblepage" v-on:page-change="listen"></pagination>
     </div>
 {% endblock %}
