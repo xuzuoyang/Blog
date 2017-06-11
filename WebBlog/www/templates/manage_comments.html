@@ -11,7 +11,8 @@ function initVM(data) {
         el: '#vm',
         data: {
             comments: data.comments,
-            page: data.page
+            page: data.page,
+            visiblepage: 3
         },
         methods: {
             delete_comment: function (comment) {
@@ -24,6 +25,9 @@ function initVM(data) {
                         refresh();
                     });
                 }
+            },
+            listen: function(selected_page) {
+                gotoPage(selected_page);
             }
         },
         components: {'pagination': pagination}

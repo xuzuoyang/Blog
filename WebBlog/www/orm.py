@@ -1,13 +1,26 @@
+#!/usr/bin/env python3
+# -*- coding:utf-8 -*-
+"""MySQL ORM
+
+"""
 import logging
-logging.basicConfig(level=logging.INFO)
 import asyncio
 import aiomysql
+
+logging.basicConfig(level=logging.INFO)
 
 
 def log(sql, args=()):
     logging.info('SQL: %s' % sql)
 
+
 async def create_pool(loop, **kwargs):
+    """Initialize a global database connection pool.
+
+    Args:
+        loop: Asyncio event loop.
+        kwargs: MySQL database params.
+    """
     logging.info('create database connection pool...')
     global __pool
     __pool = await aiomysql.create_pool(
@@ -23,6 +36,7 @@ async def create_pool(loop, **kwargs):
         loop=loop
     )
 
+
 async def select(sql, args, size=None):
     log(sql, args)
     global __pool
@@ -33,8 +47,10 @@ async def select(sql, args, size=None):
                 rs = await cur.fetchmany(size)
             else:
                 rs = await cur.fetchall()
+            await cur.close()
             logging.info('rows returned: %s' % len(rs))
             return rs
+
 
 async def execute(sql, args, autocommit=True):
     log(sql, args)
@@ -46,14 +62,15 @@ async def execute(sql, args, autocommit=True):
             async with conn.cursor(aiomysql.DictCursor) as cur:
                 await cur.execute(sql.replace('?', '%s'), args)
                 affected = cur.rowcount
+                await cur.close()
             if not autocommit:
                 await conn.commit()
         except BaseException as e:
             if not autocommit:
                 await conn.rollback()
             raise
-        finally:
-            conn.close()
+        # finally:
+        #     conn.close()
         return affected
 
 
@@ -116,7 +133,7 @@ class ModelMetaclass(type):
                 mappings[key] = value
                 if value.primary_key:
                     if primary_key:
-                        raise ValueError('Duplicate primary key for field: %s' %key)
+                        raise ValueError('Duplicate primary key for field: %s' % key)
                     primary_key = key
                 else:
                     fields.append(key)

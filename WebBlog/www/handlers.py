@@ -1,11 +1,14 @@
 #!/usr/bin/env python3
 # -*- coding:utf-8 -*-
+"""Handler functions for web pages.
+
+Handler functions for router paths and some helper methods.
+"""
 import re
 import time
 import json
 import markdown2
 import logging
-logging.basicConfig(level=logging.INFO)
 import hashlib
 import base64
 import asyncio
@@ -14,6 +17,7 @@ from coroweb import *
 from models.models import *
 from confs.config import *
 
+logging.basicConfig(level=logging.INFO)
 _RE_EMAIL = re.compile(r'^[a-z0-9\.\-\_]+\@[a-z0-9\-\_]+(\.[a-z0-9\-\_]+){1,4}$')
 _RE_SHA1 = re.compile(r'^[0-9a-f]{40}$')
 COOKIE_NAME = 'awesession'
@@ -21,8 +25,21 @@ _COOKIE_KEY = configs.session.secret
 
 
 def user2cookie(user, max_age):
-    """Generate cookie string by user
-       in the format of id-expires-sha1(id, password, expires, secret_key)
+    """Generate cookie string by user.
+
+    Combine user info into cookie in the format of
+    id-expires-sha1(id, password, expires, secret_key).
+
+    Args:
+        user: User object.
+        max_age: expire time length.
+
+    Returns:
+        A cookie string referring to the request user.
+        For example: ()
+
+    Raises:
+        Exception: Cannot find max_age parameter.
     """
     expires = str(int(time.time() + max_age))
     s = '%s-%s-%s-%s' % (user.id, user.password, expires, _COOKIE_KEY)
@@ -121,6 +138,15 @@ def manage():
 def manage_comments(request, *, page='1'):
     return {
         '__template__': 'manage_comments.html',
+        '__user__': request.__user__,
+        'page_index': get_page_index(page)
+    }
+
+
+@get('/manage/users')
+def manage_users(request, *, page='1'):
+    return {
+        '__template__': 'manage_users.html',
         '__user__': request.__user__,
         'page_index': get_page_index(page)
     }
@@ -272,6 +298,17 @@ async def api_delete_blog(request, *, id):
     blog = await Blog.find(id)
     await blog.remove()
     return dict(id=id)
+
+
+@get('/api/users')
+async def api_get_users(*, page='1'):
+    page_index = get_page_index(page)
+    num = await User.findNumber('count(id)')
+    page = Page(num, page_index)
+    if num == 0:
+        return dict(page=page, users=())
+    users = await User.findAll(orderBy='created_at desc', limit=(page.offset, page.limit))
+    return dict(page=page, users=users)
 
 
 # 用户注册API

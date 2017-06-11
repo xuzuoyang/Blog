@@ -1,3 +1,8 @@
+#!/usr/bin/env python3
+# -*- coding:utf-8 -*-
+"""Models for database tables.
+
+"""
 import time
 import uuid
 from orm import *

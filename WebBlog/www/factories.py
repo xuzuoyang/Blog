@@ -1,10 +1,15 @@
+#!/usr/bin/env python3
+# -*- coding:utf-8 -*-
+"""Middlewares for the web application.
+
+Factory functions of logger, auth, request and response middlewares.
+"""
 from handlers import *
 
 
 async def logger_factory(app, handler):
     async def logger(request):
         logging.info('Request: %s %s' % (request.method, request.path))
-        # await asyncio.sleep(0.3)
         return await handler(request)
     return logger
 
@@ -19,15 +24,15 @@ async def auth_factory(app, handler):
             if user:
                 logging.info('set current user: %s' % user.email)
                 request.__user__ = user
-        if request.path.startswith('/manage/') and (request.__user__ is None or not request.__user__.admin == 1):
+        if request.path.startswith('/manage/') and (request.__user__ is None or request.__user__.admin != 1):  # only manager(admin == 1) can access to manage page.
             return web.HTTPFound('/signin')
         return await handler(request)
     return auth
 
 
-async def data_factory(app, handler):
+async def request_factory(app, handler):
     async def parse_data(request):
-        logging.info('data_factory...')
+        logging.info('request_factory...')
         if request.method in ('POST', 'PUT'):
             if not request.content_type:
                 return web.HTTPBadRequest(text='Missing Content-Type.')
