@@ -14,5 +14,6 @@ WebBlog2作为学习<<Flask Web开发:基于Python的Web应用开发实战>>的�
 基本原样使用了书中的代码，之后再进行重构。
 
 目前进度：完成到11章博客编辑页支持MarkDown功能。
+进度更新：完成了服务器端重新生成markdown，博客permalink&edit的功能
 
 欢迎联系qq讨论：895982459
