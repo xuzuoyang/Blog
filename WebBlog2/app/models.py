@@ -78,6 +78,7 @@ class User(UserMixin, db.Model):
 	followers = db.relationship('Follow', foreign_keys=[Follow.followed_id],
 							backref=db.backref('followed', lazy='joined'),
 							lazy='dynamic', cascade='all, delete-orphan')
+	comments = db.relationship('Comment', backref='author', lazy='dynamic')
 
 	@staticmethod
 	def generate_fake(count=100):
@@ -192,6 +193,7 @@ class User(UserMixin, db.Model):
 	def is_followed_by(self, user):
 		return self.followers.filter_by(follower_id=user.id).first() is not None
 
+	@property
 	def followed_posts(self):
 		return Post.query.join(Follow, Follow.followed_id==Post.author_id).filter(Follow.follower_id==self.id)
 
@@ -222,6 +224,7 @@ class Post(db.Model):
 	body_html = db.Column(db.Text)
 	timestamp = db.Column(db.DateTime, index=True, default=datetime.utcnow)
 	author_id = db.Column(db.Integer, db.ForeignKey('users.id'))
+	comments = db.relationship('Comment', backref='post', lazy='dynamic')
 
 	@staticmethod
 	def generate_fake(count=100):
@@ -240,6 +243,26 @@ class Post(db.Model):
 		allowed_tags = ['a', 'abbr', 'acronym', 'b', 'blockquote', 'code',
 						'em', 'i', 'li', 'ol', 'pre', 'strong', 'ul',
 						'h1', 'h2', 'h3', 'p']
+		target.body_html = bleach.linkify(bleach.clean(
+			markdown(value, output_format='html'),
+			tags=allowed_tags, strip=True))
+
+db.event.listen(Post.body, 'set', Post.on_changed_body)
+
+
+class Comment(db.Model):
+	__tablename__ = 'comments'
+	id = db.Column(db.Integer, primary_key=True)
+	body = db.Column(db.Text)
+	body_html = db.Column(db.Text)
+	timestamp = db.Column(db.DateTime, index=True, default=datetime.utcnow)
+	author_id = db.Column(db.Integer, db.ForeignKey('users.id'))
+	post_id = db.Column(db.Integer, db.ForeignKey('posts.id'))
+
+	@staticmethod
+	def on_changed_body(target, value, oldvalue, initiator):
+		allowed_tags = ['a', 'abbr', 'acronym', 'b', 'code',
+						'em', 'i', 'strong']
 		target.body_html = bleach.linkify(bleach.clean(
 			markdown(value, output_format='html'),
 			tags=allowed_tags, strip=True))
