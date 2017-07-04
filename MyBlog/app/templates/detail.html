@@ -1,0 +1,117 @@
+{% extends "base.html" %}
+
+{% block title %}Detail Page{% endblock %}
+{% block head %}
+<link rel="stylesheet" type="text/css" href="{{ url_for('static', filename='css/carousel.css') }}">
+{% endblock %}
+
+{% block content %}
+<div class="container content">
+  <div class="row">
+
+    <div class="col-sm-8 blog-main">
+
+      <div class="blog-post">
+        <h2 class="blog-post-title">Sample blog post</h2>
+        <p class="blog-post-meta">January 1, 2014 by <a href="#">Mark</a></p>
+
+        <p>This blog post shows a few different types of content that's supported
+           and styled with Bootstrap. Basic typography, images, and code are all supported.
+           This blog post shows a few different types of content that's supported
+              and styled with Bootstrap. Basic typography, images, and code are all supported
+              This blog post shows a few different types of content that's supported
+                 and styled with Bootstrap. Basic typography, images, and code are all supported
+                 This blog post shows a few different types of content that's supported
+                    and styled with Bootstrap. Basic typography, images, and code are all supported
+                    This blog post shows a few different types of content that's supported
+                       and styled with Bootstrap. Basic typography, images, and code are all supported
+                       This blog post shows a few different types of content that's supported
+                          and styled with Bootstrap. Basic typography, images, and code are all supported
+                          This blog post shows a few different types of content that's supported
+                             and styled with Bootstrap. Basic typography, images, and code are all supported
+                             This blog post shows a few different types of content that's supported
+                                and styled with Bootstrap. Basic typography, images, and code are all supported
+        </p>
+
+        <br>
+      </div>
+
+      <h4>发表评论</h4>
+      <textarea class="form-control" rows="3"></textarea>
+      <br>
+      <button type="button" class="btn btn-primary">提交评论</button>
+
+      <hr>
+
+      <h4>最新评论</h4>
+      <br>      
+      <ul class="media-list">
+          <li class="media">
+              <div class="media-left media-top">
+                <a href="#">
+                  <img class="media-object" src="https://www.gravatar.com/avatar/e0713095da0509fa59048dec9508091a?default=identicon&size=50" alt="...">
+                </a>
+              </div>
+              <div class="media-body">
+                <h4 class="media-heading">Middle aligned media</h4>
+                <p>Basic typography, images, and code are all supported This blog post shows a few different types of content that's supported and styled with Bootstrap. Basic typography, images, and code are all supported This blog post shows a few different types of content that's support</p>
+              </div>
+          </li>
+          <li class="media">
+              <div class="media-left media-top">
+                <a href="#">
+                  <img class="media-object" src="https://www.gravatar.com/avatar/25c889be123332b8ffa85aee7a0c846c?default=identicon&size=50" alt="...">
+                </a>
+              </div>
+              <div class="media-body">
+                <h4 class="media-heading">Middle aligned media</h4>
+                <p>Basic typography, images, and code are all supported This blog post shows a few different types of content that's supported and styled with Bootstrap. Basic typography, images, and code are all supported This blog post shows a few different types of content that's support</p>
+              </div>
+          </li>
+          <li class="media">
+              <div class="media-left media-top">
+                <a href="#">
+                  <img class="media-object" src="https://www.gravatar.com/avatar/9ffa915dcf345cd11e24ea41bbcdf986?default=identicon&size=50" alt="...">
+                </a>
+              </div>
+              <div class="media-body">
+                <h4 class="media-heading">Middle aligned media</h4>
+                <p>Basic typography, images, and code are all supported This blog post shows a few different types of content that's supported and styled with Bootstrap. Basic typography, images, and code are all supported This blog post shows a few different types of content that's support</p>
+              </div>
+          </li>
+      </ul>
+    </div>
+    <div class="col-sm-3 col-sm-offset-1 blog-sidebar">
+      <div class="sidebar-module sidebar-module-inset">
+        <h4>About</h4>
+        <p>Etiam porta <em>sem malesuada magna</em> mollis euismod. Cras mattis consectetur purus sit amet fermentum. Aenean lacinia bibendum nulla sed consectetur.</p>
+      </div>
+      <div class="sidebar-module">
+        <h4>Archives</h4>
+        <ol class="list-unstyled">
+          <li><a href="#">March 2014</a></li>
+          <li><a href="#">February 2014</a></li>
+          <li><a href="#">January 2014</a></li>
+          <li><a href="#">December 2013</a></li>
+          <li><a href="#">November 2013</a></li>
+          <li><a href="#">October 2013</a></li>
+          <li><a href="#">September 2013</a></li>
+          <li><a href="#">August 2013</a></li>
+          <li><a href="#">July 2013</a></li>
+          <li><a href="#">June 2013</a></li>
+          <li><a href="#">May 2013</a></li>
+          <li><a href="#">April 2013</a></li>
+        </ol>
+      </div>
+      <div class="sidebar-module">
+        <h4>Elsewhere</h4>
+        <ol class="list-unstyled">
+          <li><a href="#">GitHub</a></li>
+          <li><a href="#">Twitter</a></li>
+          <li><a href="#">Facebook</a></li>
+        </ol>
+      </div>
+    </div><!-- /.blog-sidebar -->
+  </div>
+</div>
+{% endblock %}
