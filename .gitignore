@@ -16,6 +16,7 @@ WebBlog/www/sqls/
 # configuration
 WebBlog/conf/
 WebBlog2/config.py
+MyBlog/confs/
 
 #fabricate
 fabfile.*
