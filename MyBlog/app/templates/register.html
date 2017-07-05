@@ -16,6 +16,47 @@
 
     <!-- Custom styles for this template -->
     <link rel="stylesheet" type="text/css" href="{{ url_for('static', filename='css/signin.css') }}">
+    <script>
+    function validateEmail(email) {
+        var re = /^[a-z0-9\.\-\_]+\@[a-z0-9\-\_]+(\.[a-z0-9\-\_]+){1,4}$/;
+        return re.test(email.toLowerCase());
+    }
+    $(function () {
+        var vm = new Vue({
+            el: '#vm',
+            data: {
+                email: '',
+                username: '',
+                password: ''
+            },
+            methods: {
+                submit: function (event) {
+                    event.preventDefault();
+                    var $form = $('#vm');
+                    if (! this.username.trim()) {
+                        return $form.showFormError('请输入名字');
+                    }
+                    if (! validateEmail(this.email.trim().toLowerCase())) {
+                        return $form.showFormError('请输入正确的Email地址');
+                    }
+                    if (this.password.length < 6) {
+                        return $form.showFormError('口令长度至少为6个字符');
+                    }
+                    var email = this.email.trim().toLowerCase();
+                    $form.post('/auth/register', {
+                        name: this.username.trim(),
+                    }, function (err, r) {
+                        if (err) {
+                            return $form.showFormError(err);
+                        }
+                        return location.assign('/');
+                    });
+                }
+            }
+        });
+        $('#vm').show();
+    });
+    </script>
   </head>
 <!-- NAVBAR
 ================================================== -->
@@ -23,16 +64,16 @@
 
     <div class="container">
 
-      <form class="form-signin">
+      <form id="vm" class="form-signin">
         <h2 class="form-signin-heading">Register Page</h2>
         <label for="inputEmail" class="sr-only">Email address</label>
-        <input type="email" id="inputEmail" class="form-control" placeholder="Email address" required autofocus>
+        <input v-model="email" type="email" id="inputEmail" class="form-control" placeholder="Email address" required autofocus>
         <label for="inputUsername" class="sr-only">Username</label>
-        <input type="text" id="inputUsername" class="form-control" placeholder="Username" required autofocus>
+        <input v-model="username" type="text" id="inputUsername" class="form-control" placeholder="Username" required autofocus>
         <label for="inputPassword" class="sr-only">Password</label>
-        <input type="password" id="inputPassword" class="form-control" placeholder="Password" required>
+        <input v-model="password" type="password" id="inputPassword" class="form-control" placeholder="Password" required>
         <button class="btn btn-lg btn-primary btn-block" type="submit">Register</button>
-        <button class="btn btn-lg btn-primary btn-block" onclick="location.href='index.html'">Homepage</button>
+        <a href="{{ url_for('main.index') }}" class="btn btn-lg btn-primary btn-block" role="button">Homepage</a>
       </form>
 
     </div> <!-- /container -->

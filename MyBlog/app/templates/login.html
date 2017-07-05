@@ -34,7 +34,7 @@
           </label>
         </div>
         <button class="btn btn-lg btn-primary btn-block" type="submit">Sign in</button>
-        <button class="btn btn-lg btn-primary btn-block" onclick="location.href='index.html'">Homepage</button>
+        <a href="{{ url_for('main.index') }}" class="btn btn-lg btn-primary btn-block" role="button">Homepage</a>
       </form>
 
     </div> <!-- /container -->

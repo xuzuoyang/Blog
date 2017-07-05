@@ -38,8 +38,8 @@
                 <li><a href="#about">About</a></li>
               </ul>
               <ul class="nav navbar-nav navbar-right">
-                <li><a href="">Register</a></li>
-                <li><a href="">Login</a></li>
+                <li><a href="{{ url_for('auth.register') }}">Register</a></li>
+                <li><a href="{{ url_for('auth.login') }}">Login</a></li>
               </ul>
             </div>
           </div>
@@ -85,6 +85,7 @@
     <script src="https://cdn.bootcss.com/jquery/1.12.4/jquery.min.js"></script>
     <script>window.jQuery || document.write('<script src="../../assets/js/vendor/jquery.min.js"><\/script>')</script>
     <script src="https://cdn.bootcss.com/bootstrap/3.3.7/js/bootstrap.min.js"></script>
+    <script src="https://unpkg.com/vue"></script>
     {% block scripts %}{% endblock %}
   </body>
 </html>
