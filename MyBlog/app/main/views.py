@@ -6,6 +6,11 @@ from ..models import User, Post, Permission, Type, Comment
 from flask_login import login_required, current_user
 from flask import render_template, redirect, url_for, current_app, request, abort
 
+
+@main.route('/base')
+def base():
+    return render_template('base.html')
+
 @main.route('/')
 def index():
     page = request.args.get('page', 1, type=int)

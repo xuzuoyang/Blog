@@ -15,7 +15,7 @@
     <!-- Bootstrap core CSS -->
     <link href="{{ url_for('static', filename='css/bootstrap.min.css') }}" rel="stylesheet">
     <link href="{{ url_for('static', filename='css/font-awesome.min.css') }}" rel="stylesheet">
-
+    <link rel="stylesheet" type="text/css" href="{{ url_for('static', filename='css/carousel.css') }}">
     {% block head %}{% endblock %}
   </head>
 <!-- NAVBAR
@@ -72,32 +72,35 @@
 
     {% block content %}{% endblock %}
 
-    <footer class="footer">
-        <div class="container">
-            <div class="row">
-                <div class="col-sm-4">
-                  <h4>Favarite Links</h4>
-                  <p><a href="https://atom.io/" target="_blank">Atom</a></p>
-                  <p><a href="https://leetcode.com/" target="_blank">Leetcode</a></p>
-                  <p><a href="https://www.linkedin.com" target="_blank">Linkedin</a></p>
-                </div>
-                <div class="col-sm-4">
-                  <h4>Recommend Links</h4>
-                  <p><a href="http://cn.vuejs.org/" target="_blank">Vue.js</a></p>
-                  <p><a href="https://nodejs.org/en/" target="_blank">Node.js</a></p>
-                  <p><a href="http://getbootstrap.com/2.3.2/" target="_blank">Bootstrap</a></p>
-                </div>
-                <div class="col-sm-4">
-                  <h4>Common-used Links</h4>
-                  <p><a href="https://github.com/" target="_blank">Github</a></p>
-                  <p><a href="http://flask.pocoo.org/" target="_blank">Flask</a></p>
-                  <p><a href="http://www.sqlalchemy.org/" target="_blank">SQLAlchemy</a></p>
-                </div>
+    <div class="container col-sm-10 col-sm-offset-1 col-md-10 col-md-offset-1 col-lg-10 col-lg-offset-1">
+        <!-- <div class="row">
+            <div class="col-sm-4 col-md-4 col-lg-4">
+              <h4>Favarite Links</h4>
+              <p><a href="https://atom.io/" target="_blank">Atom</a></p>
+              <p><a href="https://leetcode.com/" target="_blank">Leetcode</a></p>
+              <p><a href="https://www.linkedin.com" target="_blank">Linkedin</a></p>
             </div>
+            <div class="col-sm-4 col-md-4 col-lg-4">
+              <h4>Recommend Links</h4>
+              <p><a href="http://cn.vuejs.org/" target="_blank">Vue.js</a></p>
+              <p><a href="https://nodejs.org/en/" target="_blank">Node.js</a></p>
+              <p><a href="http://getbootstrap.com/2.3.2/" target="_blank">Bootstrap</a></p>
+            </div>
+            <div class="col-sm-4 col-md-4 col-lg-4">
+              <h4>Common-used Links</h4>
+              <p><a href="https://github.com/" target="_blank">Github</a></p>
+              <p><a href="http://flask.pocoo.org/" target="_blank">Flask</a></p>
+              <p><a href="http://www.sqlalchemy.org/" target="_blank">SQLAlchemy</a></p>
+            </div>
+        </div> -->
+
+        <!-- FOOTER -->
+        <footer class="">
             <hr>
-            <p class="footer-text">&copy; 2016 Company, Inc.</p>
-        </div>
-    </footer>
+            <p class="pull-right"><a href="#">Back to top</a></p>
+            <p>2016 Company, Inc.</p>
+        </footer>
+    </div>
 
     <!-- Bootstrap core JavaScript
     ================================================== -->
@@ -105,7 +108,6 @@
     <script src="https://cdn.bootcss.com/jquery/1.12.4/jquery.min.js"></script>
     <script>window.jQuery || document.write('<script src="../../assets/js/vendor/jquery.min.js"><\/script>')</script>
     <script src="https://cdn.bootcss.com/bootstrap/3.3.7/js/bootstrap.min.js"></script>
-    <script src="https://unpkg.com/vue"></script>
     {{ moment.include_moment() }}
     {% block scripts %}{% endblock %}
   </body>
