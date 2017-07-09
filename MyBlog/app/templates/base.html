@@ -1,3 +1,5 @@
+{% import "_macros.html" as macros %}
+
 <!DOCTYPE html>
 <html lang="zh-CN">
   <head>
@@ -11,7 +13,8 @@
     <title>MyBlog {% block title %}{% endblock %}</title>
 
     <!-- Bootstrap core CSS -->
-    <link href="https://cdn.bootcss.com/bootstrap/3.3.7/css/bootstrap.min.css" rel="stylesheet">
+    <link href="{{ url_for('static', filename='css/bootstrap.min.css') }}" rel="stylesheet">
+    <link href="{{ url_for('static', filename='css/font-awesome.min.css') }}" rel="stylesheet">
 
     {% block head %}{% endblock %}
   </head>
@@ -34,12 +37,29 @@
             </div>
             <div id="navbar" class="navbar-collapse collapse">
               <ul class="nav navbar-nav">
-                <li class="active"><a href="#">Home</a></li>
+                <li><a href="{{ url_for('main.index') }}">Home</a></li>
                 <li><a href="#about">About</a></li>
               </ul>
               <ul class="nav navbar-nav navbar-right">
-                <li><a href="{{ url_for('auth.register') }}">Register</a></li>
-                <li><a href="{{ url_for('auth.login') }}">Login</a></li>
+                  {% if current_user.is_administrator() %}
+                  <li><a href="{{ url_for('main.manage_blog') }}">Manage</a></li>
+                  {% endif %}
+
+                  {% if current_user.is_authenticated %}
+                  <li class="dropdown">
+                      <a href="#" class="dropdown-toggle" data-toggle="dropdown">
+                          <img src="">
+                          {{ current_user.username }}<b class="caret"></b>
+                      </a>
+                      <ul class="dropdown-menu">
+                          <li><a href="{{ url_for('auth.change_password') }}">Change Password</a></li>
+                          <li><a href="{{ url_for('auth.logout') }}">Log Out</a></li>
+                      </ul>
+                  </li>
+                  {% else %}
+                  <li><a href="{{ url_for('auth.register') }}">Register</a></li>
+                  <li><a href="{{ url_for('auth.login') }}">Login</a></li>
+                  {% endif %}
               </ul>
             </div>
           </div>
@@ -86,6 +106,7 @@
     <script>window.jQuery || document.write('<script src="../../assets/js/vendor/jquery.min.js"><\/script>')</script>
     <script src="https://cdn.bootcss.com/bootstrap/3.3.7/js/bootstrap.min.js"></script>
     <script src="https://unpkg.com/vue"></script>
+    {{ moment.include_moment() }}
     {% block scripts %}{% endblock %}
   </body>
 </html>

@@ -11,30 +11,14 @@
 
     <div class="col-sm-8 blog-main">
 
-      <div class="blog-post">
-        <h2 class="blog-post-title">Sample blog post</h2>
-        <p class="blog-post-meta">January 1, 2014 by <a href="#">Mark</a></p>
-
-        <p>This blog post shows a few different types of content that's supported
-           and styled with Bootstrap. Basic typography, images, and code are all supported.
-           This blog post shows a few different types of content that's supported
-              and styled with Bootstrap. Basic typography, images, and code are all supported
-              This blog post shows a few different types of content that's supported
-                 and styled with Bootstrap. Basic typography, images, and code are all supported
-                 This blog post shows a few different types of content that's supported
-                    and styled with Bootstrap. Basic typography, images, and code are all supported
-                    This blog post shows a few different types of content that's supported
-                       and styled with Bootstrap. Basic typography, images, and code are all supported
-                       This blog post shows a few different types of content that's supported
-                          and styled with Bootstrap. Basic typography, images, and code are all supported
-                          This blog post shows a few different types of content that's supported
-                             and styled with Bootstrap. Basic typography, images, and code are all supported
-                             This blog post shows a few different types of content that's supported
-                                and styled with Bootstrap. Basic typography, images, and code are all supported
-        </p>
-
-        <br>
-      </div>
+        {% if post %}
+        <div class="blog-post">
+          <h2 class="blog-post-title">{{ post.title }}</h2>
+          <p class="blog-post-meta">{{ moment(post.timestamp).fromNow() }} by <a href="#">{{ post.author.username }}</a></p>
+          <p>{{ post.body }}</p>
+          <hr>
+        </div>
+        {% endif %}
 
       <h4>发表评论</h4>
       <textarea class="form-control" rows="3"></textarea>
@@ -44,7 +28,7 @@
       <hr>
 
       <h4>最新评论</h4>
-      <br>      
+      <br>
       <ul class="media-list">
           <li class="media">
               <div class="media-left media-top">
