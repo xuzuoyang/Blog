@@ -7,5 +7,10 @@ from ..models import User
 class PostForm(FlaskForm):
     title = TextAreaField('Title', validators=[InputRequired(), Length(1, 200)])
     type = SelectField('Type', validators=[InputRequired()], choices=[('tech', '技术'), ('life', '生活'), ('other', '其他')], coerce=str)
-    body = TextAreaField('Content', validators=[InputRequired(), Length(1)], render_kw={"rows": 20})
+    body = TextAreaField('Content', validators=[InputRequired(), Length(1)], render_kw={'rows': 20})
+    submit = SubmitField('Submit')
+
+
+class CommentForm(FlaskForm):
+    body = TextAreaField('Comment', validators=[InputRequired(), Length(1)], render_kw={'rows': 3})
     submit = SubmitField('Submit')

@@ -8,9 +8,9 @@
 {% block content %}
 <div class="container">
     <ol class="breadcrumb">
-      <li class="active"><a href="#">评论</a></li>
-      <li><a href="#">日志</a></li>
-      <li><a href="#">用户</a></li>
+      <li><a href="{{ url_for('main.manage_comment') }}">comments</a></li>
+      <li><a href="{{ url_for('main.manage_blog') }}">blogs</a></li>
+      <li><a href="{{ url_for('main.manage_user') }}">users</a></li>
     </ol>
 </div>
 
@@ -22,10 +22,10 @@
     <table class="table table-striped">
         <thead>
           <tr>
-            <th>标题</th>
-            <th>作者</th>
-            <th>创建时间</th>
-            <th>操作</th>
+            <th>title</th>
+            <th>author</th>
+            <th>post time</th>
+            <th>operation</th>
           </tr>
         </thead>
         {% if posts %}

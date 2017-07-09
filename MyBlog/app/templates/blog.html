@@ -1,4 +1,5 @@
 {% extends "base.html" %}
+{% import "bootstrap/wtf.html" as wtf %}
 
 {% block title %}Detail Page{% endblock %}
 {% block head %}
@@ -20,16 +21,23 @@
         </div>
         {% endif %}
 
-      <h4>发表评论</h4>
-      <textarea class="form-control" rows="3"></textarea>
-      <br>
-      <button type="button" class="btn btn-primary">提交评论</button>
+      <form class="form" method="post">
+          <div class="form-group">
+              {{ form.hidden_tag() }}
+              {{ wtf.form_field(form.body) }}
+          </div>
+          <div class="form-group">
+              {{ wtf.form_field(form.submit, button_map={'submit': 'btn btn-primary'}) }}
+          </div>
+      </form>
 
       <hr>
 
-      <h4>最新评论</h4>
+      <h4>Latest Comments</h4>
       <br>
+      {% if post.comments %}
       <ul class="media-list">
+          {% for comment in post.comments %}
           <li class="media">
               <div class="media-left media-top">
                 <a href="#">
@@ -37,34 +45,15 @@
                 </a>
               </div>
               <div class="media-body">
-                <h4 class="media-heading">Middle aligned media</h4>
-                <p>Basic typography, images, and code are all supported This blog post shows a few different types of content that's supported and styled with Bootstrap. Basic typography, images, and code are all supported This blog post shows a few different types of content that's support</p>
+                <h4 class="media-heading">{{ comment.author.username }}</h4>
+                <p>{{ comment.body }}</p>
               </div>
           </li>
-          <li class="media">
-              <div class="media-left media-top">
-                <a href="#">
-                  <img class="media-object" src="https://www.gravatar.com/avatar/25c889be123332b8ffa85aee7a0c846c?default=identicon&size=50" alt="...">
-                </a>
-              </div>
-              <div class="media-body">
-                <h4 class="media-heading">Middle aligned media</h4>
-                <p>Basic typography, images, and code are all supported This blog post shows a few different types of content that's supported and styled with Bootstrap. Basic typography, images, and code are all supported This blog post shows a few different types of content that's support</p>
-              </div>
-          </li>
-          <li class="media">
-              <div class="media-left media-top">
-                <a href="#">
-                  <img class="media-object" src="https://www.gravatar.com/avatar/9ffa915dcf345cd11e24ea41bbcdf986?default=identicon&size=50" alt="...">
-                </a>
-              </div>
-              <div class="media-body">
-                <h4 class="media-heading">Middle aligned media</h4>
-                <p>Basic typography, images, and code are all supported This blog post shows a few different types of content that's supported and styled with Bootstrap. Basic typography, images, and code are all supported This blog post shows a few different types of content that's support</p>
-              </div>
-          </li>
+          {% endfor %}
       </ul>
+      {% endif %}
     </div>
+
     <div class="col-sm-3 col-sm-offset-1 blog-sidebar">
       <div class="sidebar-module sidebar-module-inset">
         <h4>About</h4>

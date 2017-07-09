@@ -18,19 +18,19 @@
     <table class="table table-striped">
         <thead>
           <tr>
-            <th>author</th>
-            <th>content</th>
-            <th>comment time</th>
+            <th>username</th>
+            <th>email</th>
+            <th>register time</th>
             <th>operation</th>
           </tr>
         </thead>
-        {% if comments %}
+        {% if users %}
         <tbody>
-            {% for comment in comments %}
+            {% for user in users %}
             <tr>
-                <td>{{ comment.author.username }}</td>
-                <td>{{ comment.body }}</td>
-                <td>{{ comment.timestamp }}</td>
+                <td>{{ user.username }}</td>
+                <td>{{ user.email }}</td>
+                <td>{{ user.member_since }}</td>
                 <td><a href=""><i class="icon-trash">&nbsp; </i></a></td>
             </tr>
             {% endfor %}
@@ -40,7 +40,7 @@
 
     {% if pagination %}
     <div class="container pagination">
-            {{ macros.pagination_widget(pagination, '.manage_comment') }}
+            {{ macros.pagination_widget(pagination, '.manage_user') }}
     </div>
     {% endif %}
 </div>
