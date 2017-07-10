@@ -33,6 +33,11 @@ body {
   width: auto;
 }
 
+/* STUFF */
+.stuff {
+  height: 100px;
+  /*margin-bottom: 60px;*/
+}
 
 /* CUSTOMIZE THE CAROUSEL
 -------------------------------------------------- */
@@ -101,10 +106,8 @@ body {
   }
 }
 
-footer{
-    width: 60%;
-    height:10px;   /* footer的高度一定要是固定值*/
-    position:fixed;
-    bottom:20px;
-    padding-bottom: 0px;
+.breadcrumb > li + li:before {
+    color: #CCCCCC;
+    content: "/ ";
+    padding: 0 5px;
 }
