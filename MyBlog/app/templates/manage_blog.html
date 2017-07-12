@@ -35,7 +35,10 @@
                 <td>{{ post.title }}</td>
                 <td>{{ post.author.username }}</td>
                 <td>{{ post.timestamp }}</td>
-                <td><a href="{{ url_for('main.edit_blog', blog_id=post.id) }}"><i class="icon-edit">&nbsp; </i></a><a href=""><i class="icon-trash">&nbsp; </i></a></td>
+                <td>
+                    <a href="{{ url_for('main.edit_blog', blog_id=post.id) }}"><i class="icon-edit">&nbsp; </i></a>
+                    <a href="{{ url_for('main.delete_blog', blog_id=post.id) }}"><i class="icon-trash">&nbsp; </i></a>
+                </td>
             </tr>
             {% endfor %}
         </tbody>

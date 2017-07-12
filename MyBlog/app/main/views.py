@@ -7,10 +7,6 @@ from flask_login import login_required, current_user
 from flask import render_template, redirect, url_for, current_app, request, abort
 
 
-@main.route('/base')
-def base():
-    return render_template('base.html')
-
 @main.route('/')
 def index():
     page = request.args.get('page', 1, type=int)
@@ -87,9 +83,9 @@ def write_blog():
 @main.route('/edit/<blog_id>', methods=['GET', 'POST'])
 @login_required
 def edit_blog(blog_id):
-    post = Post.query.filter_by(id=blog_id).first_or_404()
     if not current_user.can(Permission.ADMINISTER):
         abort(403)
+    post = Post.query.filter_by(id=blog_id).first_or_404()
     form = PostForm()
     if form.validate_on_submit():
         post.title, post.body = form.title.data, form.body.data
@@ -99,3 +95,13 @@ def edit_blog(blog_id):
         return redirect(url_for('main.blog', blog_id=post.id))
     form.title.data, form.type.data, form.body.data = post.title, post.type, post.body
     return render_template('write_blog.html', form=form)
+
+
+@main.route('/delete/<blog_id>')
+@login_required
+def delete_blog(blog_id):
+    if not current_user.can(Permission.ADMINISTER):
+        abort(403)
+    post = Post.query.filter_by(id=blog_id).first_or_404()
+    db.session.delete(post)
+    return redirect(url_for('main.manage_blog'))
