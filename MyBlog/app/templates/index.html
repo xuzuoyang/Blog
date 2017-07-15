@@ -51,7 +51,7 @@
               <div class="blog-post">
                 <h2 class="blog-post-title">{{ post.title }}</h2>
                 <p class="blog-post-meta">{{ moment(post.timestamp).fromNow() }} by <a href="#">{{ post.author.username }}</a></p>
-                <p>{{ post.body }}</p>
+                <p>{{ post.body | safe }}</p>
                 <p><a class="btn btn-primary" href="{{ url_for('main.blog', blog_id=post.id) }}" role="button">View details &raquo;</a></p>
                 <hr>
               </div>
@@ -76,6 +76,7 @@
         </ul>
       </div>
     </div><!-- /.blog-sidebar -->
+    
   </div>
 
   {% if pagination %}

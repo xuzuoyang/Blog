@@ -1,10 +1,11 @@
-import logging
+import logging, json
+from enum import Enum
 from .. import db
 from . import main
 from .forms import PostForm, CommentForm
-from ..models import User, Post, Permission, Type, Comment
+from ..models import User, Post, Permission, Category, Comment
 from flask_login import login_required, current_user
-from flask import render_template, redirect, url_for, current_app, request, abort
+from flask import render_template, redirect, url_for, current_app, request, abort, jsonify
 
 
 @main.route('/')
@@ -67,17 +68,24 @@ def manage_user():
 @main.route('/write-blog', methods=['GET', 'POST'])
 @login_required
 def write_blog():
-    form = PostForm()
-    if current_user.can(Permission.ADMINISTER) and form.validate_on_submit():
-        title, body = form.title.data, form.body.data
+    # form = PostForm()
+    if current_user.can(Permission.ADMINISTER) and request.method == 'POST':
+        form = request.form
+        title, body = form.get('title', type=str, default=None), form.get('content', type=str, default=None)
         author = current_user._get_current_object()
-        type = form.type.data
-        # logging.warning(type)
-        type = Type.query.filter_by(name=type).first()
-        post = Post(title=title, type=type, body=body, author=author)
+
+        category = form.get('category', type=str, default=None)
+        category = Category.query.filter_by(name=category).first().id
+
+        post = Post(title=title, category_id=category, body=body, author=author)
+
+        # tags = request.values.get('tags', 5)
+        # logging.warning('tags: %s' % tags)
+
         db.session.add(post)
-        return redirect(url_for('main.blog'))
-    return render_template('write_blog.html', form=form)
+        return jsonify({'url': url_for('main.manage_blog')})
+    url = url_for('main.write_blog')
+    return render_template('write_blog.html', form=json.dumps({'url': url}))
 
 
 @main.route('/edit/<blog_id>', methods=['GET', 'POST'])
@@ -86,15 +94,23 @@ def edit_blog(blog_id):
     if not current_user.can(Permission.ADMINISTER):
         abort(403)
     post = Post.query.filter_by(id=blog_id).first_or_404()
-    form = PostForm()
-    if form.validate_on_submit():
-        post.title, post.body = form.title.data, form.body.data
-        type = form.type.data
-        post.type_id = Type.query.filter_by(name=type).first().id
+    if request.method == 'POST':
+        form = request.form
+        post.title, post.body = form.get('title', type=str, default=None), form.get('content', type=str, default=None)
+        post.author = current_user._get_current_object()
+
+        category = form.get('category', type=str, default=None)
+        category = Category.query.filter_by(name=category).first().id
+        post.category_id = category
+
+        # tags = request.values.get('tags', 5)
+        # logging.warning('tags: %s' % tags)
+
         db.session.add(post)
-        return redirect(url_for('main.blog', blog_id=post.id))
-    form.title.data, form.type.data, form.body.data = post.title, post.type, post.body
-    return render_template('write_blog.html', form=form)
+        return jsonify({'url': url_for('main.manage_blog')})
+    url = url_for('main.edit_blog', blog_id=post.id)
+    form = {'url': url, 'title': post.title, 'category': post.category_id, 'content': post.body}
+    return render_template('write_blog.html', form=json.dumps(form))
 
 
 @main.route('/delete/<blog_id>')

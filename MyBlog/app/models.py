@@ -126,15 +126,25 @@ def load_user(user_id):
     return User.query.get(int(user_id))
 
 
+class Tagging(db.Model):
+    __tablename__ = 'taggings'
+    post_id = db.Column(db.Integer, db.ForeignKey('posts.id'), primary_key=True)
+    tag_id = db.Column(db.Integer, db.ForeignKey('tags.id'), primary_key=True)
+    timestamp = db.Column(db.DateTime, default=datetime.utcnow)
+
+
 class Post(db.Model):
     __tablename__ = 'posts'
     id = db.Column(db.Integer, primary_key=True)
     title = db.Column(db.Text)
-    type_id = db.Column(db.Integer, db.ForeignKey('types.id'))
+    category_id = db.Column(db.Integer, db.ForeignKey('categories.id'))
     body = db.Column(db.Text)
     author_id = db.Column(db.Integer, db.ForeignKey('users.id'))
     timestamp = db.Column(db.DateTime, index=True, default=datetime.utcnow)
     comments = db.relationship('Comment', backref='post', lazy='dynamic')
+    tags = db.relationship('Tagging', foreign_keys=[Tagging.post_id],
+                           backref=db.backref('posts', lazy='joined'), lazy='dynamic',
+                           cascade='all, delete-orphan')
 
     @staticmethod
     def generate_fake(count=100):
@@ -145,7 +155,7 @@ class Post(db.Model):
             p = Post(title=forgery_py.lorem_ipsum.title(),
                      body=forgery_py.lorem_ipsum.sentences(quantity=20),
                      timestamp=forgery_py.date.date(True),
-                     type_id=randint(1, 4),
+                     category_id=randint(1, 4),
                      author=u)
             db.session.add(p)
             try:
@@ -154,21 +164,30 @@ class Post(db.Model):
                 db.session.rollback()
 
 
-class Type(db.Model):
-    __tablename__ = 'types'
+class Tag(db.Model):
+    __tablename__ = 'tags'
+    id = db.Column(db.Integer, primary_key=True)
+    name = db.Column(db.String(128))
+    posts = db.relationship('Tagging', foreign_keys=[Tagging.tag_id],
+                            backref=db.backref('tags', lazy='joined'), lazy='dynamic',
+                            cascade='all, delete-orphan')
+
+
+class Category(db.Model):
+    __tablename__ = 'categories'
     id = db.Column(db.Integer, primary_key=True)
     name = db.Column(db.String(128))
     label = db.Column(db.String(128))
-    posts = db.relationship('Post', backref='type')
+    posts = db.relationship('Post', backref='category')
 
     @staticmethod
-    def insert_types():
+    def insert_categories():
         data = [('tech', '技术'), ('life', '生活'), ('other', '其他')]
         for item in data:
-            type = Type()
-            type.name = item[0]
-            type.label = item[1]
-            db.session.add(type)
+            category = Category()
+            category.name = item[0]
+            category.label = item[1]
+            db.session.add(category)
         db.session.commit()
 
 
