@@ -32,7 +32,7 @@
         <tbody>
             {% for post in posts %}
             <tr>
-                <td>{{ post.title }}</td>
+                <td><a href="{{ url_for('main.blog', blog_id=post.id) }}">{{ post.title }}</a></td>
                 <td>{{ post.author.username }}</td>
                 <td>{{ post.timestamp }}</td>
                 <td>

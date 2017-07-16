@@ -68,15 +68,28 @@
       </div>
       <hr>
       <div class="sidebar-module">
+        <h4>Categories</h4>
+            {% if categories %}
+            <ul class="list-unstyled">
+                {% for category in categories %}
+                <li><i class="icon icon-th-list"><a href="#"> {{ category.name|upper }} </a></i></li>
+                {% endfor %}
+            </ul>
+            {% endif %}
+      </div>
+      <hr>
+      <div class="sidebar-module">
         <h4>Tags</h4>
-        <ul class="list-unstyled">
-          <li><i class="icon icon-tag"><a href="#"> Tech</a></i></li>
-          <li><i class="icon icon-tag"><a href="#"> Life</a></i></li>
-          <li><i class="icon icon-tag"><a href="#"> Other</a></i></li>
-        </ul>
+            {% if tags %}
+            <ul class="list-unstyled">
+                {% for tag in tags %}
+                <li><i class="icon icon-tag"><a href="#"> {{ tag.name|upper }} </a></i></li>
+                {% endfor %}
+            </ul>
+            {% endif %}
       </div>
     </div><!-- /.blog-sidebar -->
-    
+
   </div>
 
   {% if pagination %}

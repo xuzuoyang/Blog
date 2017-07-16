@@ -15,6 +15,13 @@
         {% if post %}
         <div class="blog-post">
           <h2 class="blog-post-title">{{ post.title }}</h2>
+              {% if post.tagging %}
+              <ul class="list-inline">
+                  {% for t in post.tagging.all() %}
+                  <li><i class="icon icon-tag"><a href="#"> {{ t.tag.name }}</a></i></li>
+                  {% endfor %}
+              </ul>
+              {% endif %}
           <p class="blog-post-meta">{{ moment(post.timestamp).fromNow() }} by <a href="#">{{ post.author.username }}</a></p>
           <p>{{ post.body | safe }}</p>
           <hr>
@@ -63,7 +70,7 @@
       </div>
       <hr>
       <div class="sidebar-module">
-        <h4>Tags</h4>
+        <h4>Categories</h4>
         <ul class="list-unstyled">
           <li><i class="icon icon-tag"><a href="#"> Tech</a></i></li>
           <li><i class="icon icon-tag"><a href="#"> Life</a></i></li>
@@ -71,7 +78,7 @@
         </ul>
       </div>
     </div><!-- /.blog-sidebar -->
-    
+
   </div>
 </div>
 {% endblock %}

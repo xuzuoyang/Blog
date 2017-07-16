@@ -142,8 +142,8 @@ class Post(db.Model):
     author_id = db.Column(db.Integer, db.ForeignKey('users.id'))
     timestamp = db.Column(db.DateTime, index=True, default=datetime.utcnow)
     comments = db.relationship('Comment', backref='post', lazy='dynamic')
-    tags = db.relationship('Tagging', foreign_keys=[Tagging.post_id],
-                           backref=db.backref('posts', lazy='joined'), lazy='dynamic',
+    tagging = db.relationship('Tagging', foreign_keys=[Tagging.post_id],
+                           backref=db.backref('post', lazy='joined'), lazy='dynamic',
                            cascade='all, delete-orphan')
 
     @staticmethod
@@ -168,9 +168,17 @@ class Tag(db.Model):
     __tablename__ = 'tags'
     id = db.Column(db.Integer, primary_key=True)
     name = db.Column(db.String(128))
-    posts = db.relationship('Tagging', foreign_keys=[Tagging.tag_id],
-                            backref=db.backref('tags', lazy='joined'), lazy='dynamic',
+    tagging = db.relationship('Tagging', foreign_keys=[Tagging.tag_id],
+                            backref=db.backref('tag', lazy='joined'), lazy='dynamic',
                             cascade='all, delete-orphan')
+
+    def is_tagging(self, post):
+        return self.tagging.filter_by(post_id=post.id).first() is not None
+
+    def tag_post(self, post):
+        if not self.is_tagging(post):
+            t = Tagging(post_id=post.id, tag_id=self.id)
+            db.session.add(t)
 
 
 class Category(db.Model):

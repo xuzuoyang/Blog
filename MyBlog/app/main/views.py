@@ -3,7 +3,7 @@ from enum import Enum
 from .. import db
 from . import main
 from .forms import PostForm, CommentForm
-from ..models import User, Post, Permission, Category, Comment
+from ..models import User, Post, Permission, Category, Comment, Tag, Tagging
 from flask_login import login_required, current_user
 from flask import render_template, redirect, url_for, current_app, request, abort, jsonify
 
@@ -15,7 +15,9 @@ def index():
                                                                      per_page=current_app.config['FLASKY_POSTS_PER_PAGE'],
                                                                      error_out=False)
     posts = pagination.items
-    return render_template('index.html', posts=posts, pagination=pagination)
+    categories = Category.query.all()
+    tags = Tag.query.all()
+    return render_template('index.html', posts=posts, pagination=pagination, categories=categories, tags=tags)
 
 
 @main.route('/blog/<blog_id>', methods=['GET', 'POST'])
@@ -78,11 +80,18 @@ def write_blog():
         category = Category.query.filter_by(name=category).first().id
 
         post = Post(title=title, category_id=category, body=body, author=author)
-
-        # tags = request.values.get('tags', 5)
-        # logging.warning('tags: %s' % tags)
-
         db.session.add(post)
+
+        tags = form.get('tags', type=str, default=None).strip().split(',')
+        # add new tag if not exist; tag current post
+        if tags and len(tags[0]) > 0:
+            for tag in tags:
+                if not Tag.query.filter_by(name=tag).first():
+                    db.session.add(Tag(name=tag))
+                    db.session.commit()
+                t = Tag.query.filter_by(name=tag).first()
+                t.tag_post(post)
+
         return jsonify({'url': url_for('main.manage_blog')})
     url = url_for('main.write_blog')
     return render_template('write_blog.html', form=json.dumps({'url': url}))
@@ -94,6 +103,8 @@ def edit_blog(blog_id):
     if not current_user.can(Permission.ADMINISTER):
         abort(403)
     post = Post.query.filter_by(id=blog_id).first_or_404()
+    tags = list(map(lambda x: x.tag.name, post.tagging.all()))
+
     if request.method == 'POST':
         form = request.form
         post.title, post.body = form.get('title', type=str, default=None), form.get('content', type=str, default=None)
@@ -109,7 +120,7 @@ def edit_blog(blog_id):
         db.session.add(post)
         return jsonify({'url': url_for('main.manage_blog')})
     url = url_for('main.edit_blog', blog_id=post.id)
-    form = {'url': url, 'title': post.title, 'category': post.category_id, 'content': post.body}
+    form = {'url': url, 'title': post.title, 'category': post.category_id, 'content': post.body, 'tags': tags}
     return render_template('write_blog.html', form=json.dumps(form))
 
 
