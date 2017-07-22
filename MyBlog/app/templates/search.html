@@ -1,0 +1,46 @@
+{% extends "base.html" %}
+
+{% block title %}Home Page{% endblock %}
+{% block head %}
+
+{% endblock %}
+
+{% block content %}
+
+<div class="container content">
+  <div class="search-title">
+      <ol class="breadcrumb">
+          <li>Search</li>
+          <li><a href="#">{{ type }}</a></li>
+          <li class="active">{% if category %}
+                  {{ category }}
+          {% else %}
+                  {{ tag }}
+          {% endif %}
+          </li>
+      </ol>
+  </div>
+
+  <div class="blog-main">
+
+      {% if posts %}
+              {% for post in posts %}
+              <div class="blog-post">
+                <h2 class="blog-post-title">{{ post.title }}</h2>
+                <p class="blog-post-meta">{{ moment(post.timestamp).fromNow() }} by <a href="#">{{ post.author.username }}</a></p>
+                <p>{{ post.body | safe }}</p>
+                <p><a class="btn btn-primary" href="{{ url_for('main.blog', blog_id=post.id) }}" role="button">View details &raquo;</a></p>
+                <hr>
+              </div>
+              {% endfor %}
+      {% endif %}
+
+    </div>
+
+  {% if pagination %}
+  <div class="container pagination">
+          {{ macros.pagination_widget(pagination, '.index') }}
+  </div>
+  {% endif %}
+  {% endblock %}
+</div>

@@ -15,9 +15,43 @@ def index():
                                                                      per_page=current_app.config['FLASKY_POSTS_PER_PAGE'],
                                                                      error_out=False)
     posts = pagination.items
+    for post in posts:
+        post.body = post.body[:256] + '...'
+
     categories = Category.query.all()
     tags = Tag.query.all()
     return render_template('index.html', posts=posts, pagination=pagination, categories=categories, tags=tags)
+
+
+@main.route('/search/<string:category>')
+def search_category(category):
+    category = Category.query.filter_by(name=category.lower()).first_or_404()
+    c_id = category.id
+
+    page = request.args.get('page', 1, type=int)
+    pagination = Post.query.filter_by(category_id=c_id).order_by(Post.timestamp.desc()).paginate(page,
+                                                                     per_page=current_app.config['FLASKY_POSTS_PER_PAGE'],
+                                                                     error_out=False)
+    posts = pagination.items
+    for post in posts:
+        post.body = post.body[:256] + '...'
+
+    return render_template('search.html', type='category', category=category.name, posts=posts, pagination=pagination)
+
+
+@main.route('/search/<string:tag>')
+def search_tag(tag):
+    tag = Tag.query.filter_by(name=tag.lower()).first_or_404()
+    t_id = tag.id
+
+    page = request.args.get('page', 1, type=int)
+    pagination = Tagging.query.filter_by()
+
+    posts = pagination.items
+    for post in posts:
+        post.body = post.body[:256] + '...'
+
+    return render_template('search.html', type='category', category=category.name, posts=posts, pagination=pagination)
 
 
 @main.route('/blog/<blog_id>', methods=['GET', 'POST'])

@@ -72,7 +72,7 @@
             {% if categories %}
             <ul class="list-unstyled">
                 {% for category in categories %}
-                <li><i class="icon icon-th-list"><a href="#"> {{ category.name|upper }} </a></i></li>
+                <li><i class="icon icon-th-list"><a href="{{ url_for('main.search_category', category=category.name) }}"> {{ category.name|upper }} </a></i></li>
                 {% endfor %}
             </ul>
             {% endif %}
