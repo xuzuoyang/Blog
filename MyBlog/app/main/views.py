@@ -42,7 +42,7 @@ def search_category(category):
     for post in posts:
         post.body = post.body[:256] + '...'
 
-    return render_template('search.html', type='category', category=category.name, posts=posts, pagination=pagination)
+    return render_template('search.html', type='Category', category=category.name, posts=posts, pagination=pagination)
 
 
 @main.route('/search-tag/<string:tag>')
@@ -58,7 +58,7 @@ def search_tag(tag):
     for post in posts:
         post.body = post.body[:256] + '...'
 
-    return render_template('search.html', type='tag', tag=tag.name, posts=posts, pagination=pagination)
+    return render_template('search.html', type='Tag', tag=tag.name, posts=posts, pagination=pagination)
 
 
 @main.route('/blog/<blog_id>', methods=['GET', 'POST'])
@@ -130,6 +130,7 @@ def write_blog():
         # add new tag if not exist; tag current post
         if tags and len(tags[0]) > 0:
             for tag in tags:
+                tag = tag.lower()
                 if not Tag.query.filter_by(name=tag).first():
                     db.session.add(Tag(name=tag))
                     db.session.commit()

@@ -1,6 +1,6 @@
 {% extends "base.html" %}
 
-{% block title %}Home Page{% endblock %}
+{% block title %}Search Page{% endblock %}
 {% block head %}
 
 {% endblock %}
@@ -13,9 +13,9 @@
           <li>Search</li>
           <li><a href="#">{{ type }}</a></li>
           <li class="active">{% if category %}
-                  {{ category }}
+                  {{ category|upper }}
           {% else %}
-                  {{ tag }}
+                  {{ tag|upper }}
           {% endif %}
           </li>
       </ol>

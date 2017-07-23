@@ -51,10 +51,10 @@
               <div class="blog-post">
                 <h2 class="blog-post-title">{{ post.title }}</h2>
                 <ul class="list-inline">
-                    <li><i class="icon icon-th-list"><a href="#"> {{ post.category|upper }}</a></i></li>
+                    <li><i class="icon icon-th-list"><a href="{{ url_for('main.search_category', category=post.category) }}"> {{ post.category|upper }}</a></i></li>
                     {% if post.tagging %}
                     {% for t in post.tagging.all() %}
-                    <li><i class="icon icon-tag"><a href="#"> {{ t.tag.name }}</a></i></li>
+                    <li><i class="icon icon-tag"><a href="{{ url_for('main.search_tag', tag=t.tag.name) }}"> {{ t.tag.name|upper }}</a></i></li>
                     {% endfor %}
                     {% endif %}
                 </ul>
