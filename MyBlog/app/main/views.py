@@ -14,16 +14,22 @@ def index():
     pagination = Post.query.order_by(Post.timestamp.desc()).paginate(page,
                                                                      per_page=current_app.config['FLASKY_POSTS_PER_PAGE'],
                                                                      error_out=False)
-    posts = pagination.items
-    for post in posts:
-        post.body = post.body[:256] + '...'
+    posts = []
+    for item in pagination.items:
+        post = {'id': item.id, 'title': item.title, 'timestamp': item.timestamp,
+                'author': item.author.username, 'tagging': item.tagging, 'category': item.category.name}
+        if len(item.body) > 256:
+            post['body'] = item.body[:256] + '...'
+        else:
+            post.body = item.body + '...'
+        posts.append(post)
 
     categories = Category.query.all()
     tags = Tag.query.all()
     return render_template('index.html', posts=posts, pagination=pagination, categories=categories, tags=tags)
 
 
-@main.route('/search/<string:category>')
+@main.route('/search-category/<string:category>')
 def search_category(category):
     category = Category.query.filter_by(name=category.lower()).first_or_404()
     c_id = category.id
@@ -39,19 +45,20 @@ def search_category(category):
     return render_template('search.html', type='category', category=category.name, posts=posts, pagination=pagination)
 
 
-@main.route('/search/<string:tag>')
+@main.route('/search-tag/<string:tag>')
 def search_tag(tag):
-    tag = Tag.query.filter_by(name=tag.lower()).first_or_404()
+    tag = Tag.query.filter_by(name=tag).first_or_404()
     t_id = tag.id
 
     page = request.args.get('page', 1, type=int)
-    pagination = Tagging.query.filter_by()
-
-    posts = pagination.items
+    pagination = tag.tagging.order_by(Tagging.timestamp.desc()).paginate(page,
+                                                                     per_page=current_app.config['FLASKY_POSTS_PER_PAGE'],
+                                                                     error_out=False)
+    posts = [item.post for item in pagination.items]
     for post in posts:
         post.body = post.body[:256] + '...'
 
-    return render_template('search.html', type='category', category=category.name, posts=posts, pagination=pagination)
+    return render_template('search.html', type='tag', tag=tag.name, posts=posts, pagination=pagination)
 
 
 @main.route('/blog/<blog_id>', methods=['GET', 'POST'])
@@ -65,7 +72,10 @@ def blog(blog_id):
         comment = Comment(body=body, author=author, post=post)
         db.session.add(comment)
         return redirect(url_for('main.blog', blog_id=blog_id))
-    return render_template('blog.html', post=post, form=form)
+
+    categories = Category.query.all()
+    tags = Tag.query.all()
+    return render_template('blog.html', post=post, form=form, categories=categories, tags=tags)
 
 
 @main.route('/manage-blog')

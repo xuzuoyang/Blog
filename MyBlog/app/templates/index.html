@@ -50,7 +50,15 @@
               {% for post in posts %}
               <div class="blog-post">
                 <h2 class="blog-post-title">{{ post.title }}</h2>
-                <p class="blog-post-meta">{{ moment(post.timestamp).fromNow() }} by <a href="#">{{ post.author.username }}</a></p>
+                <ul class="list-inline">
+                    <li><i class="icon icon-th-list"><a href="#"> {{ post.category|upper }}</a></i></li>
+                    {% if post.tagging %}
+                    {% for t in post.tagging.all() %}
+                    <li><i class="icon icon-tag"><a href="#"> {{ t.tag.name }}</a></i></li>
+                    {% endfor %}
+                    {% endif %}
+                </ul>
+                <p class="blog-post-meta">{{ moment(post.timestamp).fromNow() }} by <a href="#">{{ post.author }}</a></p>
                 <p>{{ post.body | safe }}</p>
                 <p><a class="btn btn-primary" href="{{ url_for('main.blog', blog_id=post.id) }}" role="button">View details &raquo;</a></p>
                 <hr>
@@ -62,7 +70,7 @@
     <div class="col-sm-3 col-sm-offset-1 col-md-3 col-md-offset-1 col-lg-3 col-lg-offset-1 blog-sidebar">
       <div class="sidebar-module sidebar-module-inset">
         <h4>About Writer</h4>
-        <p>Live and work in Beijing. Interested in Python. Welcome contact via xzyduoduo@126.com.</p>
+        <p>Live and work in Beijing. Interested in Python. Welcome contact via xzyduoduo@126.com</p>
         <p></p>
         <p></p>
       </div>
@@ -83,7 +91,7 @@
             {% if tags %}
             <ul class="list-unstyled">
                 {% for tag in tags %}
-                <li><i class="icon icon-tag"><a href="#"> {{ tag.name|upper }} </a></i></li>
+                <li><i class="icon icon-tag"><a href="{{ url_for('main.search_tag', tag=tag.name) }}"> {{ tag.name|upper }} </a></i></li>
                 {% endfor %}
             </ul>
             {% endif %}

@@ -18,6 +18,8 @@ class Permission:
 
 class Role(db.Model):
 	__tablename__ = 'roles'
+	mysql_charset='utf8'
+
 	id = db.Column(db.Integer, primary_key=True)
 	name = db.Column(db.String(64), unique=True)
 	default = db.Column(db.Boolean, default=False, index=True)
@@ -45,9 +47,11 @@ class Role(db.Model):
 
 class User(UserMixin, db.Model):
     __tablename__ = 'users'
+    mysql_charset = 'utf8'
+
     id = db.Column(db.Integer, primary_key=True)
     email = db.Column(db.String(64), unique=True, index=True)
-    username = db.Column(db.String(64), unique=True, index=True)
+    username = db.Column(db.String(64, collation='utf8'), unique=True, index=True)
     password_hash = db.Column(db.String(128))
     role_id = db.Column(db.Integer, db.ForeignKey('roles.id'))
     posts = db.relationship('Post', backref='author', lazy='dynamic')
@@ -135,10 +139,12 @@ class Tagging(db.Model):
 
 class Post(db.Model):
     __tablename__ = 'posts'
+    mysql_charset='utf8'
+
     id = db.Column(db.Integer, primary_key=True)
-    title = db.Column(db.Text)
+    title = db.Column(db.String(128, collation='utf8'))
     category_id = db.Column(db.Integer, db.ForeignKey('categories.id'))
-    body = db.Column(db.Text)
+    body = db.Column(db.Text(collation='utf8'))
     author_id = db.Column(db.Integer, db.ForeignKey('users.id'))
     timestamp = db.Column(db.DateTime, index=True, default=datetime.utcnow)
     comments = db.relationship('Comment', backref='post', lazy='dynamic')
@@ -166,8 +172,10 @@ class Post(db.Model):
 
 class Tag(db.Model):
     __tablename__ = 'tags'
+    mysql_charset='utf8'
+
     id = db.Column(db.Integer, primary_key=True)
-    name = db.Column(db.String(128))
+    name = db.Column(db.String(128, collation='utf8'))
     tagging = db.relationship('Tagging', foreign_keys=[Tagging.tag_id],
                             backref=db.backref('tag', lazy='joined'), lazy='dynamic',
                             cascade='all, delete-orphan')
@@ -183,6 +191,8 @@ class Tag(db.Model):
 
 class Category(db.Model):
     __tablename__ = 'categories'
+    mysql_charset='utf8'
+
     id = db.Column(db.Integer, primary_key=True)
     name = db.Column(db.String(128))
     label = db.Column(db.String(128))
@@ -201,8 +211,10 @@ class Category(db.Model):
 
 class Comment(db.Model):
     __tablename__ = 'comments'
+    mysql_charset='utf8'
+
     id = db.Column(db.Integer, primary_key=True)
-    body = db.Column(db.Text)
+    body = db.Column(db.Text(collation='utf8'))
     timestamp = db.Column(db.DateTime, default=datetime.utcnow)
     author_id = db.Column(db.Integer, db.ForeignKey('users.id'))
     post_id = db.Column(db.Integer, db.ForeignKey('posts.id'))
