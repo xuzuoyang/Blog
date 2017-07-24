@@ -1,6 +1,6 @@
 {% extends "base.html" %}
 
-{% block title %}Home Page{% endblock %}
+{% block title %}Manage Page{% endblock %}
 {% block head %}
 <link rel="stylesheet" type="text/css" href="{{ url_for('static', filename='css/carousel.css') }}">
 {% endblock %}
@@ -9,7 +9,7 @@
 <div class="container">
     <ol class="breadcrumb">
       <li><a href="{{ url_for('main.manage_comment') }}">comments</a></li>
-      <li class="active"><a href="{{ url_for('main.manage_blog') }}">blogs</a></li>
+      <li class="active">blogs</li>
       <li><a href="{{ url_for('main.manage_user') }}">users</a></li>
     </ol>
 </div>
