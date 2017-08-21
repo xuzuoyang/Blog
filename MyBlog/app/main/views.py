@@ -7,9 +7,12 @@ from ..models import User, Post, Permission, Category, Comment, Tag, Tagging
 from flask_login import login_required, current_user
 from flask import render_template, redirect, url_for, current_app, request, abort, jsonify
 
+logger = logging.getLogger('root')
+
 
 @main.route('/')
 def index():
+    logger.info('logging test')
     page = request.args.get('page', 1, type=int)
     pagination = Post.query.order_by(Post.timestamp.desc()).paginate(page,
                                                                      per_page=current_app.config['FLASKY_POSTS_PER_PAGE'],
@@ -21,7 +24,7 @@ def index():
         if len(item.body) > 256:
             post['body'] = item.body[:256] + '...'
         else:
-            post.body = item.body + '...'
+            post['body'] = item.body + '...'
         posts.append(post)
 
     categories = Category.query.all()
@@ -38,9 +41,15 @@ def search_category(category):
     pagination = Post.query.filter_by(category_id=c_id).order_by(Post.timestamp.desc()).paginate(page,
                                                                      per_page=current_app.config['FLASKY_POSTS_PER_PAGE'],
                                                                      error_out=False)
-    posts = pagination.items
-    for post in posts:
-        post.body = post.body[:256] + '...'
+    posts = []
+    for item in pagination.items:
+        post = {'id': item.id, 'title': item.title, 'timestamp': item.timestamp,
+                'author': item.author.username, 'tagging': item.tagging, 'category': item.category.name}
+        if len(item.body) > 256:
+            post['body'] = item.body[:256] + '...'
+        else:
+            post['body'] = item.body + '...'
+        posts.append(post)
 
     return render_template('search.html', type='Category', category=category.name, posts=posts, pagination=pagination)
 
@@ -54,9 +63,16 @@ def search_tag(tag):
     pagination = tag.tagging.order_by(Tagging.timestamp.desc()).paginate(page,
                                                                      per_page=current_app.config['FLASKY_POSTS_PER_PAGE'],
                                                                      error_out=False)
-    posts = [item.post for item in pagination.items]
-    for post in posts:
-        post.body = post.body[:256] + '...'
+    posts = []
+    for item in pagination.items:
+        item = item.post
+        post = {'id': item.id, 'title': item.title, 'timestamp': item.timestamp,
+                'author': item.author.username, 'tagging': item.tagging, 'category': item.category.name}
+        if len(item.body) > 256:
+            post['body'] = item.body[:256] + '...'
+        else:
+            post['body'] = item.body + '...'
+        posts.append(post)
 
     return render_template('search.html', type='Tag', tag=tag.name, posts=posts, pagination=pagination)
 

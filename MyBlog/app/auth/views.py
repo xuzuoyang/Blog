@@ -7,6 +7,20 @@ from flask import render_template, url_for, flash, jsonify, request, redirect
 from flask_login import login_user, logout_user, login_required, current_user
 
 
+@auth.route('/test/register', methods=['GET', 'POST'])
+def test_register():
+    logging.warning(request.headers)
+    logging.warning(request.form)
+    logging.warning(request.args)
+    logging.warning(request.values)
+    logging.warning(request.json)
+    name = request.form.get('name', None)
+    if name is not None:
+        return 'success'
+    else:
+        return jsonify(code=0, msg='failure')
+
+
 @auth.route('/register', methods=['GET', 'POST'])
 def register():
     form = RegistrationForm()

@@ -1,4 +1,5 @@
 #!/usr/bin/env python3
+import logging, logging.config
 from flask import Flask
 from flask_bootstrap import Bootstrap
 from flask_sqlalchemy import SQLAlchemy
@@ -19,6 +20,38 @@ toolbar = DebugToolbarExtension()
 def create_app(config_name):
     app = Flask(__name__)
     app.config.from_object(config[config_name])
+
+    logging.config.dictConfig({
+        'version': 1,
+        'formatters': {'default': {
+            'format': '%(asctime)s : %(levelname)s : %(module)s : %(funcName)s : %(message)s',
+        }},
+        'handlers': {
+            'h1': {
+                # The values below are popped from this dictionary and
+                # used to create the handler, set the handler's level and
+                # its formatter.
+                'class': 'logging.FileHandler',
+                'level': 'INFO',
+                'formatter': 'default',
+                # The values below are passed to the handler creator callable
+                # as keyword arguments.
+                'filename': './logs/log.txt',
+                'mode': 'a+',
+                'encoding': 'utf-8'
+            },
+            'h2': {
+                'class': 'logging.StreamHandler',
+                'level': 'DEBUG',
+                'formatter': 'default'
+            }
+        },
+        'root': {
+            'level': 'INFO',
+            'handlers': ['h1', 'h2']
+        }
+    })
+    logging.getLogger('root').info('logger initialization & configuration done.')
 
     bootstrap.init_app(app)
     db.init_app(app)

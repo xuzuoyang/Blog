@@ -16,15 +16,19 @@
         <div class="blog-post">
           <h2 class="blog-post-title">{{ post.title }}</h2>
           <ul class="list-inline">
-              <li><i class="icon icon-th-list"><a href="{{ url_for('main.search_category', category=post.category.name) }}"> {{ post.category.name|upper }}</a></i></li>
+              <li><i class="fa fa-th-list" aria-hidden="true"><a href="{{ url_for('main.search_category', category=post.category.name) }}"> {{ post.category.name|upper }}</a></i></li>
               {% if post.tagging %}
               {% for t in post.tagging.all() %}
-              <li><i class="icon icon-tag"><a href="{{ url_for('main.search_tag', tag=t.tag.name) }}"> {{ t.tag.name|upper }}</a></i></li>
+              <li><i class="fa fa-tag" aria-hidden="true"><a href="{{ url_for('main.search_tag', tag=t.tag.name) }}"> {{ t.tag.name|upper }}</a></i></li>
               {% endfor %}
               {% endif %}
           </ul>
           <p class="blog-post-meta">{{ moment(post.timestamp).fromNow() }} by <a href="#">{{ post.author.username }}</a></p>
           <p>{{ post.body | safe }}</p>
+          <ul class="list-inline">
+              <li><a href=""><i class="fa fa-thumbs-o-up fa-lg" aria-hidden="true"></i></a></li>
+              <li><a href=""><i class="fa fa-thumbs-o-down fa-lg" aria-hidden="true"></i></a></li>
+          </ul>
           <hr>
         </div>
         {% endif %}
@@ -75,7 +79,7 @@
             {% if categories %}
             <ul class="list-unstyled">
                 {% for category in categories %}
-                <li><i class="icon icon-th-list"><a href="{{ url_for('main.search_category', category=category.name) }}"> {{ category.name|upper }} </a></i></li>
+                <li><i class="fa fa-th-list" aria-hidden="true"><a href="{{ url_for('main.search_category', category=category.name) }}"> {{ category.name|upper }} </a></i></li>
                 {% endfor %}
             </ul>
             {% endif %}
@@ -86,7 +90,7 @@
             {% if tags %}
             <ul class="list-unstyled">
                 {% for tag in tags %}
-                <li><i class="icon icon-tag"><a href="{{ url_for('main.search_tag', tag=tag.name) }}"> {{ tag.name|upper }} </a></i></li>
+                <li><i class="fa fa-tag" aria-hidden="true"><a href="{{ url_for('main.search_tag', tag=tag.name) }}"> {{ tag.name|upper }} </a></i></li>
                 {% endfor %}
             </ul>
             {% endif %}

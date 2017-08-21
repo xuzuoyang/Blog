@@ -5,8 +5,9 @@
 body {
   padding-bottom: 40px;
   color: #5a5a5a;
+  background-image: url("../pics/bg.jpg");
+  background-color: #C0C0C0;
 }
-
 
 /* CUSTOMIZE THE NAVBAR
 -------------------------------------------------- */

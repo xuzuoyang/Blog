@@ -14,13 +14,14 @@
 
     <!-- Bootstrap core CSS -->
     <link href="{{ url_for('static', filename='css/bootstrap.min.css') }}" rel="stylesheet">
-    <link href="{{ url_for('static', filename='css/font-awesome.min.css') }}" rel="stylesheet">
+    <link href="{{ url_for('static', filename='font-awesome-4.7.0/css/font-awesome.min.css') }}" rel="stylesheet">
     <link rel="stylesheet" type="text/css" href="{{ url_for('static', filename='css/carousel.css') }}">
     {% block head %}{% endblock %}
   </head>
 <!-- NAVBAR
 ================================================== -->
   <body>
+
     <div class="navbar-wrapper">
       <div class="container">
 
@@ -111,5 +112,6 @@
     <script src="https://cdn.bootcss.com/bootstrap/3.3.7/js/bootstrap.min.js"></script>
     {{ moment.include_moment() }}
     {% block scripts %}{% endblock %}
+
   </body>
 </html>
