@@ -56,6 +56,7 @@ class User(UserMixin, db.Model):
     role_id = db.Column(db.Integer, db.ForeignKey('roles.id'))
     posts = db.relationship('Post', backref='author', lazy='dynamic')
     comments = db.relationship('Comment', backref='author', lazy='dynamic')
+    messages = db.relationship('Message', backref='author', lazy='dynamic')
     avatar_hash = db.Column(db.String(32))
     member_since = db.Column(db.DateTime(), default=datetime.utcnow)
 
@@ -103,9 +104,9 @@ class User(UserMixin, db.Model):
 
     def gravatar(self, size=100, default='identicon', rating='g'):
         if request.is_secure:
-            url = abs
+            url = 'https://secure.gravatar.com/avatar'
         else:
-            url = abs
+            url = 'http://www.gravatar.com/avatar'
         hash = self.avatar_hash or hashlib.md5(self.email.encode('utf-8')).hexdigest()
         return '{url}/{hash}?s={size}&d={default}&r={rating}'.format(url=url, hash=hash,
                                                                      size=size, default=default, rating=rating)
@@ -147,10 +148,12 @@ class Post(db.Model):
     body = db.Column(db.Text(collation='utf8'))
     author_id = db.Column(db.Integer, db.ForeignKey('users.id'))
     timestamp = db.Column(db.DateTime, index=True, default=datetime.utcnow)
+    last_edit = db.Column(db.DateTime, index=True, default=datetime.utcnow)
     comments = db.relationship('Comment', backref='post', lazy='dynamic')
     tagging = db.relationship('Tagging', foreign_keys=[Tagging.post_id],
                            backref=db.backref('post', lazy='joined'), lazy='dynamic',
                            cascade='all, delete-orphan')
+    thumb_up = db.Column(db.Integer, default=0)
 
     @staticmethod
     def generate_fake(count=100):
@@ -161,6 +164,7 @@ class Post(db.Model):
             p = Post(title=forgery_py.lorem_ipsum.title(),
                      body=forgery_py.lorem_ipsum.sentences(quantity=20),
                      timestamp=forgery_py.date.date(True),
+                     last_edit=forgery_py.date.date(True),
                      category_id=randint(1, 4),
                      author=u)
             db.session.add(p)
@@ -168,6 +172,10 @@ class Post(db.Model):
                 db.session.commit()
             except IntegrityError:
                 db.session.rollback()
+
+    def refresh(self):
+        last_edit = datetime.utcnow()
+        db.session.add(self)
 
 
 class Tag(db.Model):
@@ -218,3 +226,14 @@ class Comment(db.Model):
     timestamp = db.Column(db.DateTime, default=datetime.utcnow)
     author_id = db.Column(db.Integer, db.ForeignKey('users.id'))
     post_id = db.Column(db.Integer, db.ForeignKey('posts.id'))
+
+
+class Message(db.Model):
+    __tablename__ = 'messages'
+    mysql_charset = 'utf-8'
+
+    id = db.Column(db.Integer, primary_key=True)
+    title = db.Column(db.String(128))
+    body = db.Column(db.Text())
+    timestamp = db.Column(db.DateTime, default=datetime.utcnow)
+    author_id = db.Column(db.Integer, db.ForeignKey('users.id'))

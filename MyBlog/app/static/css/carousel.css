@@ -117,3 +117,7 @@ body {
 .btn {
     /*width: 30%;*/
 }
+
+.category .badge {float: right;}
+
+.tag .badge {float: right;}

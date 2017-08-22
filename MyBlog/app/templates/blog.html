@@ -23,11 +23,18 @@
               {% endfor %}
               {% endif %}
           </ul>
-          <p class="blog-post-meta">{{ moment(post.timestamp).fromNow() }} by <a href="#">{{ post.author.username }}</a></p>
+          <p class="blog-post-meta">written: {{ moment(post.timestamp).fromNow() }} & last edit: {{ moment(post.last_edit).fromNow() }}</a></p>
           <p>{{ post.body | safe }}</p>
           <ul class="list-inline">
-              <li><a href=""><i class="fa fa-thumbs-o-up fa-lg" aria-hidden="true"></i></a></li>
-              <li><a href=""><i class="fa fa-thumbs-o-down fa-lg" aria-hidden="true"></i></a></li>
+              <li>
+                  <a id="thumb-up" href="javascript:void(0);" onclick="thumbup(this)"><i class="fa fa-thumbs-o-up fa-lg" aria-hidden="true"></i></a>
+                  <span class="badge">{% if post.thumb_up %}
+                          {{ post.thumb_up }}
+                  {% else %}
+                          {{ 0 }}
+                  {% endif %}
+                   </span>
+              </li>
           </ul>
           <hr>
         </div>
@@ -53,7 +60,7 @@
           <li class="media">
               <div class="media-left media-top">
                 <a href="#">
-                  <img class="media-object" src="https://www.gravatar.com/avatar/e0713095da0509fa59048dec9508091a?default=identicon&size=50" alt="...">
+                  <img class="media-object" src="{{ current_user.gravatar(size=50) }}" alt="...">
                 </a>
               </div>
               <div class="media-body">
@@ -79,7 +86,10 @@
             {% if categories %}
             <ul class="list-unstyled">
                 {% for category in categories %}
-                <li><i class="fa fa-th-list" aria-hidden="true"><a href="{{ url_for('main.search_category', category=category.name) }}"> {{ category.name|upper }} </a></i></li>
+                <li class="category">
+                    <i class="fa fa-th-list" aria-hidden="true"><a href="{{ url_for('main.search_category', category=category.name) }}"> {{ category.name|upper }} </a></i>
+                    <span class="badge">{{ category.posts|length }}</span>
+                </li>
                 {% endfor %}
             </ul>
             {% endif %}
@@ -90,7 +100,10 @@
             {% if tags %}
             <ul class="list-unstyled">
                 {% for tag in tags %}
-                <li><i class="fa fa-tag" aria-hidden="true"><a href="{{ url_for('main.search_tag', tag=tag.name) }}"> {{ tag.name|upper }} </a></i></li>
+                <li class="tag">
+                    <i class="fa fa-tag" aria-hidden="true"><a href="{{ url_for('main.search_tag', tag=tag.name) }}"> {{ tag.name|upper }} </a></i>
+                    <span class="badge">{{ tag.tagging.all()|length }}</span>
+                </li>
                 {% endfor %}
             </ul>
             {% endif %}
@@ -99,4 +112,32 @@
 
   </div>
 </div>
+{% endblock %}
+
+{% block scripts %}
+<script>
+blog_id = {{ post.id|safe }};
+url = "/thumb-up/"+blog_id
+function thumbup(object){
+    data = {id: blog_id};
+    $.ajax({
+        type: "POST",
+        url: url,
+        data: data,
+        success: function(data, textStatus){
+            if (data.url) {
+                // alert(data.url);
+                window.location = data.url;
+            } else {
+                window.location = "/";
+            }
+        },
+        error: function(xhr, error){
+            // alert(xhr.responseText);
+            // alert(xhr.status);
+        },
+        dataType: "json"
+    })
+}
+</script>
 {% endblock %}

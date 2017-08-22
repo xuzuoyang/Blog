@@ -59,7 +59,7 @@
                     {% endfor %}
                     {% endif %}
                 </ul>
-                <p class="blog-post-meta">{{ moment(post.timestamp).fromNow() }} by <a href="#">{{ post.author }}</a></p>
+                <p class="blog-post-meta">written: {{ moment(post.timestamp).fromNow() }} & last edit: {{ moment(post.last_edit).fromNow() }}</p>
                 <p>{{ post.body | safe }}</p>
                 <p><a class="btn btn-primary" href="{{ url_for('main.blog', blog_id=post.id) }}" role="button">View details &raquo;</a></p>
                 <hr>
@@ -81,7 +81,10 @@
             {% if categories %}
             <ul class="list-unstyled">
                 {% for category in categories %}
-                <li><i class="fa fa-th-list" aria-hidden="true"><a href="{{ url_for('main.search_category', category=category.name) }}"> {{ category.name|upper }} </a></i></li>
+                <li class="category">
+                    <i class="fa fa-th-list" aria-hidden="true"><a href="{{ url_for('main.search_category', category=category.name) }}"> {{ category.name|upper }} </a></i>
+                    <span class="badge">{{ category.posts|length }}</span>
+                </li>
                 {% endfor %}
             </ul>
             {% endif %}
@@ -92,7 +95,10 @@
             {% if tags %}
             <ul class="list-unstyled">
                 {% for tag in tags %}
-                <li><i class="fa fa-tag" aria-hidden="true"><a href="{{ url_for('main.search_tag', tag=tag.name) }}"> {{ tag.name|upper }} </a></i></li>
+                <li class="tag">
+                    <i class="fa fa-tag" aria-hidden="true"><a href="{{ url_for('main.search_tag', tag=tag.name) }}"> {{ tag.name|upper }} </a></i>
+                    <span class="badge">{{ tag.tagging.all()|length }}</span>
+                </li>
                 {% endfor %}
             </ul>
             {% endif %}
