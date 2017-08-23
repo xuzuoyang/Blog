@@ -4,6 +4,7 @@ from .. import db
 from . import main
 from .forms import PostForm, CommentForm, MessageForm
 from ..models import User, Post, Permission, Category, Comment, Tag, Tagging, Message
+from ..decorators import permission_required, admin_required
 from flask_login import login_required, current_user
 from flask import render_template, redirect, url_for, current_app, request, abort, jsonify
 
@@ -36,6 +37,8 @@ def index():
 
 
 @main.route('/about', methods=['GET', 'POST'])
+@login_required
+@permission_required(Permission.COMMENT)
 def about():
     """The about page which contains self introduction and message board.
     """
@@ -107,7 +110,6 @@ def search_tag(tag):
 
 
 @main.route('/blog/<blog_id>', methods=['GET', 'POST'])
-@login_required
 def blog(blog_id):
     """Blog detail page.
     """
@@ -128,6 +130,7 @@ def blog(blog_id):
 
 @main.route('/thumb-up/<blog_id>', methods=['POST'])
 @login_required
+@permission_required(Permission.COMMENT)
 def thumb_up(blog_id):
     """Interface of thumbing up a blog.
     """
@@ -141,6 +144,7 @@ def thumb_up(blog_id):
 
 @main.route('/manage-blog')
 @login_required
+@admin_required
 def manage_blog():
     """Manage page of blogs.
     """
@@ -155,6 +159,7 @@ def manage_blog():
 
 @main.route('/manage-comment')
 @login_required
+@admin_required
 def manage_comment():
     """Manage page of comments.
     """
@@ -169,6 +174,7 @@ def manage_comment():
 
 @main.route('/manage-user')
 @login_required
+@admin_required
 def manage_user():
     """Manage page of users.
     """
@@ -183,6 +189,7 @@ def manage_user():
 
 @main.route('/write-blog', methods=['GET', 'POST'])
 @login_required
+@admin_required
 def write_blog():
     """Writing new blog page.
     """
@@ -217,6 +224,7 @@ def write_blog():
 
 @main.route('/edit/<blog_id>', methods=['GET', 'POST'])
 @login_required
+@admin_required
 def edit_blog(blog_id):
     """Edit blog page.
     """
@@ -248,6 +256,7 @@ def edit_blog(blog_id):
 
 @main.route('/delete/<blog_id>')
 @login_required
+@admin_required
 def delete_blog(blog_id):
     """Delete blog interface.
     """

@@ -1085,3 +1085,397 @@
 2017-08-22 20:57:31,083 : INFO : _internal : _log : 127.0.0.1 - - [22/Aug/2017 20:57:31] "GET /manage-user HTTP/1.1" 200 -
 2017-08-22 20:57:34,642 : INFO : views : index : Visiting home at page 1.
 2017-08-22 20:57:34,702 : INFO : _internal : _log : 127.0.0.1 - - [22/Aug/2017 20:57:34] "GET / HTTP/1.1" 200 -
+2017-08-23 11:06:26,462 : INFO : __init__ : create_app : logger initialization & configuration done.
+2017-08-23 11:06:26,490 : INFO : _internal : _log :  * Running on http://127.0.0.1:5000/ (Press CTRL+C to quit)
+2017-08-23 11:06:26,490 : INFO : _internal : _log :  * Restarting with stat
+2017-08-23 11:06:26,916 : INFO : __init__ : create_app : logger initialization & configuration done.
+2017-08-23 11:06:26,934 : WARNING : _internal : _log :  * Debugger is active!
+2017-08-23 11:06:26,934 : INFO : _internal : _log :  * Debugger PIN: 269-707-563
+2017-08-23 11:06:36,288 : INFO : views : index : Visiting home at page 1.
+2017-08-23 11:06:36,485 : INFO : _internal : _log : 127.0.0.1 - - [23/Aug/2017 11:06:36] "GET / HTTP/1.1" 200 -
+2017-08-23 11:06:36,490 : INFO : _internal : _log : 127.0.0.1 - - [23/Aug/2017 11:06:36] "GET /static/css/bootstrap.min.css HTTP/1.1" 200 -
+2017-08-23 11:06:36,493 : INFO : _internal : _log : 127.0.0.1 - - [23/Aug/2017 11:06:36] "GET /static/font-awesome-4.7.0/css/font-awesome.min.css HTTP/1.1" 200 -
+2017-08-23 11:06:36,495 : INFO : _internal : _log : 127.0.0.1 - - [23/Aug/2017 11:06:36] "GET /static/css/carousel.css HTTP/1.1" 200 -
+2017-08-23 11:06:36,544 : INFO : _internal : _log : 127.0.0.1 - - [23/Aug/2017 11:06:36] "GET /static/pics/land.jpg HTTP/1.1" 200 -
+2017-08-23 11:06:36,547 : INFO : _internal : _log : 127.0.0.1 - - [23/Aug/2017 11:06:36] "GET /static/pics/mountain.jpg HTTP/1.1" 200 -
+2017-08-23 11:06:36,559 : INFO : _internal : _log : 127.0.0.1 - - [23/Aug/2017 11:06:36] "GET /static/pics/sunset.jpg HTTP/1.1" 200 -
+2017-08-23 11:06:36,569 : INFO : _internal : _log : 127.0.0.1 - - [23/Aug/2017 11:06:36] "GET /static/pics/bg.jpg HTTP/1.1" 200 -
+2017-08-23 11:06:36,582 : INFO : _internal : _log : 127.0.0.1 - - [23/Aug/2017 11:06:36] "GET /static/font-awesome-4.7.0/fonts/fontawesome-webfont.woff2?v=4.7.0 HTTP/1.1" 200 -
+2017-08-23 11:06:54,619 : INFO : views : about : Visiting about page.
+2017-08-23 11:06:54,690 : INFO : _internal : _log : 127.0.0.1 - - [23/Aug/2017 11:06:54] "GET /about HTTP/1.1" 200 -
+2017-08-23 11:07:14,277 : INFO : views : index : Visiting home at page 1.
+2017-08-23 11:07:14,305 : INFO : _internal : _log : 127.0.0.1 - - [23/Aug/2017 11:07:14] "GET / HTTP/1.1" 200 -
+2017-08-23 11:07:17,746 : INFO : views : blog : Visiting detail page of blog 114.
+2017-08-23 11:07:17,772 : INFO : _internal : _log : 127.0.0.1 - - [23/Aug/2017 11:07:17] "GET /blog/114 HTTP/1.1" 200 -
+2017-08-23 11:07:23,817 : INFO : views : blog : Visiting detail page of blog 112.
+2017-08-23 11:07:23,840 : INFO : _internal : _log : 127.0.0.1 - - [23/Aug/2017 11:07:23] "GET /blog/112 HTTP/1.1" 200 -
+2017-08-23 11:07:25,633 : INFO : _internal : _log : 127.0.0.1 - - [23/Aug/2017 11:07:25] "POST /thumb-up/112 HTTP/1.1" 500 -
+2017-08-23 11:07:29,404 : INFO : _internal : _log : 127.0.0.1 - - [23/Aug/2017 11:07:29] "POST /thumb-up/112 HTTP/1.1" 500 -
+2017-08-23 11:07:36,260 : INFO : views : manage_blog : Visiting blog manage page 1.
+2017-08-23 11:07:36,275 : INFO : _internal : _log : 127.0.0.1 - - [23/Aug/2017 11:07:36] "GET /manage-blog HTTP/1.1" 200 -
+2017-08-23 11:07:38,671 : INFO : views : write_blog : Visiting write blog page.
+2017-08-23 11:07:38,683 : INFO : _internal : _log : 127.0.0.1 - - [23/Aug/2017 11:07:38] "GET /write-blog HTTP/1.1" 200 -
+2017-08-23 11:07:38,694 : INFO : _internal : _log : 127.0.0.1 - - [23/Aug/2017 11:07:38] "GET /static/css/bootstrap-tagsinput.css HTTP/1.1" 200 -
+2017-08-23 11:07:38,697 : INFO : _internal : _log : 127.0.0.1 - - [23/Aug/2017 11:07:38] "GET /static/js/bootstrap-tagsinput.js HTTP/1.1" 200 -
+2017-08-23 11:08:09,006 : INFO : views : write_blog : Submitting a new blog.
+2017-08-23 11:08:09,164 : INFO : _internal : _log : 127.0.0.1 - - [23/Aug/2017 11:08:09] "POST /write-blog HTTP/1.1" 200 -
+2017-08-23 11:08:09,188 : INFO : views : manage_blog : Visiting blog manage page 1.
+2017-08-23 11:08:09,214 : INFO : _internal : _log : 127.0.0.1 - - [23/Aug/2017 11:08:09] "GET /manage-blog HTTP/1.1" 200 -
+2017-08-23 11:08:11,168 : INFO : views : blog : Visiting detail page of blog 115.
+2017-08-23 11:08:11,205 : INFO : _internal : _log : 127.0.0.1 - - [23/Aug/2017 11:08:11] "GET /blog/115 HTTP/1.1" 200 -
+2017-08-23 11:08:14,498 : INFO : views : thumb_up : Thumbing up blog 115 now.
+2017-08-23 11:08:14,498 : INFO : views : thumb_up : Blog 115 has 1 thumbs up now.
+2017-08-23 11:08:14,539 : INFO : _internal : _log : 127.0.0.1 - - [23/Aug/2017 11:08:14] "POST /thumb-up/115 HTTP/1.1" 200 -
+2017-08-23 11:08:14,566 : INFO : views : blog : Visiting detail page of blog 115.
+2017-08-23 11:08:14,584 : INFO : _internal : _log : 127.0.0.1 - - [23/Aug/2017 11:08:14] "GET /blog/115 HTTP/1.1" 200 -
+2017-08-23 11:08:15,950 : INFO : views : thumb_up : Thumbing up blog 115 now.
+2017-08-23 11:08:15,950 : INFO : views : thumb_up : Blog 115 has 2 thumbs up now.
+2017-08-23 11:08:15,981 : INFO : _internal : _log : 127.0.0.1 - - [23/Aug/2017 11:08:15] "POST /thumb-up/115 HTTP/1.1" 200 -
+2017-08-23 11:08:15,997 : INFO : views : blog : Visiting detail page of blog 115.
+2017-08-23 11:08:16,015 : INFO : _internal : _log : 127.0.0.1 - - [23/Aug/2017 11:08:16] "GET /blog/115 HTTP/1.1" 200 -
+2017-08-23 11:08:17,201 : INFO : views : index : Visiting home at page 1.
+2017-08-23 11:08:17,257 : INFO : _internal : _log : 127.0.0.1 - - [23/Aug/2017 11:08:17] "GET / HTTP/1.1" 200 -
+2017-08-23 11:08:40,633 : INFO : views : index : Visiting home at page 2.
+2017-08-23 11:08:40,688 : INFO : _internal : _log : 127.0.0.1 - - [23/Aug/2017 11:08:40] "GET /?page=2 HTTP/1.1" 200 -
+2017-08-23 11:08:49,936 : INFO : views : index : Visiting home at page 1.
+2017-08-23 11:08:49,965 : INFO : _internal : _log : 127.0.0.1 - - [23/Aug/2017 11:08:49] "GET /?page=1 HTTP/1.1" 200 -
+2017-08-23 11:08:54,661 : INFO : views : search_tag : Searching by tag result at page 1.
+2017-08-23 11:08:54,661 : INFO : views : search_tag : Tag id: 2.
+2017-08-23 11:08:54,672 : INFO : _internal : _log : 127.0.0.1 - - [23/Aug/2017 11:08:54] "GET /search-tag/thumbup HTTP/1.1" 200 -
+2017-08-23 11:10:34,898 : INFO : views : index : Visiting home at page 1.
+2017-08-23 11:10:34,940 : INFO : _internal : _log : 127.0.0.1 - - [23/Aug/2017 11:10:34] "GET /?page=1 HTTP/1.1" 200 -
+2017-08-23 11:10:51,237 : INFO : views : index : Visiting home at page 1.
+2017-08-23 11:10:51,277 : INFO : _internal : _log : 127.0.0.1 - - [23/Aug/2017 11:10:51] "GET /?page=1 HTTP/1.1" 200 -
+2017-08-23 11:10:52,565 : INFO : views : index : Visiting home at page 1.
+2017-08-23 11:10:52,595 : INFO : _internal : _log : 127.0.0.1 - - [23/Aug/2017 11:10:52] "GET /?page=1 HTTP/1.1" 200 -
+2017-08-23 11:11:01,570 : INFO : views : index : Visiting home at page 1.
+2017-08-23 11:11:01,651 : INFO : _internal : _log : 127.0.0.1 - - [23/Aug/2017 11:11:01] "GET /?page=1 HTTP/1.1" 200 -
+2017-08-23 11:11:02,704 : INFO : views : index : Visiting home at page 1.
+2017-08-23 11:11:02,761 : INFO : _internal : _log : 127.0.0.1 - - [23/Aug/2017 11:11:02] "GET /?page=1 HTTP/1.1" 200 -
+2017-08-23 11:12:45,119 : INFO : __init__ : create_app : logger initialization & configuration done.
+2017-08-23 11:12:45,139 : INFO : _internal : _log :  * Running on http://127.0.0.1:5000/ (Press CTRL+C to quit)
+2017-08-23 11:12:45,139 : INFO : _internal : _log :  * Restarting with stat
+2017-08-23 11:12:45,534 : INFO : __init__ : create_app : logger initialization & configuration done.
+2017-08-23 11:12:45,551 : WARNING : _internal : _log :  * Debugger is active!
+2017-08-23 11:12:45,551 : INFO : _internal : _log :  * Debugger PIN: 269-707-563
+2017-08-23 11:12:56,928 : INFO : views : index : Visiting home at page 1.
+2017-08-23 11:12:57,009 : INFO : _internal : _log : 127.0.0.1 - - [23/Aug/2017 11:12:57] "GET /?page=1 HTTP/1.1" 200 -
+2017-08-23 11:12:57,017 : INFO : _internal : _log : 127.0.0.1 - - [23/Aug/2017 11:12:57] "GET /static/css/bootstrap.min.css HTTP/1.1" 200 -
+2017-08-23 11:12:57,019 : INFO : _internal : _log : 127.0.0.1 - - [23/Aug/2017 11:12:57] "GET /static/font-awesome-4.7.0/css/font-awesome.min.css HTTP/1.1" 200 -
+2017-08-23 11:12:57,022 : INFO : _internal : _log : 127.0.0.1 - - [23/Aug/2017 11:12:57] "GET /static/css/carousel.css HTTP/1.1" 200 -
+2017-08-23 11:12:57,078 : INFO : _internal : _log : 127.0.0.1 - - [23/Aug/2017 11:12:57] "GET /static/pics/land.jpg HTTP/1.1" 200 -
+2017-08-23 11:12:57,081 : INFO : _internal : _log : 127.0.0.1 - - [23/Aug/2017 11:12:57] "GET /static/pics/mountain.jpg HTTP/1.1" 200 -
+2017-08-23 11:12:57,082 : INFO : _internal : _log : 127.0.0.1 - - [23/Aug/2017 11:12:57] "GET /static/pics/sunset.jpg HTTP/1.1" 200 -
+2017-08-23 11:12:57,087 : INFO : _internal : _log : 127.0.0.1 - - [23/Aug/2017 11:12:57] "GET /static/font-awesome-4.7.0/fonts/fontawesome-webfont.woff2?v=4.7.0 HTTP/1.1" 200 -
+2017-08-23 11:12:57,090 : INFO : _internal : _log : 127.0.0.1 - - [23/Aug/2017 11:12:57] "GET /static/pics/bg.jpg HTTP/1.1" 200 -
+2017-08-23 11:13:48,397 : INFO : __init__ : create_app : logger initialization & configuration done.
+2017-08-23 11:13:48,418 : INFO : _internal : _log :  * Running on http://127.0.0.1:5000/ (Press CTRL+C to quit)
+2017-08-23 11:13:48,418 : INFO : _internal : _log :  * Restarting with stat
+2017-08-23 11:13:48,815 : INFO : __init__ : create_app : logger initialization & configuration done.
+2017-08-23 11:13:48,832 : WARNING : _internal : _log :  * Debugger is active!
+2017-08-23 11:13:48,832 : INFO : _internal : _log :  * Debugger PIN: 269-707-563
+2017-08-23 11:13:50,229 : INFO : views : index : Visiting home at page 1.
+2017-08-23 11:13:50,335 : INFO : _internal : _log : 127.0.0.1 - - [23/Aug/2017 11:13:50] "GET /?page=1 HTTP/1.1" 200 -
+2017-08-23 11:14:10,590 : INFO : views : index : Visiting home at page 1.
+2017-08-23 11:14:10,626 : INFO : _internal : _log : 127.0.0.1 - - [23/Aug/2017 11:14:10] "GET /?page=1 HTTP/1.1" 200 -
+2017-08-23 11:14:31,332 : INFO : views : index : Visiting home at page 1.
+2017-08-23 11:14:31,398 : INFO : _internal : _log : 127.0.0.1 - - [23/Aug/2017 11:14:31] "GET /?page=1 HTTP/1.1" 200 -
+2017-08-23 11:14:46,353 : INFO : views : search_category : Searching by category result at page 1.
+2017-08-23 11:14:46,354 : INFO : views : search_category : Category id: 1.
+2017-08-23 11:14:46,391 : INFO : _internal : _log : 127.0.0.1 - - [23/Aug/2017 11:14:46] "GET /search-category/tech HTTP/1.1" 200 -
+2017-08-23 11:15:47,666 : INFO : views : search_category : Searching by category result at page 1.
+2017-08-23 11:15:47,667 : INFO : views : search_category : Category id: 1.
+2017-08-23 11:15:47,703 : INFO : _internal : _log : 127.0.0.1 - - [23/Aug/2017 11:15:47] "GET /search-category/tech HTTP/1.1" 200 -
+2017-08-23 11:15:54,625 : INFO : views : search_tag : Searching by tag result at page 1.
+2017-08-23 11:15:54,625 : INFO : views : search_tag : Tag id: 2.
+2017-08-23 11:15:54,648 : INFO : _internal : _log : 127.0.0.1 - - [23/Aug/2017 11:15:54] "GET /search-tag/thumbup HTTP/1.1" 200 -
+2017-08-23 11:18:16,483 : INFO : views : index : Visiting home at page 1.
+2017-08-23 11:18:16,518 : INFO : _internal : _log : 127.0.0.1 - - [23/Aug/2017 11:18:16] "GET /?page=1 HTTP/1.1" 200 -
+2017-08-23 11:18:40,809 : INFO : views : search_tag : Searching by tag result at page 1.
+2017-08-23 11:18:40,809 : INFO : views : search_tag : Tag id: 2.
+2017-08-23 11:18:40,827 : INFO : _internal : _log : 127.0.0.1 - - [23/Aug/2017 11:18:40] "GET /search-tag/thumbup HTTP/1.1" 200 -
+2017-08-23 11:18:54,838 : INFO : views : blog : Visiting detail page of blog 115.
+2017-08-23 11:18:54,918 : INFO : _internal : _log : 127.0.0.1 - - [23/Aug/2017 11:18:54] "GET /blog/115 HTTP/1.1" 200 -
+2017-08-23 11:18:59,950 : INFO : views : blog : Visiting detail page of blog 115.
+2017-08-23 11:18:59,988 : INFO : _internal : _log : 127.0.0.1 - - [23/Aug/2017 11:18:59] "GET /blog/115 HTTP/1.1" 200 -
+2017-08-23 11:19:25,288 : INFO : views : blog : Visiting detail page of blog 115.
+2017-08-23 11:19:25,334 : INFO : _internal : _log : 127.0.0.1 - - [23/Aug/2017 11:19:25] "GET /blog/115 HTTP/1.1" 200 -
+2017-08-23 11:20:17,697 : INFO : views : about : Visiting about page.
+2017-08-23 11:20:17,708 : INFO : _internal : _log : 127.0.0.1 - - [23/Aug/2017 11:20:17] "GET /about HTTP/1.1" 200 -
+2017-08-23 11:25:40,881 : INFO : views : index : Visiting home at page 1.
+2017-08-23 11:25:40,940 : INFO : _internal : _log : 127.0.0.1 - - [23/Aug/2017 11:25:40] "GET / HTTP/1.1" 200 -
+2017-08-23 11:26:07,536 : INFO : _internal : _log : 127.0.0.1 - - [23/Aug/2017 11:26:07] "GET /auth/logout HTTP/1.1" 302 -
+2017-08-23 11:26:07,543 : INFO : views : index : Visiting home at page 1.
+2017-08-23 11:26:07,592 : INFO : _internal : _log : 127.0.0.1 - - [23/Aug/2017 11:26:07] "GET / HTTP/1.1" 200 -
+2017-08-23 11:26:55,428 : INFO : _internal : _log : 127.0.0.1 - - [23/Aug/2017 11:26:55] "GET /auth/login HTTP/1.1" 200 -
+2017-08-23 11:26:55,439 : INFO : _internal : _log : 127.0.0.1 - - [23/Aug/2017 11:26:55] "GET /static/css/signin.css HTTP/1.1" 200 -
+2017-08-23 11:26:55,500 : INFO : _internal : _log : 127.0.0.1 - - [23/Aug/2017 11:26:55] "GET /static/js/jquery.min.js HTTP/1.1" 200 -
+2017-08-23 11:27:21,176 : WARNING : views : register : method: GET
+2017-08-23 11:27:21,218 : INFO : _internal : _log : 127.0.0.1 - - [23/Aug/2017 11:27:21] "GET /auth/register HTTP/1.1" 200 -
+2017-08-23 11:28:56,192 : INFO : __init__ : create_app : logger initialization & configuration done.
+2017-08-23 11:28:56,209 : INFO : _internal : _log :  * Running on http://127.0.0.1:5000/ (Press CTRL+C to quit)
+2017-08-23 11:28:56,209 : INFO : _internal : _log :  * Restarting with stat
+2017-08-23 11:28:56,604 : INFO : __init__ : create_app : logger initialization & configuration done.
+2017-08-23 11:28:56,621 : WARNING : _internal : _log :  * Debugger is active!
+2017-08-23 11:28:56,621 : INFO : _internal : _log :  * Debugger PIN: 269-707-563
+2017-08-23 11:28:59,658 : INFO : views : index : Visiting home at page 1.
+2017-08-23 11:28:59,758 : INFO : _internal : _log : 127.0.0.1 - - [23/Aug/2017 11:28:59] "GET / HTTP/1.1" 200 -
+2017-08-23 11:29:00,962 : WARNING : views : register : method: GET
+2017-08-23 11:29:01,035 : INFO : _internal : _log : 127.0.0.1 - - [23/Aug/2017 11:29:01] "GET /auth/register HTTP/1.1" 200 -
+2017-08-23 11:29:09,339 : WARNING : views : register : method: GET
+2017-08-23 11:29:09,347 : INFO : _internal : _log : 127.0.0.1 - - [23/Aug/2017 11:29:09] "GET /auth/register HTTP/1.1" 200 -
+2017-08-23 11:29:09,366 : INFO : _internal : _log : 127.0.0.1 - - [23/Aug/2017 11:29:09] "GET /static/css/signin.css HTTP/1.1" 200 -
+2017-08-23 11:29:09,368 : INFO : _internal : _log : 127.0.0.1 - - [23/Aug/2017 11:29:09] "GET /static/js/jquery.min.js HTTP/1.1" 200 -
+2017-08-23 11:29:09,824 : INFO : _internal : _log : 127.0.0.1 - - [23/Aug/2017 11:29:09] "GET /static/pics/bg.jpg HTTP/1.1" 200 -
+2017-08-23 11:29:11,983 : INFO : views : index : Visiting home at page 1.
+2017-08-23 11:29:12,038 : INFO : _internal : _log : 127.0.0.1 - - [23/Aug/2017 11:29:12] "GET / HTTP/1.1" 200 -
+2017-08-23 11:29:12,048 : INFO : _internal : _log : 127.0.0.1 - - [23/Aug/2017 11:29:12] "GET /static/css/bootstrap.min.css HTTP/1.1" 200 -
+2017-08-23 11:29:12,052 : INFO : _internal : _log : 127.0.0.1 - - [23/Aug/2017 11:29:12] "GET /static/font-awesome-4.7.0/css/font-awesome.min.css HTTP/1.1" 200 -
+2017-08-23 11:29:12,054 : INFO : _internal : _log : 127.0.0.1 - - [23/Aug/2017 11:29:12] "GET /static/css/carousel.css HTTP/1.1" 200 -
+2017-08-23 11:29:12,094 : INFO : _internal : _log : 127.0.0.1 - - [23/Aug/2017 11:29:12] "GET /static/pics/land.jpg HTTP/1.1" 200 -
+2017-08-23 11:29:12,096 : INFO : _internal : _log : 127.0.0.1 - - [23/Aug/2017 11:29:12] "GET /static/pics/mountain.jpg HTTP/1.1" 200 -
+2017-08-23 11:29:12,099 : INFO : _internal : _log : 127.0.0.1 - - [23/Aug/2017 11:29:12] "GET /static/pics/sunset.jpg HTTP/1.1" 200 -
+2017-08-23 11:29:12,106 : INFO : _internal : _log : 127.0.0.1 - - [23/Aug/2017 11:29:12] "GET /static/font-awesome-4.7.0/fonts/fontawesome-webfont.woff2?v=4.7.0 HTTP/1.1" 200 -
+2017-08-23 11:29:13,367 : INFO : _internal : _log : 127.0.0.1 - - [23/Aug/2017 11:29:13] "GET /auth/login HTTP/1.1" 200 -
+2017-08-23 11:31:58,459 : INFO : views : about : Visiting about page.
+2017-08-23 11:31:58,503 : INFO : _internal : _log : 127.0.0.1 - - [23/Aug/2017 11:31:58] "GET /about HTTP/1.1" 500 -
+2017-08-23 11:31:58,513 : INFO : _internal : _log : 127.0.0.1 - - [23/Aug/2017 11:31:58] "GET /about?__debugger__=yes&cmd=resource&f=style.css HTTP/1.1" 200 -
+2017-08-23 11:31:58,514 : INFO : _internal : _log : 127.0.0.1 - - [23/Aug/2017 11:31:58] "GET /about?__debugger__=yes&cmd=resource&f=jquery.js HTTP/1.1" 200 -
+2017-08-23 11:31:58,516 : INFO : _internal : _log : 127.0.0.1 - - [23/Aug/2017 11:31:58] "GET /about?__debugger__=yes&cmd=resource&f=debugger.js HTTP/1.1" 200 -
+2017-08-23 11:31:58,638 : INFO : _internal : _log : 127.0.0.1 - - [23/Aug/2017 11:31:58] "GET /about?__debugger__=yes&cmd=resource&f=console.png HTTP/1.1" 200 -
+2017-08-23 11:33:51,078 : WARNING : views : register : method: GET
+2017-08-23 11:33:51,085 : INFO : _internal : _log : 127.0.0.1 - - [23/Aug/2017 11:33:51] "GET /auth/register HTTP/1.1" 200 -
+2017-08-23 11:33:58,855 : WARNING : views : register : method: POST
+2017-08-23 11:33:58,857 : INFO : _internal : _log : 127.0.0.1 - - [23/Aug/2017 11:33:58] "POST /auth/register HTTP/1.1" 200 -
+2017-08-23 11:34:04,666 : INFO : views : index : Visiting home at page 1.
+2017-08-23 11:34:04,693 : INFO : _internal : _log : 127.0.0.1 - - [23/Aug/2017 11:34:04] "GET / HTTP/1.1" 200 -
+2017-08-23 11:38:33,717 : INFO : _internal : _log : 127.0.0.1 - - [23/Aug/2017 11:38:33] "GET /blog/115 HTTP/1.1" 302 -
+2017-08-23 11:38:33,734 : INFO : _internal : _log : 127.0.0.1 - - [23/Aug/2017 11:38:33] "GET /auth/login?next=%2Fblog%2F115 HTTP/1.1" 200 -
+2017-08-23 11:57:12,317 : INFO : _internal : _log : 127.0.0.1 - - [23/Aug/2017 11:57:12] "GET /blog/115 HTTP/1.1" 302 -
+2017-08-23 11:57:12,331 : INFO : _internal : _log : 127.0.0.1 - - [23/Aug/2017 11:57:12] "GET /auth/login?next=%2Fblog%2F115 HTTP/1.1" 200 -
+2017-08-23 11:57:21,103 : INFO : _internal : _log : 127.0.0.1 - - [23/Aug/2017 11:57:21] "POST /auth/login?next=%2Fblog%2F115 HTTP/1.1" 302 -
+2017-08-23 11:57:21,107 : INFO : views : index : Visiting home at page 1.
+2017-08-23 11:57:21,153 : INFO : _internal : _log : 127.0.0.1 - - [23/Aug/2017 11:57:21] "GET / HTTP/1.1" 200 -
+2017-08-23 11:59:18,458 : INFO : _internal : _log :  * Detected change in '/home/xuzuoyang/mygit/MyBlog/app/auth/views.py', reloading
+2017-08-23 11:59:18,523 : INFO : _internal : _log :  * Restarting with stat
+2017-08-23 11:59:19,113 : INFO : __init__ : create_app : logger initialization & configuration done.
+2017-08-23 11:59:19,131 : WARNING : _internal : _log :  * Debugger is active!
+2017-08-23 11:59:19,131 : INFO : _internal : _log :  * Debugger PIN: 269-707-563
+2017-08-23 11:59:23,342 : INFO : views : index : Visiting home at page 1.
+2017-08-23 11:59:23,453 : INFO : _internal : _log : 127.0.0.1 - - [23/Aug/2017 11:59:23] "GET / HTTP/1.1" 200 -
+2017-08-23 11:59:25,327 : INFO : views : blog : Visiting detail page of blog 115.
+2017-08-23 11:59:25,404 : INFO : _internal : _log : 127.0.0.1 - - [23/Aug/2017 11:59:25] "GET /blog/115 HTTP/1.1" 200 -
+2017-08-23 11:59:30,244 : INFO : _internal : _log : 127.0.0.1 - - [23/Aug/2017 11:59:30] "GET /auth/logout HTTP/1.1" 302 -
+2017-08-23 11:59:30,250 : INFO : views : index : Visiting home at page 1.
+2017-08-23 11:59:30,295 : INFO : _internal : _log : 127.0.0.1 - - [23/Aug/2017 11:59:30] "GET / HTTP/1.1" 200 -
+2017-08-23 11:59:31,934 : INFO : _internal : _log : 127.0.0.1 - - [23/Aug/2017 11:59:31] "GET /blog/115 HTTP/1.1" 302 -
+2017-08-23 11:59:31,967 : INFO : _internal : _log : 127.0.0.1 - - [23/Aug/2017 11:59:31] "GET /auth/login?next=%2Fblog%2F115 HTTP/1.1" 200 -
+2017-08-23 11:59:40,402 : INFO : _internal : _log : 127.0.0.1 - - [23/Aug/2017 11:59:40] "POST /auth/login?next=%2Fblog%2F115 HTTP/1.1" 302 -
+2017-08-23 11:59:40,404 : INFO : views : index : Visiting home at page 1.
+2017-08-23 11:59:40,430 : INFO : _internal : _log : 127.0.0.1 - - [23/Aug/2017 11:59:40] "GET / HTTP/1.1" 200 -
+2017-08-23 12:02:05,567 : INFO : _internal : _log :  * Detected change in '/home/xuzuoyang/mygit/MyBlog/app/auth/views.py', reloading
+2017-08-23 12:02:05,647 : INFO : _internal : _log :  * Restarting with stat
+2017-08-23 12:02:06,048 : INFO : __init__ : create_app : logger initialization & configuration done.
+2017-08-23 12:02:06,066 : WARNING : _internal : _log :  * Debugger is active!
+2017-08-23 12:02:06,066 : INFO : _internal : _log :  * Debugger PIN: 269-707-563
+2017-08-23 12:02:16,933 : INFO : views : index : Visiting home at page 1.
+2017-08-23 12:02:17,035 : INFO : _internal : _log : 127.0.0.1 - - [23/Aug/2017 12:02:17] "GET / HTTP/1.1" 200 -
+2017-08-23 12:02:20,044 : INFO : _internal : _log : 127.0.0.1 - - [23/Aug/2017 12:02:20] "GET /auth/logout HTTP/1.1" 302 -
+2017-08-23 12:02:20,051 : INFO : views : index : Visiting home at page 1.
+2017-08-23 12:02:20,102 : INFO : _internal : _log : 127.0.0.1 - - [23/Aug/2017 12:02:20] "GET / HTTP/1.1" 200 -
+2017-08-23 12:02:21,975 : INFO : _internal : _log : 127.0.0.1 - - [23/Aug/2017 12:02:21] "GET /blog/115 HTTP/1.1" 302 -
+2017-08-23 12:02:22,042 : INFO : _internal : _log : 127.0.0.1 - - [23/Aug/2017 12:02:22] "GET /auth/login?next=%2Fblog%2F115 HTTP/1.1" 200 -
+2017-08-23 12:02:27,689 : INFO : _internal : _log : 127.0.0.1 - - [23/Aug/2017 12:02:27] "POST /auth/login?next=%2Fblog%2F115 HTTP/1.1" 302 -
+2017-08-23 12:02:27,691 : INFO : views : index : Visiting home at page 1.
+2017-08-23 12:02:27,719 : INFO : _internal : _log : 127.0.0.1 - - [23/Aug/2017 12:02:27] "GET / HTTP/1.1" 200 -
+2017-08-23 12:02:56,514 : INFO : _internal : _log :  * Detected change in '/home/xuzuoyang/mygit/MyBlog/app/auth/views.py', reloading
+2017-08-23 12:02:56,618 : INFO : _internal : _log :  * Restarting with stat
+2017-08-23 12:02:57,026 : INFO : __init__ : create_app : logger initialization & configuration done.
+2017-08-23 12:02:57,043 : WARNING : _internal : _log :  * Debugger is active!
+2017-08-23 12:02:57,044 : INFO : _internal : _log :  * Debugger PIN: 269-707-563
+2017-08-23 12:03:01,723 : INFO : _internal : _log : 127.0.0.1 - - [23/Aug/2017 12:03:01] "GET /auth/logout HTTP/1.1" 302 -
+2017-08-23 12:03:01,725 : INFO : views : index : Visiting home at page 1.
+2017-08-23 12:03:01,776 : INFO : _internal : _log : 127.0.0.1 - - [23/Aug/2017 12:03:01] "GET / HTTP/1.1" 200 -
+2017-08-23 12:03:03,919 : INFO : _internal : _log : 127.0.0.1 - - [23/Aug/2017 12:03:03] "GET /blog/115 HTTP/1.1" 302 -
+2017-08-23 12:03:03,992 : INFO : _internal : _log : 127.0.0.1 - - [23/Aug/2017 12:03:03] "GET /auth/login?next=%2Fblog%2F115 HTTP/1.1" 200 -
+2017-08-23 12:03:09,034 : INFO : _internal : _log : 127.0.0.1 - - [23/Aug/2017 12:03:09] "POST /auth/login?next=%2Fblog%2F115 HTTP/1.1" 302 -
+2017-08-23 12:03:09,040 : INFO : views : blog : Visiting detail page of blog 115.
+2017-08-23 12:03:09,066 : INFO : _internal : _log : 127.0.0.1 - - [23/Aug/2017 12:03:09] "GET /blog/115 HTTP/1.1" 200 -
+2017-08-23 12:03:11,716 : INFO : views : index : Visiting home at page 1.
+2017-08-23 12:03:11,746 : INFO : _internal : _log : 127.0.0.1 - - [23/Aug/2017 12:03:11] "GET / HTTP/1.1" 200 -
+2017-08-23 14:47:42,331 : INFO : _internal : _log :  * Detected change in '/home/xuzuoyang/mygit/MyBlog/app/main/__init__.py', reloading
+2017-08-23 14:47:42,418 : INFO : _internal : _log :  * Restarting with stat
+2017-08-23 14:47:43,248 : INFO : __init__ : create_app : logger initialization & configuration done.
+2017-08-23 14:47:43,290 : WARNING : _internal : _log :  * Debugger is active!
+2017-08-23 14:47:43,291 : INFO : _internal : _log :  * Debugger PIN: 269-707-563
+2017-08-23 14:52:14,394 : INFO : _internal : _log :  * Detected change in '/home/xuzuoyang/mygit/MyBlog/app/models.py', reloading
+2017-08-23 14:52:14,448 : INFO : _internal : _log :  * Restarting with stat
+2017-08-23 15:11:24,935 : INFO : _internal : _log :  * Running on http://127.0.0.1:5000/ (Press CTRL+C to quit)
+2017-08-23 15:11:24,935 : INFO : _internal : _log :  * Restarting with stat
+2017-08-23 15:11:25,345 : WARNING : _internal : _log :  * Debugger is active!
+2017-08-23 15:11:25,346 : INFO : _internal : _log :  * Debugger PIN: 269-707-563
+2017-08-23 15:11:34,064 : INFO : _internal : _log : 127.0.0.1 - - [23/Aug/2017 15:11:34] "GET /about HTTP/1.1" 200 -
+2017-08-23 15:13:04,376 : INFO : _internal : _log : 127.0.0.1 - - [23/Aug/2017 15:13:04] "GET / HTTP/1.1" 200 -
+2017-08-23 15:15:30,476 : INFO : _internal : _log :  * Detected change in '/home/xuzuoyang/mygit/MyBlog/app/main/views.py', reloading
+2017-08-23 15:15:30,562 : INFO : _internal : _log :  * Restarting with stat
+2017-08-23 15:15:30,978 : WARNING : _internal : _log :  * Debugger is active!
+2017-08-23 15:15:30,978 : INFO : _internal : _log :  * Debugger PIN: 269-707-563
+2017-08-23 15:16:35,517 : INFO : _internal : _log :  * Detected change in '/home/xuzuoyang/mygit/MyBlog/app/main/views.py', reloading
+2017-08-23 15:16:35,573 : INFO : _internal : _log :  * Restarting with stat
+2017-08-23 15:16:35,984 : WARNING : _internal : _log :  * Debugger is active!
+2017-08-23 15:16:35,984 : INFO : _internal : _log :  * Debugger PIN: 269-707-563
+2017-08-23 15:16:54,027 : INFO : _internal : _log : 127.0.0.1 - - [23/Aug/2017 15:16:54] "GET /manage-blog HTTP/1.1" 200 -
+2017-08-23 15:16:56,995 : INFO : _internal : _log : 127.0.0.1 - - [23/Aug/2017 15:16:56] "GET /manage-user HTTP/1.1" 200 -
+2017-08-23 15:17:02,117 : INFO : _internal : _log : 127.0.0.1 - - [23/Aug/2017 15:17:02] "GET /manage-user HTTP/1.1" 200 -
+2017-08-23 15:18:00,611 : INFO : _internal : _log : 127.0.0.1 - - [23/Aug/2017 15:18:00] "GET /auth/logout HTTP/1.1" 302 -
+2017-08-23 15:18:00,678 : INFO : _internal : _log : 127.0.0.1 - - [23/Aug/2017 15:18:00] "GET / HTTP/1.1" 200 -
+2017-08-23 15:19:56,382 : WARNING : views : register : method: GET
+2017-08-23 15:19:56,423 : INFO : _internal : _log : 127.0.0.1 - - [23/Aug/2017 15:19:56] "GET /auth/register HTTP/1.1" 200 -
+2017-08-23 15:20:09,605 : INFO : _internal : _log : 127.0.0.1 - - [23/Aug/2017 15:20:09] "POST /auth/register HTTP/1.1" 302 -
+2017-08-23 15:20:09,624 : INFO : _internal : _log : 127.0.0.1 - - [23/Aug/2017 15:20:09] "GET /auth/login HTTP/1.1" 200 -
+2017-08-23 15:20:20,455 : INFO : _internal : _log : 127.0.0.1 - - [23/Aug/2017 15:20:20] "POST /auth/login HTTP/1.1" 302 -
+2017-08-23 15:20:20,485 : INFO : _internal : _log : 127.0.0.1 - - [23/Aug/2017 15:20:20] "GET / HTTP/1.1" 200 -
+2017-08-23 15:20:35,887 : INFO : _internal : _log : 127.0.0.1 - - [23/Aug/2017 15:20:35] "GET /about HTTP/1.1" 200 -
+2017-08-23 15:21:13,432 : INFO : _internal : _log : 127.0.0.1 - - [23/Aug/2017 15:21:13] "GET / HTTP/1.1" 200 -
+2017-08-23 15:21:15,981 : INFO : _internal : _log : 127.0.0.1 - - [23/Aug/2017 15:21:15] "GET /blog/115 HTTP/1.1" 200 -
+2017-08-23 15:21:19,968 : INFO : _internal : _log : 127.0.0.1 - - [23/Aug/2017 15:21:19] "GET /blog/114 HTTP/1.1" 200 -
+2017-08-23 15:21:23,543 : INFO : _internal : _log : 127.0.0.1 - - [23/Aug/2017 15:21:23] "GET /blog/112 HTTP/1.1" 200 -
+2017-08-23 15:21:28,660 : INFO : _internal : _log : 127.0.0.1 - - [23/Aug/2017 15:21:28] "GET /blog/115 HTTP/1.1" 200 -
+2017-08-23 15:21:30,945 : INFO : _internal : _log : 127.0.0.1 - - [23/Aug/2017 15:21:30] "POST /thumb-up/115 HTTP/1.1" 200 -
+2017-08-23 15:21:30,972 : INFO : _internal : _log : 127.0.0.1 - - [23/Aug/2017 15:21:30] "GET /blog/115 HTTP/1.1" 200 -
+2017-08-23 15:21:39,503 : INFO : _internal : _log : 127.0.0.1 - - [23/Aug/2017 15:21:39] "POST /blog/115 HTTP/1.1" 302 -
+2017-08-23 15:21:39,557 : INFO : _internal : _log : 127.0.0.1 - - [23/Aug/2017 15:21:39] "GET /blog/115 HTTP/1.1" 200 -
+2017-08-23 15:21:54,444 : INFO : _internal : _log : 127.0.0.1 - - [23/Aug/2017 15:21:54] "GET / HTTP/1.1" 200 -
+2017-08-23 15:22:00,041 : INFO : _internal : _log : 127.0.0.1 - - [23/Aug/2017 15:22:00] "GET /auth/logout HTTP/1.1" 302 -
+2017-08-23 15:22:00,073 : INFO : _internal : _log : 127.0.0.1 - - [23/Aug/2017 15:22:00] "GET / HTTP/1.1" 200 -
+2017-08-23 15:22:02,750 : INFO : _internal : _log : 127.0.0.1 - - [23/Aug/2017 15:22:02] "GET /blog/115 HTTP/1.1" 500 -
+2017-08-23 15:22:02,772 : INFO : _internal : _log : 127.0.0.1 - - [23/Aug/2017 15:22:02] "GET /blog/115?__debugger__=yes&cmd=resource&f=style.css HTTP/1.1" 200 -
+2017-08-23 15:22:02,773 : INFO : _internal : _log : 127.0.0.1 - - [23/Aug/2017 15:22:02] "GET /blog/115?__debugger__=yes&cmd=resource&f=jquery.js HTTP/1.1" 200 -
+2017-08-23 15:22:02,774 : INFO : _internal : _log : 127.0.0.1 - - [23/Aug/2017 15:22:02] "GET /blog/115?__debugger__=yes&cmd=resource&f=debugger.js HTTP/1.1" 200 -
+2017-08-23 15:22:02,866 : INFO : _internal : _log : 127.0.0.1 - - [23/Aug/2017 15:22:02] "GET /blog/115?__debugger__=yes&cmd=resource&f=console.png HTTP/1.1" 200 -
+2017-08-23 15:22:03,010 : INFO : _internal : _log : 127.0.0.1 - - [23/Aug/2017 15:22:03] "GET /blog/115?__debugger__=yes&cmd=resource&f=console.png HTTP/1.1" 200 -
+2017-08-23 15:22:08,288 : INFO : _internal : _log : 127.0.0.1 - - [23/Aug/2017 15:22:08] "GET /auth/login HTTP/1.1" 200 -
+2017-08-23 15:22:14,053 : INFO : _internal : _log : 127.0.0.1 - - [23/Aug/2017 15:22:14] "POST /auth/login HTTP/1.1" 302 -
+2017-08-23 15:22:14,080 : INFO : _internal : _log : 127.0.0.1 - - [23/Aug/2017 15:22:14] "GET / HTTP/1.1" 200 -
+2017-08-23 15:22:17,376 : INFO : _internal : _log : 127.0.0.1 - - [23/Aug/2017 15:22:17] "GET /blog/115 HTTP/1.1" 200 -
+2017-08-23 15:22:21,848 : INFO : _internal : _log : 127.0.0.1 - - [23/Aug/2017 15:22:21] "GET /about HTTP/1.1" 200 -
+2017-08-23 15:24:35,945 : INFO : _internal : _log :  * Running on http://127.0.0.1:5000/ (Press CTRL+C to quit)
+2017-08-23 15:24:35,946 : INFO : _internal : _log :  * Restarting with stat
+2017-08-23 15:24:36,357 : WARNING : _internal : _log :  * Debugger is active!
+2017-08-23 15:24:36,357 : INFO : _internal : _log :  * Debugger PIN: 269-707-563
+2017-08-23 15:24:43,840 : INFO : _internal : _log : 127.0.0.1 - - [23/Aug/2017 15:24:43] "GET / HTTP/1.1" 200 -
+2017-08-23 15:24:43,849 : INFO : _internal : _log : 127.0.0.1 - - [23/Aug/2017 15:24:43] "GET /static/css/bootstrap.min.css HTTP/1.1" 200 -
+2017-08-23 15:24:43,851 : INFO : _internal : _log : 127.0.0.1 - - [23/Aug/2017 15:24:43] "GET /static/font-awesome-4.7.0/css/font-awesome.min.css HTTP/1.1" 200 -
+2017-08-23 15:24:43,853 : INFO : _internal : _log : 127.0.0.1 - - [23/Aug/2017 15:24:43] "GET /static/css/carousel.css HTTP/1.1" 200 -
+2017-08-23 15:24:43,898 : INFO : _internal : _log : 127.0.0.1 - - [23/Aug/2017 15:24:43] "GET /static/pics/land.jpg HTTP/1.1" 200 -
+2017-08-23 15:24:43,901 : INFO : _internal : _log : 127.0.0.1 - - [23/Aug/2017 15:24:43] "GET /static/pics/mountain.jpg HTTP/1.1" 200 -
+2017-08-23 15:24:43,904 : INFO : _internal : _log : 127.0.0.1 - - [23/Aug/2017 15:24:43] "GET /static/pics/sunset.jpg HTTP/1.1" 200 -
+2017-08-23 15:24:43,917 : INFO : _internal : _log : 127.0.0.1 - - [23/Aug/2017 15:24:43] "GET /static/font-awesome-4.7.0/fonts/fontawesome-webfont.woff2?v=4.7.0 HTTP/1.1" 200 -
+2017-08-23 15:24:43,919 : INFO : _internal : _log : 127.0.0.1 - - [23/Aug/2017 15:24:43] "GET /static/pics/bg.jpg HTTP/1.1" 200 -
+2017-08-23 15:24:44,799 : INFO : _internal : _log : 127.0.0.1 - - [23/Aug/2017 15:24:44] "GET /about HTTP/1.1" 200 -
+2017-08-23 15:24:52,883 : INFO : _internal : _log : 127.0.0.1 - - [23/Aug/2017 15:24:52] "GET /auth/logout HTTP/1.1" 302 -
+2017-08-23 15:24:52,914 : INFO : _internal : _log : 127.0.0.1 - - [23/Aug/2017 15:24:52] "GET / HTTP/1.1" 200 -
+2017-08-23 15:24:53,983 : INFO : _internal : _log : 127.0.0.1 - - [23/Aug/2017 15:24:53] "GET /auth/login HTTP/1.1" 200 -
+2017-08-23 15:24:53,997 : INFO : _internal : _log : 127.0.0.1 - - [23/Aug/2017 15:24:53] "GET /static/css/signin.css HTTP/1.1" 200 -
+2017-08-23 15:24:54,000 : INFO : _internal : _log : 127.0.0.1 - - [23/Aug/2017 15:24:54] "GET /static/js/jquery.min.js HTTP/1.1" 200 -
+2017-08-23 15:24:58,563 : INFO : _internal : _log : 127.0.0.1 - - [23/Aug/2017 15:24:58] "POST /auth/login HTTP/1.1" 302 -
+2017-08-23 15:24:58,593 : INFO : _internal : _log : 127.0.0.1 - - [23/Aug/2017 15:24:58] "GET / HTTP/1.1" 200 -
+2017-08-23 15:25:01,152 : INFO : _internal : _log : 127.0.0.1 - - [23/Aug/2017 15:25:01] "GET /about HTTP/1.1" 200 -
+2017-08-23 15:28:27,196 : INFO : _internal : _log :  * Running on http://127.0.0.1:5000/ (Press CTRL+C to quit)
+2017-08-23 15:28:27,196 : INFO : _internal : _log :  * Restarting with stat
+2017-08-23 15:28:27,610 : WARNING : _internal : _log :  * Debugger is active!
+2017-08-23 15:28:27,611 : INFO : _internal : _log :  * Debugger PIN: 269-707-563
+2017-08-23 15:28:39,760 : INFO : _internal : _log : 127.0.0.1 - - [23/Aug/2017 15:28:39] "GET / HTTP/1.1" 200 -
+2017-08-23 15:28:39,770 : INFO : _internal : _log : 127.0.0.1 - - [23/Aug/2017 15:28:39] "GET /static/css/bootstrap.min.css HTTP/1.1" 200 -
+2017-08-23 15:28:39,773 : INFO : _internal : _log : 127.0.0.1 - - [23/Aug/2017 15:28:39] "GET /static/font-awesome-4.7.0/css/font-awesome.min.css HTTP/1.1" 200 -
+2017-08-23 15:28:39,775 : INFO : _internal : _log : 127.0.0.1 - - [23/Aug/2017 15:28:39] "GET /static/css/carousel.css HTTP/1.1" 200 -
+2017-08-23 15:28:39,800 : INFO : _internal : _log : 127.0.0.1 - - [23/Aug/2017 15:28:39] "GET /static/pics/land.jpg HTTP/1.1" 200 -
+2017-08-23 15:28:39,802 : INFO : _internal : _log : 127.0.0.1 - - [23/Aug/2017 15:28:39] "GET /static/pics/mountain.jpg HTTP/1.1" 200 -
+2017-08-23 15:28:39,804 : INFO : _internal : _log : 127.0.0.1 - - [23/Aug/2017 15:28:39] "GET /static/pics/sunset.jpg HTTP/1.1" 200 -
+2017-08-23 15:28:39,811 : INFO : _internal : _log : 127.0.0.1 - - [23/Aug/2017 15:28:39] "GET /static/font-awesome-4.7.0/fonts/fontawesome-webfont.woff2?v=4.7.0 HTTP/1.1" 200 -
+2017-08-23 15:28:39,814 : INFO : _internal : _log : 127.0.0.1 - - [23/Aug/2017 15:28:39] "GET /static/pics/bg.jpg HTTP/1.1" 200 -
+2017-08-23 15:28:40,844 : INFO : _internal : _log : 127.0.0.1 - - [23/Aug/2017 15:28:40] "GET /about HTTP/1.1" 200 -
+2017-08-23 15:28:40,854 : INFO : _internal : _log : 127.0.0.1 - - [23/Aug/2017 15:28:40] "GET /static/pics/gzyj.jpg HTTP/1.1" 200 -
+2017-08-23 15:33:53,650 : INFO : _internal : _log :  * Running on http://127.0.0.1:5000/ (Press CTRL+C to quit)
+2017-08-23 15:33:53,650 : INFO : _internal : _log :  * Restarting with stat
+2017-08-23 15:33:54,063 : WARNING : _internal : _log :  * Debugger is active!
+2017-08-23 15:33:54,064 : INFO : _internal : _log :  * Debugger PIN: 269-707-563
+2017-08-23 15:34:04,732 : INFO : _internal : _log : 127.0.0.1 - - [23/Aug/2017 15:34:04] "GET / HTTP/1.1" 200 -
+2017-08-23 15:34:04,741 : INFO : _internal : _log : 127.0.0.1 - - [23/Aug/2017 15:34:04] "GET /static/css/bootstrap.min.css HTTP/1.1" 200 -
+2017-08-23 15:34:04,743 : INFO : _internal : _log : 127.0.0.1 - - [23/Aug/2017 15:34:04] "GET /static/font-awesome-4.7.0/css/font-awesome.min.css HTTP/1.1" 200 -
+2017-08-23 15:34:04,745 : INFO : _internal : _log : 127.0.0.1 - - [23/Aug/2017 15:34:04] "GET /static/css/carousel.css HTTP/1.1" 200 -
+2017-08-23 15:34:04,796 : INFO : _internal : _log : 127.0.0.1 - - [23/Aug/2017 15:34:04] "GET /static/pics/land.jpg HTTP/1.1" 200 -
+2017-08-23 15:34:04,798 : INFO : _internal : _log : 127.0.0.1 - - [23/Aug/2017 15:34:04] "GET /static/pics/mountain.jpg HTTP/1.1" 200 -
+2017-08-23 15:34:04,801 : INFO : _internal : _log : 127.0.0.1 - - [23/Aug/2017 15:34:04] "GET /static/pics/sunset.jpg HTTP/1.1" 200 -
+2017-08-23 15:34:04,808 : INFO : _internal : _log : 127.0.0.1 - - [23/Aug/2017 15:34:04] "GET /static/font-awesome-4.7.0/fonts/fontawesome-webfont.woff2?v=4.7.0 HTTP/1.1" 200 -
+2017-08-23 15:34:04,811 : INFO : _internal : _log : 127.0.0.1 - - [23/Aug/2017 15:34:04] "GET /static/pics/bg.jpg HTTP/1.1" 200 -
+2017-08-23 15:34:05,640 : INFO : _internal : _log : 127.0.0.1 - - [23/Aug/2017 15:34:05] "GET /about HTTP/1.1" 200 -
+2017-08-23 15:34:05,648 : INFO : _internal : _log : 127.0.0.1 - - [23/Aug/2017 15:34:05] "GET /static/pics/g2.jpg HTTP/1.1" 200 -
+2017-08-23 15:34:06,485 : INFO : _internal : _log : 127.0.0.1 - - [23/Aug/2017 15:34:06] "GET /favicon.ico HTTP/1.1" 404 -
+2017-08-23 15:35:01,525 : INFO : _internal : _log :  * Running on http://127.0.0.1:5000/ (Press CTRL+C to quit)
+2017-08-23 15:35:01,525 : INFO : _internal : _log :  * Restarting with stat
+2017-08-23 15:35:01,940 : WARNING : _internal : _log :  * Debugger is active!
+2017-08-23 15:35:01,940 : INFO : _internal : _log :  * Debugger PIN: 269-707-563
+2017-08-23 15:35:08,563 : INFO : _internal : _log : 127.0.0.1 - - [23/Aug/2017 15:35:08] "GET /about HTTP/1.1" 200 -
+2017-08-23 15:35:08,573 : INFO : _internal : _log : 127.0.0.1 - - [23/Aug/2017 15:35:08] "GET /static/css/bootstrap.min.css HTTP/1.1" 200 -
+2017-08-23 15:35:08,575 : INFO : _internal : _log : 127.0.0.1 - - [23/Aug/2017 15:35:08] "GET /static/font-awesome-4.7.0/css/font-awesome.min.css HTTP/1.1" 200 -
+2017-08-23 15:35:08,577 : INFO : _internal : _log : 127.0.0.1 - - [23/Aug/2017 15:35:08] "GET /static/css/carousel.css HTTP/1.1" 200 -
+2017-08-23 15:35:08,605 : INFO : _internal : _log : 127.0.0.1 - - [23/Aug/2017 15:35:08] "GET /static/pics/g2.jpg HTTP/1.1" 200 -
+2017-08-23 15:35:08,642 : INFO : _internal : _log : 127.0.0.1 - - [23/Aug/2017 15:35:08] "GET /static/pics/bg.jpg HTTP/1.1" 200 -
+2017-08-23 15:36:18,386 : INFO : _internal : _log : 127.0.0.1 - - [23/Aug/2017 15:36:18] "POST /about HTTP/1.1" 302 -
+2017-08-23 15:36:18,433 : INFO : _internal : _log : 127.0.0.1 - - [23/Aug/2017 15:36:18] "GET /about HTTP/1.1" 200 -
+2017-08-23 15:36:32,088 : INFO : _internal : _log : 127.0.0.1 - - [23/Aug/2017 15:36:32] "GET / HTTP/1.1" 200 -
+2017-08-23 15:36:32,097 : INFO : _internal : _log : 127.0.0.1 - - [23/Aug/2017 15:36:32] "GET /static/pics/land.jpg HTTP/1.1" 200 -
+2017-08-23 15:36:32,103 : INFO : _internal : _log : 127.0.0.1 - - [23/Aug/2017 15:36:32] "GET /static/pics/mountain.jpg HTTP/1.1" 200 -
+2017-08-23 15:36:32,138 : INFO : _internal : _log : 127.0.0.1 - - [23/Aug/2017 15:36:32] "GET /static/pics/sunset.jpg HTTP/1.1" 200 -
+2017-08-23 15:36:32,184 : INFO : _internal : _log : 127.0.0.1 - - [23/Aug/2017 15:36:32] "GET /static/font-awesome-4.7.0/fonts/fontawesome-webfont.woff2?v=4.7.0 HTTP/1.1" 200 -
+2017-08-23 15:36:39,339 : INFO : _internal : _log : 127.0.0.1 - - [23/Aug/2017 15:36:39] "GET /auth/logout HTTP/1.1" 302 -
+2017-08-23 15:36:39,391 : INFO : _internal : _log : 127.0.0.1 - - [23/Aug/2017 15:36:39] "GET / HTTP/1.1" 200 -
+2017-08-23 15:36:43,457 : INFO : _internal : _log : 127.0.0.1 - - [23/Aug/2017 15:36:43] "GET /auth/login HTTP/1.1" 200 -
+2017-08-23 15:36:43,469 : INFO : _internal : _log : 127.0.0.1 - - [23/Aug/2017 15:36:43] "GET /static/css/signin.css HTTP/1.1" 200 -
+2017-08-23 15:36:43,472 : INFO : _internal : _log : 127.0.0.1 - - [23/Aug/2017 15:36:43] "GET /static/js/jquery.min.js HTTP/1.1" 200 -
+2017-08-23 15:36:46,244 : INFO : _internal : _log : 127.0.0.1 - - [23/Aug/2017 15:36:46] "GET / HTTP/1.1" 200 -
+2017-08-23 15:36:47,187 : WARNING : views : register : method: GET
+2017-08-23 15:36:47,219 : INFO : _internal : _log : 127.0.0.1 - - [23/Aug/2017 15:36:47] "GET /auth/register HTTP/1.1" 200 -
+2017-08-23 15:37:12,928 : INFO : _internal : _log : 127.0.0.1 - - [23/Aug/2017 15:37:12] "POST /auth/register HTTP/1.1" 302 -
+2017-08-23 15:37:12,946 : INFO : _internal : _log : 127.0.0.1 - - [23/Aug/2017 15:37:12] "GET /auth/login HTTP/1.1" 200 -
+2017-08-23 15:37:22,764 : INFO : _internal : _log : 127.0.0.1 - - [23/Aug/2017 15:37:22] "POST /auth/login HTTP/1.1" 302 -
+2017-08-23 15:37:22,792 : INFO : _internal : _log : 127.0.0.1 - - [23/Aug/2017 15:37:22] "GET / HTTP/1.1" 200 -
+2017-08-23 15:37:28,514 : INFO : _internal : _log : 127.0.0.1 - - [23/Aug/2017 15:37:28] "GET /blog/115 HTTP/1.1" 200 -
+2017-08-23 15:37:30,914 : INFO : _internal : _log : 127.0.0.1 - - [23/Aug/2017 15:37:30] "POST /thumb-up/115 HTTP/1.1" 200 -
+2017-08-23 15:37:30,976 : INFO : _internal : _log : 127.0.0.1 - - [23/Aug/2017 15:37:30] "GET /blog/115 HTTP/1.1" 200 -
+2017-08-23 15:37:31,748 : INFO : _internal : _log : 127.0.0.1 - - [23/Aug/2017 15:37:31] "POST /thumb-up/115 HTTP/1.1" 200 -
+2017-08-23 15:37:31,783 : INFO : _internal : _log : 127.0.0.1 - - [23/Aug/2017 15:37:31] "GET /blog/115 HTTP/1.1" 200 -
+2017-08-23 15:38:13,962 : INFO : _internal : _log : 127.0.0.1 - - [23/Aug/2017 15:38:13] "POST /blog/115 HTTP/1.1" 302 -
+2017-08-23 15:38:14,013 : INFO : _internal : _log : 127.0.0.1 - - [23/Aug/2017 15:38:14] "GET /blog/115 HTTP/1.1" 200 -
+2017-08-23 15:38:20,303 : INFO : _internal : _log : 127.0.0.1 - - [23/Aug/2017 15:38:20] "GET / HTTP/1.1" 200 -
+2017-08-23 15:38:22,710 : INFO : _internal : _log : 127.0.0.1 - - [23/Aug/2017 15:38:22] "GET /about HTTP/1.1" 200 -
+2017-08-23 15:38:44,848 : INFO : _internal : _log : 127.0.0.1 - - [23/Aug/2017 15:38:44] "POST /about HTTP/1.1" 302 -
+2017-08-23 15:38:44,880 : INFO : _internal : _log : 127.0.0.1 - - [23/Aug/2017 15:38:44] "GET /about HTTP/1.1" 200 -
+2017-08-23 15:38:52,296 : INFO : _internal : _log : 127.0.0.1 - - [23/Aug/2017 15:38:52] "GET / HTTP/1.1" 200 -
+2017-08-23 15:39:00,634 : INFO : _internal : _log : 127.0.0.1 - - [23/Aug/2017 15:39:00] "GET /manage-blog HTTP/1.1" 403 -
+2017-08-23 15:39:06,213 : INFO : _internal : _log : 127.0.0.1 - - [23/Aug/2017 15:39:06] "GET /search-category/tech HTTP/1.1" 200 -
+2017-08-23 15:39:13,396 : INFO : _internal : _log : 127.0.0.1 - - [23/Aug/2017 15:39:13] "GET /blog/108 HTTP/1.1" 200 -
+2017-08-23 15:39:19,545 : INFO : _internal : _log : 127.0.0.1 - - [23/Aug/2017 15:39:19] "POST /thumb-up/108 HTTP/1.1" 500 -
+2017-08-23 15:39:25,222 : INFO : _internal : _log : 127.0.0.1 - - [23/Aug/2017 15:39:25] "GET /blog/115 HTTP/1.1" 200 -
+2017-08-23 15:40:06,583 : INFO : _internal : _log : 127.0.0.1 - - [23/Aug/2017 15:40:06] "GET /blog/115 HTTP/1.1" 200 -
+2017-08-23 15:40:15,160 : INFO : _internal : _log : 127.0.0.1 - - [23/Aug/2017 15:40:15] "GET /auth/logout HTTP/1.1" 302 -
+2017-08-23 15:40:15,189 : INFO : _internal : _log : 127.0.0.1 - - [23/Aug/2017 15:40:15] "GET / HTTP/1.1" 200 -
+2017-08-23 15:40:16,638 : INFO : _internal : _log : 127.0.0.1 - - [23/Aug/2017 15:40:16] "GET /about HTTP/1.1" 302 -
+2017-08-23 15:40:16,652 : INFO : _internal : _log : 127.0.0.1 - - [23/Aug/2017 15:40:16] "GET /auth/login?next=%2Fabout HTTP/1.1" 200 -
+2017-08-23 15:40:20,324 : INFO : _internal : _log : 127.0.0.1 - - [23/Aug/2017 15:40:20] "GET / HTTP/1.1" 200 -
+2017-08-23 15:40:23,741 : INFO : _internal : _log : 127.0.0.1 - - [23/Aug/2017 15:40:23] "GET /blog/115 HTTP/1.1" 200 -
+2017-08-23 15:40:29,137 : INFO : _internal : _log : 127.0.0.1 - - [23/Aug/2017 15:40:29] "POST /blog/115 HTTP/1.1" 200 -
+2017-08-23 15:40:31,352 : INFO : _internal : _log : 127.0.0.1 - - [23/Aug/2017 15:40:31] "POST /blog/115 HTTP/1.1" 200 -
+2017-08-23 15:40:44,264 : INFO : _internal : _log : 127.0.0.1 - - [23/Aug/2017 15:40:44] "GET / HTTP/1.1" 200 -
+2017-08-23 15:42:16,095 : INFO : _internal : _log : 127.0.0.1 - - [23/Aug/2017 15:42:16] "GET /auth/login HTTP/1.1" 200 -
+2017-08-23 15:42:21,283 : INFO : _internal : _log : 127.0.0.1 - - [23/Aug/2017 15:42:21] "POST /auth/login HTTP/1.1" 302 -
+2017-08-23 15:42:21,312 : INFO : _internal : _log : 127.0.0.1 - - [23/Aug/2017 15:42:21] "GET / HTTP/1.1" 200 -
+2017-08-23 15:42:23,208 : INFO : _internal : _log : 127.0.0.1 - - [23/Aug/2017 15:42:23] "GET /manage-blog HTTP/1.1" 200 -
+2017-08-23 15:42:26,255 : INFO : _internal : _log : 127.0.0.1 - - [23/Aug/2017 15:42:26] "GET /manage-comment HTTP/1.1" 200 -
+2017-08-23 15:42:30,940 : INFO : _internal : _log : 127.0.0.1 - - [23/Aug/2017 15:42:30] "GET /manage-comment HTTP/1.1" 200 -
+2017-08-23 15:43:21,151 : INFO : _internal : _log : 127.0.0.1 - - [23/Aug/2017 15:43:21] "GET / HTTP/1.1" 200 -
+2017-08-23 15:44:03,701 : INFO : _internal : _log : 127.0.0.1 - - [23/Aug/2017 15:44:03] "GET /manage-blog HTTP/1.1" 200 -
+2017-08-23 15:44:08,018 : INFO : _internal : _log : 127.0.0.1 - - [23/Aug/2017 15:44:08] "GET /write-blog HTTP/1.1" 200 -
+2017-08-23 15:44:08,026 : INFO : _internal : _log : 127.0.0.1 - - [23/Aug/2017 15:44:08] "GET /static/css/bootstrap-tagsinput.css HTTP/1.1" 200 -
+2017-08-23 15:44:08,028 : INFO : _internal : _log : 127.0.0.1 - - [23/Aug/2017 15:44:08] "GET /static/js/bootstrap-tagsinput.js HTTP/1.1" 200 -

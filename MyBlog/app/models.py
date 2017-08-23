@@ -1,5 +1,4 @@
-import hashlib
-import forgery_py
+import logging, hashlib, forgery_py
 from datetime import datetime
 from random import seed, randint
 from sqlalchemy.exc import IntegrityError
@@ -9,40 +8,44 @@ from flask_login import UserMixin, AnonymousUserMixin
 from . import db, login_manager
 from flask import current_app, request
 
+logger = logging.getLogger('root')
+
 
 class Permission:
-	READ = 0x01
-	COMMENT = 0x02
-	ADMINISTER = 0x04
+    READ = 0x01
+    COMMENT = 0x02
+    ADMINISTER = 0x04
 
 
 class Role(db.Model):
-	__tablename__ = 'roles'
-	mysql_charset='utf8'
+    __tablename__ = 'roles'
+    mysql_charset='utf8'
 
-	id = db.Column(db.Integer, primary_key=True)
-	name = db.Column(db.String(64), unique=True)
-	default = db.Column(db.Boolean, default=False, index=True)
-	permissions = db.Column(db.Integer)
-	users = db.relationship('User', backref='role')
+    id = db.Column(db.Integer, primary_key=True)
+    name = db.Column(db.String(64), unique=True)
+    default = db.Column(db.Boolean, default=False, index=True)
+    permissions = db.Column(db.Integer)
+    users = db.relationship('User', backref='role')
 
-	@staticmethod
-	def insert_roles():
-		roles = {
-			'User': (Permission.READ | Permission.COMMENT, True),
-			'Administrator': (Permission.READ | Permission.COMMENT | Permission.ADMINISTER, False)
-		}
-		for r in roles:
-			role = Role.query.filter_by(name=r).first()
-			if role is None:
-				role = Role(name=r)
-			role.permissions = roles[r][0]
-			role.default = roles[r][1]
-			db.session.add(role)
-		db.session.commit()
+    @staticmethod
+    def insert_roles():
+        logger.info('Start inserting roles...')
+        roles = {
+            'User': (Permission.READ | Permission.COMMENT, True),
+            'Administrator': (Permission.READ | Permission.COMMENT | Permission.ADMINISTER, False)
+        }
+        for r in roles:
+            role = Role.query.filter_by(name=r).first()
+            if role is None:
+                role = Role(name=r)
+            role.permissions = roles[r][0]
+            role.default = roles[r][1]
+            db.session.add(role)
+        db.session.commit()
+        logger.info('Finish inserting roles.')
 
-	def __repr__(self):
-		return 'Role <%r>' % self.name
+    def __repr__(self):
+        return 'Role <%r>' % self.name
 
 
 class User(UserMixin, db.Model):
@@ -61,14 +64,17 @@ class User(UserMixin, db.Model):
     member_since = db.Column(db.DateTime(), default=datetime.utcnow)
 
     def __init__(self, **kwargs):
+        logger.info('Start initiating user...')
         super(User, self).__init__(**kwargs)
         if self.role is None:
             if self.email == current_app.config['FLASKY_ADMIN']:
+                logger.info('Initiating user as admin...')
                 self.role = Role.query.filter_by(permissions=0x07).first()
             if self.role is None:
                 self.role = Role.query.filter_by(default=True).first()
         if self.email is not None and self.avatar_hash is None:
             self.avatar_hash = hashlib.md5(self.email.encode('utf-8')).hexdigest()
+        logger.info('Finish initiating user of {}'.format(self.role))
 
     @property
     def password(self):
@@ -103,6 +109,7 @@ class User(UserMixin, db.Model):
                 db.session.rollback()
 
     def gravatar(self, size=100, default='identicon', rating='g'):
+        logger.info('Generating gravatar url for {}.'.format(self))
         if request.is_secure:
             url = 'https://secure.gravatar.com/avatar'
         else:
@@ -174,6 +181,7 @@ class Post(db.Model):
                 db.session.rollback()
 
     def refresh(self):
+        logger.info('Editing blog {}.'.format(self.id))
         last_edit = datetime.utcnow()
         db.session.add(self)
 
@@ -192,6 +200,7 @@ class Tag(db.Model):
         return self.tagging.filter_by(post_id=post.id).first() is not None
 
     def tag_post(self, post):
+        logger.info('Tagging post {}.'.format(post.id))
         if not self.is_tagging(post):
             t = Tagging(post_id=post.id, tag_id=self.id)
             db.session.add(t)
@@ -208,6 +217,7 @@ class Category(db.Model):
 
     @staticmethod
     def insert_categories():
+        logger.info('Starting inserting categories...')
         data = [('tech', '技术'), ('life', '生活'), ('other', '其他')]
         for item in data:
             category = Category()
@@ -215,6 +225,7 @@ class Category(db.Model):
             category.label = item[1]
             db.session.add(category)
         db.session.commit()
+        logger.info('Finish inserting categories.')
 
 
 class Comment(db.Model):

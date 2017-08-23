@@ -60,7 +60,7 @@
           <li class="media">
               <div class="media-left media-top">
                 <a href="#">
-                  <img class="media-object" src="{{ current_user.gravatar(size=50) }}" alt="...">
+                  <img class="media-object" src="{{ comment.author.gravatar(size=50) }}" alt="...">
                 </a>
               </div>
               <div class="media-body">
@@ -74,13 +74,6 @@
     </div>
 
     <div class="col-sm-3 col-sm-offset-1 col-md-3 col-md-offset-1 col-lg-3 col-lg-offset-1 blog-sidebar">
-      <div class="sidebar-module sidebar-module-inset">
-        <h4>About Writer</h4>
-        <p>Live and work in Beijing. Interested in Python. Welcome contact via xzyduoduo@126.com</p>
-        <p></p>
-        <p></p>
-      </div>
-      <hr>
       <div class="sidebar-module">
         <h4>Categories</h4>
             {% if categories %}

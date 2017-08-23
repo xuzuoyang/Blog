@@ -61,21 +61,16 @@
                 </ul>
                 <p class="blog-post-meta">written: {{ moment(post.timestamp).fromNow() }} & last edit: {{ moment(post.last_edit).fromNow() }}</p>
                 <p>{{ post.body | safe }}</p>
-                <p><a class="btn btn-primary" href="{{ url_for('main.blog', blog_id=post.id) }}" role="button">View details &raquo;</a></p>
-                <hr>
               </div>
+              <div class="details">
+                <p><a class="btn btn-primary" href="{{ url_for('main.blog', blog_id=post.id) }}" role="button">View details &raquo;</a></p>
+              </div>
+              <hr>
               {% endfor %}
       {% endif %}
 
     </div>
     <div class="col-sm-3 col-sm-offset-1 col-md-3 col-md-offset-1 col-lg-3 col-lg-offset-1 blog-sidebar">
-      <div class="sidebar-module sidebar-module-inset">
-        <h4>About Writer</h4>
-        <p>Live and work in Beijing. Interested in Python. Welcome contact via xzyduoduo@126.com</p>
-        <p></p>
-        <p></p>
-      </div>
-      <hr>
       <div class="sidebar-module">
         <h4>Categories</h4>
             {% if categories %}
