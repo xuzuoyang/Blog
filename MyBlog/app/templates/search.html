@@ -25,15 +25,16 @@
 
       {% if posts %}
               {% for post in posts %}
-              <div class="blog-post">
-                <h2 class="blog-post-title">{{ post.title }}</h2>
-                <p class="blog-post-meta">{{ moment(post.timestamp).fromNow() }} by <a href="#">{{ post.author.username }}</a></p>
-                <p>{{ post.body | safe }}</p>
+              <div class="blog">
+                  <div class="blog-post">
+                    <h2 class="blog-post-title">{{ post.title }}</h2>
+                    <p class="blog-post-meta">{{ moment(post.timestamp).fromNow() }} by <a href="#">{{ post.author.username }}</a></p>
+                    <p>{{ post.body | safe }}</p>
+                  </div>
+                  <div class="details">
+                    <p><a class="btn btn-primary" href="{{ url_for('main.blog', blog_id=post.id) }}" role="button">View details &raquo;</a></p>
+                  </div>
               </div>
-              <div class="details">
-                <p><a class="btn btn-primary" href="{{ url_for('main.blog', blog_id=post.id) }}" role="button">View details &raquo;</a></p>
-              </div>
-              <hr>
               {% endfor %}
       {% endif %}
 

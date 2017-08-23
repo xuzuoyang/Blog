@@ -13,7 +13,7 @@
     <div class="col-sm-8 blog-main">
 
         {% if post %}
-        <div class="blog-post">
+        <div class="blog">
           <h2 class="blog-post-title">{{ post.title }}</h2>
           <ul class="list-inline">
               <li><i class="fa fa-th-list" aria-hidden="true"><a href="{{ url_for('main.search_category', category=post.category.name) }}"> {{ post.category.name|upper }}</a></i></li>
@@ -36,7 +36,6 @@
                    </span>
               </li>
           </ul>
-          <hr>
         </div>
         {% endif %}
 
@@ -74,34 +73,36 @@
     </div>
 
     <div class="col-sm-3 col-sm-offset-1 col-md-3 col-md-offset-1 col-lg-3 col-lg-offset-1 blog-sidebar">
-      <div class="sidebar-module">
-        <h4>Categories</h4>
-            {% if categories %}
-            <ul class="list-unstyled">
-                {% for category in categories %}
-                <li class="category">
-                    <i class="fa fa-th-list" aria-hidden="true"><a href="{{ url_for('main.search_category', category=category.name) }}"> {{ category.name|upper }} </a></i>
-                    <span class="badge">{{ category.posts|length }}</span>
-                </li>
-                {% endfor %}
-            </ul>
-            {% endif %}
+      <div class="side">
+          <div class="sidebar-module">
+            <h4><i class="fa fa-list-ol" aria-hidden="true"></i> Categories</h4>
+                {% if categories %}
+                <ul class="list-unstyled">
+                    {% for category in categories %}
+                    <li class="category">
+                        <i class="fa fa-th-list" aria-hidden="true"><a href="{{ url_for('main.search_category', category=category.name) }}"> {{ category.name|upper }} </a></i>
+                        <span class="badge">{{ category.posts|length }}</span>
+                    </li>
+                    {% endfor %}
+                </ul>
+                {% endif %}
+          </div>
+          <hr>
+          <div class="sidebar-module">
+            <h4><i class="fa fa-tags" aria-hidden="true"></i> Tags</h4>
+                {% if tags %}
+                <ul class="list-unstyled">
+                    {% for tag in tags %}
+                    <li class="tag">
+                        <i class="fa fa-tag" aria-hidden="true"><a href="{{ url_for('main.search_tag', tag=tag.name) }}"> {{ tag.name|upper }} </a></i>
+                        <span class="badge">{{ tag.tagging.all()|length }}</span>
+                    </li>
+                    {% endfor %}
+                </ul>
+                {% endif %}
+          </div>
       </div>
-      <hr>
-      <div class="sidebar-module">
-        <h4>Tags</h4>
-            {% if tags %}
-            <ul class="list-unstyled">
-                {% for tag in tags %}
-                <li class="tag">
-                    <i class="fa fa-tag" aria-hidden="true"><a href="{{ url_for('main.search_tag', tag=tag.name) }}"> {{ tag.name|upper }} </a></i>
-                    <span class="badge">{{ tag.tagging.all()|length }}</span>
-                </li>
-                {% endfor %}
-            </ul>
-            {% endif %}
-      </div>
-    </div><!-- /.blog-sidebar -->
+    </div>
 
   </div>
 </div>
