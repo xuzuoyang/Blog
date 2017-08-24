@@ -1820,3 +1820,227 @@
 2017-08-23 19:47:11,296 : INFO : _internal : _log : 127.0.0.1 - - [23/Aug/2017 19:47:11] "GET /about HTTP/1.1" 200 -
 2017-08-23 19:47:11,341 : INFO : _internal : _log : 127.0.0.1 - - [23/Aug/2017 19:47:11] "GET /static/pics/g2.jpg HTTP/1.1" 200 -
 2017-08-23 19:47:23,581 : INFO : _internal : _log : 127.0.0.1 - - [23/Aug/2017 19:47:23] "GET / HTTP/1.1" 200 -
+2017-08-24 16:53:05,088 : INFO : _internal : _log :  * Running on http://127.0.0.1:5000/ (Press CTRL+C to quit)
+2017-08-24 16:53:05,088 : INFO : _internal : _log :  * Restarting with stat
+2017-08-24 16:53:05,502 : WARNING : _internal : _log :  * Debugger is active!
+2017-08-24 16:53:05,503 : INFO : _internal : _log :  * Debugger PIN: 269-707-563
+2017-08-24 16:53:28,918 : INFO : _internal : _log : 127.0.0.1 - - [24/Aug/2017 16:53:28] "GET /write-blog HTTP/1.1" 200 -
+2017-08-24 16:54:04,322 : INFO : _internal : _log : 127.0.0.1 - - [24/Aug/2017 16:54:04] "GET /static/css/bootstrap.min.css.map HTTP/1.1" 404 -
+2017-08-24 17:13:57,911 : INFO : _internal : _log : 127.0.0.1 - - [24/Aug/2017 17:13:57] "GET /manage-blog HTTP/1.1" 200 -
+2017-08-24 17:14:00,733 : INFO : _internal : _log : 127.0.0.1 - - [24/Aug/2017 17:14:00] "GET /blog/108 HTTP/1.1" 200 -
+2017-08-24 17:14:04,400 : INFO : _internal : _log : 127.0.0.1 - - [24/Aug/2017 17:14:04] "GET /static/css/bootstrap.min.css.map HTTP/1.1" 404 -
+2017-08-24 17:14:09,928 : INFO : _internal : _log : 127.0.0.1 - - [24/Aug/2017 17:14:09] "GET /manage-blog HTTP/1.1" 200 -
+2017-08-24 17:14:10,926 : INFO : _internal : _log : 127.0.0.1 - - [24/Aug/2017 17:14:10] "GET /write-blog HTTP/1.1" 200 -
+2017-08-24 17:14:27,104 : INFO : _internal : _log : 127.0.0.1 - - [24/Aug/2017 17:14:27] "POST /write-blog HTTP/1.1" 200 -
+2017-08-24 17:55:03,243 : INFO : _internal : _log :  * Running on http://127.0.0.1:5000/ (Press CTRL+C to quit)
+2017-08-24 17:55:03,243 : INFO : _internal : _log :  * Restarting with stat
+2017-08-24 17:55:03,658 : WARNING : _internal : _log :  * Debugger is active!
+2017-08-24 17:55:03,659 : INFO : _internal : _log :  * Debugger PIN: 269-707-563
+2017-08-24 17:55:09,030 : INFO : _internal : _log : 127.0.0.1 - - [24/Aug/2017 17:55:09] "GET / HTTP/1.1" 200 -
+2017-08-24 17:55:09,463 : INFO : _internal : _log : 127.0.0.1 - - [24/Aug/2017 17:55:09] "GET /favicon.ico HTTP/1.1" 404 -
+2017-08-24 17:55:10,462 : INFO : _internal : _log : 127.0.0.1 - - [24/Aug/2017 17:55:10] "GET /manage-blog HTTP/1.1" 200 -
+2017-08-24 17:55:11,544 : INFO : _internal : _log : 127.0.0.1 - - [24/Aug/2017 17:55:11] "GET /write-blog HTTP/1.1" 200 -
+2017-08-24 18:00:07,652 : INFO : _internal : _log :  * Running on http://127.0.0.1:5000/ (Press CTRL+C to quit)
+2017-08-24 18:00:07,652 : INFO : _internal : _log :  * Restarting with stat
+2017-08-24 18:00:08,068 : WARNING : _internal : _log :  * Debugger is active!
+2017-08-24 18:00:08,069 : INFO : _internal : _log :  * Debugger PIN: 269-707-563
+2017-08-24 18:00:11,383 : INFO : _internal : _log : 127.0.0.1 - - [24/Aug/2017 18:00:11] "GET / HTTP/1.1" 200 -
+2017-08-24 18:00:13,006 : INFO : _internal : _log : 127.0.0.1 - - [24/Aug/2017 18:00:13] "GET /manage-blog HTTP/1.1" 200 -
+2017-08-24 18:00:14,514 : INFO : _internal : _log : 127.0.0.1 - - [24/Aug/2017 18:00:14] "GET /write-blog HTTP/1.1" 200 -
+2017-08-24 18:56:51,354 : INFO : _internal : _log :  * Detected change in '/home/xuzuoyang/mygit/MyBlog/app/main/views.py', reloading
+2017-08-24 18:56:51,440 : INFO : _internal : _log :  * Restarting with stat
+2017-08-24 18:56:51,860 : WARNING : _internal : _log :  * Debugger is active!
+2017-08-24 18:56:51,861 : INFO : _internal : _log :  * Debugger PIN: 269-707-563
+2017-08-24 18:57:10,100 : INFO : _internal : _log :  * Running on http://127.0.0.1:5000/ (Press CTRL+C to quit)
+2017-08-24 18:57:10,100 : INFO : _internal : _log :  * Restarting with stat
+2017-08-24 18:57:10,515 : WARNING : _internal : _log :  * Debugger is active!
+2017-08-24 18:57:10,516 : INFO : _internal : _log :  * Debugger PIN: 269-707-563
+2017-08-24 18:57:17,800 : INFO : _internal : _log : 127.0.0.1 - - [24/Aug/2017 18:57:17] "GET /write-blog HTTP/1.1" 200 -
+2017-08-24 18:57:18,733 : INFO : _internal : _log : 127.0.0.1 - - [24/Aug/2017 18:57:18] "GET /favicon.ico HTTP/1.1" 404 -
+2017-08-24 18:58:43,440 : INFO : _internal : _log :  * Running on http://127.0.0.1:5000/ (Press CTRL+C to quit)
+2017-08-24 18:58:43,440 : INFO : _internal : _log :  * Restarting with stat
+2017-08-24 18:58:43,855 : WARNING : _internal : _log :  * Debugger is active!
+2017-08-24 18:58:43,856 : INFO : _internal : _log :  * Debugger PIN: 269-707-563
+2017-08-24 18:58:45,472 : INFO : _internal : _log : 127.0.0.1 - - [24/Aug/2017 18:58:45] "GET /write-blog HTTP/1.1" 200 -
+2017-08-24 19:00:12,937 : INFO : _internal : _log :  * Running on http://127.0.0.1:5000/ (Press CTRL+C to quit)
+2017-08-24 19:00:12,937 : INFO : _internal : _log :  * Restarting with stat
+2017-08-24 19:00:13,354 : WARNING : _internal : _log :  * Debugger is active!
+2017-08-24 19:00:13,354 : INFO : _internal : _log :  * Debugger PIN: 269-707-563
+2017-08-24 19:00:17,299 : INFO : _internal : _log : 127.0.0.1 - - [24/Aug/2017 19:00:17] "GET /write-blog HTTP/1.1" 200 -
+2017-08-24 19:01:21,774 : INFO : _internal : _log :  * Running on http://127.0.0.1:5000/ (Press CTRL+C to quit)
+2017-08-24 19:01:21,774 : INFO : _internal : _log :  * Restarting with stat
+2017-08-24 19:01:22,197 : WARNING : _internal : _log :  * Debugger is active!
+2017-08-24 19:01:22,197 : INFO : _internal : _log :  * Debugger PIN: 269-707-563
+2017-08-24 19:01:25,455 : INFO : _internal : _log : 127.0.0.1 - - [24/Aug/2017 19:01:25] "GET /write-blog HTTP/1.1" 200 -
+2017-08-24 19:01:39,663 : INFO : _internal : _log :  * Running on http://127.0.0.1:5000/ (Press CTRL+C to quit)
+2017-08-24 19:01:39,664 : INFO : _internal : _log :  * Restarting with stat
+2017-08-24 19:01:40,086 : WARNING : _internal : _log :  * Debugger is active!
+2017-08-24 19:01:40,086 : INFO : _internal : _log :  * Debugger PIN: 269-707-563
+2017-08-24 19:01:41,804 : INFO : _internal : _log : 127.0.0.1 - - [24/Aug/2017 19:01:41] "GET /write-blog HTTP/1.1" 200 -
+2017-08-24 19:01:43,571 : INFO : _internal : _log : 127.0.0.1 - - [24/Aug/2017 19:01:43] "GET /write-blog HTTP/1.1" 200 -
+2017-08-24 19:01:45,920 : INFO : _internal : _log : 127.0.0.1 - - [24/Aug/2017 19:01:45] "GET / HTTP/1.1" 200 -
+2017-08-24 19:01:47,296 : INFO : _internal : _log : 127.0.0.1 - - [24/Aug/2017 19:01:47] "GET /manage-blog HTTP/1.1" 200 -
+2017-08-24 19:01:48,603 : INFO : _internal : _log : 127.0.0.1 - - [24/Aug/2017 19:01:48] "GET /write-blog HTTP/1.1" 200 -
+2017-08-24 19:02:01,474 : INFO : _internal : _log : 127.0.0.1 - - [24/Aug/2017 19:02:01] "POST /upload_img HTTP/1.1" 405 -
+2017-08-24 19:02:32,583 : INFO : _internal : _log :  * Detected change in '/home/xuzuoyang/mygit/MyBlog/app/main/views.py', reloading
+2017-08-24 19:02:32,667 : INFO : _internal : _log :  * Restarting with stat
+2017-08-24 19:02:33,091 : WARNING : _internal : _log :  * Debugger is active!
+2017-08-24 19:02:33,091 : INFO : _internal : _log :  * Debugger PIN: 269-707-563
+2017-08-24 19:02:36,887 : INFO : _internal : _log : 127.0.0.1 - - [24/Aug/2017 19:02:36] "GET / HTTP/1.1" 200 -
+2017-08-24 19:02:38,104 : INFO : _internal : _log : 127.0.0.1 - - [24/Aug/2017 19:02:38] "GET /manage-blog HTTP/1.1" 200 -
+2017-08-24 19:02:39,151 : INFO : _internal : _log : 127.0.0.1 - - [24/Aug/2017 19:02:39] "GET /write-blog HTTP/1.1" 200 -
+2017-08-24 19:02:54,794 : INFO : views : upload_img : CombinedMultiDict([ImmutableMultiDict([]), ImmutableMultiDict([])])
+2017-08-24 19:02:54,847 : INFO : _internal : _log : 127.0.0.1 - - [24/Aug/2017 19:02:54] "POST /upload_img HTTP/1.1" 500 -
+2017-08-24 19:04:54,397 : INFO : _internal : _log :  * Detected change in '/home/xuzuoyang/mygit/MyBlog/app/main/views.py', reloading
+2017-08-24 19:04:54,476 : INFO : _internal : _log :  * Restarting with stat
+2017-08-24 19:04:54,903 : WARNING : _internal : _log :  * Debugger is active!
+2017-08-24 19:04:54,904 : INFO : _internal : _log :  * Debugger PIN: 269-707-563
+2017-08-24 19:05:04,944 : INFO : _internal : _log : 127.0.0.1 - - [24/Aug/2017 19:05:04] "GET /write-blog HTTP/1.1" 200 -
+2017-08-24 19:05:28,407 : INFO : views : upload_img : CombinedMultiDict([ImmutableMultiDict([]), ImmutableMultiDict([])])
+2017-08-24 19:05:28,408 : INFO : views : upload_img : None
+2017-08-24 19:05:28,409 : INFO : _internal : _log : 127.0.0.1 - - [24/Aug/2017 19:05:28] "POST /upload_img HTTP/1.1" 200 -
+2017-08-24 19:05:28,429 : INFO : _internal : _log : 127.0.0.1 - - [24/Aug/2017 19:05:28] "GET /this%20is%20a%20test%20location HTTP/1.1" 404 -
+2017-08-24 19:05:50,396 : INFO : views : upload_img : CombinedMultiDict([ImmutableMultiDict([]), ImmutableMultiDict([])])
+2017-08-24 19:05:50,397 : INFO : views : upload_img : None
+2017-08-24 19:05:50,398 : INFO : _internal : _log : 127.0.0.1 - - [24/Aug/2017 19:05:50] "POST /upload_img HTTP/1.1" 200 -
+2017-08-24 19:05:50,410 : INFO : _internal : _log : 127.0.0.1 - - [24/Aug/2017 19:05:50] "GET /this%20is%20a%20test%20location HTTP/1.1" 404 -
+2017-08-24 19:11:56,894 : INFO : _internal : _log :  * Detected change in '/home/xuzuoyang/mygit/MyBlog/app/main/views.py', reloading
+2017-08-24 19:11:56,958 : INFO : _internal : _log :  * Restarting with stat
+2017-08-24 19:11:57,386 : WARNING : _internal : _log :  * Debugger is active!
+2017-08-24 19:11:57,386 : INFO : _internal : _log :  * Debugger PIN: 269-707-563
+2017-08-24 19:12:04,604 : INFO : _internal : _log : 127.0.0.1 - - [24/Aug/2017 19:12:04] "GET /manage-blog HTTP/1.1" 200 -
+2017-08-24 19:12:05,488 : INFO : _internal : _log : 127.0.0.1 - - [24/Aug/2017 19:12:05] "GET /write-blog HTTP/1.1" 200 -
+2017-08-24 19:12:14,321 : INFO : views : upload_img : ImmutableMultiDict([('file', <FileStorage: 'blobid1503573132684.jpg' ('image/jpeg')>)])
+2017-08-24 19:12:14,322 : INFO : _internal : _log : 127.0.0.1 - - [24/Aug/2017 19:12:14] "POST /upload_img HTTP/1.1" 200 -
+2017-08-24 19:12:14,343 : INFO : _internal : _log : 127.0.0.1 - - [24/Aug/2017 19:12:14] "GET /this%20is%20a%20test%20location HTTP/1.1" 404 -
+2017-08-24 19:32:24,581 : INFO : _internal : _log :  * Detected change in '/home/xuzuoyang/mygit/MyBlog/app/main/views.py', reloading
+2017-08-24 19:32:24,659 : INFO : _internal : _log :  * Restarting with stat
+2017-08-24 19:32:25,149 : WARNING : _internal : _log :  * Debugger is active!
+2017-08-24 19:32:25,149 : INFO : _internal : _log :  * Debugger PIN: 269-707-563
+2017-08-24 19:33:48,221 : INFO : _internal : _log :  * Detected change in '/home/xuzuoyang/mygit/MyBlog/app/main/views.py', reloading
+2017-08-24 19:33:48,315 : INFO : _internal : _log :  * Restarting with stat
+2017-08-24 19:33:48,841 : WARNING : _internal : _log :  * Debugger is active!
+2017-08-24 19:33:48,841 : INFO : _internal : _log :  * Debugger PIN: 269-707-563
+2017-08-24 19:33:57,670 : INFO : _internal : _log : 127.0.0.1 - - [24/Aug/2017 19:33:57] "GET /manage-blog HTTP/1.1" 200 -
+2017-08-24 19:33:58,687 : INFO : _internal : _log : 127.0.0.1 - - [24/Aug/2017 19:33:58] "GET /write-blog HTTP/1.1" 200 -
+2017-08-24 19:34:07,238 : INFO : _internal : _log : 127.0.0.1 - - [24/Aug/2017 19:34:07] "POST /upload_img HTTP/1.1" 500 -
+2017-08-24 19:34:58,651 : INFO : _internal : _log :  * Detected change in '/home/xuzuoyang/mygit/MyBlog/app/main/views.py', reloading
+2017-08-24 19:34:58,735 : INFO : _internal : _log :  * Restarting with stat
+2017-08-24 19:34:59,245 : WARNING : _internal : _log :  * Debugger is active!
+2017-08-24 19:34:59,245 : INFO : _internal : _log :  * Debugger PIN: 269-707-563
+2017-08-24 19:35:07,376 : INFO : _internal : _log : 127.0.0.1 - - [24/Aug/2017 19:35:07] "GET /manage-blog HTTP/1.1" 200 -
+2017-08-24 19:35:08,352 : INFO : _internal : _log : 127.0.0.1 - - [24/Aug/2017 19:35:08] "GET /write-blog HTTP/1.1" 200 -
+2017-08-24 19:35:15,397 : INFO : views : upload_img : ImmutableMultiDict([('file', <FileStorage: 'blobid1503574514387.jpg' ('image/jpeg')>)])
+2017-08-24 19:35:15,407 : INFO : _internal : _log : 127.0.0.1 - - [24/Aug/2017 19:35:15] "POST /upload_img HTTP/1.1" 500 -
+2017-08-24 19:35:40,791 : INFO : _internal : _log :  * Detected change in '/home/xuzuoyang/mygit/MyBlog/app/main/views.py', reloading
+2017-08-24 19:35:40,884 : INFO : _internal : _log :  * Restarting with stat
+2017-08-24 19:35:41,379 : WARNING : _internal : _log :  * Debugger is active!
+2017-08-24 19:35:41,380 : INFO : _internal : _log :  * Debugger PIN: 269-707-563
+2017-08-24 19:35:46,442 : INFO : _internal : _log : 127.0.0.1 - - [24/Aug/2017 19:35:46] "GET /manage-blog HTTP/1.1" 200 -
+2017-08-24 19:35:47,549 : INFO : _internal : _log : 127.0.0.1 - - [24/Aug/2017 19:35:47] "GET /write-blog HTTP/1.1" 200 -
+2017-08-24 19:35:56,621 : INFO : views : upload_img : ImmutableMultiDict([('file', <FileStorage: 'blobid1503574554874.jpg' ('image/jpeg')>)])
+2017-08-24 19:35:56,921 : INFO : views : upload_img : <oss2.http.Response object at 0x7fc0a8041dd8>
+2017-08-24 19:35:56,924 : INFO : _internal : _log : 127.0.0.1 - - [24/Aug/2017 19:35:56] "POST /upload_img HTTP/1.1" 200 -
+2017-08-24 19:35:56,955 : INFO : _internal : _log : 127.0.0.1 - - [24/Aug/2017 19:35:56] "GET /this%20is%20a%20test%20location HTTP/1.1" 404 -
+2017-08-24 19:37:32,708 : INFO : _internal : _log :  * Detected change in '/home/xuzuoyang/mygit/MyBlog/app/main/views.py', reloading
+2017-08-24 19:37:32,810 : INFO : _internal : _log :  * Restarting with stat
+2017-08-24 19:37:33,317 : WARNING : _internal : _log :  * Debugger is active!
+2017-08-24 19:37:33,318 : INFO : _internal : _log :  * Debugger PIN: 269-707-563
+2017-08-24 19:37:56,081 : INFO : _internal : _log : 127.0.0.1 - - [24/Aug/2017 19:37:56] "GET /write-blog HTTP/1.1" 200 -
+2017-08-24 19:38:05,534 : INFO : views : upload_img : ImmutableMultiDict([('file', <FileStorage: 'blobid1503574683967.jpg' ('image/jpeg')>)])
+2017-08-24 19:38:05,804 : INFO : views : upload_img : ['__class__', '__delattr__', '__dict__', '__dir__', '__doc__', '__eq__', '__format__', '__ge__', '__getattribute__', '__gt__', '__hash__', '__init__', '__iter__', '__le__', '__lt__', '__module__', '__ne__', '__new__', '__reduce__', '__reduce_ex__', '__repr__', '__setattr__', '__sizeof__', '__str__', '__subclasshook__', '__weakref__', 'headers', 'read', 'response', 'status']
+2017-08-24 19:38:05,805 : INFO : views : upload_img : ['__attrs__', '__bool__', '__class__', '__delattr__', '__dict__', '__dir__', '__doc__', '__enter__', '__eq__', '__exit__', '__format__', '__ge__', '__getattribute__', '__getstate__', '__gt__', '__hash__', '__init__', '__iter__', '__le__', '__lt__', '__module__', '__ne__', '__new__', '__nonzero__', '__reduce__', '__reduce_ex__', '__repr__', '__setattr__', '__setstate__', '__sizeof__', '__str__', '__subclasshook__', '__weakref__', '_content', '_content_consumed', '_next', 'apparent_encoding', 'close', 'connection', 'content', 'cookies', 'elapsed', 'encoding', 'headers', 'history', 'is_permanent_redirect', 'is_redirect', 'iter_content', 'iter_lines', 'json', 'links', 'next', 'ok', 'raise_for_status', 'raw', 'reason', 'request', 'status_code', 'text', 'url']
+2017-08-24 19:38:05,808 : INFO : _internal : _log : 127.0.0.1 - - [24/Aug/2017 19:38:05] "POST /upload_img HTTP/1.1" 200 -
+2017-08-24 19:38:05,837 : INFO : _internal : _log : 127.0.0.1 - - [24/Aug/2017 19:38:05] "GET /this%20is%20a%20test%20location HTTP/1.1" 404 -
+2017-08-24 19:40:31,412 : INFO : _internal : _log :  * Detected change in '/home/xuzuoyang/mygit/MyBlog/app/main/views.py', reloading
+2017-08-24 19:40:31,517 : INFO : _internal : _log :  * Restarting with stat
+2017-08-24 19:40:32,024 : WARNING : _internal : _log :  * Debugger is active!
+2017-08-24 19:40:32,025 : INFO : _internal : _log :  * Debugger PIN: 269-707-563
+2017-08-24 19:40:37,350 : INFO : _internal : _log : 127.0.0.1 - - [24/Aug/2017 19:40:37] "GET /write-blog HTTP/1.1" 200 -
+2017-08-24 19:40:47,961 : INFO : views : upload_img : ImmutableMultiDict([('file', <FileStorage: 'blobid1503574846791.jpg' ('image/jpeg')>)])
+2017-08-24 19:40:48,377 : INFO : views : upload_img : <bound method Response.json of <Response [200]>>
+2017-08-24 19:40:48,396 : INFO : _internal : _log : 127.0.0.1 - - [24/Aug/2017 19:40:48] "POST /upload_img HTTP/1.1" 500 -
+2017-08-24 19:42:44,563 : INFO : _internal : _log :  * Detected change in '/home/xuzuoyang/mygit/MyBlog/app/main/views.py', reloading
+2017-08-24 19:42:44,658 : INFO : _internal : _log :  * Restarting with stat
+2017-08-24 19:42:45,157 : WARNING : _internal : _log :  * Debugger is active!
+2017-08-24 19:42:45,157 : INFO : _internal : _log :  * Debugger PIN: 269-707-563
+2017-08-24 19:42:49,487 : INFO : _internal : _log : 127.0.0.1 - - [24/Aug/2017 19:42:49] "GET /write-blog HTTP/1.1" 200 -
+2017-08-24 19:42:57,756 : INFO : views : upload_img : ImmutableMultiDict([('file', <FileStorage: 'blobid1503574976244.jpg' ('image/jpeg')>)])
+2017-08-24 19:42:58,064 : INFO : _internal : _log : 127.0.0.1 - - [24/Aug/2017 19:42:58] "POST /upload_img HTTP/1.1" 500 -
+2017-08-24 19:44:14,311 : INFO : _internal : _log :  * Detected change in '/home/xuzuoyang/mygit/MyBlog/app/main/views.py', reloading
+2017-08-24 19:44:14,417 : INFO : _internal : _log :  * Restarting with stat
+2017-08-24 19:44:14,915 : WARNING : _internal : _log :  * Debugger is active!
+2017-08-24 19:44:14,915 : INFO : _internal : _log :  * Debugger PIN: 269-707-563
+2017-08-24 19:44:20,378 : INFO : _internal : _log : 127.0.0.1 - - [24/Aug/2017 19:44:20] "GET /write-blog HTTP/1.1" 200 -
+2017-08-24 19:44:28,729 : INFO : views : upload_img : ImmutableMultiDict([('file', <FileStorage: 'blobid1503575067431.jpg' ('image/jpeg')>)])
+2017-08-24 19:44:29,001 : INFO : views : upload_img : http://zuoyang-bucket.oss-cn-beijing.aliyuncs.com/blobid1503575067431.jpg
+2017-08-24 19:44:29,004 : INFO : _internal : _log : 127.0.0.1 - - [24/Aug/2017 19:44:29] "POST /upload_img HTTP/1.1" 200 -
+2017-08-24 19:54:04,745 : INFO : _internal : _log :  * Detected change in '/home/xuzuoyang/mygit/MyBlog/app/main/views.py', reloading
+2017-08-24 19:54:04,845 : INFO : _internal : _log :  * Restarting with stat
+2017-08-24 19:54:05,345 : WARNING : _internal : _log :  * Debugger is active!
+2017-08-24 19:54:05,345 : INFO : _internal : _log :  * Debugger PIN: 269-707-563
+2017-08-24 19:54:10,981 : INFO : _internal : _log : 127.0.0.1 - - [24/Aug/2017 19:54:10] "GET /write-blog HTTP/1.1" 200 -
+2017-08-24 19:54:20,388 : INFO : _internal : _log : 127.0.0.1 - - [24/Aug/2017 19:54:20] "GET /write-blog HTTP/1.1" 200 -
+2017-08-24 19:54:31,525 : INFO : views : upload_img : ImmutableMultiDict([('file', <FileStorage: 'blobid1503575670216.jpg' ('image/jpeg')>)])
+2017-08-24 19:54:31,824 : INFO : views : upload_img : http://zuoyang-bucket.oss-cn-beijing.aliyuncs.com/blobid1503575670216.jpg
+2017-08-24 19:54:31,828 : INFO : _internal : _log : 127.0.0.1 - - [24/Aug/2017 19:54:31] "POST /upload_img HTTP/1.1" 200 -
+2017-08-24 19:54:51,893 : INFO : _internal : _log : 127.0.0.1 - - [24/Aug/2017 19:54:51] "POST /write-blog HTTP/1.1" 200 -
+2017-08-24 19:54:51,945 : INFO : _internal : _log : 127.0.0.1 - - [24/Aug/2017 19:54:51] "GET /manage-blog HTTP/1.1" 200 -
+2017-08-24 19:54:53,570 : INFO : _internal : _log : 127.0.0.1 - - [24/Aug/2017 19:54:53] "GET /blog/116 HTTP/1.1" 200 -
+2017-08-24 19:54:59,537 : INFO : _internal : _log : 127.0.0.1 - - [24/Aug/2017 19:54:59] "GET /manage-blog HTTP/1.1" 200 -
+2017-08-24 19:55:00,946 : INFO : _internal : _log : 127.0.0.1 - - [24/Aug/2017 19:55:00] "GET /write-blog HTTP/1.1" 200 -
+2017-08-24 19:55:46,182 : INFO : _internal : _log : 127.0.0.1 - - [24/Aug/2017 19:55:46] "GET /blog/116 HTTP/1.1" 200 -
+2017-08-24 19:55:48,425 : INFO : _internal : _log : 127.0.0.1 - - [24/Aug/2017 19:55:48] "GET /static/css/bootstrap.min.css.map HTTP/1.1" 404 -
+2017-08-24 20:04:46,381 : INFO : _internal : _log :  * Detected change in '/home/xuzuoyang/mygit/MyBlog/app/main/views.py', reloading
+2017-08-24 20:04:46,484 : INFO : _internal : _log :  * Restarting with stat
+2017-08-24 20:04:47,013 : WARNING : _internal : _log :  * Debugger is active!
+2017-08-24 20:04:47,013 : INFO : _internal : _log :  * Debugger PIN: 269-707-563
+2017-08-24 20:04:53,670 : INFO : _internal : _log : 127.0.0.1 - - [24/Aug/2017 20:04:53] "GET / HTTP/1.1" 200 -
+2017-08-24 20:04:54,142 : INFO : _internal : _log : 127.0.0.1 - - [24/Aug/2017 20:04:54] "GET /favicon.ico HTTP/1.1" 404 -
+2017-08-24 20:04:55,589 : INFO : _internal : _log : 127.0.0.1 - - [24/Aug/2017 20:04:55] "GET /manage-blog HTTP/1.1" 200 -
+2017-08-24 20:04:57,363 : INFO : _internal : _log : 127.0.0.1 - - [24/Aug/2017 20:04:57] "GET / HTTP/1.1" 200 -
+2017-08-24 20:05:10,698 : INFO : _internal : _log : 127.0.0.1 - - [24/Aug/2017 20:05:10] "GET /manage-blog HTTP/1.1" 200 -
+2017-08-24 20:05:12,206 : INFO : _internal : _log : 127.0.0.1 - - [24/Aug/2017 20:05:12] "GET /write-blog HTTP/1.1" 200 -
+2017-08-24 20:05:34,599 : INFO : views : upload_img : ImmutableMultiDict([('file', <FileStorage: 'blobid1503576330000.jpg' ('image/jpeg')>)])
+2017-08-24 20:05:34,868 : INFO : views : upload_img : http://zuoyang-bucket.oss-cn-beijing.aliyuncs.com/blobid1503576330000.jpg
+2017-08-24 20:05:34,887 : INFO : _internal : _log : 127.0.0.1 - - [24/Aug/2017 20:05:34] "POST /upload_img HTTP/1.1" 500 -
+2017-08-24 20:05:55,868 : INFO : _internal : _log :  * Detected change in '/home/xuzuoyang/mygit/MyBlog/app/main/views.py', reloading
+2017-08-24 20:05:55,972 : INFO : _internal : _log :  * Restarting with stat
+2017-08-24 20:05:56,492 : WARNING : _internal : _log :  * Debugger is active!
+2017-08-24 20:05:56,492 : INFO : _internal : _log :  * Debugger PIN: 269-707-563
+2017-08-24 20:06:08,992 : INFO : views : upload_img : ImmutableMultiDict([('file', <FileStorage: 'blobid1503576367686.jpg' ('image/jpeg')>)])
+2017-08-24 20:06:09,254 : INFO : views : upload_img : http://zuoyang-bucket.oss-cn-beijing.aliyuncs.com/blobid1503576367686.jpg
+2017-08-24 20:06:09,255 : INFO : views : upload_img : http://zuoyang-bucket.oss-cn-beijing.aliyuncs.com/blobid1503576367686.jpg?Signature=Kt8KmXEE2ycn9U2LBKjL19unjgc%3D&OSSAccessKeyId=LTAIgWiYz3iim0Ox&Expires=1818936369
+2017-08-24 20:06:09,258 : INFO : _internal : _log : 127.0.0.1 - - [24/Aug/2017 20:06:09] "POST /upload_img HTTP/1.1" 200 -
+2017-08-24 20:06:14,003 : INFO : _internal : _log : 127.0.0.1 - - [24/Aug/2017 20:06:14] "POST /write-blog HTTP/1.1" 200 -
+2017-08-24 20:06:14,073 : INFO : _internal : _log : 127.0.0.1 - - [24/Aug/2017 20:06:14] "GET /manage-blog HTTP/1.1" 200 -
+2017-08-24 20:06:16,575 : INFO : _internal : _log : 127.0.0.1 - - [24/Aug/2017 20:06:16] "GET / HTTP/1.1" 200 -
+2017-08-24 20:06:48,360 : INFO : _internal : _log : 127.0.0.1 - - [24/Aug/2017 20:06:48] "GET /manage-blog HTTP/1.1" 200 -
+2017-08-24 20:06:54,895 : INFO : _internal : _log : 127.0.0.1 - - [24/Aug/2017 20:06:54] "GET /edit/117 HTTP/1.1" 200 -
+2017-08-24 20:07:33,177 : INFO : views : upload_img : ImmutableMultiDict([('file', <FileStorage: 'blobid1503576434574.png' ('image/png')>)])
+2017-08-24 20:07:33,410 : INFO : views : upload_img : http://zuoyang-bucket.oss-cn-beijing.aliyuncs.com/blobid1503576434574.png
+2017-08-24 20:07:33,411 : INFO : views : upload_img : http://zuoyang-bucket.oss-cn-beijing.aliyuncs.com/blobid1503576434574.png?Signature=uaq8YSgIiexFPWWxIi9NITX%2FwFs%3D&OSSAccessKeyId=LTAIgWiYz3iim0Ox&Expires=1818936453
+2017-08-24 20:07:33,415 : INFO : _internal : _log : 127.0.0.1 - - [24/Aug/2017 20:07:33] "POST /upload_img HTTP/1.1" 200 -
+2017-08-24 20:07:39,021 : INFO : _internal : _log : 127.0.0.1 - - [24/Aug/2017 20:07:39] "POST /edit/117 HTTP/1.1" 200 -
+2017-08-24 20:07:39,073 : INFO : _internal : _log : 127.0.0.1 - - [24/Aug/2017 20:07:39] "GET /manage-blog HTTP/1.1" 200 -
+2017-08-24 20:07:40,981 : INFO : _internal : _log : 127.0.0.1 - - [24/Aug/2017 20:07:40] "GET / HTTP/1.1" 200 -
+2017-08-24 22:08:28,309 : INFO : _internal : _log :  * Running on http://127.0.0.1:5000/ (Press CTRL+C to quit)
+2017-08-24 22:08:28,310 : INFO : _internal : _log :  * Restarting with stat
+2017-08-24 22:08:28,821 : WARNING : _internal : _log :  * Debugger is active!
+2017-08-24 22:08:28,822 : INFO : _internal : _log :  * Debugger PIN: 269-707-563
+2017-08-24 22:08:41,221 : INFO : _internal : _log : 127.0.0.1 - - [24/Aug/2017 22:08:41] "GET / HTTP/1.1" 200 -
+2017-08-24 22:08:42,634 : INFO : _internal : _log : 127.0.0.1 - - [24/Aug/2017 22:08:42] "GET /manage-blog HTTP/1.1" 200 -
+2017-08-24 22:08:44,108 : INFO : _internal : _log : 127.0.0.1 - - [24/Aug/2017 22:08:44] "GET /write-blog HTTP/1.1" 200 -
+2017-08-24 22:09:08,168 : INFO : views : upload_img : Ready to upload image: blobid1503583739750.jpg
+2017-08-24 22:09:08,174 : INFO : _internal : _log : 127.0.0.1 - - [24/Aug/2017 22:09:08] "POST /upload_img HTTP/1.1" 500 -
+2017-08-24 22:09:48,067 : INFO : _internal : _log :  * Detected change in '/home/xuzuoyang/mygit/MyBlog/app/utils/file_manage.py', reloading
+2017-08-24 22:09:48,158 : INFO : _internal : _log :  * Restarting with stat
+2017-08-24 22:09:48,667 : WARNING : _internal : _log :  * Debugger is active!
+2017-08-24 22:09:48,667 : INFO : _internal : _log :  * Debugger PIN: 269-707-563
+2017-08-24 22:09:52,007 : INFO : _internal : _log : 127.0.0.1 - - [24/Aug/2017 22:09:52] "GET /manage-blog HTTP/1.1" 200 -
+2017-08-24 22:09:53,167 : INFO : _internal : _log : 127.0.0.1 - - [24/Aug/2017 22:09:53] "GET /write-blog HTTP/1.1" 200 -
+2017-08-24 22:10:06,078 : INFO : views : upload_img : Ready to upload image: blobid1503583800692.jpg
+2017-08-24 22:10:06,368 : INFO : _internal : _log : 127.0.0.1 - - [24/Aug/2017 22:10:06] "POST /upload_img HTTP/1.1" 200 -
+2017-08-24 22:10:11,393 : INFO : _internal : _log : 127.0.0.1 - - [24/Aug/2017 22:10:11] "POST /write-blog HTTP/1.1" 200 -
+2017-08-24 22:10:11,444 : INFO : _internal : _log : 127.0.0.1 - - [24/Aug/2017 22:10:11] "GET /manage-blog HTTP/1.1" 200 -
+2017-08-24 22:10:13,841 : INFO : _internal : _log : 127.0.0.1 - - [24/Aug/2017 22:10:13] "GET / HTTP/1.1" 200 -

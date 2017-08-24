@@ -1,4 +1,4 @@
-import logging, json
+import logging, json, oss2
 from enum import Enum
 from .. import db
 from . import main
@@ -7,6 +7,7 @@ from ..models import User, Post, Permission, Category, Comment, Tag, Tagging, Me
 from ..decorators import permission_required, admin_required
 from flask_login import login_required, current_user
 from flask import render_template, redirect, url_for, current_app, request, abort, jsonify
+from app.utils.file_manage import OssClient
 
 logger = logging.getLogger('root')
 
@@ -265,3 +266,14 @@ def delete_blog(blog_id):
     post = Post.query.filter_by(id=blog_id).first_or_404()
     db.session.delete(post)
     return redirect(url_for('main.manage_blog'))
+
+
+@main.route('/upload_img', methods=['POST'])
+@login_required
+@admin_required
+def upload_img():
+    img = request.files['file']
+    logging.info('Ready to upload image: {}'.format(img.filename))
+    oc = OssClient()
+    location = oc.upload_img(file=img)
+    return jsonify(location=location)
