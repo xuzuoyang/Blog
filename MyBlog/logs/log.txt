@@ -2044,3 +2044,775 @@
 2017-08-24 22:10:11,393 : INFO : _internal : _log : 127.0.0.1 - - [24/Aug/2017 22:10:11] "POST /write-blog HTTP/1.1" 200 -
 2017-08-24 22:10:11,444 : INFO : _internal : _log : 127.0.0.1 - - [24/Aug/2017 22:10:11] "GET /manage-blog HTTP/1.1" 200 -
 2017-08-24 22:10:13,841 : INFO : _internal : _log : 127.0.0.1 - - [24/Aug/2017 22:10:13] "GET / HTTP/1.1" 200 -
+2017-08-25 10:45:24,883 : INFO : _internal : _log :  * Running on http://127.0.0.1:5000/ (Press CTRL+C to quit)
+2017-08-25 10:45:24,883 : INFO : _internal : _log :  * Restarting with stat
+2017-08-25 10:45:25,385 : WARNING : _internal : _log :  * Debugger is active!
+2017-08-25 10:45:25,385 : INFO : _internal : _log :  * Debugger PIN: 269-707-563
+2017-08-25 10:45:33,786 : INFO : _internal : _log : 127.0.0.1 - - [25/Aug/2017 10:45:33] "GET / HTTP/1.1" 200 -
+2017-08-25 10:45:33,798 : INFO : _internal : _log : 127.0.0.1 - - [25/Aug/2017 10:45:33] "GET /static/css/bootstrap.min.css HTTP/1.1" 304 -
+2017-08-25 10:45:33,800 : INFO : _internal : _log : 127.0.0.1 - - [25/Aug/2017 10:45:33] "GET /static/css/carousel.css HTTP/1.1" 200 -
+2017-08-25 10:45:33,808 : INFO : _internal : _log : 127.0.0.1 - - [25/Aug/2017 10:45:33] "GET /static/font-awesome-4.7.0/css/font-awesome.min.css HTTP/1.1" 304 -
+2017-08-25 10:45:33,858 : INFO : _internal : _log : 127.0.0.1 - - [25/Aug/2017 10:45:33] "GET /static/pics/land.jpg HTTP/1.1" 304 -
+2017-08-25 10:45:33,860 : INFO : _internal : _log : 127.0.0.1 - - [25/Aug/2017 10:45:33] "GET /static/pics/mountain.jpg HTTP/1.1" 304 -
+2017-08-25 10:45:33,862 : INFO : _internal : _log : 127.0.0.1 - - [25/Aug/2017 10:45:33] "GET /static/pics/sunset.jpg HTTP/1.1" 304 -
+2017-08-25 10:45:33,956 : INFO : _internal : _log : 127.0.0.1 - - [25/Aug/2017 10:45:33] "GET /static/font-awesome-4.7.0/fonts/fontawesome-webfont.woff2?v=4.7.0 HTTP/1.1" 304 -
+2017-08-25 10:45:43,497 : INFO : _internal : _log : 127.0.0.1 - - [25/Aug/2017 10:45:43] "GET /about HTTP/1.1" 200 -
+2017-08-25 10:45:43,536 : INFO : _internal : _log : 127.0.0.1 - - [25/Aug/2017 10:45:43] "GET /static/pics/g2.jpg HTTP/1.1" 200 -
+2017-08-25 10:45:47,834 : INFO : _internal : _log : 127.0.0.1 - - [25/Aug/2017 10:45:47] "GET / HTTP/1.1" 200 -
+2017-08-25 10:45:51,703 : INFO : _internal : _log : 127.0.0.1 - - [25/Aug/2017 10:45:51] "GET /blog/115 HTTP/1.1" 200 -
+2017-08-25 10:46:25,486 : INFO : _internal : _log :  * Running on http://127.0.0.1:5000/ (Press CTRL+C to quit)
+2017-08-25 10:46:25,487 : INFO : _internal : _log :  * Restarting with stat
+2017-08-25 10:46:25,968 : WARNING : _internal : _log :  * Debugger is active!
+2017-08-25 10:46:25,968 : INFO : _internal : _log :  * Debugger PIN: 269-707-563
+2017-08-25 10:46:34,341 : INFO : _internal : _log : 127.0.0.1 - - [25/Aug/2017 10:46:34] "GET /blog/115 HTTP/1.1" 200 -
+2017-08-25 10:46:34,349 : INFO : _internal : _log : 127.0.0.1 - - [25/Aug/2017 10:46:34] "GET /static/css/bootstrap.min.css HTTP/1.1" 200 -
+2017-08-25 10:46:34,372 : INFO : _internal : _log : 127.0.0.1 - - [25/Aug/2017 10:46:34] "GET /static/font-awesome-4.7.0/css/font-awesome.min.css HTTP/1.1" 200 -
+2017-08-25 10:46:34,374 : INFO : _internal : _log : 127.0.0.1 - - [25/Aug/2017 10:46:34] "GET /static/css/carousel.css HTTP/1.1" 200 -
+2017-08-25 10:46:34,375 : INFO : _internal : _log : 127.0.0.1 - - [25/Aug/2017 10:46:34] "GET /static/css/comment.css HTTP/1.1" 200 -
+2017-08-25 10:46:34,436 : INFO : _internal : _log : 127.0.0.1 - - [25/Aug/2017 10:46:34] "GET /static/font-awesome-4.7.0/fonts/fontawesome-webfont.woff2?v=4.7.0 HTTP/1.1" 200 -
+2017-08-25 10:46:55,597 : INFO : _internal : _log : 127.0.0.1 - - [25/Aug/2017 10:46:55] "GET /blog/115 HTTP/1.1" 200 -
+2017-08-25 10:47:07,150 : INFO : _internal : _log : 127.0.0.1 - - [25/Aug/2017 10:47:07] "GET / HTTP/1.1" 200 -
+2017-08-25 10:47:07,166 : INFO : _internal : _log : 127.0.0.1 - - [25/Aug/2017 10:47:07] "GET /static/pics/land.jpg HTTP/1.1" 200 -
+2017-08-25 10:47:07,177 : INFO : _internal : _log : 127.0.0.1 - - [25/Aug/2017 10:47:07] "GET /static/pics/mountain.jpg HTTP/1.1" 200 -
+2017-08-25 10:47:07,215 : INFO : _internal : _log : 127.0.0.1 - - [25/Aug/2017 10:47:07] "GET /static/pics/sunset.jpg HTTP/1.1" 200 -
+2017-08-25 10:47:17,563 : INFO : _internal : _log : 127.0.0.1 - - [25/Aug/2017 10:47:17] "GET /blog/115 HTTP/1.1" 200 -
+2017-08-25 10:48:08,334 : INFO : _internal : _log : 127.0.0.1 - - [25/Aug/2017 10:48:08] "POST /thumb-up/115 HTTP/1.1" 200 -
+2017-08-25 10:48:08,391 : INFO : _internal : _log : 127.0.0.1 - - [25/Aug/2017 10:48:08] "GET /blog/115 HTTP/1.1" 200 -
+2017-08-25 10:50:29,154 : INFO : _internal : _log : 127.0.0.1 - - [25/Aug/2017 10:50:29] "GET / HTTP/1.1" 200 -
+2017-08-25 10:51:06,868 : INFO : _internal : _log : 127.0.0.1 - - [25/Aug/2017 10:51:06] "GET /blog/115 HTTP/1.1" 200 -
+2017-08-25 10:55:04,963 : INFO : _internal : _log : 127.0.0.1 - - [25/Aug/2017 10:55:04] "GET / HTTP/1.1" 200 -
+2017-08-25 10:56:25,957 : INFO : _internal : _log : 127.0.0.1 - - [25/Aug/2017 10:56:25] "GET /blog/115 HTTP/1.1" 200 -
+2017-08-25 11:08:20,834 : INFO : _internal : _log : 127.0.0.1 - - [25/Aug/2017 11:08:20] "GET /blog/115 HTTP/1.1" 200 -
+2017-08-25 11:08:20,843 : INFO : _internal : _log : 127.0.0.1 - - [25/Aug/2017 11:08:20] "GET /static/css/mycomment.css HTTP/1.1" 200 -
+2017-08-25 11:08:22,519 : INFO : _internal : _log : 127.0.0.1 - - [25/Aug/2017 11:08:22] "GET /blog/115 HTTP/1.1" 200 -
+2017-08-25 11:08:29,715 : INFO : _internal : _log :  * Running on http://127.0.0.1:5000/ (Press CTRL+C to quit)
+2017-08-25 11:08:29,716 : INFO : _internal : _log :  * Restarting with stat
+2017-08-25 11:08:30,200 : WARNING : _internal : _log :  * Debugger is active!
+2017-08-25 11:08:30,200 : INFO : _internal : _log :  * Debugger PIN: 269-707-563
+2017-08-25 11:08:39,840 : INFO : _internal : _log : 127.0.0.1 - - [25/Aug/2017 11:08:39] "GET /blog/115 HTTP/1.1" 200 -
+2017-08-25 11:08:39,849 : INFO : _internal : _log : 127.0.0.1 - - [25/Aug/2017 11:08:39] "GET /static/css/bootstrap.min.css HTTP/1.1" 200 -
+2017-08-25 11:08:39,852 : INFO : _internal : _log : 127.0.0.1 - - [25/Aug/2017 11:08:39] "GET /static/font-awesome-4.7.0/css/font-awesome.min.css HTTP/1.1" 200 -
+2017-08-25 11:08:39,854 : INFO : _internal : _log : 127.0.0.1 - - [25/Aug/2017 11:08:39] "GET /static/css/carousel.css HTTP/1.1" 200 -
+2017-08-25 11:08:39,857 : INFO : _internal : _log : 127.0.0.1 - - [25/Aug/2017 11:08:39] "GET /static/css/mycomment.css HTTP/1.1" 200 -
+2017-08-25 11:08:39,913 : INFO : _internal : _log : 127.0.0.1 - - [25/Aug/2017 11:08:39] "GET /static/font-awesome-4.7.0/fonts/fontawesome-webfont.woff2?v=4.7.0 HTTP/1.1" 200 -
+2017-08-25 11:09:30,603 : INFO : _internal : _log : 127.0.0.1 - - [25/Aug/2017 11:09:30] "GET /blog/115 HTTP/1.1" 200 -
+2017-08-25 12:09:51,286 : INFO : _internal : _log :  * Running on http://127.0.0.1:5000/ (Press CTRL+C to quit)
+2017-08-25 12:09:51,286 : INFO : _internal : _log :  * Restarting with stat
+2017-08-25 12:09:51,796 : WARNING : _internal : _log :  * Debugger is active!
+2017-08-25 12:09:51,797 : INFO : _internal : _log :  * Debugger PIN: 269-707-563
+2017-08-25 12:10:03,698 : INFO : _internal : _log : 127.0.0.1 - - [25/Aug/2017 12:10:03] "GET /blog/115 HTTP/1.1" 200 -
+2017-08-25 12:10:03,708 : INFO : _internal : _log : 127.0.0.1 - - [25/Aug/2017 12:10:03] "GET /static/css/bootstrap.min.css HTTP/1.1" 200 -
+2017-08-25 12:10:03,711 : INFO : _internal : _log : 127.0.0.1 - - [25/Aug/2017 12:10:03] "GET /static/font-awesome-4.7.0/css/font-awesome.min.css HTTP/1.1" 200 -
+2017-08-25 12:10:03,713 : INFO : _internal : _log : 127.0.0.1 - - [25/Aug/2017 12:10:03] "GET /static/css/carousel.css HTTP/1.1" 200 -
+2017-08-25 12:10:03,717 : INFO : _internal : _log : 127.0.0.1 - - [25/Aug/2017 12:10:03] "GET /static/css/mycomment.css HTTP/1.1" 200 -
+2017-08-25 12:10:03,773 : INFO : _internal : _log : 127.0.0.1 - - [25/Aug/2017 12:10:03] "GET /static/font-awesome-4.7.0/fonts/fontawesome-webfont.woff2?v=4.7.0 HTTP/1.1" 200 -
+2017-08-25 12:11:09,644 : INFO : _internal : _log :  * Running on http://127.0.0.1:5000/ (Press CTRL+C to quit)
+2017-08-25 12:11:09,645 : INFO : _internal : _log :  * Restarting with stat
+2017-08-25 12:11:10,152 : WARNING : _internal : _log :  * Debugger is active!
+2017-08-25 12:11:10,153 : INFO : _internal : _log :  * Debugger PIN: 269-707-563
+2017-08-25 12:11:18,031 : INFO : _internal : _log : 127.0.0.1 - - [25/Aug/2017 12:11:18] "GET /blog/115 HTTP/1.1" 200 -
+2017-08-25 12:11:18,038 : INFO : _internal : _log : 127.0.0.1 - - [25/Aug/2017 12:11:18] "GET /static/css/bootstrap.min.css HTTP/1.1" 200 -
+2017-08-25 12:11:18,040 : INFO : _internal : _log : 127.0.0.1 - - [25/Aug/2017 12:11:18] "GET /static/font-awesome-4.7.0/css/font-awesome.min.css HTTP/1.1" 200 -
+2017-08-25 12:11:18,042 : INFO : _internal : _log : 127.0.0.1 - - [25/Aug/2017 12:11:18] "GET /static/css/carousel.css HTTP/1.1" 200 -
+2017-08-25 12:11:18,044 : INFO : _internal : _log : 127.0.0.1 - - [25/Aug/2017 12:11:18] "GET /static/css/mycomment.css HTTP/1.1" 200 -
+2017-08-25 12:11:18,109 : INFO : _internal : _log : 127.0.0.1 - - [25/Aug/2017 12:11:18] "GET /static/font-awesome-4.7.0/fonts/fontawesome-webfont.woff2?v=4.7.0 HTTP/1.1" 200 -
+2017-08-25 12:15:09,249 : INFO : _internal : _log :  * Running on http://127.0.0.1:5000/ (Press CTRL+C to quit)
+2017-08-25 12:15:09,250 : INFO : _internal : _log :  * Restarting with stat
+2017-08-25 12:15:09,739 : WARNING : _internal : _log :  * Debugger is active!
+2017-08-25 12:15:09,739 : INFO : _internal : _log :  * Debugger PIN: 269-707-563
+2017-08-25 12:15:17,878 : INFO : _internal : _log : 127.0.0.1 - - [25/Aug/2017 12:15:17] "GET /blog/115 HTTP/1.1" 200 -
+2017-08-25 12:15:17,885 : INFO : _internal : _log : 127.0.0.1 - - [25/Aug/2017 12:15:17] "GET /static/css/bootstrap.min.css HTTP/1.1" 200 -
+2017-08-25 12:15:17,887 : INFO : _internal : _log : 127.0.0.1 - - [25/Aug/2017 12:15:17] "GET /static/font-awesome-4.7.0/css/font-awesome.min.css HTTP/1.1" 200 -
+2017-08-25 12:15:17,888 : INFO : _internal : _log : 127.0.0.1 - - [25/Aug/2017 12:15:17] "GET /static/css/carousel.css HTTP/1.1" 200 -
+2017-08-25 12:15:17,890 : INFO : _internal : _log : 127.0.0.1 - - [25/Aug/2017 12:15:17] "GET /static/css/mycomment.css HTTP/1.1" 200 -
+2017-08-25 12:15:17,949 : INFO : _internal : _log : 127.0.0.1 - - [25/Aug/2017 12:15:17] "GET /static/font-awesome-4.7.0/fonts/fontawesome-webfont.woff2?v=4.7.0 HTTP/1.1" 200 -
+2017-08-25 12:15:43,060 : INFO : _internal : _log :  * Running on http://127.0.0.1:5000/ (Press CTRL+C to quit)
+2017-08-25 12:15:43,060 : INFO : _internal : _log :  * Restarting with stat
+2017-08-25 12:15:43,544 : WARNING : _internal : _log :  * Debugger is active!
+2017-08-25 12:15:43,545 : INFO : _internal : _log :  * Debugger PIN: 269-707-563
+2017-08-25 12:15:50,782 : INFO : _internal : _log : 127.0.0.1 - - [25/Aug/2017 12:15:50] "GET /blog/115 HTTP/1.1" 200 -
+2017-08-25 12:15:50,791 : INFO : _internal : _log : 127.0.0.1 - - [25/Aug/2017 12:15:50] "GET /static/css/bootstrap.min.css HTTP/1.1" 200 -
+2017-08-25 12:15:50,793 : INFO : _internal : _log : 127.0.0.1 - - [25/Aug/2017 12:15:50] "GET /static/font-awesome-4.7.0/css/font-awesome.min.css HTTP/1.1" 200 -
+2017-08-25 12:15:50,794 : INFO : _internal : _log : 127.0.0.1 - - [25/Aug/2017 12:15:50] "GET /static/css/carousel.css HTTP/1.1" 200 -
+2017-08-25 12:15:50,797 : INFO : _internal : _log : 127.0.0.1 - - [25/Aug/2017 12:15:50] "GET /static/css/mycomment.css HTTP/1.1" 200 -
+2017-08-25 12:15:50,851 : INFO : _internal : _log : 127.0.0.1 - - [25/Aug/2017 12:15:50] "GET /static/font-awesome-4.7.0/fonts/fontawesome-webfont.woff2?v=4.7.0 HTTP/1.1" 200 -
+2017-08-25 12:31:14,438 : INFO : _internal : _log :  * Running on http://127.0.0.1:5000/ (Press CTRL+C to quit)
+2017-08-25 12:31:14,438 : INFO : _internal : _log :  * Restarting with stat
+2017-08-25 12:31:14,920 : WARNING : _internal : _log :  * Debugger is active!
+2017-08-25 12:31:14,920 : INFO : _internal : _log :  * Debugger PIN: 269-707-563
+2017-08-25 12:31:30,339 : INFO : _internal : _log : 127.0.0.1 - - [25/Aug/2017 12:31:30] "GET /blog/115 HTTP/1.1" 200 -
+2017-08-25 12:31:30,347 : INFO : _internal : _log : 127.0.0.1 - - [25/Aug/2017 12:31:30] "GET /static/css/bootstrap.min.css HTTP/1.1" 200 -
+2017-08-25 12:31:30,349 : INFO : _internal : _log : 127.0.0.1 - - [25/Aug/2017 12:31:30] "GET /static/font-awesome-4.7.0/css/font-awesome.min.css HTTP/1.1" 200 -
+2017-08-25 12:31:30,351 : INFO : _internal : _log : 127.0.0.1 - - [25/Aug/2017 12:31:30] "GET /static/css/carousel.css HTTP/1.1" 200 -
+2017-08-25 12:31:30,411 : INFO : _internal : _log : 127.0.0.1 - - [25/Aug/2017 12:31:30] "GET /static/font-awesome-4.7.0/fonts/fontawesome-webfont.woff2?v=4.7.0 HTTP/1.1" 200 -
+2017-08-25 12:43:52,816 : INFO : _internal : _log :  * Running on http://127.0.0.1:5000/ (Press CTRL+C to quit)
+2017-08-25 12:43:52,817 : INFO : _internal : _log :  * Restarting with stat
+2017-08-25 12:43:53,300 : WARNING : _internal : _log :  * Debugger is active!
+2017-08-25 12:43:53,301 : INFO : _internal : _log :  * Debugger PIN: 269-707-563
+2017-08-25 12:44:09,238 : INFO : _internal : _log : 127.0.0.1 - - [25/Aug/2017 12:44:09] "GET /blog/115 HTTP/1.1" 200 -
+2017-08-25 12:44:09,245 : INFO : _internal : _log : 127.0.0.1 - - [25/Aug/2017 12:44:09] "GET /static/css/bootstrap.min.css HTTP/1.1" 200 -
+2017-08-25 12:44:09,247 : INFO : _internal : _log : 127.0.0.1 - - [25/Aug/2017 12:44:09] "GET /static/font-awesome-4.7.0/css/font-awesome.min.css HTTP/1.1" 200 -
+2017-08-25 12:44:09,250 : INFO : _internal : _log : 127.0.0.1 - - [25/Aug/2017 12:44:09] "GET /static/css/carousel.css HTTP/1.1" 200 -
+2017-08-25 12:44:09,312 : INFO : _internal : _log : 127.0.0.1 - - [25/Aug/2017 12:44:09] "GET /static/font-awesome-4.7.0/fonts/fontawesome-webfont.woff2?v=4.7.0 HTTP/1.1" 200 -
+2017-08-25 12:44:52,252 : INFO : _internal : _log :  * Running on http://127.0.0.1:5000/ (Press CTRL+C to quit)
+2017-08-25 12:44:52,253 : INFO : _internal : _log :  * Restarting with stat
+2017-08-25 12:44:52,755 : WARNING : _internal : _log :  * Debugger is active!
+2017-08-25 12:44:52,755 : INFO : _internal : _log :  * Debugger PIN: 269-707-563
+2017-08-25 12:45:04,132 : INFO : _internal : _log : 127.0.0.1 - - [25/Aug/2017 12:45:04] "GET /blog/115 HTTP/1.1" 200 -
+2017-08-25 12:45:04,141 : INFO : _internal : _log : 127.0.0.1 - - [25/Aug/2017 12:45:04] "GET /static/css/bootstrap.min.css HTTP/1.1" 200 -
+2017-08-25 12:45:04,143 : INFO : _internal : _log : 127.0.0.1 - - [25/Aug/2017 12:45:04] "GET /static/font-awesome-4.7.0/css/font-awesome.min.css HTTP/1.1" 200 -
+2017-08-25 12:45:04,146 : INFO : _internal : _log : 127.0.0.1 - - [25/Aug/2017 12:45:04] "GET /static/css/carousel.css HTTP/1.1" 200 -
+2017-08-25 12:45:04,149 : INFO : _internal : _log : 127.0.0.1 - - [25/Aug/2017 12:45:04] "GET /static/css/mycomment.css HTTP/1.1" 200 -
+2017-08-25 12:45:04,208 : INFO : _internal : _log : 127.0.0.1 - - [25/Aug/2017 12:45:04] "GET /static/font-awesome-4.7.0/fonts/fontawesome-webfont.woff2?v=4.7.0 HTTP/1.1" 200 -
+2017-08-25 12:55:16,562 : INFO : _internal : _log :  * Running on http://127.0.0.1:5000/ (Press CTRL+C to quit)
+2017-08-25 12:55:16,562 : INFO : _internal : _log :  * Restarting with stat
+2017-08-25 12:55:17,052 : WARNING : _internal : _log :  * Debugger is active!
+2017-08-25 12:55:17,053 : INFO : _internal : _log :  * Debugger PIN: 269-707-563
+2017-08-25 12:55:52,129 : INFO : _internal : _log : 127.0.0.1 - - [25/Aug/2017 12:55:52] "GET /blog/115 HTTP/1.1" 200 -
+2017-08-25 12:55:52,139 : INFO : _internal : _log : 127.0.0.1 - - [25/Aug/2017 12:55:52] "GET /static/css/bootstrap.min.css HTTP/1.1" 200 -
+2017-08-25 12:55:52,142 : INFO : _internal : _log : 127.0.0.1 - - [25/Aug/2017 12:55:52] "GET /static/font-awesome-4.7.0/css/font-awesome.min.css HTTP/1.1" 200 -
+2017-08-25 12:55:52,144 : INFO : _internal : _log : 127.0.0.1 - - [25/Aug/2017 12:55:52] "GET /static/css/carousel.css HTTP/1.1" 200 -
+2017-08-25 12:55:52,147 : INFO : _internal : _log : 127.0.0.1 - - [25/Aug/2017 12:55:52] "GET /static/css/mycomment.css HTTP/1.1" 200 -
+2017-08-25 12:55:52,206 : INFO : _internal : _log : 127.0.0.1 - - [25/Aug/2017 12:55:52] "GET /static/font-awesome-4.7.0/fonts/fontawesome-webfont.woff2?v=4.7.0 HTTP/1.1" 200 -
+2017-08-25 12:57:10,233 : INFO : _internal : _log :  * Running on http://127.0.0.1:5000/ (Press CTRL+C to quit)
+2017-08-25 12:57:10,233 : INFO : _internal : _log :  * Restarting with stat
+2017-08-25 12:57:10,718 : WARNING : _internal : _log :  * Debugger is active!
+2017-08-25 12:57:10,719 : INFO : _internal : _log :  * Debugger PIN: 269-707-563
+2017-08-25 12:57:18,116 : INFO : _internal : _log : 127.0.0.1 - - [25/Aug/2017 12:57:18] "GET /blog/115 HTTP/1.1" 200 -
+2017-08-25 12:57:18,124 : INFO : _internal : _log : 127.0.0.1 - - [25/Aug/2017 12:57:18] "GET /static/css/bootstrap.min.css HTTP/1.1" 200 -
+2017-08-25 12:57:18,126 : INFO : _internal : _log : 127.0.0.1 - - [25/Aug/2017 12:57:18] "GET /static/font-awesome-4.7.0/css/font-awesome.min.css HTTP/1.1" 200 -
+2017-08-25 12:57:18,127 : INFO : _internal : _log : 127.0.0.1 - - [25/Aug/2017 12:57:18] "GET /static/css/carousel.css HTTP/1.1" 200 -
+2017-08-25 12:57:18,129 : INFO : _internal : _log : 127.0.0.1 - - [25/Aug/2017 12:57:18] "GET /static/css/mycomment.css HTTP/1.1" 200 -
+2017-08-25 12:57:18,196 : INFO : _internal : _log : 127.0.0.1 - - [25/Aug/2017 12:57:18] "GET /static/font-awesome-4.7.0/fonts/fontawesome-webfont.woff2?v=4.7.0 HTTP/1.1" 200 -
+2017-08-25 13:00:45,562 : INFO : _internal : _log :  * Running on http://127.0.0.1:5000/ (Press CTRL+C to quit)
+2017-08-25 13:00:45,563 : INFO : _internal : _log :  * Restarting with stat
+2017-08-25 13:00:46,050 : WARNING : _internal : _log :  * Debugger is active!
+2017-08-25 13:00:46,051 : INFO : _internal : _log :  * Debugger PIN: 269-707-563
+2017-08-25 13:01:07,389 : INFO : _internal : _log : 127.0.0.1 - - [25/Aug/2017 13:01:07] "GET /blog/115 HTTP/1.1" 200 -
+2017-08-25 13:01:07,398 : INFO : _internal : _log : 127.0.0.1 - - [25/Aug/2017 13:01:07] "GET /static/css/bootstrap.min.css HTTP/1.1" 200 -
+2017-08-25 13:01:07,400 : INFO : _internal : _log : 127.0.0.1 - - [25/Aug/2017 13:01:07] "GET /static/font-awesome-4.7.0/css/font-awesome.min.css HTTP/1.1" 200 -
+2017-08-25 13:01:07,401 : INFO : _internal : _log : 127.0.0.1 - - [25/Aug/2017 13:01:07] "GET /static/css/carousel.css HTTP/1.1" 200 -
+2017-08-25 13:01:07,403 : INFO : _internal : _log : 127.0.0.1 - - [25/Aug/2017 13:01:07] "GET /static/css/mycomment.css HTTP/1.1" 200 -
+2017-08-25 13:01:07,457 : INFO : _internal : _log : 127.0.0.1 - - [25/Aug/2017 13:01:07] "GET /static/font-awesome-4.7.0/fonts/fontawesome-webfont.woff2?v=4.7.0 HTTP/1.1" 200 -
+2017-08-25 13:02:52,336 : INFO : _internal : _log :  * Running on http://127.0.0.1:5000/ (Press CTRL+C to quit)
+2017-08-25 13:02:52,336 : INFO : _internal : _log :  * Restarting with stat
+2017-08-25 13:02:52,829 : WARNING : _internal : _log :  * Debugger is active!
+2017-08-25 13:02:52,829 : INFO : _internal : _log :  * Debugger PIN: 269-707-563
+2017-08-25 13:03:20,252 : INFO : _internal : _log : 127.0.0.1 - - [25/Aug/2017 13:03:20] "GET /blog/115 HTTP/1.1" 200 -
+2017-08-25 13:03:20,261 : INFO : _internal : _log : 127.0.0.1 - - [25/Aug/2017 13:03:20] "GET /static/css/bootstrap.min.css HTTP/1.1" 200 -
+2017-08-25 13:03:20,263 : INFO : _internal : _log : 127.0.0.1 - - [25/Aug/2017 13:03:20] "GET /static/font-awesome-4.7.0/css/font-awesome.min.css HTTP/1.1" 200 -
+2017-08-25 13:03:20,265 : INFO : _internal : _log : 127.0.0.1 - - [25/Aug/2017 13:03:20] "GET /static/css/carousel.css HTTP/1.1" 200 -
+2017-08-25 13:03:20,267 : INFO : _internal : _log : 127.0.0.1 - - [25/Aug/2017 13:03:20] "GET /static/css/mycomment.css HTTP/1.1" 200 -
+2017-08-25 13:03:20,328 : INFO : _internal : _log : 127.0.0.1 - - [25/Aug/2017 13:03:20] "GET /static/font-awesome-4.7.0/fonts/fontawesome-webfont.woff2?v=4.7.0 HTTP/1.1" 200 -
+2017-08-25 13:05:21,293 : INFO : _internal : _log :  * Running on http://127.0.0.1:5000/ (Press CTRL+C to quit)
+2017-08-25 13:05:21,294 : INFO : _internal : _log :  * Restarting with stat
+2017-08-25 13:05:21,782 : WARNING : _internal : _log :  * Debugger is active!
+2017-08-25 13:05:21,782 : INFO : _internal : _log :  * Debugger PIN: 269-707-563
+2017-08-25 13:05:29,311 : INFO : _internal : _log : 127.0.0.1 - - [25/Aug/2017 13:05:29] "GET /blog/115 HTTP/1.1" 200 -
+2017-08-25 13:05:29,324 : INFO : _internal : _log : 127.0.0.1 - - [25/Aug/2017 13:05:29] "GET /static/css/bootstrap.min.css HTTP/1.1" 200 -
+2017-08-25 13:05:29,327 : INFO : _internal : _log : 127.0.0.1 - - [25/Aug/2017 13:05:29] "GET /static/font-awesome-4.7.0/css/font-awesome.min.css HTTP/1.1" 200 -
+2017-08-25 13:05:29,329 : INFO : _internal : _log : 127.0.0.1 - - [25/Aug/2017 13:05:29] "GET /static/css/carousel.css HTTP/1.1" 200 -
+2017-08-25 13:05:29,331 : INFO : _internal : _log : 127.0.0.1 - - [25/Aug/2017 13:05:29] "GET /static/css/mycomment.css HTTP/1.1" 200 -
+2017-08-25 13:05:29,389 : INFO : _internal : _log : 127.0.0.1 - - [25/Aug/2017 13:05:29] "GET /static/font-awesome-4.7.0/fonts/fontawesome-webfont.woff2?v=4.7.0 HTTP/1.1" 200 -
+2017-08-25 13:06:57,879 : INFO : _internal : _log :  * Running on http://127.0.0.1:5000/ (Press CTRL+C to quit)
+2017-08-25 13:06:57,880 : INFO : _internal : _log :  * Restarting with stat
+2017-08-25 13:06:58,364 : WARNING : _internal : _log :  * Debugger is active!
+2017-08-25 13:06:58,364 : INFO : _internal : _log :  * Debugger PIN: 269-707-563
+2017-08-25 13:07:06,820 : INFO : _internal : _log : 127.0.0.1 - - [25/Aug/2017 13:07:06] "GET /blog/115 HTTP/1.1" 200 -
+2017-08-25 13:07:06,827 : INFO : _internal : _log : 127.0.0.1 - - [25/Aug/2017 13:07:06] "GET /static/css/bootstrap.min.css HTTP/1.1" 200 -
+2017-08-25 13:07:06,830 : INFO : _internal : _log : 127.0.0.1 - - [25/Aug/2017 13:07:06] "GET /static/font-awesome-4.7.0/css/font-awesome.min.css HTTP/1.1" 200 -
+2017-08-25 13:07:06,832 : INFO : _internal : _log : 127.0.0.1 - - [25/Aug/2017 13:07:06] "GET /static/css/carousel.css HTTP/1.1" 200 -
+2017-08-25 13:07:06,835 : INFO : _internal : _log : 127.0.0.1 - - [25/Aug/2017 13:07:06] "GET /static/css/mycomment.css HTTP/1.1" 200 -
+2017-08-25 13:07:06,896 : INFO : _internal : _log : 127.0.0.1 - - [25/Aug/2017 13:07:06] "GET /static/font-awesome-4.7.0/fonts/fontawesome-webfont.woff2?v=4.7.0 HTTP/1.1" 200 -
+2017-08-25 13:11:42,405 : INFO : _internal : _log :  * Running on http://127.0.0.1:5000/ (Press CTRL+C to quit)
+2017-08-25 13:11:42,405 : INFO : _internal : _log :  * Restarting with stat
+2017-08-25 13:11:42,889 : WARNING : _internal : _log :  * Debugger is active!
+2017-08-25 13:11:42,890 : INFO : _internal : _log :  * Debugger PIN: 269-707-563
+2017-08-25 13:12:10,054 : INFO : _internal : _log : 127.0.0.1 - - [25/Aug/2017 13:12:10] "GET /blog/115 HTTP/1.1" 200 -
+2017-08-25 13:12:10,067 : INFO : _internal : _log : 127.0.0.1 - - [25/Aug/2017 13:12:10] "GET /static/css/bootstrap.min.css HTTP/1.1" 200 -
+2017-08-25 13:12:10,069 : INFO : _internal : _log : 127.0.0.1 - - [25/Aug/2017 13:12:10] "GET /static/font-awesome-4.7.0/css/font-awesome.min.css HTTP/1.1" 200 -
+2017-08-25 13:12:10,071 : INFO : _internal : _log : 127.0.0.1 - - [25/Aug/2017 13:12:10] "GET /static/css/carousel.css HTTP/1.1" 200 -
+2017-08-25 13:12:10,073 : INFO : _internal : _log : 127.0.0.1 - - [25/Aug/2017 13:12:10] "GET /static/css/mycomment.css HTTP/1.1" 200 -
+2017-08-25 13:12:10,121 : INFO : _internal : _log : 127.0.0.1 - - [25/Aug/2017 13:12:10] "GET /static/font-awesome-4.7.0/fonts/fontawesome-webfont.woff2?v=4.7.0 HTTP/1.1" 200 -
+2017-08-25 13:15:57,504 : INFO : _internal : _log :  * Running on http://127.0.0.1:5000/ (Press CTRL+C to quit)
+2017-08-25 13:15:57,505 : INFO : _internal : _log :  * Restarting with stat
+2017-08-25 13:15:58,011 : WARNING : _internal : _log :  * Debugger is active!
+2017-08-25 13:15:58,012 : INFO : _internal : _log :  * Debugger PIN: 269-707-563
+2017-08-25 13:16:06,589 : INFO : _internal : _log : 127.0.0.1 - - [25/Aug/2017 13:16:06] "GET /blog/115 HTTP/1.1" 200 -
+2017-08-25 13:16:06,596 : INFO : _internal : _log : 127.0.0.1 - - [25/Aug/2017 13:16:06] "GET /static/css/bootstrap.min.css HTTP/1.1" 200 -
+2017-08-25 13:16:06,598 : INFO : _internal : _log : 127.0.0.1 - - [25/Aug/2017 13:16:06] "GET /static/font-awesome-4.7.0/css/font-awesome.min.css HTTP/1.1" 200 -
+2017-08-25 13:16:06,600 : INFO : _internal : _log : 127.0.0.1 - - [25/Aug/2017 13:16:06] "GET /static/css/carousel.css HTTP/1.1" 200 -
+2017-08-25 13:16:06,602 : INFO : _internal : _log : 127.0.0.1 - - [25/Aug/2017 13:16:06] "GET /static/css/mycomment.css HTTP/1.1" 200 -
+2017-08-25 13:16:06,661 : INFO : _internal : _log : 127.0.0.1 - - [25/Aug/2017 13:16:06] "GET /static/font-awesome-4.7.0/fonts/fontawesome-webfont.woff2?v=4.7.0 HTTP/1.1" 200 -
+2017-08-25 13:20:54,783 : INFO : _internal : _log :  * Running on http://127.0.0.1:5000/ (Press CTRL+C to quit)
+2017-08-25 13:20:54,784 : INFO : _internal : _log :  * Restarting with stat
+2017-08-25 13:20:55,275 : WARNING : _internal : _log :  * Debugger is active!
+2017-08-25 13:20:55,275 : INFO : _internal : _log :  * Debugger PIN: 269-707-563
+2017-08-25 13:21:02,373 : INFO : _internal : _log : 127.0.0.1 - - [25/Aug/2017 13:21:02] "GET /blog/115 HTTP/1.1" 200 -
+2017-08-25 13:21:02,380 : INFO : _internal : _log : 127.0.0.1 - - [25/Aug/2017 13:21:02] "GET /static/css/bootstrap.min.css HTTP/1.1" 200 -
+2017-08-25 13:21:02,383 : INFO : _internal : _log : 127.0.0.1 - - [25/Aug/2017 13:21:02] "GET /static/font-awesome-4.7.0/css/font-awesome.min.css HTTP/1.1" 200 -
+2017-08-25 13:21:02,385 : INFO : _internal : _log : 127.0.0.1 - - [25/Aug/2017 13:21:02] "GET /static/css/carousel.css HTTP/1.1" 200 -
+2017-08-25 13:21:02,387 : INFO : _internal : _log : 127.0.0.1 - - [25/Aug/2017 13:21:02] "GET /static/css/mycomment.css HTTP/1.1" 200 -
+2017-08-25 13:21:02,442 : INFO : _internal : _log : 127.0.0.1 - - [25/Aug/2017 13:21:02] "GET /static/font-awesome-4.7.0/fonts/fontawesome-webfont.woff2?v=4.7.0 HTTP/1.1" 200 -
+2017-08-25 13:24:34,910 : INFO : _internal : _log :  * Running on http://127.0.0.1:5000/ (Press CTRL+C to quit)
+2017-08-25 13:24:34,911 : INFO : _internal : _log :  * Restarting with stat
+2017-08-25 13:24:35,397 : WARNING : _internal : _log :  * Debugger is active!
+2017-08-25 13:24:35,398 : INFO : _internal : _log :  * Debugger PIN: 269-707-563
+2017-08-25 13:24:48,375 : INFO : _internal : _log : 127.0.0.1 - - [25/Aug/2017 13:24:48] "GET /blog/115 HTTP/1.1" 200 -
+2017-08-25 13:24:48,384 : INFO : _internal : _log : 127.0.0.1 - - [25/Aug/2017 13:24:48] "GET /static/css/bootstrap.min.css HTTP/1.1" 200 -
+2017-08-25 13:24:48,385 : INFO : _internal : _log : 127.0.0.1 - - [25/Aug/2017 13:24:48] "GET /static/font-awesome-4.7.0/css/font-awesome.min.css HTTP/1.1" 200 -
+2017-08-25 13:24:48,387 : INFO : _internal : _log : 127.0.0.1 - - [25/Aug/2017 13:24:48] "GET /static/css/carousel.css HTTP/1.1" 200 -
+2017-08-25 13:24:48,389 : INFO : _internal : _log : 127.0.0.1 - - [25/Aug/2017 13:24:48] "GET /static/css/mycomment.css HTTP/1.1" 200 -
+2017-08-25 13:24:48,437 : INFO : _internal : _log : 127.0.0.1 - - [25/Aug/2017 13:24:48] "GET /static/font-awesome-4.7.0/fonts/fontawesome-webfont.woff2?v=4.7.0 HTTP/1.1" 200 -
+2017-08-25 13:32:25,982 : INFO : _internal : _log :  * Running on http://127.0.0.1:5000/ (Press CTRL+C to quit)
+2017-08-25 13:32:25,982 : INFO : _internal : _log :  * Restarting with stat
+2017-08-25 13:32:26,469 : WARNING : _internal : _log :  * Debugger is active!
+2017-08-25 13:32:26,469 : INFO : _internal : _log :  * Debugger PIN: 269-707-563
+2017-08-25 13:32:41,607 : INFO : _internal : _log : 127.0.0.1 - - [25/Aug/2017 13:32:41] "GET /blog/115 HTTP/1.1" 200 -
+2017-08-25 13:32:41,614 : INFO : _internal : _log : 127.0.0.1 - - [25/Aug/2017 13:32:41] "GET /static/css/bootstrap.min.css HTTP/1.1" 200 -
+2017-08-25 13:32:41,616 : INFO : _internal : _log : 127.0.0.1 - - [25/Aug/2017 13:32:41] "GET /static/font-awesome-4.7.0/css/font-awesome.min.css HTTP/1.1" 200 -
+2017-08-25 13:32:41,619 : INFO : _internal : _log : 127.0.0.1 - - [25/Aug/2017 13:32:41] "GET /static/css/carousel.css HTTP/1.1" 200 -
+2017-08-25 13:32:41,622 : INFO : _internal : _log : 127.0.0.1 - - [25/Aug/2017 13:32:41] "GET /static/css/mycomment.css HTTP/1.1" 200 -
+2017-08-25 13:32:41,673 : INFO : _internal : _log : 127.0.0.1 - - [25/Aug/2017 13:32:41] "GET /static/font-awesome-4.7.0/fonts/fontawesome-webfont.woff2?v=4.7.0 HTTP/1.1" 200 -
+2017-08-25 13:33:11,029 : INFO : _internal : _log :  * Running on http://127.0.0.1:5000/ (Press CTRL+C to quit)
+2017-08-25 13:33:11,029 : INFO : _internal : _log :  * Restarting with stat
+2017-08-25 13:33:11,519 : WARNING : _internal : _log :  * Debugger is active!
+2017-08-25 13:33:11,520 : INFO : _internal : _log :  * Debugger PIN: 269-707-563
+2017-08-25 13:33:20,498 : INFO : _internal : _log : 127.0.0.1 - - [25/Aug/2017 13:33:20] "GET /blog/115 HTTP/1.1" 200 -
+2017-08-25 13:33:20,507 : INFO : _internal : _log : 127.0.0.1 - - [25/Aug/2017 13:33:20] "GET /static/css/bootstrap.min.css HTTP/1.1" 200 -
+2017-08-25 13:33:20,510 : INFO : _internal : _log : 127.0.0.1 - - [25/Aug/2017 13:33:20] "GET /static/font-awesome-4.7.0/css/font-awesome.min.css HTTP/1.1" 200 -
+2017-08-25 13:33:20,512 : INFO : _internal : _log : 127.0.0.1 - - [25/Aug/2017 13:33:20] "GET /static/css/carousel.css HTTP/1.1" 200 -
+2017-08-25 13:33:20,515 : INFO : _internal : _log : 127.0.0.1 - - [25/Aug/2017 13:33:20] "GET /static/css/mycomment.css HTTP/1.1" 200 -
+2017-08-25 13:33:20,571 : INFO : _internal : _log : 127.0.0.1 - - [25/Aug/2017 13:33:20] "GET /static/font-awesome-4.7.0/fonts/fontawesome-webfont.woff2?v=4.7.0 HTTP/1.1" 200 -
+2017-08-25 13:33:29,216 : INFO : _internal : _log : 127.0.0.1 - - [25/Aug/2017 13:33:29] "GET /blog/115 HTTP/1.1" 200 -
+2017-08-25 13:33:32,190 : INFO : _internal : _log : 127.0.0.1 - - [25/Aug/2017 13:33:32] "GET /blog/115 HTTP/1.1" 200 -
+2017-08-25 13:38:58,034 : INFO : _internal : _log :  * Running on http://127.0.0.1:5000/ (Press CTRL+C to quit)
+2017-08-25 13:38:58,035 : INFO : _internal : _log :  * Restarting with stat
+2017-08-25 13:38:58,528 : WARNING : _internal : _log :  * Debugger is active!
+2017-08-25 13:38:58,528 : INFO : _internal : _log :  * Debugger PIN: 269-707-563
+2017-08-25 13:39:12,206 : INFO : _internal : _log : 127.0.0.1 - - [25/Aug/2017 13:39:12] "GET /blog/115 HTTP/1.1" 200 -
+2017-08-25 13:39:12,215 : INFO : _internal : _log : 127.0.0.1 - - [25/Aug/2017 13:39:12] "GET /static/css/bootstrap.min.css HTTP/1.1" 200 -
+2017-08-25 13:39:12,221 : INFO : _internal : _log : 127.0.0.1 - - [25/Aug/2017 13:39:12] "GET /static/font-awesome-4.7.0/css/font-awesome.min.css HTTP/1.1" 200 -
+2017-08-25 13:39:12,224 : INFO : _internal : _log : 127.0.0.1 - - [25/Aug/2017 13:39:12] "GET /static/css/carousel.css HTTP/1.1" 200 -
+2017-08-25 13:39:12,226 : INFO : _internal : _log : 127.0.0.1 - - [25/Aug/2017 13:39:12] "GET /static/css/mycomment.css HTTP/1.1" 200 -
+2017-08-25 13:39:12,257 : INFO : _internal : _log : 127.0.0.1 - - [25/Aug/2017 13:39:12] "GET /static/font-awesome-4.7.0/fonts/fontawesome-webfont.woff2?v=4.7.0 HTTP/1.1" 200 -
+2017-08-25 13:39:45,195 : INFO : _internal : _log :  * Running on http://127.0.0.1:5000/ (Press CTRL+C to quit)
+2017-08-25 13:39:45,195 : INFO : _internal : _log :  * Restarting with stat
+2017-08-25 13:39:45,686 : WARNING : _internal : _log :  * Debugger is active!
+2017-08-25 13:39:45,686 : INFO : _internal : _log :  * Debugger PIN: 269-707-563
+2017-08-25 13:40:17,522 : INFO : _internal : _log :  * Running on http://127.0.0.1:5000/ (Press CTRL+C to quit)
+2017-08-25 13:40:17,523 : INFO : _internal : _log :  * Restarting with stat
+2017-08-25 13:40:18,008 : WARNING : _internal : _log :  * Debugger is active!
+2017-08-25 13:40:18,008 : INFO : _internal : _log :  * Debugger PIN: 269-707-563
+2017-08-25 13:41:26,687 : INFO : _internal : _log : 127.0.0.1 - - [25/Aug/2017 13:41:26] "GET /blog/115 HTTP/1.1" 200 -
+2017-08-25 13:42:28,244 : INFO : _internal : _log : 127.0.0.1 - - [25/Aug/2017 13:42:28] "GET /blog/115 HTTP/1.1" 200 -
+2017-08-25 13:45:02,527 : INFO : _internal : _log :  * Running on http://127.0.0.1:5000/ (Press CTRL+C to quit)
+2017-08-25 13:45:02,528 : INFO : _internal : _log :  * Restarting with stat
+2017-08-25 13:45:03,025 : WARNING : _internal : _log :  * Debugger is active!
+2017-08-25 13:45:03,026 : INFO : _internal : _log :  * Debugger PIN: 269-707-563
+2017-08-25 13:45:05,905 : INFO : _internal : _log : 127.0.0.1 - - [25/Aug/2017 13:45:05] "GET /blog/115 HTTP/1.1" 200 -
+2017-08-25 13:45:14,172 : INFO : _internal : _log : 127.0.0.1 - - [25/Aug/2017 13:45:14] "GET /blog/115 HTTP/1.1" 200 -
+2017-08-25 13:45:14,180 : INFO : _internal : _log : 127.0.0.1 - - [25/Aug/2017 13:45:14] "GET /static/css/bootstrap.min.css HTTP/1.1" 200 -
+2017-08-25 13:45:14,184 : INFO : _internal : _log : 127.0.0.1 - - [25/Aug/2017 13:45:14] "GET /static/font-awesome-4.7.0/css/font-awesome.min.css HTTP/1.1" 200 -
+2017-08-25 13:45:14,185 : INFO : _internal : _log : 127.0.0.1 - - [25/Aug/2017 13:45:14] "GET /static/css/carousel.css HTTP/1.1" 200 -
+2017-08-25 13:45:14,187 : INFO : _internal : _log : 127.0.0.1 - - [25/Aug/2017 13:45:14] "GET /static/css/mycomment.css HTTP/1.1" 200 -
+2017-08-25 13:45:14,228 : INFO : _internal : _log : 127.0.0.1 - - [25/Aug/2017 13:45:14] "GET /static/font-awesome-4.7.0/fonts/fontawesome-webfont.woff2?v=4.7.0 HTTP/1.1" 200 -
+2017-08-25 13:48:14,530 : INFO : _internal : _log :  * Running on http://127.0.0.1:5000/ (Press CTRL+C to quit)
+2017-08-25 13:48:14,530 : INFO : _internal : _log :  * Restarting with stat
+2017-08-25 13:48:15,024 : WARNING : _internal : _log :  * Debugger is active!
+2017-08-25 13:48:15,024 : INFO : _internal : _log :  * Debugger PIN: 269-707-563
+2017-08-25 13:48:42,804 : INFO : _internal : _log : 127.0.0.1 - - [25/Aug/2017 13:48:42] "GET /blog/115 HTTP/1.1" 200 -
+2017-08-25 13:48:42,811 : INFO : _internal : _log : 127.0.0.1 - - [25/Aug/2017 13:48:42] "GET /static/css/bootstrap.min.css HTTP/1.1" 200 -
+2017-08-25 13:48:42,814 : INFO : _internal : _log : 127.0.0.1 - - [25/Aug/2017 13:48:42] "GET /static/font-awesome-4.7.0/css/font-awesome.min.css HTTP/1.1" 200 -
+2017-08-25 13:48:42,817 : INFO : _internal : _log : 127.0.0.1 - - [25/Aug/2017 13:48:42] "GET /static/css/carousel.css HTTP/1.1" 200 -
+2017-08-25 13:48:42,819 : INFO : _internal : _log : 127.0.0.1 - - [25/Aug/2017 13:48:42] "GET /static/css/mycomment.css HTTP/1.1" 200 -
+2017-08-25 13:48:42,872 : INFO : _internal : _log : 127.0.0.1 - - [25/Aug/2017 13:48:42] "GET /static/font-awesome-4.7.0/fonts/fontawesome-webfont.woff2?v=4.7.0 HTTP/1.1" 200 -
+2017-08-25 13:50:53,025 : INFO : _internal : _log :  * Running on http://127.0.0.1:5000/ (Press CTRL+C to quit)
+2017-08-25 13:50:53,026 : INFO : _internal : _log :  * Restarting with stat
+2017-08-25 13:50:53,521 : WARNING : _internal : _log :  * Debugger is active!
+2017-08-25 13:50:53,521 : INFO : _internal : _log :  * Debugger PIN: 269-707-563
+2017-08-25 13:51:12,000 : INFO : _internal : _log : 127.0.0.1 - - [25/Aug/2017 13:51:12] "GET /blog/115 HTTP/1.1" 200 -
+2017-08-25 13:51:12,010 : INFO : _internal : _log : 127.0.0.1 - - [25/Aug/2017 13:51:12] "GET /static/css/bootstrap.min.css HTTP/1.1" 200 -
+2017-08-25 13:51:12,012 : INFO : _internal : _log : 127.0.0.1 - - [25/Aug/2017 13:51:12] "GET /static/font-awesome-4.7.0/css/font-awesome.min.css HTTP/1.1" 200 -
+2017-08-25 13:51:12,015 : INFO : _internal : _log : 127.0.0.1 - - [25/Aug/2017 13:51:12] "GET /static/css/carousel.css HTTP/1.1" 200 -
+2017-08-25 13:51:12,017 : INFO : _internal : _log : 127.0.0.1 - - [25/Aug/2017 13:51:12] "GET /static/css/mycomment.css HTTP/1.1" 200 -
+2017-08-25 13:51:12,068 : INFO : _internal : _log : 127.0.0.1 - - [25/Aug/2017 13:51:12] "GET /static/font-awesome-4.7.0/fonts/fontawesome-webfont.woff2?v=4.7.0 HTTP/1.1" 200 -
+2017-08-25 13:51:21,200 : INFO : _internal : _log : 127.0.0.1 - - [25/Aug/2017 13:51:21] "GET /blog/115 HTTP/1.1" 200 -
+2017-08-25 13:51:21,208 : INFO : _internal : _log : 127.0.0.1 - - [25/Aug/2017 13:51:21] "GET /static/css/bootstrap.min.css HTTP/1.1" 200 -
+2017-08-25 13:51:21,211 : INFO : _internal : _log : 127.0.0.1 - - [25/Aug/2017 13:51:21] "GET /static/font-awesome-4.7.0/css/font-awesome.min.css HTTP/1.1" 200 -
+2017-08-25 13:51:21,214 : INFO : _internal : _log : 127.0.0.1 - - [25/Aug/2017 13:51:21] "GET /static/css/carousel.css HTTP/1.1" 200 -
+2017-08-25 13:51:21,217 : INFO : _internal : _log : 127.0.0.1 - - [25/Aug/2017 13:51:21] "GET /static/css/mycomment.css HTTP/1.1" 200 -
+2017-08-25 13:51:21,245 : INFO : _internal : _log : 127.0.0.1 - - [25/Aug/2017 13:51:21] "GET /static/font-awesome-4.7.0/fonts/fontawesome-webfont.woff2?v=4.7.0 HTTP/1.1" 200 -
+2017-08-25 13:58:37,507 : INFO : _internal : _log :  * Running on http://127.0.0.1:5000/ (Press CTRL+C to quit)
+2017-08-25 13:58:37,507 : INFO : _internal : _log :  * Restarting with stat
+2017-08-25 13:58:37,993 : WARNING : _internal : _log :  * Debugger is active!
+2017-08-25 13:58:37,993 : INFO : _internal : _log :  * Debugger PIN: 269-707-563
+2017-08-25 13:58:47,071 : INFO : _internal : _log : 127.0.0.1 - - [25/Aug/2017 13:58:47] "GET /blog/115 HTTP/1.1" 200 -
+2017-08-25 13:58:47,078 : INFO : _internal : _log : 127.0.0.1 - - [25/Aug/2017 13:58:47] "GET /static/css/bootstrap.min.css HTTP/1.1" 200 -
+2017-08-25 13:58:47,087 : INFO : _internal : _log : 127.0.0.1 - - [25/Aug/2017 13:58:47] "GET /static/font-awesome-4.7.0/css/font-awesome.min.css HTTP/1.1" 200 -
+2017-08-25 13:58:47,089 : INFO : _internal : _log : 127.0.0.1 - - [25/Aug/2017 13:58:47] "GET /static/css/carousel.css HTTP/1.1" 200 -
+2017-08-25 13:58:47,091 : INFO : _internal : _log : 127.0.0.1 - - [25/Aug/2017 13:58:47] "GET /static/css/mycomment.css HTTP/1.1" 200 -
+2017-08-25 13:58:47,139 : INFO : _internal : _log : 127.0.0.1 - - [25/Aug/2017 13:58:47] "GET /static/font-awesome-4.7.0/fonts/fontawesome-webfont.woff2?v=4.7.0 HTTP/1.1" 200 -
+2017-08-25 13:59:28,972 : INFO : _internal : _log :  * Running on http://127.0.0.1:5000/ (Press CTRL+C to quit)
+2017-08-25 13:59:28,973 : INFO : _internal : _log :  * Restarting with stat
+2017-08-25 13:59:29,470 : WARNING : _internal : _log :  * Debugger is active!
+2017-08-25 13:59:29,470 : INFO : _internal : _log :  * Debugger PIN: 269-707-563
+2017-08-25 13:59:41,665 : INFO : _internal : _log : 127.0.0.1 - - [25/Aug/2017 13:59:41] "GET /blog/115 HTTP/1.1" 200 -
+2017-08-25 13:59:41,673 : INFO : _internal : _log : 127.0.0.1 - - [25/Aug/2017 13:59:41] "GET /static/css/bootstrap.min.css HTTP/1.1" 200 -
+2017-08-25 13:59:41,675 : INFO : _internal : _log : 127.0.0.1 - - [25/Aug/2017 13:59:41] "GET /static/font-awesome-4.7.0/css/font-awesome.min.css HTTP/1.1" 200 -
+2017-08-25 13:59:41,677 : INFO : _internal : _log : 127.0.0.1 - - [25/Aug/2017 13:59:41] "GET /static/css/carousel.css HTTP/1.1" 200 -
+2017-08-25 13:59:41,680 : INFO : _internal : _log : 127.0.0.1 - - [25/Aug/2017 13:59:41] "GET /static/css/mycomment.css HTTP/1.1" 200 -
+2017-08-25 13:59:41,740 : INFO : _internal : _log : 127.0.0.1 - - [25/Aug/2017 13:59:41] "GET /static/font-awesome-4.7.0/fonts/fontawesome-webfont.woff2?v=4.7.0 HTTP/1.1" 200 -
+2017-08-25 14:01:33,836 : INFO : _internal : _log :  * Running on http://127.0.0.1:5000/ (Press CTRL+C to quit)
+2017-08-25 14:01:33,836 : INFO : _internal : _log :  * Restarting with stat
+2017-08-25 14:01:34,322 : WARNING : _internal : _log :  * Debugger is active!
+2017-08-25 14:01:34,322 : INFO : _internal : _log :  * Debugger PIN: 269-707-563
+2017-08-25 14:01:47,156 : INFO : _internal : _log : 127.0.0.1 - - [25/Aug/2017 14:01:47] "GET /blog/115 HTTP/1.1" 200 -
+2017-08-25 14:01:47,164 : INFO : _internal : _log : 127.0.0.1 - - [25/Aug/2017 14:01:47] "GET /static/css/bootstrap.min.css HTTP/1.1" 200 -
+2017-08-25 14:01:47,169 : INFO : _internal : _log : 127.0.0.1 - - [25/Aug/2017 14:01:47] "GET /static/font-awesome-4.7.0/css/font-awesome.min.css HTTP/1.1" 200 -
+2017-08-25 14:01:47,171 : INFO : _internal : _log : 127.0.0.1 - - [25/Aug/2017 14:01:47] "GET /static/css/carousel.css HTTP/1.1" 200 -
+2017-08-25 14:01:47,173 : INFO : _internal : _log : 127.0.0.1 - - [25/Aug/2017 14:01:47] "GET /static/css/mycomment.css HTTP/1.1" 200 -
+2017-08-25 14:01:47,227 : INFO : _internal : _log : 127.0.0.1 - - [25/Aug/2017 14:01:47] "GET /static/font-awesome-4.7.0/fonts/fontawesome-webfont.woff2?v=4.7.0 HTTP/1.1" 200 -
+2017-08-25 14:09:50,345 : INFO : _internal : _log :  * Running on http://127.0.0.1:5000/ (Press CTRL+C to quit)
+2017-08-25 14:09:50,345 : INFO : _internal : _log :  * Restarting with stat
+2017-08-25 14:09:50,829 : WARNING : _internal : _log :  * Debugger is active!
+2017-08-25 14:09:50,830 : INFO : _internal : _log :  * Debugger PIN: 269-707-563
+2017-08-25 14:09:57,250 : INFO : _internal : _log : 127.0.0.1 - - [25/Aug/2017 14:09:57] "GET /blog/115 HTTP/1.1" 200 -
+2017-08-25 14:09:57,258 : INFO : _internal : _log : 127.0.0.1 - - [25/Aug/2017 14:09:57] "GET /static/css/bootstrap.min.css HTTP/1.1" 200 -
+2017-08-25 14:09:57,261 : INFO : _internal : _log : 127.0.0.1 - - [25/Aug/2017 14:09:57] "GET /static/font-awesome-4.7.0/css/font-awesome.min.css HTTP/1.1" 200 -
+2017-08-25 14:09:57,263 : INFO : _internal : _log : 127.0.0.1 - - [25/Aug/2017 14:09:57] "GET /static/css/carousel.css HTTP/1.1" 200 -
+2017-08-25 14:09:57,265 : INFO : _internal : _log : 127.0.0.1 - - [25/Aug/2017 14:09:57] "GET /static/css/mycomment.css HTTP/1.1" 200 -
+2017-08-25 14:09:57,318 : INFO : _internal : _log : 127.0.0.1 - - [25/Aug/2017 14:09:57] "GET /static/font-awesome-4.7.0/fonts/fontawesome-webfont.woff2?v=4.7.0 HTTP/1.1" 200 -
+2017-08-25 14:10:24,666 : INFO : _internal : _log :  * Running on http://127.0.0.1:5000/ (Press CTRL+C to quit)
+2017-08-25 14:10:24,666 : INFO : _internal : _log :  * Restarting with stat
+2017-08-25 14:10:25,149 : WARNING : _internal : _log :  * Debugger is active!
+2017-08-25 14:10:25,150 : INFO : _internal : _log :  * Debugger PIN: 269-707-563
+2017-08-25 14:10:37,575 : INFO : _internal : _log : 127.0.0.1 - - [25/Aug/2017 14:10:37] "GET /blog/115 HTTP/1.1" 200 -
+2017-08-25 14:10:37,583 : INFO : _internal : _log : 127.0.0.1 - - [25/Aug/2017 14:10:37] "GET /static/css/bootstrap.min.css HTTP/1.1" 200 -
+2017-08-25 14:10:37,585 : INFO : _internal : _log : 127.0.0.1 - - [25/Aug/2017 14:10:37] "GET /static/font-awesome-4.7.0/css/font-awesome.min.css HTTP/1.1" 200 -
+2017-08-25 14:10:37,587 : INFO : _internal : _log : 127.0.0.1 - - [25/Aug/2017 14:10:37] "GET /static/css/carousel.css HTTP/1.1" 200 -
+2017-08-25 14:10:37,588 : INFO : _internal : _log : 127.0.0.1 - - [25/Aug/2017 14:10:37] "GET /static/css/mycomment.css HTTP/1.1" 200 -
+2017-08-25 14:10:37,649 : INFO : _internal : _log : 127.0.0.1 - - [25/Aug/2017 14:10:37] "GET /static/font-awesome-4.7.0/fonts/fontawesome-webfont.woff2?v=4.7.0 HTTP/1.1" 200 -
+2017-08-25 14:12:51,493 : INFO : _internal : _log :  * Running on http://127.0.0.1:5000/ (Press CTRL+C to quit)
+2017-08-25 14:12:51,493 : INFO : _internal : _log :  * Restarting with stat
+2017-08-25 14:12:51,978 : WARNING : _internal : _log :  * Debugger is active!
+2017-08-25 14:12:51,978 : INFO : _internal : _log :  * Debugger PIN: 269-707-563
+2017-08-25 14:13:14,561 : INFO : _internal : _log : 127.0.0.1 - - [25/Aug/2017 14:13:14] "GET /blog/115 HTTP/1.1" 200 -
+2017-08-25 14:13:14,569 : INFO : _internal : _log : 127.0.0.1 - - [25/Aug/2017 14:13:14] "GET /static/css/bootstrap.min.css HTTP/1.1" 200 -
+2017-08-25 14:13:14,571 : INFO : _internal : _log : 127.0.0.1 - - [25/Aug/2017 14:13:14] "GET /static/font-awesome-4.7.0/css/font-awesome.min.css HTTP/1.1" 200 -
+2017-08-25 14:13:14,573 : INFO : _internal : _log : 127.0.0.1 - - [25/Aug/2017 14:13:14] "GET /static/css/carousel.css HTTP/1.1" 200 -
+2017-08-25 14:13:14,576 : INFO : _internal : _log : 127.0.0.1 - - [25/Aug/2017 14:13:14] "GET /static/css/mycomment.css HTTP/1.1" 200 -
+2017-08-25 14:13:14,642 : INFO : _internal : _log : 127.0.0.1 - - [25/Aug/2017 14:13:14] "GET /static/font-awesome-4.7.0/fonts/fontawesome-webfont.woff2?v=4.7.0 HTTP/1.1" 200 -
+2017-08-25 14:13:33,045 : INFO : _internal : _log : 127.0.0.1 - - [25/Aug/2017 14:13:33] "GET /blog/115 HTTP/1.1" 200 -
+2017-08-25 14:35:03,004 : INFO : _internal : _log :  * Running on http://127.0.0.1:5000/ (Press CTRL+C to quit)
+2017-08-25 14:35:03,005 : INFO : _internal : _log :  * Restarting with stat
+2017-08-25 14:35:03,499 : WARNING : _internal : _log :  * Debugger is active!
+2017-08-25 14:35:03,499 : INFO : _internal : _log :  * Debugger PIN: 269-707-563
+2017-08-25 14:35:10,372 : INFO : _internal : _log : 127.0.0.1 - - [25/Aug/2017 14:35:10] "GET /blog/115 HTTP/1.1" 200 -
+2017-08-25 14:35:10,381 : INFO : _internal : _log : 127.0.0.1 - - [25/Aug/2017 14:35:10] "GET /static/css/bootstrap.min.css HTTP/1.1" 200 -
+2017-08-25 14:35:10,384 : INFO : _internal : _log : 127.0.0.1 - - [25/Aug/2017 14:35:10] "GET /static/font-awesome-4.7.0/css/font-awesome.min.css HTTP/1.1" 200 -
+2017-08-25 14:35:10,386 : INFO : _internal : _log : 127.0.0.1 - - [25/Aug/2017 14:35:10] "GET /static/css/carousel.css HTTP/1.1" 200 -
+2017-08-25 14:35:10,389 : INFO : _internal : _log : 127.0.0.1 - - [25/Aug/2017 14:35:10] "GET /static/css/mycomment.css HTTP/1.1" 200 -
+2017-08-25 14:35:10,443 : INFO : _internal : _log : 127.0.0.1 - - [25/Aug/2017 14:35:10] "GET /static/font-awesome-4.7.0/fonts/fontawesome-webfont.woff2?v=4.7.0 HTTP/1.1" 200 -
+2017-08-25 14:35:20,522 : INFO : _internal : _log : 127.0.0.1 - - [25/Aug/2017 14:35:20] "GET /blog/115 HTTP/1.1" 200 -
+2017-08-25 14:40:08,749 : INFO : _internal : _log :  * Running on http://127.0.0.1:5000/ (Press CTRL+C to quit)
+2017-08-25 14:40:08,750 : INFO : _internal : _log :  * Restarting with stat
+2017-08-25 14:40:09,242 : WARNING : _internal : _log :  * Debugger is active!
+2017-08-25 14:40:09,243 : INFO : _internal : _log :  * Debugger PIN: 269-707-563
+2017-08-25 14:40:15,876 : INFO : _internal : _log : 127.0.0.1 - - [25/Aug/2017 14:40:15] "GET /blog/115 HTTP/1.1" 200 -
+2017-08-25 14:40:15,883 : INFO : _internal : _log : 127.0.0.1 - - [25/Aug/2017 14:40:15] "GET /static/css/bootstrap.min.css HTTP/1.1" 200 -
+2017-08-25 14:40:15,886 : INFO : _internal : _log : 127.0.0.1 - - [25/Aug/2017 14:40:15] "GET /static/font-awesome-4.7.0/css/font-awesome.min.css HTTP/1.1" 200 -
+2017-08-25 14:40:15,888 : INFO : _internal : _log : 127.0.0.1 - - [25/Aug/2017 14:40:15] "GET /static/css/carousel.css HTTP/1.1" 200 -
+2017-08-25 14:40:15,891 : INFO : _internal : _log : 127.0.0.1 - - [25/Aug/2017 14:40:15] "GET /static/css/mycomment.css HTTP/1.1" 200 -
+2017-08-25 14:40:15,944 : INFO : _internal : _log : 127.0.0.1 - - [25/Aug/2017 14:40:15] "GET /static/font-awesome-4.7.0/fonts/fontawesome-webfont.woff2?v=4.7.0 HTTP/1.1" 200 -
+2017-08-25 14:41:03,285 : INFO : _internal : _log :  * Running on http://127.0.0.1:5000/ (Press CTRL+C to quit)
+2017-08-25 14:41:03,286 : INFO : _internal : _log :  * Restarting with stat
+2017-08-25 14:41:03,777 : WARNING : _internal : _log :  * Debugger is active!
+2017-08-25 14:41:03,777 : INFO : _internal : _log :  * Debugger PIN: 269-707-563
+2017-08-25 14:41:11,238 : INFO : _internal : _log : 127.0.0.1 - - [25/Aug/2017 14:41:11] "GET /blog/115 HTTP/1.1" 200 -
+2017-08-25 14:41:11,246 : INFO : _internal : _log : 127.0.0.1 - - [25/Aug/2017 14:41:11] "GET /static/css/bootstrap.min.css HTTP/1.1" 200 -
+2017-08-25 14:41:11,248 : INFO : _internal : _log : 127.0.0.1 - - [25/Aug/2017 14:41:11] "GET /static/font-awesome-4.7.0/css/font-awesome.min.css HTTP/1.1" 200 -
+2017-08-25 14:41:11,251 : INFO : _internal : _log : 127.0.0.1 - - [25/Aug/2017 14:41:11] "GET /static/css/carousel.css HTTP/1.1" 200 -
+2017-08-25 14:41:11,253 : INFO : _internal : _log : 127.0.0.1 - - [25/Aug/2017 14:41:11] "GET /static/css/mycomment.css HTTP/1.1" 200 -
+2017-08-25 14:41:11,306 : INFO : _internal : _log : 127.0.0.1 - - [25/Aug/2017 14:41:11] "GET /static/font-awesome-4.7.0/fonts/fontawesome-webfont.woff2?v=4.7.0 HTTP/1.1" 200 -
+2017-08-25 14:41:21,557 : INFO : _internal : _log : 127.0.0.1 - - [25/Aug/2017 14:41:21] "GET / HTTP/1.1" 200 -
+2017-08-25 14:41:21,566 : INFO : _internal : _log : 127.0.0.1 - - [25/Aug/2017 14:41:21] "GET /static/pics/land.jpg HTTP/1.1" 200 -
+2017-08-25 14:41:21,572 : INFO : _internal : _log : 127.0.0.1 - - [25/Aug/2017 14:41:21] "GET /static/pics/mountain.jpg HTTP/1.1" 200 -
+2017-08-25 14:41:21,611 : INFO : _internal : _log : 127.0.0.1 - - [25/Aug/2017 14:41:21] "GET /static/pics/sunset.jpg HTTP/1.1" 200 -
+2017-08-25 14:42:11,229 : INFO : _internal : _log : 127.0.0.1 - - [25/Aug/2017 14:42:11] "GET / HTTP/1.1" 200 -
+2017-08-25 14:42:11,237 : INFO : _internal : _log : 127.0.0.1 - - [25/Aug/2017 14:42:11] "GET /static/css/bootstrap.min.css HTTP/1.1" 200 -
+2017-08-25 14:42:11,239 : INFO : _internal : _log : 127.0.0.1 - - [25/Aug/2017 14:42:11] "GET /static/font-awesome-4.7.0/css/font-awesome.min.css HTTP/1.1" 200 -
+2017-08-25 14:42:11,241 : INFO : _internal : _log : 127.0.0.1 - - [25/Aug/2017 14:42:11] "GET /static/css/carousel.css HTTP/1.1" 200 -
+2017-08-25 14:42:11,296 : INFO : _internal : _log : 127.0.0.1 - - [25/Aug/2017 14:42:11] "GET /static/pics/land.jpg HTTP/1.1" 200 -
+2017-08-25 14:42:11,299 : INFO : _internal : _log : 127.0.0.1 - - [25/Aug/2017 14:42:11] "GET /static/pics/mountain.jpg HTTP/1.1" 200 -
+2017-08-25 14:42:11,301 : INFO : _internal : _log : 127.0.0.1 - - [25/Aug/2017 14:42:11] "GET /static/pics/sunset.jpg HTTP/1.1" 200 -
+2017-08-25 14:42:11,304 : INFO : _internal : _log : 127.0.0.1 - - [25/Aug/2017 14:42:11] "GET /static/font-awesome-4.7.0/fonts/fontawesome-webfont.woff2?v=4.7.0 HTTP/1.1" 200 -
+2017-08-25 14:42:19,851 : INFO : _internal : _log : 127.0.0.1 - - [25/Aug/2017 14:42:19] "GET /blog/115 HTTP/1.1" 200 -
+2017-08-25 14:42:19,859 : INFO : _internal : _log : 127.0.0.1 - - [25/Aug/2017 14:42:19] "GET /static/css/mycomment.css HTTP/1.1" 200 -
+2017-08-25 14:44:03,522 : INFO : _internal : _log : 127.0.0.1 - - [25/Aug/2017 14:44:03] "POST /blog/115 HTTP/1.1" 302 -
+2017-08-25 14:44:03,575 : INFO : _internal : _log : 127.0.0.1 - - [25/Aug/2017 14:44:03] "GET /blog/115 HTTP/1.1" 200 -
+2017-08-25 14:44:19,124 : INFO : _internal : _log : 127.0.0.1 - - [25/Aug/2017 14:44:19] "POST /blog/115 HTTP/1.1" 302 -
+2017-08-25 14:44:19,174 : INFO : _internal : _log : 127.0.0.1 - - [25/Aug/2017 14:44:19] "GET /blog/115 HTTP/1.1" 200 -
+2017-08-25 14:47:17,290 : INFO : _internal : _log :  * Running on http://127.0.0.1:5000/ (Press CTRL+C to quit)
+2017-08-25 14:47:17,290 : INFO : _internal : _log :  * Restarting with stat
+2017-08-25 14:47:17,804 : WARNING : _internal : _log :  * Debugger is active!
+2017-08-25 14:47:17,804 : INFO : _internal : _log :  * Debugger PIN: 269-707-563
+2017-08-25 14:47:25,579 : INFO : _internal : _log : 127.0.0.1 - - [25/Aug/2017 14:47:25] "GET /blog/115 HTTP/1.1" 200 -
+2017-08-25 14:47:25,587 : INFO : _internal : _log : 127.0.0.1 - - [25/Aug/2017 14:47:25] "GET /static/css/bootstrap.min.css HTTP/1.1" 200 -
+2017-08-25 14:47:25,591 : INFO : _internal : _log : 127.0.0.1 - - [25/Aug/2017 14:47:25] "GET /static/font-awesome-4.7.0/css/font-awesome.min.css HTTP/1.1" 200 -
+2017-08-25 14:47:25,595 : INFO : _internal : _log : 127.0.0.1 - - [25/Aug/2017 14:47:25] "GET /static/css/carousel.css HTTP/1.1" 200 -
+2017-08-25 14:47:25,597 : INFO : _internal : _log : 127.0.0.1 - - [25/Aug/2017 14:47:25] "GET /static/css/mycomment.css HTTP/1.1" 200 -
+2017-08-25 14:47:25,654 : INFO : _internal : _log : 127.0.0.1 - - [25/Aug/2017 14:47:25] "GET /static/font-awesome-4.7.0/fonts/fontawesome-webfont.woff2?v=4.7.0 HTTP/1.1" 200 -
+2017-08-25 14:48:58,493 : INFO : _internal : _log :  * Running on http://127.0.0.1:5000/ (Press CTRL+C to quit)
+2017-08-25 14:48:58,494 : INFO : _internal : _log :  * Restarting with stat
+2017-08-25 14:48:58,984 : WARNING : _internal : _log :  * Debugger is active!
+2017-08-25 14:48:58,984 : INFO : _internal : _log :  * Debugger PIN: 269-707-563
+2017-08-25 14:49:09,737 : INFO : _internal : _log : 127.0.0.1 - - [25/Aug/2017 14:49:09] "GET /blog/115 HTTP/1.1" 200 -
+2017-08-25 14:49:09,746 : INFO : _internal : _log : 127.0.0.1 - - [25/Aug/2017 14:49:09] "GET /static/css/bootstrap.min.css HTTP/1.1" 200 -
+2017-08-25 14:49:09,748 : INFO : _internal : _log : 127.0.0.1 - - [25/Aug/2017 14:49:09] "GET /static/font-awesome-4.7.0/css/font-awesome.min.css HTTP/1.1" 200 -
+2017-08-25 14:49:09,751 : INFO : _internal : _log : 127.0.0.1 - - [25/Aug/2017 14:49:09] "GET /static/css/carousel.css HTTP/1.1" 200 -
+2017-08-25 14:49:09,754 : INFO : _internal : _log : 127.0.0.1 - - [25/Aug/2017 14:49:09] "GET /static/css/mycomment.css HTTP/1.1" 200 -
+2017-08-25 14:49:09,818 : INFO : _internal : _log : 127.0.0.1 - - [25/Aug/2017 14:49:09] "GET /static/font-awesome-4.7.0/fonts/fontawesome-webfont.woff2?v=4.7.0 HTTP/1.1" 200 -
+2017-08-25 14:50:07,330 : INFO : _internal : _log :  * Running on http://127.0.0.1:5000/ (Press CTRL+C to quit)
+2017-08-25 14:50:07,330 : INFO : _internal : _log :  * Restarting with stat
+2017-08-25 14:50:07,825 : WARNING : _internal : _log :  * Debugger is active!
+2017-08-25 14:50:07,825 : INFO : _internal : _log :  * Debugger PIN: 269-707-563
+2017-08-25 14:50:17,036 : INFO : _internal : _log : 127.0.0.1 - - [25/Aug/2017 14:50:17] "GET /blog/115 HTTP/1.1" 200 -
+2017-08-25 14:50:17,049 : INFO : _internal : _log : 127.0.0.1 - - [25/Aug/2017 14:50:17] "GET /static/css/bootstrap.min.css HTTP/1.1" 200 -
+2017-08-25 14:50:17,051 : INFO : _internal : _log : 127.0.0.1 - - [25/Aug/2017 14:50:17] "GET /static/font-awesome-4.7.0/css/font-awesome.min.css HTTP/1.1" 200 -
+2017-08-25 14:50:17,054 : INFO : _internal : _log : 127.0.0.1 - - [25/Aug/2017 14:50:17] "GET /static/css/carousel.css HTTP/1.1" 200 -
+2017-08-25 14:50:17,056 : INFO : _internal : _log : 127.0.0.1 - - [25/Aug/2017 14:50:17] "GET /static/css/mycomment.css HTTP/1.1" 200 -
+2017-08-25 14:50:17,106 : INFO : _internal : _log : 127.0.0.1 - - [25/Aug/2017 14:50:17] "GET /static/font-awesome-4.7.0/fonts/fontawesome-webfont.woff2?v=4.7.0 HTTP/1.1" 200 -
+2017-08-25 14:50:50,845 : INFO : _internal : _log : 127.0.0.1 - - [25/Aug/2017 14:50:50] "GET /blog/115 HTTP/1.1" 200 -
+2017-08-25 14:51:21,087 : INFO : _internal : _log : 127.0.0.1 - - [25/Aug/2017 14:51:21] "GET /blog/115 HTTP/1.1" 200 -
+2017-08-25 14:52:37,084 : INFO : _internal : _log : 127.0.0.1 - - [25/Aug/2017 14:52:37] "GET /blog/115 HTTP/1.1" 200 -
+2017-08-25 14:53:25,681 : INFO : _internal : _log : 127.0.0.1 - - [25/Aug/2017 14:53:25] "GET /blog/115 HTTP/1.1" 200 -
+2017-08-25 14:54:19,174 : INFO : _internal : _log : 127.0.0.1 - - [25/Aug/2017 14:54:19] "GET /blog/115 HTTP/1.1" 200 -
+2017-08-25 14:54:20,915 : INFO : _internal : _log : 127.0.0.1 - - [25/Aug/2017 14:54:20] "GET /blog/115 HTTP/1.1" 200 -
+2017-08-25 14:58:13,575 : INFO : _internal : _log : 127.0.0.1 - - [25/Aug/2017 14:58:13] "GET /blog/115 HTTP/1.1" 200 -
+2017-08-25 15:08:28,119 : INFO : _internal : _log :  * Running on http://127.0.0.1:5000/ (Press CTRL+C to quit)
+2017-08-25 15:08:28,119 : INFO : _internal : _log :  * Restarting with stat
+2017-08-25 15:08:28,623 : WARNING : _internal : _log :  * Debugger is active!
+2017-08-25 15:08:28,623 : INFO : _internal : _log :  * Debugger PIN: 269-707-563
+2017-08-25 15:08:40,720 : INFO : _internal : _log : 127.0.0.1 - - [25/Aug/2017 15:08:40] "GET /blog/115 HTTP/1.1" 200 -
+2017-08-25 15:08:40,728 : INFO : _internal : _log : 127.0.0.1 - - [25/Aug/2017 15:08:40] "GET /static/css/bootstrap.min.css HTTP/1.1" 200 -
+2017-08-25 15:08:40,731 : INFO : _internal : _log : 127.0.0.1 - - [25/Aug/2017 15:08:40] "GET /static/font-awesome-4.7.0/css/font-awesome.min.css HTTP/1.1" 200 -
+2017-08-25 15:08:40,734 : INFO : _internal : _log : 127.0.0.1 - - [25/Aug/2017 15:08:40] "GET /static/css/carousel.css HTTP/1.1" 200 -
+2017-08-25 15:08:40,736 : INFO : _internal : _log : 127.0.0.1 - - [25/Aug/2017 15:08:40] "GET /static/css/mycomment.css HTTP/1.1" 200 -
+2017-08-25 15:08:40,796 : INFO : _internal : _log : 127.0.0.1 - - [25/Aug/2017 15:08:40] "GET /static/font-awesome-4.7.0/fonts/fontawesome-webfont.woff2?v=4.7.0 HTTP/1.1" 200 -
+2017-08-25 15:10:22,696 : INFO : _internal : _log :  * Running on http://127.0.0.1:5000/ (Press CTRL+C to quit)
+2017-08-25 15:10:22,697 : INFO : _internal : _log :  * Restarting with stat
+2017-08-25 15:10:23,190 : WARNING : _internal : _log :  * Debugger is active!
+2017-08-25 15:10:23,190 : INFO : _internal : _log :  * Debugger PIN: 269-707-563
+2017-08-25 15:10:30,049 : INFO : _internal : _log : 127.0.0.1 - - [25/Aug/2017 15:10:30] "GET /blog/115 HTTP/1.1" 200 -
+2017-08-25 15:10:30,057 : INFO : _internal : _log : 127.0.0.1 - - [25/Aug/2017 15:10:30] "GET /static/css/bootstrap.min.css HTTP/1.1" 200 -
+2017-08-25 15:10:30,059 : INFO : _internal : _log : 127.0.0.1 - - [25/Aug/2017 15:10:30] "GET /static/font-awesome-4.7.0/css/font-awesome.min.css HTTP/1.1" 200 -
+2017-08-25 15:10:30,061 : INFO : _internal : _log : 127.0.0.1 - - [25/Aug/2017 15:10:30] "GET /static/css/carousel.css HTTP/1.1" 200 -
+2017-08-25 15:10:30,063 : INFO : _internal : _log : 127.0.0.1 - - [25/Aug/2017 15:10:30] "GET /static/css/mycomment.css HTTP/1.1" 200 -
+2017-08-25 15:10:30,119 : INFO : _internal : _log : 127.0.0.1 - - [25/Aug/2017 15:10:30] "GET /static/font-awesome-4.7.0/fonts/fontawesome-webfont.woff2?v=4.7.0 HTTP/1.1" 200 -
+2017-08-25 15:10:41,049 : INFO : _internal : _log : 127.0.0.1 - - [25/Aug/2017 15:10:41] "GET /blog/115 HTTP/1.1" 200 -
+2017-08-25 15:11:54,769 : INFO : _internal : _log :  * Running on http://127.0.0.1:5000/ (Press CTRL+C to quit)
+2017-08-25 15:11:54,769 : INFO : _internal : _log :  * Restarting with stat
+2017-08-25 15:11:55,257 : WARNING : _internal : _log :  * Debugger is active!
+2017-08-25 15:11:55,257 : INFO : _internal : _log :  * Debugger PIN: 269-707-563
+2017-08-25 15:12:04,821 : INFO : _internal : _log : 127.0.0.1 - - [25/Aug/2017 15:12:04] "GET /blog/115 HTTP/1.1" 200 -
+2017-08-25 15:12:04,829 : INFO : _internal : _log : 127.0.0.1 - - [25/Aug/2017 15:12:04] "GET /static/css/bootstrap.min.css HTTP/1.1" 200 -
+2017-08-25 15:12:04,832 : INFO : _internal : _log : 127.0.0.1 - - [25/Aug/2017 15:12:04] "GET /static/font-awesome-4.7.0/css/font-awesome.min.css HTTP/1.1" 200 -
+2017-08-25 15:12:04,834 : INFO : _internal : _log : 127.0.0.1 - - [25/Aug/2017 15:12:04] "GET /static/css/carousel.css HTTP/1.1" 200 -
+2017-08-25 15:12:04,837 : INFO : _internal : _log : 127.0.0.1 - - [25/Aug/2017 15:12:04] "GET /static/css/mycomment.css HTTP/1.1" 200 -
+2017-08-25 15:12:04,896 : INFO : _internal : _log : 127.0.0.1 - - [25/Aug/2017 15:12:04] "GET /static/font-awesome-4.7.0/fonts/fontawesome-webfont.woff2?v=4.7.0 HTTP/1.1" 200 -
+2017-08-25 15:13:44,947 : INFO : _internal : _log : 127.0.0.1 - - [25/Aug/2017 15:13:44] "GET /blog/115 HTTP/1.1" 200 -
+2017-08-25 15:14:53,091 : INFO : _internal : _log :  * Running on http://127.0.0.1:5000/ (Press CTRL+C to quit)
+2017-08-25 15:14:53,092 : INFO : _internal : _log :  * Restarting with stat
+2017-08-25 15:14:53,585 : WARNING : _internal : _log :  * Debugger is active!
+2017-08-25 15:14:53,585 : INFO : _internal : _log :  * Debugger PIN: 269-707-563
+2017-08-25 15:15:05,923 : INFO : _internal : _log : 127.0.0.1 - - [25/Aug/2017 15:15:05] "GET /blog/115 HTTP/1.1" 200 -
+2017-08-25 15:15:05,931 : INFO : _internal : _log : 127.0.0.1 - - [25/Aug/2017 15:15:05] "GET /static/css/bootstrap.min.css HTTP/1.1" 200 -
+2017-08-25 15:15:05,933 : INFO : _internal : _log : 127.0.0.1 - - [25/Aug/2017 15:15:05] "GET /static/font-awesome-4.7.0/css/font-awesome.min.css HTTP/1.1" 200 -
+2017-08-25 15:15:05,935 : INFO : _internal : _log : 127.0.0.1 - - [25/Aug/2017 15:15:05] "GET /static/css/carousel.css HTTP/1.1" 200 -
+2017-08-25 15:15:05,937 : INFO : _internal : _log : 127.0.0.1 - - [25/Aug/2017 15:15:05] "GET /static/css/mycomment.css HTTP/1.1" 200 -
+2017-08-25 15:15:05,992 : INFO : _internal : _log : 127.0.0.1 - - [25/Aug/2017 15:15:05] "GET /static/font-awesome-4.7.0/fonts/fontawesome-webfont.woff2?v=4.7.0 HTTP/1.1" 200 -
+2017-08-25 15:15:53,016 : INFO : _internal : _log :  * Running on http://127.0.0.1:5000/ (Press CTRL+C to quit)
+2017-08-25 15:15:53,017 : INFO : _internal : _log :  * Restarting with stat
+2017-08-25 15:15:53,504 : WARNING : _internal : _log :  * Debugger is active!
+2017-08-25 15:15:53,504 : INFO : _internal : _log :  * Debugger PIN: 269-707-563
+2017-08-25 15:16:04,185 : INFO : _internal : _log : 127.0.0.1 - - [25/Aug/2017 15:16:04] "GET /blog/115 HTTP/1.1" 200 -
+2017-08-25 15:16:04,196 : INFO : _internal : _log : 127.0.0.1 - - [25/Aug/2017 15:16:04] "GET /static/css/bootstrap.min.css HTTP/1.1" 200 -
+2017-08-25 15:16:04,198 : INFO : _internal : _log : 127.0.0.1 - - [25/Aug/2017 15:16:04] "GET /static/font-awesome-4.7.0/css/font-awesome.min.css HTTP/1.1" 200 -
+2017-08-25 15:16:04,201 : INFO : _internal : _log : 127.0.0.1 - - [25/Aug/2017 15:16:04] "GET /static/css/carousel.css HTTP/1.1" 200 -
+2017-08-25 15:16:04,203 : INFO : _internal : _log : 127.0.0.1 - - [25/Aug/2017 15:16:04] "GET /static/css/mycomment.css HTTP/1.1" 200 -
+2017-08-25 15:16:04,257 : INFO : _internal : _log : 127.0.0.1 - - [25/Aug/2017 15:16:04] "GET /static/font-awesome-4.7.0/fonts/fontawesome-webfont.woff2?v=4.7.0 HTTP/1.1" 200 -
+2017-08-25 15:19:10,063 : INFO : _internal : _log : 127.0.0.1 - - [25/Aug/2017 15:19:10] "GET /blog/115 HTTP/1.1" 200 -
+2017-08-25 15:19:11,461 : INFO : _internal : _log : 127.0.0.1 - - [25/Aug/2017 15:19:11] "GET /blog/115 HTTP/1.1" 200 -
+2017-08-25 15:19:21,188 : INFO : _internal : _log : 127.0.0.1 - - [25/Aug/2017 15:19:21] "GET /blog/115 HTTP/1.1" 200 -
+2017-08-25 15:19:52,436 : INFO : _internal : _log : 127.0.0.1 - - [25/Aug/2017 15:19:52] "GET /blog/115 HTTP/1.1" 200 -
+2017-08-25 15:22:05,271 : INFO : _internal : _log :  * Running on http://127.0.0.1:5000/ (Press CTRL+C to quit)
+2017-08-25 15:22:05,271 : INFO : _internal : _log :  * Restarting with stat
+2017-08-25 15:22:05,762 : WARNING : _internal : _log :  * Debugger is active!
+2017-08-25 15:22:05,762 : INFO : _internal : _log :  * Debugger PIN: 269-707-563
+2017-08-25 15:22:14,282 : INFO : _internal : _log : 127.0.0.1 - - [25/Aug/2017 15:22:14] "GET /blog/115 HTTP/1.1" 200 -
+2017-08-25 15:22:14,290 : INFO : _internal : _log : 127.0.0.1 - - [25/Aug/2017 15:22:14] "GET /static/css/bootstrap.min.css HTTP/1.1" 200 -
+2017-08-25 15:22:14,293 : INFO : _internal : _log : 127.0.0.1 - - [25/Aug/2017 15:22:14] "GET /static/font-awesome-4.7.0/css/font-awesome.min.css HTTP/1.1" 200 -
+2017-08-25 15:22:14,295 : INFO : _internal : _log : 127.0.0.1 - - [25/Aug/2017 15:22:14] "GET /static/css/carousel.css HTTP/1.1" 200 -
+2017-08-25 15:22:14,298 : INFO : _internal : _log : 127.0.0.1 - - [25/Aug/2017 15:22:14] "GET /static/css/mycomment.css HTTP/1.1" 200 -
+2017-08-25 15:22:14,353 : INFO : _internal : _log : 127.0.0.1 - - [25/Aug/2017 15:22:14] "GET /static/font-awesome-4.7.0/fonts/fontawesome-webfont.woff2?v=4.7.0 HTTP/1.1" 200 -
+2017-08-25 15:24:13,370 : INFO : _internal : _log : 127.0.0.1 - - [25/Aug/2017 15:24:13] "GET /blog/115 HTTP/1.1" 200 -
+2017-08-25 15:24:14,665 : INFO : _internal : _log : 127.0.0.1 - - [25/Aug/2017 15:24:14] "GET /blog/115 HTTP/1.1" 200 -
+2017-08-25 15:26:29,386 : INFO : _internal : _log :  * Running on http://127.0.0.1:5000/ (Press CTRL+C to quit)
+2017-08-25 15:26:29,387 : INFO : _internal : _log :  * Restarting with stat
+2017-08-25 15:26:29,874 : WARNING : _internal : _log :  * Debugger is active!
+2017-08-25 15:26:29,874 : INFO : _internal : _log :  * Debugger PIN: 269-707-563
+2017-08-25 15:26:43,432 : INFO : _internal : _log : 127.0.0.1 - - [25/Aug/2017 15:26:43] "GET /blog/115 HTTP/1.1" 200 -
+2017-08-25 15:26:43,440 : INFO : _internal : _log : 127.0.0.1 - - [25/Aug/2017 15:26:43] "GET /static/css/bootstrap.min.css HTTP/1.1" 200 -
+2017-08-25 15:26:43,443 : INFO : _internal : _log : 127.0.0.1 - - [25/Aug/2017 15:26:43] "GET /static/font-awesome-4.7.0/css/font-awesome.min.css HTTP/1.1" 200 -
+2017-08-25 15:26:43,446 : INFO : _internal : _log : 127.0.0.1 - - [25/Aug/2017 15:26:43] "GET /static/css/carousel.css HTTP/1.1" 200 -
+2017-08-25 15:26:43,448 : INFO : _internal : _log : 127.0.0.1 - - [25/Aug/2017 15:26:43] "GET /static/css/mycomment.css HTTP/1.1" 200 -
+2017-08-25 15:26:43,503 : INFO : _internal : _log : 127.0.0.1 - - [25/Aug/2017 15:26:43] "GET /static/font-awesome-4.7.0/fonts/fontawesome-webfont.woff2?v=4.7.0 HTTP/1.1" 200 -
+2017-08-25 15:28:37,749 : INFO : _internal : _log : 127.0.0.1 - - [25/Aug/2017 15:28:37] "GET / HTTP/1.1" 200 -
+2017-08-25 15:28:37,759 : INFO : _internal : _log : 127.0.0.1 - - [25/Aug/2017 15:28:37] "GET /static/pics/land.jpg HTTP/1.1" 200 -
+2017-08-25 15:28:37,762 : INFO : _internal : _log : 127.0.0.1 - - [25/Aug/2017 15:28:37] "GET /static/pics/mountain.jpg HTTP/1.1" 200 -
+2017-08-25 15:28:37,822 : INFO : _internal : _log : 127.0.0.1 - - [25/Aug/2017 15:28:37] "GET /static/pics/sunset.jpg HTTP/1.1" 200 -
+2017-08-25 15:29:32,881 : INFO : _internal : _log : 127.0.0.1 - - [25/Aug/2017 15:29:32] "GET /blog/115 HTTP/1.1" 200 -
+2017-08-25 15:32:35,644 : INFO : _internal : _log :  * Running on http://127.0.0.1:5000/ (Press CTRL+C to quit)
+2017-08-25 15:32:35,645 : INFO : _internal : _log :  * Restarting with stat
+2017-08-25 15:32:36,125 : WARNING : _internal : _log :  * Debugger is active!
+2017-08-25 15:32:36,125 : INFO : _internal : _log :  * Debugger PIN: 269-707-563
+2017-08-25 15:32:50,272 : INFO : _internal : _log : 127.0.0.1 - - [25/Aug/2017 15:32:50] "GET /blog/115 HTTP/1.1" 200 -
+2017-08-25 15:32:50,281 : INFO : _internal : _log : 127.0.0.1 - - [25/Aug/2017 15:32:50] "GET /static/css/bootstrap.min.css HTTP/1.1" 200 -
+2017-08-25 15:32:50,286 : INFO : _internal : _log : 127.0.0.1 - - [25/Aug/2017 15:32:50] "GET /static/font-awesome-4.7.0/css/font-awesome.min.css HTTP/1.1" 200 -
+2017-08-25 15:32:50,288 : INFO : _internal : _log : 127.0.0.1 - - [25/Aug/2017 15:32:50] "GET /static/css/carousel.css HTTP/1.1" 200 -
+2017-08-25 15:32:50,290 : INFO : _internal : _log : 127.0.0.1 - - [25/Aug/2017 15:32:50] "GET /static/css/mycomment.css HTTP/1.1" 200 -
+2017-08-25 15:32:50,341 : INFO : _internal : _log : 127.0.0.1 - - [25/Aug/2017 15:32:50] "GET /static/font-awesome-4.7.0/fonts/fontawesome-webfont.woff2?v=4.7.0 HTTP/1.1" 200 -
+2017-08-25 15:33:42,859 : INFO : _internal : _log : 127.0.0.1 - - [25/Aug/2017 15:33:42] "GET /blog/115 HTTP/1.1" 200 -
+2017-08-25 15:33:54,440 : INFO : _internal : _log :  * Running on http://127.0.0.1:5000/ (Press CTRL+C to quit)
+2017-08-25 15:33:54,441 : INFO : _internal : _log :  * Restarting with stat
+2017-08-25 15:33:54,930 : WARNING : _internal : _log :  * Debugger is active!
+2017-08-25 15:33:54,931 : INFO : _internal : _log :  * Debugger PIN: 269-707-563
+2017-08-25 15:33:58,436 : INFO : _internal : _log : 127.0.0.1 - - [25/Aug/2017 15:33:58] "GET /blog/115 HTTP/1.1" 200 -
+2017-08-25 15:34:18,519 : INFO : _internal : _log : 127.0.0.1 - - [25/Aug/2017 15:34:18] "GET /blog/115 HTTP/1.1" 200 -
+2017-08-25 15:34:18,528 : INFO : _internal : _log : 127.0.0.1 - - [25/Aug/2017 15:34:18] "GET /static/css/bootstrap.min.css HTTP/1.1" 200 -
+2017-08-25 15:34:18,531 : INFO : _internal : _log : 127.0.0.1 - - [25/Aug/2017 15:34:18] "GET /static/font-awesome-4.7.0/css/font-awesome.min.css HTTP/1.1" 200 -
+2017-08-25 15:34:18,533 : INFO : _internal : _log : 127.0.0.1 - - [25/Aug/2017 15:34:18] "GET /static/css/carousel.css HTTP/1.1" 200 -
+2017-08-25 15:34:18,535 : INFO : _internal : _log : 127.0.0.1 - - [25/Aug/2017 15:34:18] "GET /static/css/mycomment.css HTTP/1.1" 200 -
+2017-08-25 15:34:18,590 : INFO : _internal : _log : 127.0.0.1 - - [25/Aug/2017 15:34:18] "GET /static/font-awesome-4.7.0/fonts/fontawesome-webfont.woff2?v=4.7.0 HTTP/1.1" 200 -
+2017-08-25 15:40:36,008 : INFO : _internal : _log :  * Running on http://127.0.0.1:5000/ (Press CTRL+C to quit)
+2017-08-25 15:40:36,008 : INFO : _internal : _log :  * Restarting with stat
+2017-08-25 15:40:36,491 : WARNING : _internal : _log :  * Debugger is active!
+2017-08-25 15:40:36,491 : INFO : _internal : _log :  * Debugger PIN: 269-707-563
+2017-08-25 15:41:10,102 : INFO : _internal : _log : 127.0.0.1 - - [25/Aug/2017 15:41:10] "GET /blog/115 HTTP/1.1" 200 -
+2017-08-25 15:41:10,110 : INFO : _internal : _log : 127.0.0.1 - - [25/Aug/2017 15:41:10] "GET /static/css/bootstrap.min.css HTTP/1.1" 200 -
+2017-08-25 15:41:10,113 : INFO : _internal : _log : 127.0.0.1 - - [25/Aug/2017 15:41:10] "GET /static/font-awesome-4.7.0/css/font-awesome.min.css HTTP/1.1" 200 -
+2017-08-25 15:41:10,115 : INFO : _internal : _log : 127.0.0.1 - - [25/Aug/2017 15:41:10] "GET /static/css/carousel.css HTTP/1.1" 200 -
+2017-08-25 15:41:10,117 : INFO : _internal : _log : 127.0.0.1 - - [25/Aug/2017 15:41:10] "GET /static/css/comment.css HTTP/1.1" 200 -
+2017-08-25 15:41:10,185 : INFO : _internal : _log : 127.0.0.1 - - [25/Aug/2017 15:41:10] "GET /static/font-awesome-4.7.0/fonts/fontawesome-webfont.woff2?v=4.7.0 HTTP/1.1" 200 -
+2017-08-25 15:46:28,185 : INFO : _internal : _log :  * Running on http://127.0.0.1:5000/ (Press CTRL+C to quit)
+2017-08-25 15:46:28,186 : INFO : _internal : _log :  * Restarting with stat
+2017-08-25 15:46:28,676 : WARNING : _internal : _log :  * Debugger is active!
+2017-08-25 15:46:28,676 : INFO : _internal : _log :  * Debugger PIN: 269-707-563
+2017-08-25 15:46:57,867 : INFO : _internal : _log : 127.0.0.1 - - [25/Aug/2017 15:46:57] "GET /blog/115 HTTP/1.1" 200 -
+2017-08-25 15:46:57,878 : INFO : _internal : _log : 127.0.0.1 - - [25/Aug/2017 15:46:57] "GET /static/css/bootstrap.min.css HTTP/1.1" 200 -
+2017-08-25 15:46:57,880 : INFO : _internal : _log : 127.0.0.1 - - [25/Aug/2017 15:46:57] "GET /static/font-awesome-4.7.0/css/font-awesome.min.css HTTP/1.1" 200 -
+2017-08-25 15:46:57,882 : INFO : _internal : _log : 127.0.0.1 - - [25/Aug/2017 15:46:57] "GET /static/css/carousel.css HTTP/1.1" 200 -
+2017-08-25 15:46:57,885 : INFO : _internal : _log : 127.0.0.1 - - [25/Aug/2017 15:46:57] "GET /static/css/comment.css HTTP/1.1" 200 -
+2017-08-25 15:46:57,944 : INFO : _internal : _log : 127.0.0.1 - - [25/Aug/2017 15:46:57] "GET /static/font-awesome-4.7.0/fonts/fontawesome-webfont.woff2?v=4.7.0 HTTP/1.1" 200 -
+2017-08-25 15:47:03,145 : INFO : _internal : _log : 127.0.0.1 - - [25/Aug/2017 15:47:03] "GET / HTTP/1.1" 200 -
+2017-08-25 15:47:03,161 : INFO : _internal : _log : 127.0.0.1 - - [25/Aug/2017 15:47:03] "GET /static/pics/land.jpg HTTP/1.1" 200 -
+2017-08-25 15:47:03,164 : INFO : _internal : _log : 127.0.0.1 - - [25/Aug/2017 15:47:03] "GET /static/pics/mountain.jpg HTTP/1.1" 200 -
+2017-08-25 15:47:03,189 : INFO : _internal : _log : 127.0.0.1 - - [25/Aug/2017 15:47:03] "GET /static/pics/sunset.jpg HTTP/1.1" 200 -
+2017-08-25 15:47:20,431 : INFO : _internal : _log : 127.0.0.1 - - [25/Aug/2017 15:47:20] "GET /blog/115 HTTP/1.1" 200 -
+2017-08-25 15:48:09,142 : INFO : _internal : _log :  * Running on http://127.0.0.1:5000/ (Press CTRL+C to quit)
+2017-08-25 15:48:09,142 : INFO : _internal : _log :  * Restarting with stat
+2017-08-25 15:48:09,625 : WARNING : _internal : _log :  * Debugger is active!
+2017-08-25 15:48:09,625 : INFO : _internal : _log :  * Debugger PIN: 269-707-563
+2017-08-25 15:48:21,039 : INFO : _internal : _log : 127.0.0.1 - - [25/Aug/2017 15:48:21] "GET /blog/115 HTTP/1.1" 200 -
+2017-08-25 15:48:21,048 : INFO : _internal : _log : 127.0.0.1 - - [25/Aug/2017 15:48:21] "GET /static/css/bootstrap.min.css HTTP/1.1" 200 -
+2017-08-25 15:48:21,050 : INFO : _internal : _log : 127.0.0.1 - - [25/Aug/2017 15:48:21] "GET /static/font-awesome-4.7.0/css/font-awesome.min.css HTTP/1.1" 200 -
+2017-08-25 15:48:21,053 : INFO : _internal : _log : 127.0.0.1 - - [25/Aug/2017 15:48:21] "GET /static/css/carousel.css HTTP/1.1" 200 -
+2017-08-25 15:48:21,056 : INFO : _internal : _log : 127.0.0.1 - - [25/Aug/2017 15:48:21] "GET /static/css/comment.css HTTP/1.1" 200 -
+2017-08-25 15:48:21,090 : INFO : _internal : _log : 127.0.0.1 - - [25/Aug/2017 15:48:21] "GET /static/font-awesome-4.7.0/fonts/fontawesome-webfont.woff2?v=4.7.0 HTTP/1.1" 200 -
+2017-08-25 15:50:26,759 : INFO : _internal : _log : 127.0.0.1 - - [25/Aug/2017 15:50:26] "GET /blog/115 HTTP/1.1" 200 -
+2017-08-25 15:52:41,764 : INFO : _internal : _log : 127.0.0.1 - - [25/Aug/2017 15:52:41] "GET /blog/115 HTTP/1.1" 200 -
+2017-08-25 15:52:47,060 : INFO : _internal : _log : 127.0.0.1 - - [25/Aug/2017 15:52:47] "GET / HTTP/1.1" 200 -
+2017-08-25 15:52:47,069 : INFO : _internal : _log : 127.0.0.1 - - [25/Aug/2017 15:52:47] "GET /static/pics/land.jpg HTTP/1.1" 200 -
+2017-08-25 15:52:47,073 : INFO : _internal : _log : 127.0.0.1 - - [25/Aug/2017 15:52:47] "GET /static/pics/mountain.jpg HTTP/1.1" 200 -
+2017-08-25 15:52:47,093 : INFO : _internal : _log : 127.0.0.1 - - [25/Aug/2017 15:52:47] "GET /static/pics/sunset.jpg HTTP/1.1" 200 -
+2017-08-25 15:57:37,486 : INFO : _internal : _log : 127.0.0.1 - - [25/Aug/2017 15:57:37] "GET / HTTP/1.1" 200 -
+2017-08-25 15:58:00,929 : INFO : _internal : _log : 127.0.0.1 - - [25/Aug/2017 15:58:00] "GET /blog/115 HTTP/1.1" 200 -
+2017-08-25 15:58:02,765 : INFO : _internal : _log : 127.0.0.1 - - [25/Aug/2017 15:58:02] "GET / HTTP/1.1" 200 -
+2017-08-25 16:04:41,998 : INFO : _internal : _log : 127.0.0.1 - - [25/Aug/2017 16:04:41] "GET / HTTP/1.1" 200 -
+2017-08-25 16:04:47,084 : INFO : _internal : _log : 127.0.0.1 - - [25/Aug/2017 16:04:47] "GET /blog/115 HTTP/1.1" 200 -
+2017-08-25 16:06:43,314 : INFO : _internal : _log : 127.0.0.1 - - [25/Aug/2017 16:06:43] "GET / HTTP/1.1" 200 -
+2017-08-25 16:07:48,484 : INFO : _internal : _log : 127.0.0.1 - - [25/Aug/2017 16:07:48] "GET / HTTP/1.1" 200 -
+2017-08-25 17:23:22,915 : INFO : _internal : _log : 127.0.0.1 - - [25/Aug/2017 17:23:22] "GET /blog/115 HTTP/1.1" 200 -
+2017-08-25 17:23:23,388 : INFO : _internal : _log : 127.0.0.1 - - [25/Aug/2017 17:23:23] "GET /favicon.ico HTTP/1.1" 404 -
+2017-08-25 17:38:00,888 : INFO : _internal : _log : 127.0.0.1 - - [25/Aug/2017 17:38:00] "GET /search-category/tech HTTP/1.1" 200 -
+2017-08-25 17:38:09,074 : INFO : _internal : _log : 127.0.0.1 - - [25/Aug/2017 17:38:09] "GET /search-tag/thumbup HTTP/1.1" 200 -
+2017-08-25 17:38:52,232 : INFO : _internal : _log : 127.0.0.1 - - [25/Aug/2017 17:38:52] "GET /search-tag/thumbup HTTP/1.1" 500 -
+2017-08-25 17:38:52,248 : INFO : _internal : _log : 127.0.0.1 - - [25/Aug/2017 17:38:52] "GET /search-tag/thumbup?__debugger__=yes&cmd=resource&f=style.css HTTP/1.1" 200 -
+2017-08-25 17:38:52,262 : INFO : _internal : _log : 127.0.0.1 - - [25/Aug/2017 17:38:52] "GET /search-tag/thumbup?__debugger__=yes&cmd=resource&f=jquery.js HTTP/1.1" 200 -
+2017-08-25 17:38:52,265 : INFO : _internal : _log : 127.0.0.1 - - [25/Aug/2017 17:38:52] "GET /search-tag/thumbup?__debugger__=yes&cmd=resource&f=debugger.js HTTP/1.1" 200 -
+2017-08-25 17:38:52,400 : INFO : _internal : _log : 127.0.0.1 - - [25/Aug/2017 17:38:52] "GET /search-tag/thumbup?__debugger__=yes&cmd=resource&f=console.png HTTP/1.1" 200 -
+2017-08-25 17:38:52,539 : INFO : _internal : _log : 127.0.0.1 - - [25/Aug/2017 17:38:52] "GET /search-tag/thumbup?__debugger__=yes&cmd=resource&f=console.png HTTP/1.1" 200 -
+2017-08-25 17:39:12,652 : INFO : _internal : _log : 127.0.0.1 - - [25/Aug/2017 17:39:12] "GET /search-tag/thumbup HTTP/1.1" 500 -
+2017-08-25 17:39:12,666 : INFO : _internal : _log : 127.0.0.1 - - [25/Aug/2017 17:39:12] "GET /search-tag/thumbup?__debugger__=yes&cmd=resource&f=style.css HTTP/1.1" 200 -
+2017-08-25 17:39:12,667 : INFO : _internal : _log : 127.0.0.1 - - [25/Aug/2017 17:39:12] "GET /search-tag/thumbup?__debugger__=yes&cmd=resource&f=jquery.js HTTP/1.1" 200 -
+2017-08-25 17:39:12,667 : INFO : _internal : _log : 127.0.0.1 - - [25/Aug/2017 17:39:12] "GET /search-tag/thumbup?__debugger__=yes&cmd=resource&f=debugger.js HTTP/1.1" 200 -
+2017-08-25 17:39:12,763 : INFO : _internal : _log : 127.0.0.1 - - [25/Aug/2017 17:39:12] "GET /search-tag/thumbup?__debugger__=yes&cmd=resource&f=console.png HTTP/1.1" 200 -
+2017-08-25 17:39:15,924 : INFO : _internal : _log : 127.0.0.1 - - [25/Aug/2017 17:39:15] "GET /search-category/tech HTTP/1.1" 500 -
+2017-08-25 17:39:15,939 : INFO : _internal : _log : 127.0.0.1 - - [25/Aug/2017 17:39:15] "GET /search-category/tech?__debugger__=yes&cmd=resource&f=style.css HTTP/1.1" 200 -
+2017-08-25 17:39:15,940 : INFO : _internal : _log : 127.0.0.1 - - [25/Aug/2017 17:39:15] "GET /search-category/tech?__debugger__=yes&cmd=resource&f=jquery.js HTTP/1.1" 200 -
+2017-08-25 17:39:15,941 : INFO : _internal : _log : 127.0.0.1 - - [25/Aug/2017 17:39:15] "GET /search-category/tech?__debugger__=yes&cmd=resource&f=debugger.js HTTP/1.1" 200 -
+2017-08-25 17:39:16,014 : INFO : _internal : _log : 127.0.0.1 - - [25/Aug/2017 17:39:16] "GET /search-category/tech?__debugger__=yes&cmd=resource&f=console.png HTTP/1.1" 200 -
+2017-08-25 17:39:16,068 : INFO : _internal : _log : 127.0.0.1 - - [25/Aug/2017 17:39:16] "GET /search-category/tech?__debugger__=yes&cmd=resource&f=console.png HTTP/1.1" 200 -
+2017-08-25 17:39:47,813 : INFO : _internal : _log :  * Detected change in '/home/xuzuoyang/mygit/MyBlog/app/main/views.py', reloading
+2017-08-25 17:39:47,940 : INFO : _internal : _log :  * Restarting with stat
+2017-08-25 17:39:48,552 : WARNING : _internal : _log :  * Debugger is active!
+2017-08-25 17:39:48,553 : INFO : _internal : _log :  * Debugger PIN: 269-707-563
+2017-08-25 17:39:53,603 : INFO : _internal : _log :  * Detected change in '/home/xuzuoyang/mygit/MyBlog/app/main/views.py', reloading
+2017-08-25 17:39:53,688 : INFO : _internal : _log :  * Restarting with stat
+2017-08-25 17:39:54,193 : WARNING : _internal : _log :  * Debugger is active!
+2017-08-25 17:39:54,193 : INFO : _internal : _log :  * Debugger PIN: 269-707-563
+2017-08-25 17:39:57,882 : INFO : _internal : _log : 127.0.0.1 - - [25/Aug/2017 17:39:57] "GET /search-category/tech HTTP/1.1" 200 -
+2017-08-25 17:40:08,777 : INFO : _internal : _log : 127.0.0.1 - - [25/Aug/2017 17:40:08] "GET / HTTP/1.1" 200 -
+2017-08-25 17:41:30,710 : INFO : _internal : _log : 127.0.0.1 - - [25/Aug/2017 17:41:30] "GET /blog/115 HTTP/1.1" 200 -
+2017-08-25 17:41:50,067 : INFO : _internal : _log : 127.0.0.1 - - [25/Aug/2017 17:41:50] "GET /blog/115 HTTP/1.1" 200 -
+2017-08-25 17:41:51,935 : INFO : _internal : _log : 127.0.0.1 - - [25/Aug/2017 17:41:51] "GET /blog/115 HTTP/1.1" 200 -
+2017-08-25 17:41:58,510 : INFO : _internal : _log :  * Running on http://127.0.0.1:5000/ (Press CTRL+C to quit)
+2017-08-25 17:41:58,511 : INFO : _internal : _log :  * Restarting with stat
+2017-08-25 17:41:59,003 : WARNING : _internal : _log :  * Debugger is active!
+2017-08-25 17:41:59,003 : INFO : _internal : _log :  * Debugger PIN: 269-707-563
+2017-08-25 17:42:09,274 : INFO : _internal : _log : 127.0.0.1 - - [25/Aug/2017 17:42:09] "GET /blog/115 HTTP/1.1" 200 -
+2017-08-25 17:42:09,281 : INFO : _internal : _log : 127.0.0.1 - - [25/Aug/2017 17:42:09] "GET /static/css/bootstrap.min.css HTTP/1.1" 200 -
+2017-08-25 17:42:09,284 : INFO : _internal : _log : 127.0.0.1 - - [25/Aug/2017 17:42:09] "GET /static/font-awesome-4.7.0/css/font-awesome.min.css HTTP/1.1" 200 -
+2017-08-25 17:42:09,287 : INFO : _internal : _log : 127.0.0.1 - - [25/Aug/2017 17:42:09] "GET /static/css/carousel.css HTTP/1.1" 200 -
+2017-08-25 17:42:09,291 : INFO : _internal : _log : 127.0.0.1 - - [25/Aug/2017 17:42:09] "GET /static/css/comment.css HTTP/1.1" 200 -
+2017-08-25 17:42:09,353 : INFO : _internal : _log : 127.0.0.1 - - [25/Aug/2017 17:42:09] "GET /static/font-awesome-4.7.0/fonts/fontawesome-webfont.woff2?v=4.7.0 HTTP/1.1" 200 -
+2017-08-25 17:50:04,867 : INFO : _internal : _log :  * Running on http://127.0.0.1:5000/ (Press CTRL+C to quit)
+2017-08-25 17:50:04,868 : INFO : _internal : _log :  * Restarting with stat
+2017-08-25 17:50:05,357 : WARNING : _internal : _log :  * Debugger is active!
+2017-08-25 17:50:05,357 : INFO : _internal : _log :  * Debugger PIN: 269-707-563
+2017-08-25 17:50:07,971 : INFO : _internal : _log : 127.0.0.1 - - [25/Aug/2017 17:50:07] "GET /blog/115 HTTP/1.1" 200 -
+2017-08-25 17:56:11,411 : INFO : _internal : _log : 127.0.0.1 - - [25/Aug/2017 17:56:11] "GET /blog/115 HTTP/1.1" 200 -
+2017-08-25 17:59:05,814 : INFO : _internal : _log :  * Running on http://127.0.0.1:5000/ (Press CTRL+C to quit)
+2017-08-25 17:59:05,815 : INFO : _internal : _log :  * Restarting with stat
+2017-08-25 17:59:06,309 : WARNING : _internal : _log :  * Debugger is active!
+2017-08-25 17:59:06,309 : INFO : _internal : _log :  * Debugger PIN: 269-707-563
+2017-08-25 17:59:15,185 : INFO : _internal : _log : 127.0.0.1 - - [25/Aug/2017 17:59:15] "GET /blog/115 HTTP/1.1" 200 -
+2017-08-25 17:59:15,192 : INFO : _internal : _log : 127.0.0.1 - - [25/Aug/2017 17:59:15] "GET /static/css/bootstrap.min.css HTTP/1.1" 200 -
+2017-08-25 17:59:15,194 : INFO : _internal : _log : 127.0.0.1 - - [25/Aug/2017 17:59:15] "GET /static/font-awesome-4.7.0/css/font-awesome.min.css HTTP/1.1" 200 -
+2017-08-25 17:59:15,197 : INFO : _internal : _log : 127.0.0.1 - - [25/Aug/2017 17:59:15] "GET /static/css/carousel.css HTTP/1.1" 200 -
+2017-08-25 17:59:15,199 : INFO : _internal : _log : 127.0.0.1 - - [25/Aug/2017 17:59:15] "GET /static/css/comment.css HTTP/1.1" 200 -
+2017-08-25 17:59:15,261 : INFO : _internal : _log : 127.0.0.1 - - [25/Aug/2017 17:59:15] "GET /static/font-awesome-4.7.0/fonts/fontawesome-webfont.woff2?v=4.7.0 HTTP/1.1" 200 -
+2017-08-25 18:01:30,747 : INFO : _internal : _log : 127.0.0.1 - - [25/Aug/2017 18:01:30] "GET /blog/115 HTTP/1.1" 200 -
+2017-08-25 18:02:27,306 : INFO : _internal : _log : 127.0.0.1 - - [25/Aug/2017 18:02:27] "GET /blog/115 HTTP/1.1" 200 -
+2017-08-25 18:06:06,154 : INFO : _internal : _log :  * Running on http://127.0.0.1:5000/ (Press CTRL+C to quit)
+2017-08-25 18:06:06,155 : INFO : _internal : _log :  * Restarting with stat
+2017-08-25 18:06:06,652 : WARNING : _internal : _log :  * Debugger is active!
+2017-08-25 18:06:06,652 : INFO : _internal : _log :  * Debugger PIN: 269-707-563
+2017-08-25 18:06:16,187 : INFO : _internal : _log : 127.0.0.1 - - [25/Aug/2017 18:06:16] "GET /blog/115 HTTP/1.1" 200 -
+2017-08-25 18:06:16,195 : INFO : _internal : _log : 127.0.0.1 - - [25/Aug/2017 18:06:16] "GET /static/css/bootstrap.min.css HTTP/1.1" 200 -
+2017-08-25 18:06:16,197 : INFO : _internal : _log : 127.0.0.1 - - [25/Aug/2017 18:06:16] "GET /static/font-awesome-4.7.0/css/font-awesome.min.css HTTP/1.1" 200 -
+2017-08-25 18:06:16,199 : INFO : _internal : _log : 127.0.0.1 - - [25/Aug/2017 18:06:16] "GET /static/css/carousel.css HTTP/1.1" 200 -
+2017-08-25 18:06:16,202 : INFO : _internal : _log : 127.0.0.1 - - [25/Aug/2017 18:06:16] "GET /static/css/comment.css HTTP/1.1" 200 -
+2017-08-25 18:06:16,264 : INFO : _internal : _log : 127.0.0.1 - - [25/Aug/2017 18:06:16] "GET /static/font-awesome-4.7.0/fonts/fontawesome-webfont.woff2?v=4.7.0 HTTP/1.1" 200 -
+2017-08-25 18:08:10,166 : INFO : _internal : _log :  * Running on http://127.0.0.1:5000/ (Press CTRL+C to quit)
+2017-08-25 18:08:10,167 : INFO : _internal : _log :  * Restarting with stat
+2017-08-25 18:08:10,653 : WARNING : _internal : _log :  * Debugger is active!
+2017-08-25 18:08:10,653 : INFO : _internal : _log :  * Debugger PIN: 269-707-563
+2017-08-25 18:08:25,841 : INFO : _internal : _log : 127.0.0.1 - - [25/Aug/2017 18:08:25] "GET /blog/115 HTTP/1.1" 200 -
+2017-08-25 18:08:25,852 : INFO : _internal : _log : 127.0.0.1 - - [25/Aug/2017 18:08:25] "GET /static/css/bootstrap.min.css HTTP/1.1" 200 -
+2017-08-25 18:08:25,854 : INFO : _internal : _log : 127.0.0.1 - - [25/Aug/2017 18:08:25] "GET /static/font-awesome-4.7.0/css/font-awesome.min.css HTTP/1.1" 200 -
+2017-08-25 18:08:25,856 : INFO : _internal : _log : 127.0.0.1 - - [25/Aug/2017 18:08:25] "GET /static/css/carousel.css HTTP/1.1" 200 -
+2017-08-25 18:08:25,858 : INFO : _internal : _log : 127.0.0.1 - - [25/Aug/2017 18:08:25] "GET /static/css/comment.css HTTP/1.1" 200 -
+2017-08-25 18:08:25,918 : INFO : _internal : _log : 127.0.0.1 - - [25/Aug/2017 18:08:25] "GET /static/font-awesome-4.7.0/fonts/fontawesome-webfont.woff2?v=4.7.0 HTTP/1.1" 200 -
+2017-08-25 18:09:19,976 : INFO : _internal : _log : 127.0.0.1 - - [25/Aug/2017 18:09:19] "GET /blog/115 HTTP/1.1" 200 -
+2017-08-25 18:09:26,307 : INFO : _internal : _log : 127.0.0.1 - - [25/Aug/2017 18:09:26] "GET /blog/115 HTTP/1.1" 200 -
+2017-08-25 18:11:20,738 : INFO : _internal : _log :  * Running on http://127.0.0.1:5000/ (Press CTRL+C to quit)
+2017-08-25 18:11:20,739 : INFO : _internal : _log :  * Restarting with stat
+2017-08-25 18:11:21,228 : WARNING : _internal : _log :  * Debugger is active!
+2017-08-25 18:11:21,228 : INFO : _internal : _log :  * Debugger PIN: 269-707-563
+2017-08-25 18:11:31,738 : INFO : _internal : _log : 127.0.0.1 - - [25/Aug/2017 18:11:31] "GET /blog/115 HTTP/1.1" 200 -
+2017-08-25 18:11:31,745 : INFO : _internal : _log : 127.0.0.1 - - [25/Aug/2017 18:11:31] "GET /static/css/bootstrap.min.css HTTP/1.1" 200 -
+2017-08-25 18:11:31,748 : INFO : _internal : _log : 127.0.0.1 - - [25/Aug/2017 18:11:31] "GET /static/font-awesome-4.7.0/css/font-awesome.min.css HTTP/1.1" 200 -
+2017-08-25 18:11:31,750 : INFO : _internal : _log : 127.0.0.1 - - [25/Aug/2017 18:11:31] "GET /static/css/carousel.css HTTP/1.1" 200 -
+2017-08-25 18:11:31,752 : INFO : _internal : _log : 127.0.0.1 - - [25/Aug/2017 18:11:31] "GET /static/css/comment.css HTTP/1.1" 200 -
+2017-08-25 18:11:31,798 : INFO : _internal : _log : 127.0.0.1 - - [25/Aug/2017 18:11:31] "GET /static/font-awesome-4.7.0/fonts/fontawesome-webfont.woff2?v=4.7.0 HTTP/1.1" 200 -
+2017-08-25 18:13:18,910 : INFO : _internal : _log : 127.0.0.1 - - [25/Aug/2017 18:13:18] "GET /blog/115 HTTP/1.1" 200 -
+2017-08-25 18:13:20,121 : INFO : _internal : _log : 127.0.0.1 - - [25/Aug/2017 18:13:20] "GET /blog/115 HTTP/1.1" 200 -
+2017-08-25 18:13:51,723 : INFO : _internal : _log : 127.0.0.1 - - [25/Aug/2017 18:13:51] "GET /blog/115 HTTP/1.1" 200 -
+2017-08-25 18:15:32,657 : INFO : _internal : _log : 127.0.0.1 - - [25/Aug/2017 18:15:32] "GET /blog/115 HTTP/1.1" 200 -
+2017-08-25 18:19:30,076 : INFO : _internal : _log : 127.0.0.1 - - [25/Aug/2017 18:19:30] "GET /blog/115 HTTP/1.1" 200 -
+2017-08-25 18:19:32,583 : INFO : _internal : _log : 127.0.0.1 - - [25/Aug/2017 18:19:32] "GET /blog/115 HTTP/1.1" 200 -
+2017-08-25 18:19:41,293 : INFO : _internal : _log :  * Running on http://127.0.0.1:5000/ (Press CTRL+C to quit)
+2017-08-25 18:19:41,294 : INFO : _internal : _log :  * Restarting with stat
+2017-08-25 18:19:41,784 : WARNING : _internal : _log :  * Debugger is active!
+2017-08-25 18:19:41,784 : INFO : _internal : _log :  * Debugger PIN: 269-707-563
+2017-08-25 18:20:04,400 : INFO : _internal : _log :  * Running on http://127.0.0.1:5000/ (Press CTRL+C to quit)
+2017-08-25 18:20:04,400 : INFO : _internal : _log :  * Restarting with stat
+2017-08-25 18:20:04,888 : WARNING : _internal : _log :  * Debugger is active!
+2017-08-25 18:20:04,888 : INFO : _internal : _log :  * Debugger PIN: 269-707-563
+2017-08-25 18:20:16,334 : INFO : _internal : _log : 127.0.0.1 - - [25/Aug/2017 18:20:16] "GET /blog/115 HTTP/1.1" 200 -
+2017-08-25 18:20:16,342 : INFO : _internal : _log : 127.0.0.1 - - [25/Aug/2017 18:20:16] "GET /static/css/bootstrap.min.css HTTP/1.1" 200 -
+2017-08-25 18:20:16,344 : INFO : _internal : _log : 127.0.0.1 - - [25/Aug/2017 18:20:16] "GET /static/font-awesome-4.7.0/css/font-awesome.min.css HTTP/1.1" 200 -
+2017-08-25 18:20:16,346 : INFO : _internal : _log : 127.0.0.1 - - [25/Aug/2017 18:20:16] "GET /static/css/carousel.css HTTP/1.1" 200 -
+2017-08-25 18:20:16,348 : INFO : _internal : _log : 127.0.0.1 - - [25/Aug/2017 18:20:16] "GET /static/css/comment.css HTTP/1.1" 200 -
+2017-08-25 18:20:16,406 : INFO : _internal : _log : 127.0.0.1 - - [25/Aug/2017 18:20:16] "GET /static/font-awesome-4.7.0/fonts/fontawesome-webfont.woff2?v=4.7.0 HTTP/1.1" 200 -
+2017-08-25 18:20:25,438 : INFO : _internal : _log : 127.0.0.1 - - [25/Aug/2017 18:20:25] "GET /blog/115 HTTP/1.1" 200 -
+2017-08-25 18:21:20,853 : INFO : _internal : _log : 127.0.0.1 - - [25/Aug/2017 18:21:20] "GET /blog/115 HTTP/1.1" 200 -
+2017-08-25 18:23:51,564 : INFO : _internal : _log :  * Running on http://127.0.0.1:5000/ (Press CTRL+C to quit)
+2017-08-25 18:23:51,564 : INFO : _internal : _log :  * Restarting with stat
+2017-08-25 18:23:52,056 : WARNING : _internal : _log :  * Debugger is active!
+2017-08-25 18:23:52,056 : INFO : _internal : _log :  * Debugger PIN: 269-707-563
+2017-08-25 18:24:03,387 : INFO : _internal : _log : 127.0.0.1 - - [25/Aug/2017 18:24:03] "GET /blog/115 HTTP/1.1" 200 -
+2017-08-25 18:24:03,396 : INFO : _internal : _log : 127.0.0.1 - - [25/Aug/2017 18:24:03] "GET /static/css/bootstrap.min.css HTTP/1.1" 200 -
+2017-08-25 18:24:03,398 : INFO : _internal : _log : 127.0.0.1 - - [25/Aug/2017 18:24:03] "GET /static/font-awesome-4.7.0/css/font-awesome.min.css HTTP/1.1" 200 -
+2017-08-25 18:24:03,401 : INFO : _internal : _log : 127.0.0.1 - - [25/Aug/2017 18:24:03] "GET /static/css/carousel.css HTTP/1.1" 200 -
+2017-08-25 18:24:03,403 : INFO : _internal : _log : 127.0.0.1 - - [25/Aug/2017 18:24:03] "GET /static/css/comment.css HTTP/1.1" 200 -
+2017-08-25 18:24:03,456 : INFO : _internal : _log : 127.0.0.1 - - [25/Aug/2017 18:24:03] "GET /static/font-awesome-4.7.0/fonts/fontawesome-webfont.woff2?v=4.7.0 HTTP/1.1" 200 -
+2017-08-25 18:32:30,378 : INFO : _internal : _log : 127.0.0.1 - - [25/Aug/2017 18:32:30] "GET /blog/115 HTTP/1.1" 200 -
+2017-08-25 18:36:57,713 : INFO : _internal : _log : 127.0.0.1 - - [25/Aug/2017 18:36:57] "GET /blog/115 HTTP/1.1" 200 -
+2017-08-25 18:39:09,119 : INFO : _internal : _log :  * Running on http://127.0.0.1:5000/ (Press CTRL+C to quit)
+2017-08-25 18:39:09,120 : INFO : _internal : _log :  * Restarting with stat
+2017-08-25 18:39:09,614 : WARNING : _internal : _log :  * Debugger is active!
+2017-08-25 18:39:09,614 : INFO : _internal : _log :  * Debugger PIN: 269-707-563
+2017-08-25 18:39:17,571 : INFO : _internal : _log : 127.0.0.1 - - [25/Aug/2017 18:39:17] "GET /blog/115 HTTP/1.1" 200 -
+2017-08-25 18:39:17,579 : INFO : _internal : _log : 127.0.0.1 - - [25/Aug/2017 18:39:17] "GET /static/css/bootstrap.min.css HTTP/1.1" 200 -
+2017-08-25 18:39:17,581 : INFO : _internal : _log : 127.0.0.1 - - [25/Aug/2017 18:39:17] "GET /static/font-awesome-4.7.0/css/font-awesome.min.css HTTP/1.1" 200 -
+2017-08-25 18:39:17,583 : INFO : _internal : _log : 127.0.0.1 - - [25/Aug/2017 18:39:17] "GET /static/css/carousel.css HTTP/1.1" 200 -
+2017-08-25 18:39:17,586 : INFO : _internal : _log : 127.0.0.1 - - [25/Aug/2017 18:39:17] "GET /static/css/comment.css HTTP/1.1" 200 -
+2017-08-25 18:39:17,646 : INFO : _internal : _log : 127.0.0.1 - - [25/Aug/2017 18:39:17] "GET /static/font-awesome-4.7.0/fonts/fontawesome-webfont.woff2?v=4.7.0 HTTP/1.1" 200 -
+2017-08-25 18:39:41,586 : INFO : _internal : _log :  * Running on http://127.0.0.1:5000/ (Press CTRL+C to quit)
+2017-08-25 18:39:41,587 : INFO : _internal : _log :  * Restarting with stat
+2017-08-25 18:39:42,088 : WARNING : _internal : _log :  * Debugger is active!
+2017-08-25 18:39:42,088 : INFO : _internal : _log :  * Debugger PIN: 269-707-563
+2017-08-25 18:39:51,402 : INFO : _internal : _log : 127.0.0.1 - - [25/Aug/2017 18:39:51] "GET /blog/115 HTTP/1.1" 200 -
+2017-08-25 18:39:51,410 : INFO : _internal : _log : 127.0.0.1 - - [25/Aug/2017 18:39:51] "GET /static/css/bootstrap.min.css HTTP/1.1" 200 -
+2017-08-25 18:39:51,413 : INFO : _internal : _log : 127.0.0.1 - - [25/Aug/2017 18:39:51] "GET /static/font-awesome-4.7.0/css/font-awesome.min.css HTTP/1.1" 200 -
+2017-08-25 18:39:51,415 : INFO : _internal : _log : 127.0.0.1 - - [25/Aug/2017 18:39:51] "GET /static/css/carousel.css HTTP/1.1" 200 -
+2017-08-25 18:39:51,418 : INFO : _internal : _log : 127.0.0.1 - - [25/Aug/2017 18:39:51] "GET /static/css/comment.css HTTP/1.1" 200 -
+2017-08-25 18:39:51,482 : INFO : _internal : _log : 127.0.0.1 - - [25/Aug/2017 18:39:51] "GET /static/font-awesome-4.7.0/fonts/fontawesome-webfont.woff2?v=4.7.0 HTTP/1.1" 200 -
+2017-08-25 18:40:19,281 : INFO : _internal : _log :  * Running on http://127.0.0.1:5000/ (Press CTRL+C to quit)
+2017-08-25 18:40:19,281 : INFO : _internal : _log :  * Restarting with stat
+2017-08-25 18:40:19,776 : WARNING : _internal : _log :  * Debugger is active!
+2017-08-25 18:40:19,777 : INFO : _internal : _log :  * Debugger PIN: 269-707-563
+2017-08-25 18:40:32,383 : INFO : _internal : _log : 127.0.0.1 - - [25/Aug/2017 18:40:32] "GET /blog/115 HTTP/1.1" 200 -
+2017-08-25 18:40:32,391 : INFO : _internal : _log : 127.0.0.1 - - [25/Aug/2017 18:40:32] "GET /static/css/bootstrap.min.css HTTP/1.1" 200 -
+2017-08-25 18:40:32,393 : INFO : _internal : _log : 127.0.0.1 - - [25/Aug/2017 18:40:32] "GET /static/font-awesome-4.7.0/css/font-awesome.min.css HTTP/1.1" 200 -
+2017-08-25 18:40:32,395 : INFO : _internal : _log : 127.0.0.1 - - [25/Aug/2017 18:40:32] "GET /static/css/carousel.css HTTP/1.1" 200 -
+2017-08-25 18:40:32,397 : INFO : _internal : _log : 127.0.0.1 - - [25/Aug/2017 18:40:32] "GET /static/css/comment.css HTTP/1.1" 200 -
+2017-08-25 18:40:32,464 : INFO : _internal : _log : 127.0.0.1 - - [25/Aug/2017 18:40:32] "GET /static/font-awesome-4.7.0/fonts/fontawesome-webfont.woff2?v=4.7.0 HTTP/1.1" 200 -
+2017-08-25 18:40:37,438 : INFO : _internal : _log : 127.0.0.1 - - [25/Aug/2017 18:40:37] "GET /blog/115 HTTP/1.1" 200 -
+2017-08-25 18:40:59,461 : INFO : _internal : _log :  * Running on http://127.0.0.1:5000/ (Press CTRL+C to quit)
+2017-08-25 18:40:59,461 : INFO : _internal : _log :  * Restarting with stat
+2017-08-25 18:40:59,955 : WARNING : _internal : _log :  * Debugger is active!
+2017-08-25 18:40:59,956 : INFO : _internal : _log :  * Debugger PIN: 269-707-563
+2017-08-25 18:41:08,941 : INFO : _internal : _log : 127.0.0.1 - - [25/Aug/2017 18:41:08] "GET /blog/115 HTTP/1.1" 200 -
+2017-08-25 18:41:08,951 : INFO : _internal : _log : 127.0.0.1 - - [25/Aug/2017 18:41:08] "GET /static/css/bootstrap.min.css HTTP/1.1" 200 -
+2017-08-25 18:41:08,953 : INFO : _internal : _log : 127.0.0.1 - - [25/Aug/2017 18:41:08] "GET /static/font-awesome-4.7.0/css/font-awesome.min.css HTTP/1.1" 200 -
+2017-08-25 18:41:08,955 : INFO : _internal : _log : 127.0.0.1 - - [25/Aug/2017 18:41:08] "GET /static/css/carousel.css HTTP/1.1" 200 -
+2017-08-25 18:41:08,958 : INFO : _internal : _log : 127.0.0.1 - - [25/Aug/2017 18:41:08] "GET /static/css/comment.css HTTP/1.1" 200 -
+2017-08-25 18:41:09,032 : INFO : _internal : _log : 127.0.0.1 - - [25/Aug/2017 18:41:09] "GET /static/font-awesome-4.7.0/fonts/fontawesome-webfont.woff2?v=4.7.0 HTTP/1.1" 200 -
+2017-08-25 18:41:29,946 : INFO : _internal : _log : 127.0.0.1 - - [25/Aug/2017 18:41:29] "GET / HTTP/1.1" 200 -
+2017-08-25 18:41:29,957 : INFO : _internal : _log : 127.0.0.1 - - [25/Aug/2017 18:41:29] "GET /static/pics/land.jpg HTTP/1.1" 200 -
+2017-08-25 18:41:29,965 : INFO : _internal : _log : 127.0.0.1 - - [25/Aug/2017 18:41:29] "GET /static/pics/mountain.jpg HTTP/1.1" 200 -
+2017-08-25 18:41:30,006 : INFO : _internal : _log : 127.0.0.1 - - [25/Aug/2017 18:41:30] "GET /static/pics/sunset.jpg HTTP/1.1" 200 -

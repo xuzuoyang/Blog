@@ -72,7 +72,7 @@ def search_category(category):
                                                                      error_out=False)
     posts = []
     for item in pagination.items:
-        post = {'id': item.id, 'title': item.title, 'timestamp': item.timestamp,
+        post = {'id': item.id, 'title': item.title, 'timestamp': item.timestamp, 'last_edit': item.last_edit,
                 'author': item.author.username, 'tagging': item.tagging, 'category': item.category.name}
         if len(item.body) > 256:
             post['body'] = item.body[:256] + '...'
@@ -99,7 +99,7 @@ def search_tag(tag):
     posts = []
     for item in pagination.items:
         item = item.post
-        post = {'id': item.id, 'title': item.title, 'timestamp': item.timestamp,
+        post = {'id': item.id, 'title': item.title, 'timestamp': item.timestamp, 'last_edit': item.last_edit,
                 'author': item.author.username, 'tagging': item.tagging, 'category': item.category.name}
         if len(item.body) > 256:
             post['body'] = item.body[:256] + '...'

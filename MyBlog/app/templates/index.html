@@ -59,7 +59,10 @@
                         {% endfor %}
                         {% endif %}
                     </ul>
-                    <p class="blog-post-meta">written: {{ moment(post.timestamp).fromNow() }} & last edit: {{ moment(post.last_edit).fromNow() }}</p>
+                    <p class="blog-post-meta">
+                        <i class="fa fa-calendar" aria-hidden="true"></i>
+                        written: {{ moment(post.timestamp).fromNow() }} & last edit: {{ moment(post.last_edit).fromNow() }}
+                    </p>
                     <p>{{ post.body | safe }}</p>
                   </div>
                   <div class="details">

@@ -4,6 +4,7 @@
 {% block title %}Detail Page{% endblock %}
 {% block head %}
 <link rel="stylesheet" type="text/css" href="{{ url_for('static', filename='css/carousel.css') }}">
+<link rel="stylesheet" type="text/css" href="{{ url_for('static', filename='css/comment.css') }}">
 {% endblock %}
 
 {% block content %}
@@ -23,7 +24,10 @@
               {% endfor %}
               {% endif %}
           </ul>
-          <p class="blog-post-meta">written: {{ moment(post.timestamp).fromNow() }} & last edit: {{ moment(post.last_edit).fromNow() }}</a></p>
+          <p class="blog-post-meta">
+              <i class="fa fa-calendar" aria-hidden="true"></i>
+              written: {{ moment(post.timestamp).fromNow() }} & last edit: {{ moment(post.last_edit).fromNow() }}
+          </p>
           <p>{{ post.body | safe }}</p>
           <ul class="list-inline">
               <li>
@@ -56,19 +60,52 @@
       {% if post.comments %}
       <ul class="media-list">
           {% for comment in post.comments %}
-          <li class="media">
-              <div class="media-left media-top">
-                <a href="#">
-                  <img class="media-object" src="{{ comment.author.gravatar(size=50) }}" alt="...">
-                </a>
-              </div>
-              <div class="media-body">
-                <h4 class="media-heading">{{ comment.author.username }}</h4>
-                <p>{{ comment.body }}</p>
-              </div>
-          </li>
+          <div class="comment-container">
+              <li class="media">
+                  <div class="media-left media-top comment-avatar">
+                    <a href="#">
+                      <img class="media-object" src="{{ comment.author.gravatar(size=50) }}" alt="...">
+                    </a>
+                  </div>
+                  <div class="media-body comment-box">
+                    <div class="comment-head">
+                        <ul class="list-inline">
+                            <li><h5 class="comment-author media-heading">{{ comment.author.username }}</h5></li>
+                            <li><span class="label label-primary">author</span></li>
+                            <li><p>{{ moment(comment.timestamp).fromNow() }}</p></li>
+                            <li class="pull-right">
+                                <a href=""><i class="fa fa-heart comment-icon-like" aria-hidden="true"></i></a>
+                                <a href=""><i class="fa fa-reply comment-icon-reply" aria-hidden="true"></i></a>
+                            </li>
+                        </ul>
+                    </div>
+                    <div class="comment-content">{{ comment.body }}</div>
+                  </div>
+              </li>
+              <ul class="media-list reply-list">
+                <li class="media">
+                  <div class="media-left media-top comment-avatar">
+                      <img class="media-object" src="{{ current_user.gravatar(size=50) }}" alt="">
+                  </div>
+                  <div class="media-body comment-box">
+                      <div class="comment-head">
+                          <ul class="list-inline">
+                              <li><h5 class="comment-author media-heading">{{ comment.author.username }}</h5></li>
+                              <li><span class="label label-primary">author</span></li>
+                              <li><p>{{ moment(comment.timestamp).fromNow() }}</p></li>
+                              <li class="pull-right">
+                                  <a href=""><i class="fa fa-heart comment-icon-like" aria-hidden="true"></i></a>
+                                  <a href=""><i class="fa fa-reply comment-icon-reply" aria-hidden="true"></i></a>
+                              </li>
+                          </ul>
+                      </div>
+                      <div class="comment-content">Lorem ipsum dolor sit amet, consectetur adipisicing elit. Velit omnis animi et iure laudantium vitae, praesentium optio, sapiente distinctio illo?</div>
+                  </div>
+                </li>
+              </ul>
+          </div>
           {% endfor %}
-      </ul>
+          </ul>
       {% endif %}
     </div>
 

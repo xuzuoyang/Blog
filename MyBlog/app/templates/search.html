@@ -28,7 +28,10 @@
               <div class="blog">
                   <div class="blog-post">
                     <h2 class="blog-post-title">{{ post.title }}</h2>
-                    <p class="blog-post-meta">{{ moment(post.timestamp).fromNow() }} by <a href="#">{{ post.author.username }}</a></p>
+                    <p class="blog-post-meta">
+                        <i class="fa fa-calendar" aria-hidden="true"></i>
+                        written: {{ moment(post.timestamp).fromNow() }} & last edit: {{ moment(post.last_edit).fromNow() }}
+                    </p>
                     <p>{{ post.body | safe }}</p>
                   </div>
                   <div class="details">

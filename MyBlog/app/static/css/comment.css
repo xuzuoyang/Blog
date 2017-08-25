@@ -1,0 +1,55 @@
+div.comment-container {
+    margin-bottom: 30px;
+    padding-left: 20px;
+    padding-right: 20px;
+    padding-top: 10px;
+    padding-bottom: 10px;
+    box-shadow: 7px 7px 6px 0 rgba(0, 0, 0, 0.2), -3px -3px 20px 0 rgba(0, 0, 0, 0.19);
+}
+
+.reply-list {
+	padding-left: 88px;
+	clear: both;
+	margin-top: 15px;
+}
+
+.comment-box .comment-head {
+	background: #FCFCFC;
+	padding: 0px 2px;
+	border-bottom: 1px solid #E5E5E5;
+	overflow: hidden;
+	-webkit-border-radius: 4px 4px 0 0;
+	-moz-border-radius: 4px 4px 0 0;
+	border-radius: 4px 4px 0 0;
+}
+
+.comment-box .comment-content {
+	background: #FFF;
+	padding: 12px;
+	font-size: 15px;
+	color: #595959;
+	-webkit-border-radius: 0 0 4px 4px;
+	-moz-border-radius: 0 0 4px 4px;
+	border-radius: 0 0 4px 4px;
+}
+
+i.comment-icon-like {
+    float: left;
+    color: #A6A6A6;
+}
+i.comment-icon-reply {
+    float: left;
+    color: #A6A6A6;
+    margin-left: 7px;
+}
+
+i.comment-icon-like:hover {
+	color: #FF0000;
+}
+i.comment-icon-reply:hover {
+	color: #03658c;
+}
+
+h5.comment-author {
+    color: #03658c;
+}

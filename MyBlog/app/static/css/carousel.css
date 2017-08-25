@@ -128,14 +128,14 @@ div.blog {
     padding-right: 20px;
     padding-top: 10px;
     padding-bottom: 10px;
-    box-shadow: 10px 10px 8px 0 rgba(0, 0, 0, 0.2), -3px -3px 20px 0 rgba(0, 0, 0, 0.19);
+    box-shadow: 8px 8px 8px 0 rgba(0, 0, 0, 0.2), -3px -3px 20px 0 rgba(0, 0, 0, 0.19);
 }
 div.side {
     padding-left: 15px;
     padding-right: 15px;
     padding-top: 15px;
     padding-bottom: 15px;
-    box-shadow: 10px 10px 8px 0 rgba(0, 0, 0, 0.2), -3px -3px 20px 0 rgba(0, 0, 0, 0.19);
+    box-shadow: 8px 8px 8px 0 rgba(0, 0, 0, 0.2), -3px -3px 20px 0 rgba(0, 0, 0, 0.19);
 }
 
 hr { height:1px;border:none;border-top:1px solid #D3D3D3; }
