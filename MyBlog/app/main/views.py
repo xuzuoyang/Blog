@@ -2,7 +2,7 @@ import logging, json, oss2
 from enum import Enum
 from .. import db
 from . import main
-from .forms import PostForm, CommentForm, MessageForm
+from .forms import PostForm, CommentForm, MessageForm, ReplyForm
 from ..models import User, Post, Permission, Category, Comment, Tag, Tagging, Message
 from ..decorators import permission_required, admin_required
 from flask_login import login_required, current_user
@@ -115,10 +115,10 @@ def blog(blog_id):
     """Blog detail page.
     """
     post = Post.query.filter_by(id=blog_id).first()
-    form = CommentForm()
-    if current_user.can(Permission.COMMENT) and form.validate_on_submit():
+    comment_form, reply_form = CommentForm(), ReplyForm()
+    if current_user.can(Permission.COMMENT) and comment_form.validate_on_submit():
         logger.info('Submitting a new comment.')
-        body = form.body.data
+        body = comment_form.body.data
         author = current_user._get_current_object()
         comment = Comment(body=body, author=author, post=post)
         db.session.add(comment)
@@ -126,7 +126,26 @@ def blog(blog_id):
     logger.info('Visiting detail page of blog {}.'.format(blog_id))
     categories = Category.query.all()
     tags = Tag.query.all()
-    return render_template('blog.html', post=post, form=form, categories=categories, tags=tags)
+    return render_template('blog.html', post=post, comment_form=comment_form,
+                           reply_form=reply_form, categories=categories,
+                           tags=tags, Comment=Comment)
+
+
+@main.route('/reply/<blog_id>', methods=['POST'])
+@login_required
+@permission_required(Permission.COMMENT)
+def reply(blog_id):
+    """Interface of making comment replies.
+    """
+    form = request.form
+    parent_id, body = form.get('parent_id', type=int, default=None), form.get('content', type=str, default=None)
+    if parent_id is None or body is None:
+        return jsonify(status='failure', blog_id=blog_id)
+    post = Post.query.filter_by(id=blog_id).first()
+    author = current_user._get_current_object()
+    comment = Comment(body=body, author=author, post=post, parent_id=parent_id)
+    db.session.add(comment)
+    return jsonify(url=url_for('main.blog', blog_id=blog_id))
 
 
 @main.route('/thumb-up/<blog_id>', methods=['POST'])

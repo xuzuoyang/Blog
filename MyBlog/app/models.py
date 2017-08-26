@@ -48,6 +48,20 @@ class Role(db.Model):
         return 'Role <%r>' % self.name
 
 
+class PostThumbing(db.Model):
+    __tablename__ = 'postthumbs'
+    post_id = db.Column(db.Integer, db.ForeignKey('posts.id'), primary_key=True)
+    user_id = db.Column(db.Integer, db.ForeignKey('users.id'), primary_key=True)
+    timestamp = db.Column(db.DateTime, default=datetime.utcnow)
+
+
+class CommentThumbing(db.Model):
+    __tablename__ = 'commentthumbs'
+    comment_id = db.Column(db.Integer, db.ForeignKey('comments.id'), primary_key=True)
+    user_id = db.Column(db.Integer, db.ForeignKey('users.id'), primary_key=True)
+    timestamp = db.Column(db.DateTime, default=datetime.utcnow)
+
+
 class User(UserMixin, db.Model):
     __tablename__ = 'users'
     mysql_charset = 'utf8'
@@ -62,6 +76,12 @@ class User(UserMixin, db.Model):
     messages = db.relationship('Message', backref='author', lazy='dynamic')
     avatar_hash = db.Column(db.String(32))
     member_since = db.Column(db.DateTime(), default=datetime.utcnow)
+    post_thumb_up = db.relationship('PostThumbing', foreign_keys=[PostThumbing.user_id],
+                            backref=db.backref('user', lazy='joined'), lazy='dynamic',
+                            cascade='all, delete-orphan')
+    comment_thumb_up = db.relationship('CommentThumbing', foreign_keys=[CommentThumbing.user_id],
+                            backref=db.backref('user', lazy='joined'), lazy='dynamic',
+                            cascade='all, delete-orphan')
 
     def __init__(self, **kwargs):
         logger.info('Start initiating user...')
@@ -160,7 +180,9 @@ class Post(db.Model):
     tagging = db.relationship('Tagging', foreign_keys=[Tagging.post_id],
                            backref=db.backref('post', lazy='joined'), lazy='dynamic',
                            cascade='all, delete-orphan')
-    thumb_up = db.Column(db.Integer, default=0)
+    thumb_up = db.relationship('PostThumbing', foreign_keys=[PostThumbing.post_id],
+                               backref=db.backref('post', lazy='joined'), lazy='dynamic',
+                               cascade='all, delete-orphan')
 
     @staticmethod
     def generate_fake(count=100):
@@ -237,6 +259,10 @@ class Comment(db.Model):
     timestamp = db.Column(db.DateTime, default=datetime.utcnow)
     author_id = db.Column(db.Integer, db.ForeignKey('users.id'))
     post_id = db.Column(db.Integer, db.ForeignKey('posts.id'))
+    parent_id = db.Column(db.Integer)
+    thumb_up = db.relationship('CommentThumbing', foreign_keys=[CommentThumbing.comment_id],
+                               backref=db.backref('comment', lazy='joined'), lazy='dynamic',
+                               cascade='all, delete-orphan')
 
 
 class Message(db.Model):

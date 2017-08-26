@@ -3,12 +3,12 @@
 
 {% block title %}Detail Page{% endblock %}
 {% block head %}
-<link rel="stylesheet" type="text/css" href="{{ url_for('static', filename='css/carousel.css') }}">
 <link rel="stylesheet" type="text/css" href="{{ url_for('static', filename='css/comment.css') }}">
 {% endblock %}
 
 {% block content %}
 <div class="container content">
+
   <div class="row">
 
     <div class="col-sm-8 blog-main">
@@ -33,7 +33,7 @@
               <li>
                   <a id="thumb-up" href="javascript:void(0);" onclick="thumbup(this)"><i class="fa fa-thumbs-o-up fa-lg" aria-hidden="true"></i></a>
                   <span class="badge">{% if post.thumb_up %}
-                          {{ post.thumb_up }}
+                          {{ post.thumb_up.all()|length }}
                   {% else %}
                           {{ 0 }}
                   {% endif %}
@@ -45,11 +45,11 @@
 
       <form class="form" method="post">
           <div class="form-group">
-              {{ form.hidden_tag() }}
-              {{ wtf.form_field(form.body) }}
+              {{ comment_form.hidden_tag() }}
+              {{ wtf.form_field(comment_form.body) }}
           </div>
           <div class="form-group">
-              {{ wtf.form_field(form.submit, button_map={'submit': 'btn btn-primary'}) }}
+              {{ wtf.form_field(comment_form.submit, button_map={'submit': 'btn btn-primary'}) }}
           </div>
       </form>
 
@@ -75,7 +75,11 @@
                             <li><p>{{ moment(comment.timestamp).fromNow() }}</p></li>
                             <li class="pull-right">
                                 <a href=""><i class="fa fa-heart comment-icon-like" aria-hidden="true"></i></a>
-                                <a href=""><i class="fa fa-reply comment-icon-reply" aria-hidden="true"></i></a>
+                                <a id="reply" href="javascript:void(0);" onclick="reply(this)">
+                                    <i class="fa fa-reply comment-icon-reply" aria-hidden="true">
+                                        <span>{{ comment.id }}</span>
+                                    </i>
+                                </a>
                             </li>
                         </ul>
                     </div>
@@ -83,6 +87,7 @@
                   </div>
               </li>
               <ul class="media-list reply-list">
+                {% for reply in Comment.query.filter_by(parent_id=comment.id).all() %}
                 <li class="media">
                   <div class="media-left media-top comment-avatar">
                       <img class="media-object" src="{{ current_user.gravatar(size=50) }}" alt="">
@@ -90,22 +95,31 @@
                   <div class="media-body comment-box">
                       <div class="comment-head">
                           <ul class="list-inline">
-                              <li><h5 class="comment-author media-heading">{{ comment.author.username }}</h5></li>
-                              <li><span class="label label-primary">author</span></li>
-                              <li><p>{{ moment(comment.timestamp).fromNow() }}</p></li>
-                              <li class="pull-right">
+                              <li><h5 class="comment-author media-heading">{{ reply.author.username }}</h5></li>
+                              <li><span class="label label-success">replied</span></li>
+                              <li><p>{{ moment(reply.timestamp).fromNow() }}</p></li>
+                              <!-- <li class="pull-right">
                                   <a href=""><i class="fa fa-heart comment-icon-like" aria-hidden="true"></i></a>
-                                  <a href=""><i class="fa fa-reply comment-icon-reply" aria-hidden="true"></i></a>
-                              </li>
+                                  <a id="reply" href="javascript:void(0);" onclick="reply(this)">
+                                      <i class="fa fa-reply comment-icon-reply" aria-hidden="true">
+                                          <span>{{ comment.id }}</span>
+                                      </i>
+                                  </a>
+                              </li> -->
                           </ul>
                       </div>
-                      <div class="comment-content">Lorem ipsum dolor sit amet, consectetur adipisicing elit. Velit omnis animi et iure laudantium vitae, praesentium optio, sapiente distinctio illo?</div>
+                      <div class="comment-content">{{ reply.body }}</div>
                   </div>
                 </li>
+                {% if not loop.last %}
+                <hr>
+                {% endif %}
+
+                {% endfor %}
               </ul>
           </div>
           {% endfor %}
-          </ul>
+      </ul>
       {% endif %}
     </div>
 
@@ -142,13 +156,37 @@
     </div>
 
   </div>
+
+  <div class="modal fade" id="replyModal" tabindex="-1" role="dialog" aria-labelledby="exampleModalLabel">
+    <div class="modal-dialog" role="document">
+      <div class="modal-content">
+        <div class="modal-header">
+          <button type="button" class="close" data-dismiss="modal" aria-label="Close"><span aria-hidden="true">&times;</span></button>
+          <h4 class="modal-title" id="exampleModalLabel">Reply to: </h4>
+        </div>
+        <form class="form" method="post">
+            <div class="modal-body">
+                <div class="form-group">
+                    <textarea id="reply_content" class="form-control" rows="3"></textarea>
+                </div>
+            </div>
+            <div class="modal-footer">
+                <div class="form-group">
+                    <input id="reply_submit" class="btn btn-primary" type="button" value="Submit">
+                </div>
+            </div>
+        </form>
+      </div>
+    </div>
+  </div>
+
 </div>
 {% endblock %}
 
 {% block scripts %}
 <script>
 blog_id = {{ post.id|safe }};
-url = "/thumb-up/"+blog_id
+url = "/thumb-up/"+blog_id;
 function thumbup(object){
     data = {id: blog_id};
     $.ajax({
@@ -169,6 +207,33 @@ function thumbup(object){
         },
         dataType: "json"
     })
-}
+};
+url = "/reply/"+blog_id;
+function reply(object){
+    parent_id = $(object).find("span").text();
+    $('#reply_submit').click(function() {
+        content = $('#reply_content').val();
+        data = {parent_id: parent_id, content: content};
+        $.ajax({
+          type: "POST",
+          url: url,
+          data: data,
+          success: function (data, textStatus) {
+            if (data.url) {
+                // alert(data.url);
+                window.location = data.url;
+            } else {
+                window.location = "/";
+            }
+          },
+          error: function (xhr, error) {
+            alert(xhr.responseText);
+            alert(xhr.status);
+          },
+          dataType: "json"
+        });
+    });
+    $('#replyModal').modal();
+};
 </script>
 {% endblock %}

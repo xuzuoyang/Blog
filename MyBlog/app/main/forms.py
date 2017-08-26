@@ -20,3 +20,8 @@ class MessageForm(FlaskForm):
     title = StringField('Title', validators=[InputRequired(), Length(1, 200)])
     body = TextAreaField('Content', validators=[InputRequired(), Length(1)], render_kw={'rows': 3})
     submit = SubmitField('Submit')
+
+
+class ReplyForm(FlaskForm):
+    body = TextAreaField('Comment', validators=[InputRequired(), Length(1)], render_kw={'rows': 3})
+    submit = SubmitField('Submit')

@@ -2,7 +2,9 @@
 {% import "bootstrap/wtf.html" as wtf %}
 
 {% block title %}About Page{% endblock %}
-{% block head %}{% endblock %}
+{% block head %}
+<link rel="stylesheet" type="text/css" href="{{ url_for('static', filename='css/comment.css') }}">
+{% endblock %}
 
 {% block content %}
 <div class="container content">
@@ -25,20 +27,32 @@
         </div>
         <div class="col-sm-8 col-sm-offset-1 col-md-8 col-md-offset-1 col-lg-8 col-lg-offset-1">
             <h4>Message Board</h4>
-            <br>
+            <hr>
             <ul class="media-list">
                 {% for message in messages %}
-                <li class="media">
-                    <div class="media-left media-top">
-                      <a href="#">
-                        <img class="media-object" src="{{ message.author.gravatar(size=50) }}" alt="...">
-                      </a>
-                    </div>
-                    <div class="media-body">
-                      <h4 class="media-heading">{{ message.author.username }}</h4>
-                      <p>{{ message.body }}</p>
-                    </div>
-                </li>
+                <div class="comment-container">
+                    <li class="media">
+                        <div class="media-left media-top comment-avatar">
+                          <a href="#">
+                            <img class="media-object" src="{{ message.author.gravatar(size=50) }}" alt="...">
+                          </a>
+                        </div>
+                        <div class="media-body comment-box">
+                          <div class="comment-head">
+                              <ul class="list-inline">
+                                  <li><h5 class="comment-author media-heading">{{ message.author.username }}</h5></li>
+                                  <li><span class="label label-primary">author</span></li>
+                                  <li><p>{{ moment(message.timestamp).fromNow() }}</p></li>
+                                  <li class="pull-right">
+                                      <a href=""><i class="fa fa-heart comment-icon-like" aria-hidden="true"></i></a>
+                                      <a href=""><i class="fa fa-reply comment-icon-reply" aria-hidden="true"></i></a>
+                                  </li>
+                              </ul>
+                          </div>
+                          <div class="comment-content">{{ message.body }}</div>
+                        </div>
+                    </li>
+                </div>
                 {% endfor %}
             </ul>
         </div>
