@@ -68,7 +68,7 @@ class User(UserMixin, db.Model):
 
     id = db.Column(db.Integer, primary_key=True)
     email = db.Column(db.String(64), unique=True, index=True)
-    username = db.Column(db.String(64, collation='utf8'), unique=True, index=True)
+    username = db.Column(db.String(64, collation='utf8_bin'), unique=True, index=True)
     password_hash = db.Column(db.String(128))
     role_id = db.Column(db.Integer, db.ForeignKey('roles.id'))
     posts = db.relationship('Post', backref='author', lazy='dynamic')
@@ -191,9 +191,9 @@ class Post(db.Model):
     mysql_charset='utf8'
 
     id = db.Column(db.Integer, primary_key=True)
-    title = db.Column(db.String(128, collation='utf8'))
+    title = db.Column(db.String(128, collation='utf8_bin'))
     category_id = db.Column(db.Integer, db.ForeignKey('categories.id'))
-    body = db.Column(db.Text(collation='utf8'))
+    body = db.Column(db.Text(collation='utf8_bin'))
     author_id = db.Column(db.Integer, db.ForeignKey('users.id'))
     timestamp = db.Column(db.DateTime, index=True, default=datetime.utcnow)
     last_edit = db.Column(db.DateTime, index=True, default=datetime.utcnow)
@@ -234,7 +234,7 @@ class Tag(db.Model):
     mysql_charset='utf8'
 
     id = db.Column(db.Integer, primary_key=True)
-    name = db.Column(db.String(128, collation='utf8'))
+    name = db.Column(db.String(128, collation='utf8_bin'))
     tagging = db.relationship('Tagging', foreign_keys=[Tagging.tag_id],
                             backref=db.backref('tag', lazy='joined'), lazy='dynamic',
                             cascade='all, delete-orphan')
@@ -276,7 +276,7 @@ class Comment(db.Model):
     mysql_charset='utf8'
 
     id = db.Column(db.Integer, primary_key=True)
-    body = db.Column(db.Text(collation='utf8'))
+    body = db.Column(db.Text(collation='utf8_bin'))
     timestamp = db.Column(db.DateTime, default=datetime.utcnow)
     author_id = db.Column(db.Integer, db.ForeignKey('users.id'))
     post_id = db.Column(db.Integer, db.ForeignKey('posts.id'))
@@ -291,7 +291,7 @@ class Message(db.Model):
     mysql_charset = 'utf-8'
 
     id = db.Column(db.Integer, primary_key=True)
-    title = db.Column(db.String(128, collation='utf8'))
-    body = db.Column(db.Text(collation='utf8'))
+    title = db.Column(db.String(128, collation='utf8_bin'))
+    body = db.Column(db.Text(collation='utf8_bin'))
     timestamp = db.Column(db.DateTime, default=datetime.utcnow)
     author_id = db.Column(db.Integer, db.ForeignKey('users.id'))
