@@ -11,7 +11,7 @@
 
     <div class="row">
         <div class="col-sm-3 col-md-3 col-lg-3">
-                <img class="img-rounded profile-thumbnail" src="{{ url_for('static', filename='pics/g2.jpg') }}">
+                <img class="img-rounded profile-thumbnail" src="{{ url_for('static', filename='pics/portrait.jpg') }}">
                 <div class="profile-header">
                     <h1>Zuoyang</h1>
                     <p>From: Beijing</p>
@@ -20,7 +20,7 @@
                     <p>Interests: Python | Webdev | Bigdata</p>
                     <p>
                         <a class="btn btn-success" role="button" href="https://www.github.com/xuzuoyang" target="_blank">Github</a>
-                        <a class="btn btn-primary" role="button" data-toggle="modal" data-target="#messageModal">Leave a message</a>
+                        <a class="btn btn-primary" role="button" href="javascript:void(0);" onclick="leavemessage(this)">Leave a message</a>
                     </p>
                 </div>
 
@@ -84,9 +84,35 @@
       </div>
     </div>
 
+    <div class="modal fade" id="loginModal" tabindex="-1" role="dialog" aria-labelledby="exampleModalLabel">
+      <div class="modal-dialog" role="document">
+        <div class="modal-content">
+          <div class="modal-header">
+            <button type="button" class="close" data-dismiss="modal" aria-label="Close"><span aria-hidden="true">&times;</span></button>
+            <h4 class="modal-title" id="exampleModalLabel">Message for here</h4>
+          </div>
+          <div class="modal-body">
+              <p>You need to log in to leave a message ^_^</p>
+          </div>
+          <div class="modal-footer">
+              <button type="button" class="btn btn-warning" data-dismiss="modal">Close</button>
+              <a class="btn btn-primary" role="button" href="{{ url_for('auth.login') }}">Log in</a>
+          </div>
+        </div>
+      </div>
+    </div>
+
 </div>
 {% endblock %}
 
 {% block scripts %}
-
+<script type="text/javascript">
+function leavemessage(object){
+    {% if current_user.is_anonymous %}
+        $("#loginModal").modal()
+    {% else %}
+        $("#messageModal").modal()
+    {% endif %}
+}
+</script>
 {% endblock %}

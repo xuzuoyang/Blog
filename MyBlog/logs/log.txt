@@ -3073,3 +3073,672 @@
 2017-08-26 23:37:26,160 : INFO : _internal : _log : 127.0.0.1 - - [26/Aug/2017 23:37:26] "GET /blog/115 HTTP/1.1" 200 -
 2017-08-26 23:38:30,701 : INFO : _internal : _log : 127.0.0.1 - - [26/Aug/2017 23:38:30] "GET /blog/115 HTTP/1.1" 200 -
 2017-08-26 23:39:09,974 : INFO : _internal : _log : 127.0.0.1 - - [26/Aug/2017 23:39:09] "GET /blog/115 HTTP/1.1" 200 -
+2017-08-27 10:39:08,578 : INFO : _internal : _log :  * Running on http://127.0.0.1:5000/ (Press CTRL+C to quit)
+2017-08-27 10:39:08,591 : INFO : _internal : _log :  * Restarting with stat
+2017-08-27 10:39:09,082 : WARNING : _internal : _log :  * Debugger is active!
+2017-08-27 10:39:09,083 : INFO : _internal : _log :  * Debugger PIN: 269-707-563
+2017-08-27 10:39:12,554 : INFO : _internal : _log : 127.0.0.1 - - [27/Aug/2017 10:39:12] "GET /blog/115 HTTP/1.1" 200 -
+2017-08-27 10:44:52,009 : INFO : _internal : _log : 127.0.0.1 - - [27/Aug/2017 10:44:52] "GET /blog/115 HTTP/1.1" 200 -
+2017-08-27 10:45:02,379 : INFO : _internal : _log : 127.0.0.1 - - [27/Aug/2017 10:45:02] "POST /reply/115 HTTP/1.1" 200 -
+2017-08-27 10:45:02,464 : INFO : _internal : _log : 127.0.0.1 - - [27/Aug/2017 10:45:02] "GET /blog/115 HTTP/1.1" 200 -
+2017-08-27 10:45:51,027 : INFO : _internal : _log : 127.0.0.1 - - [27/Aug/2017 10:45:51] "GET /blog/115 HTTP/1.1" 200 -
+2017-08-27 10:47:24,988 : INFO : _internal : _log : 127.0.0.1 - - [27/Aug/2017 10:47:24] "GET /blog/115 HTTP/1.1" 200 -
+2017-08-27 10:48:18,126 : INFO : _internal : _log : 127.0.0.1 - - [27/Aug/2017 10:48:18] "GET /static/css/bootstrap.min.css.map HTTP/1.1" 404 -
+2017-08-27 10:51:46,853 : INFO : _internal : _log : 127.0.0.1 - - [27/Aug/2017 10:51:46] "GET /blog/115 HTTP/1.1" 200 -
+2017-08-27 10:52:13,922 : INFO : _internal : _log : 127.0.0.1 - - [27/Aug/2017 10:52:13] "GET /blog/115 HTTP/1.1" 200 -
+2017-08-27 10:53:00,663 : INFO : _internal : _log : 127.0.0.1 - - [27/Aug/2017 10:53:00] "GET /blog/115 HTTP/1.1" 200 -
+2017-08-27 10:53:46,785 : INFO : _internal : _log : 127.0.0.1 - - [27/Aug/2017 10:53:46] "GET /blog/115 HTTP/1.1" 200 -
+2017-08-27 10:53:59,930 : INFO : _internal : _log : 127.0.0.1 - - [27/Aug/2017 10:53:59] "GET /blog/115 HTTP/1.1" 200 -
+2017-08-27 10:55:16,360 : INFO : _internal : _log : 127.0.0.1 - - [27/Aug/2017 10:55:16] "POST /reply/115 HTTP/1.1" 200 -
+2017-08-27 10:55:16,410 : INFO : _internal : _log : 127.0.0.1 - - [27/Aug/2017 10:55:16] "POST /reply/115 HTTP/1.1" 200 -
+2017-08-27 10:55:16,443 : INFO : _internal : _log : 127.0.0.1 - - [27/Aug/2017 10:55:16] "GET /blog/115 HTTP/1.1" 200 -
+2017-08-27 10:55:16,468 : INFO : _internal : _log : 127.0.0.1 - - [27/Aug/2017 10:55:16] "GET /blog/115 HTTP/1.1" 200 -
+2017-08-27 10:56:20,384 : INFO : _internal : _log : 127.0.0.1 - - [27/Aug/2017 10:56:20] "GET /blog/115 HTTP/1.1" 200 -
+2017-08-27 10:58:23,579 : INFO : _internal : _log : 127.0.0.1 - - [27/Aug/2017 10:58:23] "GET /blog/115 HTTP/1.1" 200 -
+2017-08-27 11:00:20,987 : INFO : _internal : _log :  * Detected change in '/home/xuzuoyang/mygit/MyBlog/app/main/views.py', reloading
+2017-08-27 11:00:21,084 : INFO : _internal : _log :  * Restarting with stat
+2017-08-27 11:00:21,657 : WARNING : _internal : _log :  * Debugger is active!
+2017-08-27 11:00:21,658 : INFO : _internal : _log :  * Debugger PIN: 269-707-563
+2017-08-27 11:01:25,899 : INFO : _internal : _log : 127.0.0.1 - - [27/Aug/2017 11:01:25] "GET /blog/115 HTTP/1.1" 200 -
+2017-08-27 11:01:44,168 : INFO : _internal : _log : 127.0.0.1 - - [27/Aug/2017 11:01:44] "GET /blog/115 HTTP/1.1" 200 -
+2017-08-27 11:03:14,982 : INFO : _internal : _log : 127.0.0.1 - - [27/Aug/2017 11:03:14] "GET /blog/115 HTTP/1.1" 200 -
+2017-08-27 11:18:09,665 : INFO : _internal : _log : 127.0.0.1 - - [27/Aug/2017 11:18:09] "GET /blog/115 HTTP/1.1" 200 -
+2017-08-27 11:18:10,077 : INFO : _internal : _log : 127.0.0.1 - - [27/Aug/2017 11:18:10] "GET /favicon.ico HTTP/1.1" 404 -
+2017-08-27 11:35:33,536 : INFO : _internal : _log :  * Detected change in '/home/xuzuoyang/mygit/MyBlog/app/models.py', reloading
+2017-08-27 11:35:33,612 : INFO : _internal : _log :  * Restarting with stat
+2017-08-27 11:35:34,130 : WARNING : _internal : _log :  * Debugger is active!
+2017-08-27 11:35:34,130 : INFO : _internal : _log :  * Debugger PIN: 269-707-563
+2017-08-27 11:42:42,712 : INFO : _internal : _log :  * Detected change in '/home/xuzuoyang/mygit/MyBlog/app/models.py', reloading
+2017-08-27 11:42:42,795 : INFO : _internal : _log :  * Restarting with stat
+2017-08-27 11:42:43,292 : WARNING : _internal : _log :  * Debugger is active!
+2017-08-27 11:42:43,292 : INFO : _internal : _log :  * Debugger PIN: 269-707-563
+2017-08-27 11:52:35,855 : INFO : _internal : _log : 127.0.0.1 - - [27/Aug/2017 11:52:35] "GET / HTTP/1.1" 200 -
+2017-08-27 11:52:35,867 : INFO : _internal : _log : 127.0.0.1 - - [27/Aug/2017 11:52:35] "GET /static/css/bootstrap.min.css HTTP/1.1" 304 -
+2017-08-27 11:52:35,869 : INFO : _internal : _log : 127.0.0.1 - - [27/Aug/2017 11:52:35] "GET /static/font-awesome-4.7.0/css/font-awesome.min.css HTTP/1.1" 304 -
+2017-08-27 11:52:35,871 : INFO : _internal : _log : 127.0.0.1 - - [27/Aug/2017 11:52:35] "GET /static/css/carousel.css HTTP/1.1" 304 -
+2017-08-27 11:52:35,919 : INFO : _internal : _log : 127.0.0.1 - - [27/Aug/2017 11:52:35] "GET /static/pics/land.jpg HTTP/1.1" 304 -
+2017-08-27 11:52:35,921 : INFO : _internal : _log : 127.0.0.1 - - [27/Aug/2017 11:52:35] "GET /static/pics/mountain.jpg HTTP/1.1" 304 -
+2017-08-27 11:52:35,923 : INFO : _internal : _log : 127.0.0.1 - - [27/Aug/2017 11:52:35] "GET /static/pics/sunset.jpg HTTP/1.1" 304 -
+2017-08-27 11:52:35,965 : INFO : _internal : _log : 127.0.0.1 - - [27/Aug/2017 11:52:35] "GET /static/font-awesome-4.7.0/fonts/fontawesome-webfont.woff2?v=4.7.0 HTTP/1.1" 304 -
+2017-08-27 11:55:28,652 : INFO : _internal : _log :  * Detected change in '/home/xuzuoyang/mygit/MyBlog/app/main/views.py', reloading
+2017-08-27 11:55:28,756 : INFO : _internal : _log :  * Restarting with stat
+2017-08-27 11:55:29,355 : WARNING : _internal : _log :  * Debugger is active!
+2017-08-27 11:55:29,355 : INFO : _internal : _log :  * Debugger PIN: 269-707-563
+2017-08-27 11:55:32,386 : INFO : _internal : _log : 127.0.0.1 - - [27/Aug/2017 11:55:32] "GET /blog/115 HTTP/1.1" 200 -
+2017-08-27 11:55:32,396 : INFO : _internal : _log : 127.0.0.1 - - [27/Aug/2017 11:55:32] "GET /static/css/comment.css HTTP/1.1" 304 -
+2017-08-27 11:55:34,770 : INFO : _internal : _log : 127.0.0.1 - - [27/Aug/2017 11:55:34] "POST /reply/115 HTTP/1.1" 200 -
+2017-08-27 11:55:34,835 : INFO : _internal : _log : 127.0.0.1 - - [27/Aug/2017 11:55:34] "GET / HTTP/1.1" 200 -
+2017-08-27 11:55:45,231 : INFO : _internal : _log : 127.0.0.1 - - [27/Aug/2017 11:55:45] "GET /blog/115 HTTP/1.1" 200 -
+2017-08-27 11:56:59,500 : INFO : _internal : _log : 127.0.0.1 - - [27/Aug/2017 11:56:59] "POST /reply/115 HTTP/1.1" 200 -
+2017-08-27 11:56:59,574 : INFO : _internal : _log : 127.0.0.1 - - [27/Aug/2017 11:56:59] "GET / HTTP/1.1" 200 -
+2017-08-27 11:57:14,281 : INFO : _internal : _log : 127.0.0.1 - - [27/Aug/2017 11:57:14] "GET /blog/115 HTTP/1.1" 200 -
+2017-08-27 11:58:11,667 : INFO : _internal : _log : 127.0.0.1 - - [27/Aug/2017 11:58:11] "GET /blog/115 HTTP/1.1" 200 -
+2017-08-27 11:58:13,389 : INFO : _internal : _log : 127.0.0.1 - - [27/Aug/2017 11:58:13] "POST /reply/115 HTTP/1.1" 200 -
+2017-08-27 11:58:13,458 : INFO : _internal : _log : 127.0.0.1 - - [27/Aug/2017 11:58:13] "GET / HTTP/1.1" 200 -
+2017-08-27 12:00:44,628 : INFO : _internal : _log : 127.0.0.1 - - [27/Aug/2017 12:00:44] "GET /blog/115 HTTP/1.1" 200 -
+2017-08-27 12:00:46,875 : INFO : _internal : _log : 127.0.0.1 - - [27/Aug/2017 12:00:46] "POST /thumb-up/115 HTTP/1.1" 200 -
+2017-08-27 12:00:46,942 : INFO : _internal : _log : 127.0.0.1 - - [27/Aug/2017 12:00:46] "GET /blog/115 HTTP/1.1" 200 -
+2017-08-27 12:00:58,364 : INFO : _internal : _log : 127.0.0.1 - - [27/Aug/2017 12:00:58] "POST /thumb-up/115 HTTP/1.1" 200 -
+2017-08-27 12:00:58,415 : INFO : _internal : _log : 127.0.0.1 - - [27/Aug/2017 12:00:58] "GET /blog/115 HTTP/1.1" 200 -
+2017-08-27 12:01:03,894 : INFO : _internal : _log : 127.0.0.1 - - [27/Aug/2017 12:01:03] "POST /thumb-up/115 HTTP/1.1" 200 -
+2017-08-27 12:01:03,926 : INFO : _internal : _log : 127.0.0.1 - - [27/Aug/2017 12:01:03] "GET /blog/115 HTTP/1.1" 200 -
+2017-08-27 12:01:14,450 : INFO : _internal : _log : 127.0.0.1 - - [27/Aug/2017 12:01:14] "GET /auth/logout HTTP/1.1" 302 -
+2017-08-27 12:01:14,481 : INFO : _internal : _log : 127.0.0.1 - - [27/Aug/2017 12:01:14] "GET / HTTP/1.1" 200 -
+2017-08-27 12:01:17,063 : INFO : _internal : _log : 127.0.0.1 - - [27/Aug/2017 12:01:17] "GET /auth/login HTTP/1.1" 200 -
+2017-08-27 12:01:17,077 : INFO : _internal : _log : 127.0.0.1 - - [27/Aug/2017 12:01:17] "GET /static/css/signin.css HTTP/1.1" 200 -
+2017-08-27 12:01:17,080 : INFO : _internal : _log : 127.0.0.1 - - [27/Aug/2017 12:01:17] "GET /static/js/jquery.min.js HTTP/1.1" 200 -
+2017-08-27 12:01:27,603 : INFO : _internal : _log : 127.0.0.1 - - [27/Aug/2017 12:01:27] "POST /auth/login HTTP/1.1" 302 -
+2017-08-27 12:01:27,669 : INFO : _internal : _log : 127.0.0.1 - - [27/Aug/2017 12:01:27] "GET / HTTP/1.1" 200 -
+2017-08-27 12:01:31,631 : INFO : _internal : _log : 127.0.0.1 - - [27/Aug/2017 12:01:31] "GET /blog/115 HTTP/1.1" 200 -
+2017-08-27 12:02:00,248 : INFO : _internal : _log : 127.0.0.1 - - [27/Aug/2017 12:02:00] "POST /thumb-up/115 HTTP/1.1" 200 -
+2017-08-27 12:02:00,316 : INFO : _internal : _log : 127.0.0.1 - - [27/Aug/2017 12:02:00] "GET /blog/115 HTTP/1.1" 200 -
+2017-08-27 12:02:02,262 : INFO : _internal : _log : 127.0.0.1 - - [27/Aug/2017 12:02:02] "POST /thumb-up/115 HTTP/1.1" 200 -
+2017-08-27 12:02:02,296 : INFO : _internal : _log : 127.0.0.1 - - [27/Aug/2017 12:02:02] "GET /blog/115 HTTP/1.1" 200 -
+2017-08-27 12:02:13,997 : INFO : _internal : _log : 127.0.0.1 - - [27/Aug/2017 12:02:13] "GET /manage-blog HTTP/1.1" 200 -
+2017-08-27 12:02:15,281 : INFO : _internal : _log : 127.0.0.1 - - [27/Aug/2017 12:02:15] "GET /manage-user HTTP/1.1" 200 -
+2017-08-27 12:04:49,303 : INFO : _internal : _log : 127.0.0.1 - - [27/Aug/2017 12:04:49] "GET /blog/115 HTTP/1.1" 200 -
+2017-08-27 12:12:11,447 : INFO : _internal : _log :  * Detected change in '/home/xuzuoyang/mygit/MyBlog/app/models.py', reloading
+2017-08-27 12:12:11,536 : INFO : _internal : _log :  * Restarting with stat
+2017-08-27 12:26:31,746 : INFO : _internal : _log :  * Running on http://127.0.0.1:5000/ (Press CTRL+C to quit)
+2017-08-27 12:26:31,746 : INFO : _internal : _log :  * Restarting with stat
+2017-08-27 12:26:32,232 : WARNING : _internal : _log :  * Debugger is active!
+2017-08-27 12:26:32,233 : INFO : _internal : _log :  * Debugger PIN: 269-707-563
+2017-08-27 12:40:57,512 : INFO : _internal : _log : 127.0.0.1 - - [27/Aug/2017 12:40:57] "GET /blog/115 HTTP/1.1" 200 -
+2017-08-27 12:41:01,268 : INFO : _internal : _log : 127.0.0.1 - - [27/Aug/2017 12:41:01] "POST /thumb-up-comment/115/5 HTTP/1.1" 200 -
+2017-08-27 12:41:01,357 : INFO : _internal : _log : 127.0.0.1 - - [27/Aug/2017 12:41:01] "GET /blog/115 HTTP/1.1" 200 -
+2017-08-27 12:41:37,774 : INFO : _internal : _log :  * Running on http://127.0.0.1:5000/ (Press CTRL+C to quit)
+2017-08-27 12:41:37,774 : INFO : _internal : _log :  * Restarting with stat
+2017-08-27 12:41:38,263 : WARNING : _internal : _log :  * Debugger is active!
+2017-08-27 12:41:38,264 : INFO : _internal : _log :  * Debugger PIN: 269-707-563
+2017-08-27 12:41:46,346 : INFO : _internal : _log : 127.0.0.1 - - [27/Aug/2017 12:41:46] "GET /blog/115 HTTP/1.1" 200 -
+2017-08-27 12:41:46,364 : INFO : _internal : _log : 127.0.0.1 - - [27/Aug/2017 12:41:46] "GET /static/css/bootstrap.min.css HTTP/1.1" 200 -
+2017-08-27 12:41:46,366 : INFO : _internal : _log : 127.0.0.1 - - [27/Aug/2017 12:41:46] "GET /static/font-awesome-4.7.0/css/font-awesome.min.css HTTP/1.1" 200 -
+2017-08-27 12:41:46,381 : INFO : _internal : _log : 127.0.0.1 - - [27/Aug/2017 12:41:46] "GET /static/css/carousel.css HTTP/1.1" 200 -
+2017-08-27 12:41:46,384 : INFO : _internal : _log : 127.0.0.1 - - [27/Aug/2017 12:41:46] "GET /static/css/comment.css HTTP/1.1" 200 -
+2017-08-27 12:41:46,418 : INFO : _internal : _log : 127.0.0.1 - - [27/Aug/2017 12:41:46] "GET /static/font-awesome-4.7.0/fonts/fontawesome-webfont.woff2?v=4.7.0 HTTP/1.1" 200 -
+2017-08-27 12:41:48,621 : INFO : _internal : _log : 127.0.0.1 - - [27/Aug/2017 12:41:48] "POST /thumb-up-comment/115/5 HTTP/1.1" 200 -
+2017-08-27 12:41:48,683 : INFO : _internal : _log : 127.0.0.1 - - [27/Aug/2017 12:41:48] "GET /blog/115 HTTP/1.1" 200 -
+2017-08-27 12:42:00,998 : INFO : _internal : _log : 127.0.0.1 - - [27/Aug/2017 12:42:00] "POST /thumb-up-comment/115/6 HTTP/1.1" 200 -
+2017-08-27 12:42:01,065 : INFO : _internal : _log : 127.0.0.1 - - [27/Aug/2017 12:42:01] "GET /blog/115 HTTP/1.1" 200 -
+2017-08-27 12:42:26,461 : INFO : _internal : _log : 127.0.0.1 - - [27/Aug/2017 12:42:26] "GET /static/css/bootstrap.min.css.map HTTP/1.1" 404 -
+2017-08-27 12:43:31,063 : INFO : _internal : _log : 127.0.0.1 - - [27/Aug/2017 12:43:31] "GET /blog/115 HTTP/1.1" 200 -
+2017-08-27 12:48:10,746 : INFO : _internal : _log :  * Running on http://127.0.0.1:5000/ (Press CTRL+C to quit)
+2017-08-27 12:48:10,747 : INFO : _internal : _log :  * Restarting with stat
+2017-08-27 12:48:11,233 : WARNING : _internal : _log :  * Debugger is active!
+2017-08-27 12:48:11,233 : INFO : _internal : _log :  * Debugger PIN: 269-707-563
+2017-08-27 12:48:21,204 : INFO : _internal : _log : 127.0.0.1 - - [27/Aug/2017 12:48:21] "GET /blog/115 HTTP/1.1" 500 -
+2017-08-27 12:48:21,219 : INFO : _internal : _log : 127.0.0.1 - - [27/Aug/2017 12:48:21] "GET /blog/115?__debugger__=yes&cmd=resource&f=style.css HTTP/1.1" 200 -
+2017-08-27 12:48:21,221 : INFO : _internal : _log : 127.0.0.1 - - [27/Aug/2017 12:48:21] "GET /blog/115?__debugger__=yes&cmd=resource&f=jquery.js HTTP/1.1" 200 -
+2017-08-27 12:48:21,223 : INFO : _internal : _log : 127.0.0.1 - - [27/Aug/2017 12:48:21] "GET /blog/115?__debugger__=yes&cmd=resource&f=debugger.js HTTP/1.1" 200 -
+2017-08-27 12:48:21,314 : INFO : _internal : _log : 127.0.0.1 - - [27/Aug/2017 12:48:21] "GET /blog/115?__debugger__=yes&cmd=resource&f=console.png HTTP/1.1" 200 -
+2017-08-27 12:48:21,454 : INFO : _internal : _log : 127.0.0.1 - - [27/Aug/2017 12:48:21] "GET /blog/115?__debugger__=yes&cmd=resource&f=console.png HTTP/1.1" 200 -
+2017-08-27 12:48:37,078 : INFO : _internal : _log : 127.0.0.1 - - [27/Aug/2017 12:48:37] "GET /blog/115 HTTP/1.1" 200 -
+2017-08-27 12:48:37,087 : INFO : _internal : _log : 127.0.0.1 - - [27/Aug/2017 12:48:37] "GET /static/css/bootstrap.min.css HTTP/1.1" 200 -
+2017-08-27 12:48:37,089 : INFO : _internal : _log : 127.0.0.1 - - [27/Aug/2017 12:48:37] "GET /static/font-awesome-4.7.0/css/font-awesome.min.css HTTP/1.1" 200 -
+2017-08-27 12:48:37,091 : INFO : _internal : _log : 127.0.0.1 - - [27/Aug/2017 12:48:37] "GET /static/css/carousel.css HTTP/1.1" 200 -
+2017-08-27 12:48:37,093 : INFO : _internal : _log : 127.0.0.1 - - [27/Aug/2017 12:48:37] "GET /static/css/comment.css HTTP/1.1" 200 -
+2017-08-27 12:48:37,148 : INFO : _internal : _log : 127.0.0.1 - - [27/Aug/2017 12:48:37] "GET /static/font-awesome-4.7.0/fonts/fontawesome-webfont.woff2?v=4.7.0 HTTP/1.1" 200 -
+2017-08-27 12:48:47,677 : INFO : _internal : _log : 127.0.0.1 - - [27/Aug/2017 12:48:47] "POST /thumb-up-comment/115/5 HTTP/1.1" 200 -
+2017-08-27 12:48:47,717 : INFO : _internal : _log : 127.0.0.1 - - [27/Aug/2017 12:48:47] "GET /blog/115 HTTP/1.1" 200 -
+2017-08-27 12:50:25,682 : INFO : _internal : _log : 127.0.0.1 - - [27/Aug/2017 12:50:25] "POST /thumb-up-comment/115/7 HTTP/1.1" 200 -
+2017-08-27 12:50:25,758 : INFO : _internal : _log : 127.0.0.1 - - [27/Aug/2017 12:50:25] "GET /blog/115 HTTP/1.1" 200 -
+2017-08-27 12:50:43,216 : INFO : _internal : _log : 127.0.0.1 - - [27/Aug/2017 12:50:43] "POST /thumb-up-comment/115/8 HTTP/1.1" 200 -
+2017-08-27 12:50:43,294 : INFO : _internal : _log : 127.0.0.1 - - [27/Aug/2017 12:50:43] "GET /blog/115 HTTP/1.1" 200 -
+2017-08-27 12:52:02,768 : INFO : _internal : _log :  * Detected change in '/home/xuzuoyang/mygit/MyBlog/app/main/views.py', reloading
+2017-08-27 12:52:02,864 : INFO : _internal : _log :  * Restarting with stat
+2017-08-27 12:52:03,353 : WARNING : _internal : _log :  * Debugger is active!
+2017-08-27 12:52:03,353 : INFO : _internal : _log :  * Debugger PIN: 269-707-563
+2017-08-27 12:53:13,126 : INFO : _internal : _log :  * Detected change in '/home/xuzuoyang/mygit/MyBlog/app/main/views.py', reloading
+2017-08-27 12:53:13,226 : INFO : _internal : _log :  * Restarting with stat
+2017-08-27 12:53:13,725 : WARNING : _internal : _log :  * Debugger is active!
+2017-08-27 12:53:13,726 : INFO : _internal : _log :  * Debugger PIN: 269-707-563
+2017-08-27 12:55:05,975 : INFO : _internal : _log :  * Detected change in '/home/xuzuoyang/mygit/MyBlog/app/models.py', reloading
+2017-08-27 12:55:06,070 : INFO : _internal : _log :  * Restarting with stat
+2017-08-27 12:55:06,561 : WARNING : _internal : _log :  * Debugger is active!
+2017-08-27 12:55:06,562 : INFO : _internal : _log :  * Debugger PIN: 269-707-563
+2017-08-27 12:55:18,677 : INFO : _internal : _log : 127.0.0.1 - - [27/Aug/2017 12:55:18] "GET /blog/115 HTTP/1.1" 200 -
+2017-08-27 12:55:22,124 : INFO : _internal : _log : 127.0.0.1 - - [27/Aug/2017 12:55:22] "POST /thumb-up-comment/115/5 HTTP/1.1" 500 -
+2017-08-27 12:57:36,169 : INFO : _internal : _log :  * Detected change in '/home/xuzuoyang/mygit/MyBlog/app/models.py', reloading
+2017-08-27 12:57:36,269 : INFO : _internal : _log :  * Restarting with stat
+2017-08-27 12:57:36,756 : WARNING : _internal : _log :  * Debugger is active!
+2017-08-27 12:57:36,756 : INFO : _internal : _log :  * Debugger PIN: 269-707-563
+2017-08-27 12:57:40,643 : INFO : _internal : _log : 127.0.0.1 - - [27/Aug/2017 12:57:40] "GET /blog/115 HTTP/1.1" 200 -
+2017-08-27 12:57:42,660 : INFO : _internal : _log : 127.0.0.1 - - [27/Aug/2017 12:57:42] "POST /thumb-up-comment/115/5 HTTP/1.1" 200 -
+2017-08-27 12:57:42,700 : INFO : _internal : _log : 127.0.0.1 - - [27/Aug/2017 12:57:42] "GET /blog/115 HTTP/1.1" 200 -
+2017-08-27 12:57:46,636 : INFO : _internal : _log : 127.0.0.1 - - [27/Aug/2017 12:57:46] "POST /thumb-up-comment/115/6 HTTP/1.1" 200 -
+2017-08-27 12:57:46,678 : INFO : _internal : _log : 127.0.0.1 - - [27/Aug/2017 12:57:46] "GET /blog/115 HTTP/1.1" 200 -
+2017-08-27 12:58:10,568 : INFO : _internal : _log : 127.0.0.1 - - [27/Aug/2017 12:58:10] "GET /blog/115 HTTP/1.1" 200 -
+2017-08-27 12:58:12,763 : INFO : _internal : _log : 127.0.0.1 - - [27/Aug/2017 12:58:12] "POST /thumb-up-comment/115/6 HTTP/1.1" 200 -
+2017-08-27 12:58:12,845 : INFO : _internal : _log : 127.0.0.1 - - [27/Aug/2017 12:58:12] "GET /blog/115 HTTP/1.1" 200 -
+2017-08-27 12:58:16,231 : INFO : _internal : _log : 127.0.0.1 - - [27/Aug/2017 12:58:16] "POST /thumb-up-comment/115/7 HTTP/1.1" 200 -
+2017-08-27 12:58:16,312 : INFO : _internal : _log : 127.0.0.1 - - [27/Aug/2017 12:58:16] "GET /blog/115 HTTP/1.1" 200 -
+2017-08-27 12:58:19,012 : INFO : _internal : _log : 127.0.0.1 - - [27/Aug/2017 12:58:19] "POST /thumb-up-comment/115/8 HTTP/1.1" 200 -
+2017-08-27 12:58:19,097 : INFO : _internal : _log : 127.0.0.1 - - [27/Aug/2017 12:58:19] "GET /blog/115 HTTP/1.1" 200 -
+2017-08-27 12:58:21,244 : INFO : _internal : _log : 127.0.0.1 - - [27/Aug/2017 12:58:21] "POST /thumb-up-comment/115/5 HTTP/1.1" 200 -
+2017-08-27 12:58:21,321 : INFO : _internal : _log : 127.0.0.1 - - [27/Aug/2017 12:58:21] "GET /blog/115 HTTP/1.1" 200 -
+2017-08-27 13:02:59,292 : INFO : _internal : _log : 127.0.0.1 - - [27/Aug/2017 13:02:59] "GET /blog/115 HTTP/1.1" 200 -
+2017-08-27 13:03:01,442 : INFO : _internal : _log : 127.0.0.1 - - [27/Aug/2017 13:03:01] "POST /thumb-up-comment/115/5 HTTP/1.1" 200 -
+2017-08-27 13:03:03,985 : INFO : _internal : _log : 127.0.0.1 - - [27/Aug/2017 13:03:03] "POST /thumb-up-comment/115/6 HTTP/1.1" 200 -
+2017-08-27 13:03:05,833 : INFO : _internal : _log : 127.0.0.1 - - [27/Aug/2017 13:03:05] "GET /blog/115 HTTP/1.1" 200 -
+2017-08-27 13:03:09,600 : INFO : _internal : _log : 127.0.0.1 - - [27/Aug/2017 13:03:09] "POST /thumb-up-comment/115/5 HTTP/1.1" 200 -
+2017-08-27 13:03:12,166 : INFO : _internal : _log : 127.0.0.1 - - [27/Aug/2017 13:03:12] "GET /blog/115 HTTP/1.1" 200 -
+2017-08-27 13:09:31,449 : INFO : _internal : _log : 127.0.0.1 - - [27/Aug/2017 13:09:31] "GET /blog/115 HTTP/1.1" 200 -
+2017-08-27 13:09:34,248 : INFO : _internal : _log : 127.0.0.1 - - [27/Aug/2017 13:09:34] "POST /thumb-up-comment/115/6 HTTP/1.1" 200 -
+2017-08-27 13:09:37,733 : INFO : _internal : _log : 127.0.0.1 - - [27/Aug/2017 13:09:37] "POST /thumb-up-comment/115/6 HTTP/1.1" 200 -
+2017-08-27 13:09:39,866 : INFO : _internal : _log : 127.0.0.1 - - [27/Aug/2017 13:09:39] "GET /blog/115 HTTP/1.1" 200 -
+2017-08-27 13:09:44,004 : INFO : _internal : _log : 127.0.0.1 - - [27/Aug/2017 13:09:44] "POST /thumb-up-comment/115/6 HTTP/1.1" 200 -
+2017-08-27 13:14:53,977 : INFO : _internal : _log : 127.0.0.1 - - [27/Aug/2017 13:14:53] "GET /blog/115 HTTP/1.1" 200 -
+2017-08-27 13:14:55,897 : INFO : _internal : _log : 127.0.0.1 - - [27/Aug/2017 13:14:55] "POST /thumb-up-comment/115/5 HTTP/1.1" 200 -
+2017-08-27 13:14:57,880 : INFO : _internal : _log : 127.0.0.1 - - [27/Aug/2017 13:14:57] "POST /thumb-up-comment/115/6 HTTP/1.1" 200 -
+2017-08-27 13:14:59,577 : INFO : _internal : _log : 127.0.0.1 - - [27/Aug/2017 13:14:59] "POST /thumb-up-comment/115/5 HTTP/1.1" 200 -
+2017-08-27 13:15:03,263 : INFO : _internal : _log : 127.0.0.1 - - [27/Aug/2017 13:15:03] "POST /thumb-up-comment/115/5 HTTP/1.1" 200 -
+2017-08-27 13:15:05,535 : INFO : _internal : _log : 127.0.0.1 - - [27/Aug/2017 13:15:05] "GET /blog/115 HTTP/1.1" 200 -
+2017-08-27 13:15:07,639 : INFO : _internal : _log : 127.0.0.1 - - [27/Aug/2017 13:15:07] "POST /thumb-up-comment/115/5 HTTP/1.1" 200 -
+2017-08-27 13:15:09,496 : INFO : _internal : _log : 127.0.0.1 - - [27/Aug/2017 13:15:09] "GET /blog/115 HTTP/1.1" 200 -
+2017-08-27 13:15:12,117 : INFO : _internal : _log : 127.0.0.1 - - [27/Aug/2017 13:15:12] "POST /thumb-up-comment/115/6 HTTP/1.1" 200 -
+2017-08-27 13:15:15,705 : INFO : _internal : _log : 127.0.0.1 - - [27/Aug/2017 13:15:15] "POST /thumb-up-comment/115/5 HTTP/1.1" 200 -
+2017-08-27 13:15:17,705 : INFO : _internal : _log : 127.0.0.1 - - [27/Aug/2017 13:15:17] "POST /thumb-up-comment/115/5 HTTP/1.1" 200 -
+2017-08-27 13:15:19,823 : INFO : _internal : _log : 127.0.0.1 - - [27/Aug/2017 13:15:19] "POST /thumb-up-comment/115/5 HTTP/1.1" 200 -
+2017-08-27 13:15:26,333 : INFO : _internal : _log : 127.0.0.1 - - [27/Aug/2017 13:15:26] "GET /blog/115 HTTP/1.1" 200 -
+2017-08-27 13:15:31,586 : INFO : _internal : _log : 127.0.0.1 - - [27/Aug/2017 13:15:31] "POST /thumb-up-comment/115/6 HTTP/1.1" 200 -
+2017-08-27 13:15:33,978 : INFO : _internal : _log : 127.0.0.1 - - [27/Aug/2017 13:15:33] "POST /thumb-up-comment/115/6 HTTP/1.1" 200 -
+2017-08-27 13:15:35,746 : INFO : _internal : _log : 127.0.0.1 - - [27/Aug/2017 13:15:35] "POST /thumb-up-comment/115/5 HTTP/1.1" 200 -
+2017-08-27 13:15:37,589 : INFO : _internal : _log : 127.0.0.1 - - [27/Aug/2017 13:15:37] "POST /thumb-up-comment/115/5 HTTP/1.1" 200 -
+2017-08-27 13:17:44,490 : INFO : _internal : _log : 127.0.0.1 - - [27/Aug/2017 13:17:44] "GET /blog/115 HTTP/1.1" 200 -
+2017-08-27 13:17:46,503 : INFO : _internal : _log : 127.0.0.1 - - [27/Aug/2017 13:17:46] "POST /thumb-up-comment/115/5 HTTP/1.1" 200 -
+2017-08-27 13:17:48,621 : INFO : _internal : _log : 127.0.0.1 - - [27/Aug/2017 13:17:48] "POST /thumb-up-comment/115/5 HTTP/1.1" 200 -
+2017-08-27 13:17:50,191 : INFO : _internal : _log : 127.0.0.1 - - [27/Aug/2017 13:17:50] "POST /thumb-up-comment/115/6 HTTP/1.1" 200 -
+2017-08-27 13:17:52,040 : INFO : _internal : _log : 127.0.0.1 - - [27/Aug/2017 13:17:52] "GET /blog/115 HTTP/1.1" 200 -
+2017-08-27 13:18:26,014 : INFO : _internal : _log : 127.0.0.1 - - [27/Aug/2017 13:18:26] "GET /blog/115 HTTP/1.1" 200 -
+2017-08-27 13:18:28,293 : INFO : _internal : _log : 127.0.0.1 - - [27/Aug/2017 13:18:28] "POST /thumb-up-comment/115/5 HTTP/1.1" 200 -
+2017-08-27 13:19:55,408 : INFO : _internal : _log : 127.0.0.1 - - [27/Aug/2017 13:19:55] "GET /blog/115 HTTP/1.1" 200 -
+2017-08-27 13:19:57,816 : INFO : _internal : _log : 127.0.0.1 - - [27/Aug/2017 13:19:57] "POST /thumb-up-comment/115/5 HTTP/1.1" 200 -
+2017-08-27 13:20:02,138 : INFO : _internal : _log : 127.0.0.1 - - [27/Aug/2017 13:20:02] "POST /thumb-up-comment/115/5 HTTP/1.1" 200 -
+2017-08-27 13:20:09,927 : INFO : _internal : _log : 127.0.0.1 - - [27/Aug/2017 13:20:09] "POST /thumb-up-comment/115/6 HTTP/1.1" 200 -
+2017-08-27 13:20:32,979 : INFO : _internal : _log : 127.0.0.1 - - [27/Aug/2017 13:20:32] "GET /static/css/bootstrap.min.css.map HTTP/1.1" 404 -
+2017-08-27 13:21:07,175 : INFO : _internal : _log : 127.0.0.1 - - [27/Aug/2017 13:21:07] "GET /blog/115 HTTP/1.1" 200 -
+2017-08-27 13:21:07,275 : INFO : _internal : _log : 127.0.0.1 - - [27/Aug/2017 13:21:07] "GET /static/css/bootstrap.min.css.map HTTP/1.1" 404 -
+2017-08-27 13:21:08,990 : INFO : _internal : _log : 127.0.0.1 - - [27/Aug/2017 13:21:08] "POST /thumb-up-comment/115/5 HTTP/1.1" 200 -
+2017-08-27 13:21:14,667 : INFO : _internal : _log : 127.0.0.1 - - [27/Aug/2017 13:21:14] "POST /thumb-up-comment/115/5 HTTP/1.1" 200 -
+2017-08-27 13:21:32,151 : INFO : _internal : _log : 127.0.0.1 - - [27/Aug/2017 13:21:32] "GET /blog/115 HTTP/1.1" 200 -
+2017-08-27 13:21:35,445 : INFO : _internal : _log : 127.0.0.1 - - [27/Aug/2017 13:21:35] "POST /thumb-up-comment/115/5 HTTP/1.1" 200 -
+2017-08-27 13:21:37,955 : INFO : _internal : _log : 127.0.0.1 - - [27/Aug/2017 13:21:37] "POST /thumb-up-comment/115/5 HTTP/1.1" 200 -
+2017-08-27 13:21:40,125 : INFO : _internal : _log : 127.0.0.1 - - [27/Aug/2017 13:21:40] "POST /thumb-up-comment/115/5 HTTP/1.1" 200 -
+2017-08-27 13:21:43,228 : INFO : _internal : _log : 127.0.0.1 - - [27/Aug/2017 13:21:43] "POST /thumb-up-comment/115/5 HTTP/1.1" 200 -
+2017-08-27 13:21:45,645 : INFO : _internal : _log : 127.0.0.1 - - [27/Aug/2017 13:21:45] "POST /thumb-up-comment/115/5 HTTP/1.1" 200 -
+2017-08-27 13:21:46,521 : INFO : _internal : _log : 127.0.0.1 - - [27/Aug/2017 13:21:46] "POST /thumb-up-comment/115/5 HTTP/1.1" 200 -
+2017-08-27 13:21:47,129 : INFO : _internal : _log : 127.0.0.1 - - [27/Aug/2017 13:21:47] "POST /thumb-up-comment/115/5 HTTP/1.1" 200 -
+2017-08-27 13:21:47,621 : INFO : _internal : _log : 127.0.0.1 - - [27/Aug/2017 13:21:47] "POST /thumb-up-comment/115/5 HTTP/1.1" 200 -
+2017-08-27 13:21:48,071 : INFO : _internal : _log : 127.0.0.1 - - [27/Aug/2017 13:21:48] "POST /thumb-up-comment/115/5 HTTP/1.1" 200 -
+2017-08-27 13:21:50,108 : INFO : _internal : _log : 127.0.0.1 - - [27/Aug/2017 13:21:50] "GET /blog/115 HTTP/1.1" 200 -
+2017-08-27 13:21:52,952 : INFO : _internal : _log : 127.0.0.1 - - [27/Aug/2017 13:21:52] "POST /thumb-up-comment/115/6 HTTP/1.1" 200 -
+2017-08-27 13:21:59,301 : INFO : _internal : _log : 127.0.0.1 - - [27/Aug/2017 13:21:59] "POST /thumb-up-comment/115/6 HTTP/1.1" 200 -
+2017-08-27 13:22:02,451 : INFO : _internal : _log : 127.0.0.1 - - [27/Aug/2017 13:22:02] "POST /thumb-up-comment/115/7 HTTP/1.1" 200 -
+2017-08-27 13:22:06,395 : INFO : _internal : _log : 127.0.0.1 - - [27/Aug/2017 13:22:06] "POST /thumb-up-comment/115/7 HTTP/1.1" 200 -
+2017-08-27 13:27:02,844 : INFO : _internal : _log : 127.0.0.1 - - [27/Aug/2017 13:27:02] "GET /blog/115 HTTP/1.1" 500 -
+2017-08-27 13:27:02,873 : INFO : _internal : _log : 127.0.0.1 - - [27/Aug/2017 13:27:02] "GET /blog/115?__debugger__=yes&cmd=resource&f=style.css HTTP/1.1" 200 -
+2017-08-27 13:27:02,876 : INFO : _internal : _log : 127.0.0.1 - - [27/Aug/2017 13:27:02] "GET /blog/115?__debugger__=yes&cmd=resource&f=jquery.js HTTP/1.1" 200 -
+2017-08-27 13:27:02,878 : INFO : _internal : _log : 127.0.0.1 - - [27/Aug/2017 13:27:02] "GET /blog/115?__debugger__=yes&cmd=resource&f=debugger.js HTTP/1.1" 200 -
+2017-08-27 13:27:02,995 : INFO : _internal : _log : 127.0.0.1 - - [27/Aug/2017 13:27:02] "GET /blog/115?__debugger__=yes&cmd=resource&f=console.png HTTP/1.1" 200 -
+2017-08-27 13:27:03,142 : INFO : _internal : _log : 127.0.0.1 - - [27/Aug/2017 13:27:03] "GET /blog/115?__debugger__=yes&cmd=resource&f=console.png HTTP/1.1" 200 -
+2017-08-27 13:38:58,944 : INFO : _internal : _log :  * Detected change in '/home/xuzuoyang/mygit/MyBlog/app/main/views.py', reloading
+2017-08-27 13:38:59,076 : INFO : _internal : _log :  * Restarting with stat
+2017-08-27 13:38:59,618 : WARNING : _internal : _log :  * Debugger is active!
+2017-08-27 13:38:59,618 : INFO : _internal : _log :  * Debugger PIN: 269-707-563
+2017-08-27 13:41:22,497 : INFO : _internal : _log :  * Detected change in '/home/xuzuoyang/mygit/MyBlog/app/main/views.py', reloading
+2017-08-27 13:41:22,589 : INFO : _internal : _log :  * Restarting with stat
+2017-08-27 13:41:23,090 : WARNING : _internal : _log :  * Debugger is active!
+2017-08-27 13:41:23,091 : INFO : _internal : _log :  * Debugger PIN: 269-707-563
+2017-08-27 13:42:21,027 : INFO : _internal : _log : 127.0.0.1 - - [27/Aug/2017 13:42:21] "GET /blog/115 HTTP/1.1" 200 -
+2017-08-27 13:42:21,411 : INFO : _internal : _log : 127.0.0.1 - - [27/Aug/2017 13:42:21] "GET /favicon.ico HTTP/1.1" 404 -
+2017-08-27 13:42:30,630 : INFO : _internal : _log : 127.0.0.1 - - [27/Aug/2017 13:42:30] "POST /thumb-up-comment/115/5 HTTP/1.1" 500 -
+2017-08-27 13:42:34,991 : INFO : _internal : _log : 127.0.0.1 - - [27/Aug/2017 13:42:34] "POST /thumb-up-comment/115/5 HTTP/1.1" 500 -
+2017-08-27 13:43:13,463 : INFO : _internal : _log :  * Detected change in '/home/xuzuoyang/mygit/MyBlog/app/main/views.py', reloading
+2017-08-27 13:43:13,570 : INFO : _internal : _log :  * Restarting with stat
+2017-08-27 13:43:14,065 : WARNING : _internal : _log :  * Debugger is active!
+2017-08-27 13:43:14,065 : INFO : _internal : _log :  * Debugger PIN: 269-707-563
+2017-08-27 13:43:16,900 : INFO : _internal : _log : 127.0.0.1 - - [27/Aug/2017 13:43:16] "GET /blog/115 HTTP/1.1" 200 -
+2017-08-27 13:43:55,178 : INFO : _internal : _log : 127.0.0.1 - - [27/Aug/2017 13:43:55] "POST /thumb-up-comment/115/5 HTTP/1.1" 500 -
+2017-08-27 13:46:40,297 : INFO : _internal : _log :  * Detected change in '/home/xuzuoyang/mygit/MyBlog/app/main/views.py', reloading
+2017-08-27 13:46:40,391 : INFO : _internal : _log :  * Restarting with stat
+2017-08-27 13:46:40,893 : WARNING : _internal : _log :  * Debugger is active!
+2017-08-27 13:46:40,893 : INFO : _internal : _log :  * Debugger PIN: 269-707-563
+2017-08-27 13:47:04,770 : INFO : _internal : _log : 127.0.0.1 - - [27/Aug/2017 13:47:04] "GET /blog/115 HTTP/1.1" 200 -
+2017-08-27 13:47:06,320 : INFO : _internal : _log : 127.0.0.1 - - [27/Aug/2017 13:47:06] "POST /thumb-up-comment/115/5 HTTP/1.1" 200 -
+2017-08-27 13:47:08,137 : INFO : _internal : _log : 127.0.0.1 - - [27/Aug/2017 13:47:08] "POST /thumb-up-comment/115/5 HTTP/1.1" 200 -
+2017-08-27 13:47:09,766 : INFO : _internal : _log : 127.0.0.1 - - [27/Aug/2017 13:47:09] "POST /thumb-up-comment/115/5 HTTP/1.1" 200 -
+2017-08-27 13:47:19,524 : INFO : _internal : _log : 127.0.0.1 - - [27/Aug/2017 13:47:19] "POST /thumb-up-comment/115/5 HTTP/1.1" 200 -
+2017-08-27 13:47:27,905 : INFO : _internal : _log : 127.0.0.1 - - [27/Aug/2017 13:47:27] "GET /static/css/bootstrap.min.css.map HTTP/1.1" 404 -
+2017-08-27 13:48:17,295 : INFO : _internal : _log : 127.0.0.1 - - [27/Aug/2017 13:48:17] "GET /blog/115 HTTP/1.1" 200 -
+2017-08-27 13:48:17,399 : INFO : _internal : _log : 127.0.0.1 - - [27/Aug/2017 13:48:17] "GET /static/css/bootstrap.min.css.map HTTP/1.1" 404 -
+2017-08-27 13:48:19,556 : INFO : _internal : _log : 127.0.0.1 - - [27/Aug/2017 13:48:19] "POST /thumb-up-comment/115/5 HTTP/1.1" 200 -
+2017-08-27 13:48:22,953 : INFO : _internal : _log : 127.0.0.1 - - [27/Aug/2017 13:48:22] "POST /thumb-up-comment/115/5 HTTP/1.1" 200 -
+2017-08-27 13:48:24,871 : INFO : _internal : _log : 127.0.0.1 - - [27/Aug/2017 13:48:24] "POST /thumb-up-comment/115/6 HTTP/1.1" 200 -
+2017-08-27 13:48:27,365 : INFO : _internal : _log : 127.0.0.1 - - [27/Aug/2017 13:48:27] "POST /thumb-up-comment/115/6 HTTP/1.1" 200 -
+2017-08-27 13:48:42,293 : INFO : _internal : _log : 127.0.0.1 - - [27/Aug/2017 13:48:42] "GET /blog/115 HTTP/1.1" 200 -
+2017-08-27 13:48:58,301 : INFO : _internal : _log : 127.0.0.1 - - [27/Aug/2017 13:48:58] "POST /thumb-up-comment/115/5 HTTP/1.1" 200 -
+2017-08-27 13:49:02,844 : INFO : _internal : _log : 127.0.0.1 - - [27/Aug/2017 13:49:02] "POST /thumb-up-comment/115/6 HTTP/1.1" 200 -
+2017-08-27 13:49:05,666 : INFO : _internal : _log : 127.0.0.1 - - [27/Aug/2017 13:49:05] "POST /thumb-up-comment/115/6 HTTP/1.1" 200 -
+2017-08-27 13:49:08,808 : INFO : _internal : _log : 127.0.0.1 - - [27/Aug/2017 13:49:08] "POST /thumb-up-comment/115/5 HTTP/1.1" 200 -
+2017-08-27 13:49:10,128 : INFO : _internal : _log : 127.0.0.1 - - [27/Aug/2017 13:49:10] "POST /thumb-up-comment/115/5 HTTP/1.1" 200 -
+2017-08-27 13:49:13,236 : INFO : _internal : _log : 127.0.0.1 - - [27/Aug/2017 13:49:13] "POST /thumb-up-comment/115/7 HTTP/1.1" 200 -
+2017-08-27 13:49:15,729 : INFO : _internal : _log : 127.0.0.1 - - [27/Aug/2017 13:49:15] "POST /thumb-up-comment/115/7 HTTP/1.1" 200 -
+2017-08-27 13:49:17,773 : INFO : _internal : _log : 127.0.0.1 - - [27/Aug/2017 13:49:17] "POST /thumb-up-comment/115/5 HTTP/1.1" 200 -
+2017-08-27 13:49:18,902 : INFO : _internal : _log : 127.0.0.1 - - [27/Aug/2017 13:49:18] "POST /thumb-up-comment/115/5 HTTP/1.1" 200 -
+2017-08-27 13:49:20,710 : INFO : _internal : _log : 127.0.0.1 - - [27/Aug/2017 13:49:20] "POST /thumb-up-comment/115/6 HTTP/1.1" 200 -
+2017-08-27 13:49:25,608 : INFO : _internal : _log : 127.0.0.1 - - [27/Aug/2017 13:49:25] "GET /blog/115 HTTP/1.1" 200 -
+2017-08-27 14:02:14,907 : INFO : _internal : _log : 127.0.0.1 - - [27/Aug/2017 14:02:14] "GET /blog/115 HTTP/1.1" 500 -
+2017-08-27 14:02:14,915 : INFO : _internal : _log : 127.0.0.1 - - [27/Aug/2017 14:02:14] "GET /blog/115?__debugger__=yes&cmd=resource&f=style.css HTTP/1.1" 200 -
+2017-08-27 14:02:14,916 : INFO : _internal : _log : 127.0.0.1 - - [27/Aug/2017 14:02:14] "GET /blog/115?__debugger__=yes&cmd=resource&f=jquery.js HTTP/1.1" 200 -
+2017-08-27 14:02:14,917 : INFO : _internal : _log : 127.0.0.1 - - [27/Aug/2017 14:02:14] "GET /blog/115?__debugger__=yes&cmd=resource&f=debugger.js HTTP/1.1" 200 -
+2017-08-27 14:02:15,014 : INFO : _internal : _log : 127.0.0.1 - - [27/Aug/2017 14:02:15] "GET /blog/115?__debugger__=yes&cmd=resource&f=console.png HTTP/1.1" 200 -
+2017-08-27 14:02:15,149 : INFO : _internal : _log : 127.0.0.1 - - [27/Aug/2017 14:02:15] "GET /blog/115?__debugger__=yes&cmd=resource&f=console.png HTTP/1.1" 200 -
+2017-08-27 14:02:23,051 : INFO : _internal : _log :  * To enable the debugger you need to enter the security pin:
+2017-08-27 14:02:23,051 : INFO : _internal : _log :  * Debugger pin code: 269-707-563
+2017-08-27 14:02:23,051 : INFO : _internal : _log : 127.0.0.1 - - [27/Aug/2017 14:02:23] "GET /blog/115?__debugger__=yes&cmd=printpin&s=LjPa3EF2SMlnQX99QCGu HTTP/1.1" 200 -
+2017-08-27 14:02:34,295 : INFO : _internal : _log : 127.0.0.1 - - [27/Aug/2017 14:02:34] "GET /blog/115?__debugger__=yes&cmd=pinauth&pin=269-707-563&s=LjPa3EF2SMlnQX99QCGu HTTP/1.1" 200 -
+2017-08-27 14:03:12,285 : INFO : _internal : _log : 127.0.0.1 - - [27/Aug/2017 14:03:12] "GET /blog/115?__debugger__=yes&cmd=%7B%7Bpost.id%7D%7D&frm=140595338798472&s=LjPa3EF2SMlnQX99QCGu HTTP/1.1" 200 -
+2017-08-27 14:03:17,584 : INFO : _internal : _log : 127.0.0.1 - - [27/Aug/2017 14:03:17] "GET /blog/115?__debugger__=yes&cmd=post.id&frm=140595338798472&s=LjPa3EF2SMlnQX99QCGu HTTP/1.1" 200 -
+2017-08-27 14:03:46,602 : INFO : _internal : _log : 127.0.0.1 - - [27/Aug/2017 14:03:46] "GET /blog/115 HTTP/1.1" 500 -
+2017-08-27 14:03:46,610 : INFO : _internal : _log : 127.0.0.1 - - [27/Aug/2017 14:03:46] "GET /blog/115?__debugger__=yes&cmd=resource&f=style.css HTTP/1.1" 200 -
+2017-08-27 14:03:46,611 : INFO : _internal : _log : 127.0.0.1 - - [27/Aug/2017 14:03:46] "GET /blog/115?__debugger__=yes&cmd=resource&f=jquery.js HTTP/1.1" 200 -
+2017-08-27 14:03:46,611 : INFO : _internal : _log : 127.0.0.1 - - [27/Aug/2017 14:03:46] "GET /blog/115?__debugger__=yes&cmd=resource&f=debugger.js HTTP/1.1" 200 -
+2017-08-27 14:03:46,712 : INFO : _internal : _log : 127.0.0.1 - - [27/Aug/2017 14:03:46] "GET /blog/115?__debugger__=yes&cmd=resource&f=console.png HTTP/1.1" 200 -
+2017-08-27 14:03:46,877 : INFO : _internal : _log : 127.0.0.1 - - [27/Aug/2017 14:03:46] "GET /blog/115?__debugger__=yes&cmd=resource&f=console.png HTTP/1.1" 200 -
+2017-08-27 14:03:48,304 : INFO : _internal : _log : 127.0.0.1 - - [27/Aug/2017 14:03:48] "GET /blog/115 HTTP/1.1" 500 -
+2017-08-27 14:03:48,312 : INFO : _internal : _log : 127.0.0.1 - - [27/Aug/2017 14:03:48] "GET /blog/115?__debugger__=yes&cmd=resource&f=style.css HTTP/1.1" 200 -
+2017-08-27 14:03:48,313 : INFO : _internal : _log : 127.0.0.1 - - [27/Aug/2017 14:03:48] "GET /blog/115?__debugger__=yes&cmd=resource&f=jquery.js HTTP/1.1" 200 -
+2017-08-27 14:03:48,315 : INFO : _internal : _log : 127.0.0.1 - - [27/Aug/2017 14:03:48] "GET /blog/115?__debugger__=yes&cmd=resource&f=debugger.js HTTP/1.1" 200 -
+2017-08-27 14:03:48,380 : INFO : _internal : _log : 127.0.0.1 - - [27/Aug/2017 14:03:48] "GET /blog/115?__debugger__=yes&cmd=resource&f=console.png HTTP/1.1" 200 -
+2017-08-27 14:03:48,432 : INFO : _internal : _log : 127.0.0.1 - - [27/Aug/2017 14:03:48] "GET /blog/115?__debugger__=yes&cmd=resource&f=console.png HTTP/1.1" 200 -
+2017-08-27 14:04:24,340 : INFO : _internal : _log : 127.0.0.1 - - [27/Aug/2017 14:04:24] "GET /blog/115 HTTP/1.1" 500 -
+2017-08-27 14:04:24,348 : INFO : _internal : _log : 127.0.0.1 - - [27/Aug/2017 14:04:24] "GET /blog/115?__debugger__=yes&cmd=resource&f=style.css HTTP/1.1" 200 -
+2017-08-27 14:04:24,349 : INFO : _internal : _log : 127.0.0.1 - - [27/Aug/2017 14:04:24] "GET /blog/115?__debugger__=yes&cmd=resource&f=jquery.js HTTP/1.1" 200 -
+2017-08-27 14:04:24,350 : INFO : _internal : _log : 127.0.0.1 - - [27/Aug/2017 14:04:24] "GET /blog/115?__debugger__=yes&cmd=resource&f=debugger.js HTTP/1.1" 200 -
+2017-08-27 14:04:24,446 : INFO : _internal : _log : 127.0.0.1 - - [27/Aug/2017 14:04:24] "GET /blog/115?__debugger__=yes&cmd=resource&f=console.png HTTP/1.1" 200 -
+2017-08-27 14:04:24,598 : INFO : _internal : _log : 127.0.0.1 - - [27/Aug/2017 14:04:24] "GET /blog/115?__debugger__=yes&cmd=resource&f=console.png HTTP/1.1" 200 -
+2017-08-27 14:08:43,937 : INFO : _internal : _log : 127.0.0.1 - - [27/Aug/2017 14:08:43] "GET /blog/115 HTTP/1.1" 200 -
+2017-08-27 14:08:56,104 : INFO : _internal : _log : 127.0.0.1 - - [27/Aug/2017 14:08:56] "GET /static/css/bootstrap.min.css.map HTTP/1.1" 404 -
+2017-08-27 14:09:21,087 : INFO : _internal : _log : 127.0.0.1 - - [27/Aug/2017 14:09:21] "GET /blog/115 HTTP/1.1" 200 -
+2017-08-27 14:09:21,191 : INFO : _internal : _log : 127.0.0.1 - - [27/Aug/2017 14:09:21] "GET /static/css/bootstrap.min.css.map HTTP/1.1" 404 -
+2017-08-27 14:09:53,556 : INFO : _internal : _log : 127.0.0.1 - - [27/Aug/2017 14:09:53] "GET /blog/115 HTTP/1.1" 200 -
+2017-08-27 14:09:53,709 : INFO : _internal : _log : 127.0.0.1 - - [27/Aug/2017 14:09:53] "GET /static/css/bootstrap.min.css.map HTTP/1.1" 404 -
+2017-08-27 14:10:28,135 : INFO : _internal : _log : 127.0.0.1 - - [27/Aug/2017 14:10:28] "GET /blog/115 HTTP/1.1" 200 -
+2017-08-27 14:10:28,273 : INFO : _internal : _log : 127.0.0.1 - - [27/Aug/2017 14:10:28] "GET /static/css/bootstrap.min.css.map HTTP/1.1" 404 -
+2017-08-27 14:11:26,102 : INFO : _internal : _log : 127.0.0.1 - - [27/Aug/2017 14:11:26] "GET /blog/115 HTTP/1.1" 200 -
+2017-08-27 14:11:29,478 : INFO : _internal : _log : 127.0.0.1 - - [27/Aug/2017 14:11:29] "POST /thumb-up-comment/115/5 HTTP/1.1" 200 -
+2017-08-27 14:11:37,792 : INFO : _internal : _log : 127.0.0.1 - - [27/Aug/2017 14:11:37] "POST /thumb-up-comment/115/5 HTTP/1.1" 200 -
+2017-08-27 14:11:39,158 : INFO : _internal : _log : 127.0.0.1 - - [27/Aug/2017 14:11:39] "POST /thumb-up-comment/115/6 HTTP/1.1" 200 -
+2017-08-27 14:11:41,653 : INFO : _internal : _log : 127.0.0.1 - - [27/Aug/2017 14:11:41] "POST /thumb-up-comment/115/7 HTTP/1.1" 200 -
+2017-08-27 14:11:43,246 : INFO : _internal : _log : 127.0.0.1 - - [27/Aug/2017 14:11:43] "POST /thumb-up-comment/115/8 HTTP/1.1" 200 -
+2017-08-27 14:11:48,721 : INFO : _internal : _log : 127.0.0.1 - - [27/Aug/2017 14:11:48] "POST /thumb-up-comment/115/5 HTTP/1.1" 200 -
+2017-08-27 14:11:50,163 : INFO : _internal : _log : 127.0.0.1 - - [27/Aug/2017 14:11:50] "POST /thumb-up-comment/115/6 HTTP/1.1" 200 -
+2017-08-27 14:11:52,583 : INFO : _internal : _log : 127.0.0.1 - - [27/Aug/2017 14:11:52] "GET /blog/115 HTTP/1.1" 200 -
+2017-08-27 15:42:20,589 : INFO : _internal : _log : 127.0.0.1 - - [27/Aug/2017 15:42:20] "POST /thumb-up-comment/115/5 HTTP/1.1" 200 -
+2017-08-27 15:42:23,483 : INFO : _internal : _log : 127.0.0.1 - - [27/Aug/2017 15:42:23] "POST /thumb-up-comment/115/7 HTTP/1.1" 200 -
+2017-08-27 15:42:24,676 : INFO : _internal : _log : 127.0.0.1 - - [27/Aug/2017 15:42:24] "POST /thumb-up-comment/115/8 HTTP/1.1" 200 -
+2017-08-27 15:42:27,702 : INFO : _internal : _log : 127.0.0.1 - - [27/Aug/2017 15:42:27] "POST /thumb-up-comment/115/6 HTTP/1.1" 200 -
+2017-08-27 15:42:28,969 : INFO : _internal : _log : 127.0.0.1 - - [27/Aug/2017 15:42:28] "POST /thumb-up-comment/115/5 HTTP/1.1" 200 -
+2017-08-27 15:42:37,756 : INFO : _internal : _log : 127.0.0.1 - - [27/Aug/2017 15:42:37] "POST /thumb-up-comment/115/5 HTTP/1.1" 200 -
+2017-08-27 15:42:40,751 : INFO : _internal : _log : 127.0.0.1 - - [27/Aug/2017 15:42:40] "POST /thumb-up-comment/115/5 HTTP/1.1" 200 -
+2017-08-27 15:42:42,067 : INFO : _internal : _log : 127.0.0.1 - - [27/Aug/2017 15:42:42] "POST /thumb-up-comment/115/5 HTTP/1.1" 200 -
+2017-08-27 15:42:46,220 : INFO : _internal : _log : 127.0.0.1 - - [27/Aug/2017 15:42:46] "POST /thumb-up-comment/115/5 HTTP/1.1" 200 -
+2017-08-27 15:44:20,126 : INFO : _internal : _log :  * Running on http://127.0.0.1:5000/ (Press CTRL+C to quit)
+2017-08-27 15:44:20,127 : INFO : _internal : _log :  * Restarting with stat
+2017-08-27 15:44:20,622 : WARNING : _internal : _log :  * Debugger is active!
+2017-08-27 15:44:20,623 : INFO : _internal : _log :  * Debugger PIN: 269-707-563
+2017-08-27 15:44:34,688 : INFO : _internal : _log : 127.0.0.1 - - [27/Aug/2017 15:44:34] "GET /blog/115 HTTP/1.1" 200 -
+2017-08-27 15:44:34,696 : INFO : _internal : _log : 127.0.0.1 - - [27/Aug/2017 15:44:34] "GET /static/css/bootstrap.min.css HTTP/1.1" 200 -
+2017-08-27 15:44:34,698 : INFO : _internal : _log : 127.0.0.1 - - [27/Aug/2017 15:44:34] "GET /static/font-awesome-4.7.0/css/font-awesome.min.css HTTP/1.1" 200 -
+2017-08-27 15:44:34,700 : INFO : _internal : _log : 127.0.0.1 - - [27/Aug/2017 15:44:34] "GET /static/css/carousel.css HTTP/1.1" 200 -
+2017-08-27 15:44:34,702 : INFO : _internal : _log : 127.0.0.1 - - [27/Aug/2017 15:44:34] "GET /static/css/comment.css HTTP/1.1" 200 -
+2017-08-27 15:44:34,763 : INFO : _internal : _log : 127.0.0.1 - - [27/Aug/2017 15:44:34] "GET /static/font-awesome-4.7.0/fonts/fontawesome-webfont.woff2?v=4.7.0 HTTP/1.1" 200 -
+2017-08-27 15:45:02,328 : INFO : _internal : _log : 127.0.0.1 - - [27/Aug/2017 15:45:02] "GET /blog/115 HTTP/1.1" 200 -
+2017-08-27 15:45:09,546 : INFO : _internal : _log : 127.0.0.1 - - [27/Aug/2017 15:45:09] "GET / HTTP/1.1" 200 -
+2017-08-27 15:45:09,572 : INFO : _internal : _log : 127.0.0.1 - - [27/Aug/2017 15:45:09] "GET /static/pics/land.jpg HTTP/1.1" 200 -
+2017-08-27 15:45:09,625 : INFO : _internal : _log : 127.0.0.1 - - [27/Aug/2017 15:45:09] "GET /static/pics/mountain.jpg HTTP/1.1" 200 -
+2017-08-27 15:45:09,729 : INFO : _internal : _log : 127.0.0.1 - - [27/Aug/2017 15:45:09] "GET /static/pics/sunset.jpg HTTP/1.1" 200 -
+2017-08-27 15:45:16,240 : INFO : _internal : _log : 127.0.0.1 - - [27/Aug/2017 15:45:16] "GET /blog/115 HTTP/1.1" 200 -
+2017-08-27 15:45:22,058 : INFO : _internal : _log : 127.0.0.1 - - [27/Aug/2017 15:45:22] "POST /thumb-up-comment/115/5 HTTP/1.1" 200 -
+2017-08-27 15:45:26,584 : INFO : _internal : _log : 127.0.0.1 - - [27/Aug/2017 15:45:26] "POST /thumb-up-comment/115/5 HTTP/1.1" 200 -
+2017-08-27 15:45:41,186 : INFO : _internal : _log : 127.0.0.1 - - [27/Aug/2017 15:45:41] "POST /thumb-up-comment/115/5 HTTP/1.1" 200 -
+2017-08-27 15:45:57,622 : INFO : _internal : _log : 127.0.0.1 - - [27/Aug/2017 15:45:57] "POST /thumb-up-comment/115/7 HTTP/1.1" 200 -
+2017-08-27 15:45:59,929 : INFO : _internal : _log : 127.0.0.1 - - [27/Aug/2017 15:45:59] "POST /thumb-up-comment/115/7 HTTP/1.1" 200 -
+2017-08-27 15:46:07,151 : INFO : _internal : _log : 127.0.0.1 - - [27/Aug/2017 15:46:07] "POST /thumb-up-comment/115/5 HTTP/1.1" 200 -
+2017-08-27 15:46:09,988 : INFO : _internal : _log : 127.0.0.1 - - [27/Aug/2017 15:46:09] "GET /blog/115 HTTP/1.1" 200 -
+2017-08-27 15:46:23,868 : INFO : _internal : _log : 127.0.0.1 - - [27/Aug/2017 15:46:23] "POST /thumb-up-comment/115/5 HTTP/1.1" 200 -
+2017-08-27 15:46:25,742 : INFO : _internal : _log : 127.0.0.1 - - [27/Aug/2017 15:46:25] "POST /thumb-up-comment/115/5 HTTP/1.1" 200 -
+2017-08-27 15:49:24,232 : INFO : _internal : _log : 127.0.0.1 - - [27/Aug/2017 15:49:24] "GET /blog/115 HTTP/1.1" 200 -
+2017-08-27 15:49:25,933 : INFO : _internal : _log : 127.0.0.1 - - [27/Aug/2017 15:49:25] "GET /blog/115 HTTP/1.1" 200 -
+2017-08-27 15:49:28,450 : INFO : _internal : _log : 127.0.0.1 - - [27/Aug/2017 15:49:28] "POST /thumb-up-comment/115/5 HTTP/1.1" 200 -
+2017-08-27 15:49:30,896 : INFO : _internal : _log : 127.0.0.1 - - [27/Aug/2017 15:49:30] "POST /thumb-up-comment/115/5 HTTP/1.1" 200 -
+2017-08-27 15:49:35,525 : INFO : _internal : _log : 127.0.0.1 - - [27/Aug/2017 15:49:35] "POST /thumb-up-comment/115/5 HTTP/1.1" 200 -
+2017-08-27 15:49:37,917 : INFO : _internal : _log : 127.0.0.1 - - [27/Aug/2017 15:49:37] "POST /thumb-up-comment/115/5 HTTP/1.1" 200 -
+2017-08-27 15:49:41,562 : INFO : _internal : _log : 127.0.0.1 - - [27/Aug/2017 15:49:41] "POST /thumb-up-comment/115/5 HTTP/1.1" 200 -
+2017-08-27 15:49:45,683 : INFO : _internal : _log : 127.0.0.1 - - [27/Aug/2017 15:49:45] "GET /blog/115 HTTP/1.1" 200 -
+2017-08-27 15:49:48,391 : INFO : _internal : _log : 127.0.0.1 - - [27/Aug/2017 15:49:48] "POST /thumb-up-comment/115/5 HTTP/1.1" 200 -
+2017-08-27 15:51:28,589 : INFO : _internal : _log : 127.0.0.1 - - [27/Aug/2017 15:51:28] "GET /blog/115 HTTP/1.1" 200 -
+2017-08-27 15:51:32,037 : INFO : _internal : _log : 127.0.0.1 - - [27/Aug/2017 15:51:32] "POST /thumb-up-comment/115/5 HTTP/1.1" 200 -
+2017-08-27 15:51:34,872 : INFO : _internal : _log : 127.0.0.1 - - [27/Aug/2017 15:51:34] "POST /thumb-up-comment/115/5 HTTP/1.1" 200 -
+2017-08-27 15:51:42,059 : INFO : _internal : _log : 127.0.0.1 - - [27/Aug/2017 15:51:42] "GET /blog/115 HTTP/1.1" 200 -
+2017-08-27 15:52:35,421 : INFO : _internal : _log : 127.0.0.1 - - [27/Aug/2017 15:52:35] "GET /blog/115 HTTP/1.1" 200 -
+2017-08-27 15:52:38,524 : INFO : _internal : _log : 127.0.0.1 - - [27/Aug/2017 15:52:38] "POST /thumb-up-comment/115/5 HTTP/1.1" 200 -
+2017-08-27 15:52:40,887 : INFO : _internal : _log : 127.0.0.1 - - [27/Aug/2017 15:52:40] "POST /thumb-up-comment/115/5 HTTP/1.1" 200 -
+2017-08-27 15:52:44,581 : INFO : _internal : _log : 127.0.0.1 - - [27/Aug/2017 15:52:44] "POST /thumb-up-comment/115/5 HTTP/1.1" 200 -
+2017-08-27 15:52:47,974 : INFO : _internal : _log : 127.0.0.1 - - [27/Aug/2017 15:52:47] "POST /thumb-up-comment/115/5 HTTP/1.1" 200 -
+2017-08-27 15:52:51,677 : INFO : _internal : _log : 127.0.0.1 - - [27/Aug/2017 15:52:51] "POST /thumb-up-comment/115/5 HTTP/1.1" 200 -
+2017-08-27 15:52:53,152 : INFO : _internal : _log : 127.0.0.1 - - [27/Aug/2017 15:52:53] "POST /thumb-up-comment/115/5 HTTP/1.1" 200 -
+2017-08-27 15:52:54,755 : INFO : _internal : _log : 127.0.0.1 - - [27/Aug/2017 15:52:54] "POST /thumb-up-comment/115/5 HTTP/1.1" 200 -
+2017-08-27 15:52:56,413 : INFO : _internal : _log : 127.0.0.1 - - [27/Aug/2017 15:52:56] "POST /thumb-up-comment/115/5 HTTP/1.1" 200 -
+2017-08-27 15:53:37,375 : INFO : _internal : _log : 127.0.0.1 - - [27/Aug/2017 15:53:37] "GET /blog/115 HTTP/1.1" 200 -
+2017-08-27 15:53:38,492 : INFO : _internal : _log : 127.0.0.1 - - [27/Aug/2017 15:53:38] "GET /blog/115 HTTP/1.1" 200 -
+2017-08-27 15:53:40,471 : INFO : _internal : _log : 127.0.0.1 - - [27/Aug/2017 15:53:40] "POST /thumb-up-comment/115/5 HTTP/1.1" 200 -
+2017-08-27 15:53:42,398 : INFO : _internal : _log : 127.0.0.1 - - [27/Aug/2017 15:53:42] "POST /thumb-up-comment/115/5 HTTP/1.1" 200 -
+2017-08-27 15:53:45,851 : INFO : _internal : _log : 127.0.0.1 - - [27/Aug/2017 15:53:45] "POST /thumb-up-comment/115/5 HTTP/1.1" 200 -
+2017-08-27 15:53:48,754 : INFO : _internal : _log : 127.0.0.1 - - [27/Aug/2017 15:53:48] "POST /thumb-up-comment/115/5 HTTP/1.1" 200 -
+2017-08-27 15:53:50,085 : INFO : _internal : _log : 127.0.0.1 - - [27/Aug/2017 15:53:50] "POST /thumb-up-comment/115/5 HTTP/1.1" 200 -
+2017-08-27 15:53:51,400 : INFO : _internal : _log : 127.0.0.1 - - [27/Aug/2017 15:53:51] "POST /thumb-up-comment/115/5 HTTP/1.1" 200 -
+2017-08-27 15:53:52,750 : INFO : _internal : _log : 127.0.0.1 - - [27/Aug/2017 15:53:52] "POST /thumb-up-comment/115/5 HTTP/1.1" 200 -
+2017-08-27 15:54:29,308 : INFO : _internal : _log : 127.0.0.1 - - [27/Aug/2017 15:54:29] "GET / HTTP/1.1" 200 -
+2017-08-27 15:54:32,417 : INFO : _internal : _log : 127.0.0.1 - - [27/Aug/2017 15:54:32] "GET /blog/115 HTTP/1.1" 200 -
+2017-08-27 15:54:36,796 : INFO : _internal : _log : 127.0.0.1 - - [27/Aug/2017 15:54:36] "POST /thumb-up-comment/115/5 HTTP/1.1" 200 -
+2017-08-27 15:54:39,986 : INFO : _internal : _log : 127.0.0.1 - - [27/Aug/2017 15:54:39] "POST /thumb-up-comment/115/5 HTTP/1.1" 200 -
+2017-08-27 15:54:42,601 : INFO : _internal : _log : 127.0.0.1 - - [27/Aug/2017 15:54:42] "POST /thumb-up-comment/115/5 HTTP/1.1" 200 -
+2017-08-27 15:54:48,853 : INFO : _internal : _log : 127.0.0.1 - - [27/Aug/2017 15:54:48] "POST /thumb-up-comment/115/5 HTTP/1.1" 200 -
+2017-08-27 15:54:52,133 : INFO : _internal : _log : 127.0.0.1 - - [27/Aug/2017 15:54:52] "POST /thumb-up-comment/115/6 HTTP/1.1" 200 -
+2017-08-27 15:54:53,766 : INFO : _internal : _log : 127.0.0.1 - - [27/Aug/2017 15:54:53] "POST /thumb-up-comment/115/6 HTTP/1.1" 200 -
+2017-08-27 15:54:54,975 : INFO : _internal : _log : 127.0.0.1 - - [27/Aug/2017 15:54:54] "POST /thumb-up-comment/115/6 HTTP/1.1" 200 -
+2017-08-27 15:54:56,458 : INFO : _internal : _log : 127.0.0.1 - - [27/Aug/2017 15:54:56] "POST /thumb-up-comment/115/6 HTTP/1.1" 200 -
+2017-08-27 15:54:57,909 : INFO : _internal : _log : 127.0.0.1 - - [27/Aug/2017 15:54:57] "POST /thumb-up-comment/115/6 HTTP/1.1" 200 -
+2017-08-27 15:55:28,526 : INFO : _internal : _log : 127.0.0.1 - - [27/Aug/2017 15:55:28] "GET /blog/115 HTTP/1.1" 200 -
+2017-08-27 15:55:32,027 : INFO : _internal : _log : 127.0.0.1 - - [27/Aug/2017 15:55:32] "POST /thumb-up-comment/115/5 HTTP/1.1" 200 -
+2017-08-27 15:55:34,694 : INFO : _internal : _log : 127.0.0.1 - - [27/Aug/2017 15:55:34] "POST /thumb-up-comment/115/5 HTTP/1.1" 200 -
+2017-08-27 15:55:37,320 : INFO : _internal : _log : 127.0.0.1 - - [27/Aug/2017 15:55:37] "POST /thumb-up-comment/115/5 HTTP/1.1" 200 -
+2017-08-27 15:55:39,541 : INFO : _internal : _log : 127.0.0.1 - - [27/Aug/2017 15:55:39] "POST /thumb-up-comment/115/6 HTTP/1.1" 200 -
+2017-08-27 15:55:41,267 : INFO : _internal : _log : 127.0.0.1 - - [27/Aug/2017 15:55:41] "POST /thumb-up-comment/115/6 HTTP/1.1" 200 -
+2017-08-27 15:55:43,653 : INFO : _internal : _log : 127.0.0.1 - - [27/Aug/2017 15:55:43] "POST /thumb-up-comment/115/5 HTTP/1.1" 200 -
+2017-08-27 15:55:46,746 : INFO : _internal : _log : 127.0.0.1 - - [27/Aug/2017 15:55:46] "POST /thumb-up-comment/115/6 HTTP/1.1" 200 -
+2017-08-27 15:55:49,870 : INFO : _internal : _log : 127.0.0.1 - - [27/Aug/2017 15:55:49] "POST /thumb-up-comment/115/6 HTTP/1.1" 200 -
+2017-08-27 15:55:52,856 : INFO : _internal : _log : 127.0.0.1 - - [27/Aug/2017 15:55:52] "GET /blog/115 HTTP/1.1" 200 -
+2017-08-27 15:55:56,126 : INFO : _internal : _log : 127.0.0.1 - - [27/Aug/2017 15:55:56] "POST /thumb-up-comment/115/5 HTTP/1.1" 200 -
+2017-08-27 15:55:59,160 : INFO : _internal : _log : 127.0.0.1 - - [27/Aug/2017 15:55:59] "POST /thumb-up-comment/115/6 HTTP/1.1" 200 -
+2017-08-27 15:56:01,467 : INFO : _internal : _log : 127.0.0.1 - - [27/Aug/2017 15:56:01] "GET /blog/115 HTTP/1.1" 200 -
+2017-08-27 15:56:24,002 : INFO : _internal : _log : 127.0.0.1 - - [27/Aug/2017 15:56:24] "GET /blog/115 HTTP/1.1" 200 -
+2017-08-27 15:56:30,449 : INFO : _internal : _log : 127.0.0.1 - - [27/Aug/2017 15:56:30] "GET /auth/logout HTTP/1.1" 302 -
+2017-08-27 15:56:30,505 : INFO : _internal : _log : 127.0.0.1 - - [27/Aug/2017 15:56:30] "GET / HTTP/1.1" 200 -
+2017-08-27 15:56:32,192 : INFO : _internal : _log : 127.0.0.1 - - [27/Aug/2017 15:56:32] "GET /auth/login HTTP/1.1" 200 -
+2017-08-27 15:56:32,206 : INFO : _internal : _log : 127.0.0.1 - - [27/Aug/2017 15:56:32] "GET /static/css/signin.css HTTP/1.1" 200 -
+2017-08-27 15:56:32,219 : INFO : _internal : _log : 127.0.0.1 - - [27/Aug/2017 15:56:32] "GET /static/js/jquery.min.js HTTP/1.1" 200 -
+2017-08-27 15:56:44,262 : INFO : _internal : _log : 127.0.0.1 - - [27/Aug/2017 15:56:44] "POST /auth/login HTTP/1.1" 302 -
+2017-08-27 15:56:44,291 : INFO : _internal : _log : 127.0.0.1 - - [27/Aug/2017 15:56:44] "GET / HTTP/1.1" 200 -
+2017-08-27 15:56:47,969 : INFO : _internal : _log : 127.0.0.1 - - [27/Aug/2017 15:56:47] "GET /blog/115 HTTP/1.1" 200 -
+2017-08-27 15:56:54,450 : INFO : _internal : _log : 127.0.0.1 - - [27/Aug/2017 15:56:54] "POST /thumb-up-comment/115/5 HTTP/1.1" 200 -
+2017-08-27 15:57:59,254 : INFO : _internal : _log : 127.0.0.1 - - [27/Aug/2017 15:57:59] "POST /thumb-up-post/115 HTTP/1.1" 200 -
+2017-08-27 15:57:59,305 : INFO : _internal : _log : 127.0.0.1 - - [27/Aug/2017 15:57:59] "GET /blog/115 HTTP/1.1" 200 -
+2017-08-27 15:58:08,092 : INFO : _internal : _log : 127.0.0.1 - - [27/Aug/2017 15:58:08] "POST /thumb-up-post/115 HTTP/1.1" 200 -
+2017-08-27 15:58:08,131 : INFO : _internal : _log : 127.0.0.1 - - [27/Aug/2017 15:58:08] "GET /blog/115 HTTP/1.1" 200 -
+2017-08-27 15:58:11,157 : INFO : _internal : _log : 127.0.0.1 - - [27/Aug/2017 15:58:11] "POST /thumb-up-post/115 HTTP/1.1" 200 -
+2017-08-27 15:58:11,200 : INFO : _internal : _log : 127.0.0.1 - - [27/Aug/2017 15:58:11] "GET /blog/115 HTTP/1.1" 200 -
+2017-08-27 16:03:48,004 : INFO : _internal : _log : 127.0.0.1 - - [27/Aug/2017 16:03:48] "GET /about HTTP/1.1" 200 -
+2017-08-27 16:03:48,071 : INFO : _internal : _log : 127.0.0.1 - - [27/Aug/2017 16:03:48] "GET /static/pics/g2.jpg HTTP/1.1" 200 -
+2017-08-27 16:04:06,271 : INFO : _internal : _log : 127.0.0.1 - - [27/Aug/2017 16:04:06] "GET /about HTTP/1.1" 200 -
+2017-08-27 16:04:34,940 : INFO : _internal : _log : 127.0.0.1 - - [27/Aug/2017 16:04:34] "GET / HTTP/1.1" 200 -
+2017-08-27 16:04:36,687 : INFO : _internal : _log : 127.0.0.1 - - [27/Aug/2017 16:04:36] "GET /blog/118 HTTP/1.1" 200 -
+2017-08-27 16:04:43,540 : INFO : _internal : _log : 127.0.0.1 - - [27/Aug/2017 16:04:43] "GET /blog/115 HTTP/1.1" 200 -
+2017-08-27 16:04:49,253 : INFO : _internal : _log : 127.0.0.1 - - [27/Aug/2017 16:04:49] "GET /about HTTP/1.1" 200 -
+2017-08-27 16:11:34,707 : INFO : _internal : _log : 127.0.0.1 - - [27/Aug/2017 16:11:34] "GET /about HTTP/1.1" 500 -
+2017-08-27 16:11:34,721 : INFO : _internal : _log : 127.0.0.1 - - [27/Aug/2017 16:11:34] "GET /about?__debugger__=yes&cmd=resource&f=style.css HTTP/1.1" 200 -
+2017-08-27 16:11:34,722 : INFO : _internal : _log : 127.0.0.1 - - [27/Aug/2017 16:11:34] "GET /about?__debugger__=yes&cmd=resource&f=jquery.js HTTP/1.1" 200 -
+2017-08-27 16:11:34,722 : INFO : _internal : _log : 127.0.0.1 - - [27/Aug/2017 16:11:34] "GET /about?__debugger__=yes&cmd=resource&f=debugger.js HTTP/1.1" 200 -
+2017-08-27 16:11:34,839 : INFO : _internal : _log : 127.0.0.1 - - [27/Aug/2017 16:11:34] "GET /about?__debugger__=yes&cmd=resource&f=console.png HTTP/1.1" 200 -
+2017-08-27 16:11:34,974 : INFO : _internal : _log : 127.0.0.1 - - [27/Aug/2017 16:11:34] "GET /about?__debugger__=yes&cmd=resource&f=console.png HTTP/1.1" 200 -
+2017-08-27 16:11:48,599 : INFO : _internal : _log : 127.0.0.1 - - [27/Aug/2017 16:11:48] "GET /about HTTP/1.1" 200 -
+2017-08-27 16:11:55,410 : INFO : _internal : _log : 127.0.0.1 - - [27/Aug/2017 16:11:55] "GET /static/css/bootstrap.min.css.map HTTP/1.1" 404 -
+2017-08-27 16:12:15,940 : INFO : _internal : _log : 127.0.0.1 - - [27/Aug/2017 16:12:15] "GET /about HTTP/1.1" 200 -
+2017-08-27 16:12:16,093 : INFO : _internal : _log : 127.0.0.1 - - [27/Aug/2017 16:12:16] "GET /static/css/bootstrap.min.css.map HTTP/1.1" 404 -
+2017-08-27 16:12:22,872 : INFO : _internal : _log : 127.0.0.1 - - [27/Aug/2017 16:12:22] "GET /auth/logout HTTP/1.1" 302 -
+2017-08-27 16:12:22,901 : INFO : _internal : _log : 127.0.0.1 - - [27/Aug/2017 16:12:22] "GET / HTTP/1.1" 200 -
+2017-08-27 16:12:24,516 : INFO : _internal : _log : 127.0.0.1 - - [27/Aug/2017 16:12:24] "GET /about HTTP/1.1" 302 -
+2017-08-27 16:12:24,531 : INFO : _internal : _log : 127.0.0.1 - - [27/Aug/2017 16:12:24] "GET /auth/login?next=%2Fabout HTTP/1.1" 200 -
+2017-08-27 16:13:07,669 : INFO : _internal : _log :  * Detected change in '/home/xuzuoyang/mygit/MyBlog/app/main/views.py', reloading
+2017-08-27 16:13:07,764 : INFO : _internal : _log :  * Restarting with stat
+2017-08-27 16:13:08,265 : WARNING : _internal : _log :  * Debugger is active!
+2017-08-27 16:13:08,265 : INFO : _internal : _log :  * Debugger PIN: 269-707-563
+2017-08-27 16:13:11,416 : INFO : _internal : _log : 127.0.0.1 - - [27/Aug/2017 16:13:11] "GET / HTTP/1.1" 200 -
+2017-08-27 16:13:13,775 : INFO : _internal : _log : 127.0.0.1 - - [27/Aug/2017 16:13:13] "GET /about HTTP/1.1" 200 -
+2017-08-27 16:13:22,868 : INFO : _internal : _log : 127.0.0.1 - - [27/Aug/2017 16:13:22] "GET /auth/login HTTP/1.1" 200 -
+2017-08-27 16:13:46,315 : INFO : _internal : _log : 127.0.0.1 - - [27/Aug/2017 16:13:46] "GET /about HTTP/1.1" 200 -
+2017-08-27 16:13:50,740 : INFO : _internal : _log : 127.0.0.1 - - [27/Aug/2017 16:13:50] "GET / HTTP/1.1" 200 -
+2017-08-27 16:13:54,071 : INFO : _internal : _log : 127.0.0.1 - - [27/Aug/2017 16:13:54] "GET /blog/115 HTTP/1.1" 500 -
+2017-08-27 16:13:54,078 : INFO : _internal : _log : 127.0.0.1 - - [27/Aug/2017 16:13:54] "GET /blog/115?__debugger__=yes&cmd=resource&f=style.css HTTP/1.1" 200 -
+2017-08-27 16:13:54,079 : INFO : _internal : _log : 127.0.0.1 - - [27/Aug/2017 16:13:54] "GET /blog/115?__debugger__=yes&cmd=resource&f=jquery.js HTTP/1.1" 200 -
+2017-08-27 16:13:54,080 : INFO : _internal : _log : 127.0.0.1 - - [27/Aug/2017 16:13:54] "GET /blog/115?__debugger__=yes&cmd=resource&f=debugger.js HTTP/1.1" 200 -
+2017-08-27 16:13:54,150 : INFO : _internal : _log : 127.0.0.1 - - [27/Aug/2017 16:13:54] "GET /blog/115?__debugger__=yes&cmd=resource&f=console.png HTTP/1.1" 200 -
+2017-08-27 16:13:54,200 : INFO : _internal : _log : 127.0.0.1 - - [27/Aug/2017 16:13:54] "GET /blog/115?__debugger__=yes&cmd=resource&f=console.png HTTP/1.1" 200 -
+2017-08-27 16:15:33,035 : INFO : _internal : _log : 127.0.0.1 - - [27/Aug/2017 16:15:33] "GET /blog/115 HTTP/1.1" 200 -
+2017-08-27 16:15:41,084 : INFO : _internal : _log : 127.0.0.1 - - [27/Aug/2017 16:15:41] "POST /thumb-up-comment/115/5 HTTP/1.1" 302 -
+2017-08-27 16:15:41,087 : INFO : _internal : _log : 127.0.0.1 - - [27/Aug/2017 16:15:41] "GET /auth/login?next=%2Fthumb-up-comment%2F115%2F5 HTTP/1.1" 200 -
+2017-08-27 16:15:58,319 : INFO : _internal : _log : 127.0.0.1 - - [27/Aug/2017 16:15:58] "POST /reply/115 HTTP/1.1" 302 -
+2017-08-27 16:15:58,329 : INFO : _internal : _log : 127.0.0.1 - - [27/Aug/2017 16:15:58] "POST /reply/115 HTTP/1.1" 302 -
+2017-08-27 16:15:58,339 : INFO : _internal : _log : 127.0.0.1 - - [27/Aug/2017 16:15:58] "GET /auth/login?next=%2Freply%2F115 HTTP/1.1" 200 -
+2017-08-27 16:15:58,349 : INFO : _internal : _log : 127.0.0.1 - - [27/Aug/2017 16:15:58] "GET /auth/login?next=%2Freply%2F115 HTTP/1.1" 200 -
+2017-08-27 16:16:07,950 : INFO : _internal : _log : 127.0.0.1 - - [27/Aug/2017 16:16:07] "POST /thumb-up-post/115 HTTP/1.1" 302 -
+2017-08-27 16:16:07,953 : INFO : _internal : _log : 127.0.0.1 - - [27/Aug/2017 16:16:07] "GET /auth/login?next=%2Fthumb-up-post%2F115 HTTP/1.1" 200 -
+2017-08-27 16:19:24,774 : INFO : _internal : _log : 127.0.0.1 - - [27/Aug/2017 16:19:24] "GET /blog/115 HTTP/1.1" 200 -
+2017-08-27 16:19:33,486 : INFO : _internal : _log : 127.0.0.1 - - [27/Aug/2017 16:19:33] "GET /auth/login HTTP/1.1" 200 -
+2017-08-27 16:19:38,442 : INFO : _internal : _log : 127.0.0.1 - - [27/Aug/2017 16:19:38] "POST /auth/login HTTP/1.1" 302 -
+2017-08-27 16:19:38,469 : INFO : _internal : _log : 127.0.0.1 - - [27/Aug/2017 16:19:38] "GET / HTTP/1.1" 200 -
+2017-08-27 16:19:42,725 : INFO : _internal : _log : 127.0.0.1 - - [27/Aug/2017 16:19:42] "GET /blog/115 HTTP/1.1" 200 -
+2017-08-27 16:19:50,251 : INFO : _internal : _log : 127.0.0.1 - - [27/Aug/2017 16:19:50] "GET /auth/logout HTTP/1.1" 302 -
+2017-08-27 16:19:50,284 : INFO : _internal : _log : 127.0.0.1 - - [27/Aug/2017 16:19:50] "GET / HTTP/1.1" 200 -
+2017-08-27 16:19:53,378 : INFO : _internal : _log : 127.0.0.1 - - [27/Aug/2017 16:19:53] "GET /blog/116 HTTP/1.1" 200 -
+2017-08-27 16:20:36,444 : INFO : _internal : _log :  * Detected change in '/home/xuzuoyang/mygit/MyBlog/app/auth/views.py', reloading
+2017-08-27 16:20:36,543 : INFO : _internal : _log :  * Restarting with stat
+2017-08-27 16:20:37,084 : WARNING : _internal : _log :  * Debugger is active!
+2017-08-27 16:20:37,084 : INFO : _internal : _log :  * Debugger PIN: 269-707-563
+2017-08-27 16:20:41,851 : INFO : _internal : _log : 127.0.0.1 - - [27/Aug/2017 16:20:41] "GET /blog/116 HTTP/1.1" 200 -
+2017-08-27 16:20:48,071 : INFO : _internal : _log : 127.0.0.1 - - [27/Aug/2017 16:20:48] "GET /auth/login HTTP/1.1" 200 -
+2017-08-27 16:20:55,257 : INFO : _internal : _log : 127.0.0.1 - - [27/Aug/2017 16:20:55] "POST /auth/login HTTP/1.1" 302 -
+2017-08-27 16:20:55,314 : INFO : _internal : _log : 127.0.0.1 - - [27/Aug/2017 16:20:55] "GET / HTTP/1.1" 200 -
+2017-08-27 16:21:02,108 : INFO : _internal : _log : 127.0.0.1 - - [27/Aug/2017 16:21:02] "GET /blog/115 HTTP/1.1" 200 -
+2017-08-27 16:21:13,329 : INFO : _internal : _log : 127.0.0.1 - - [27/Aug/2017 16:21:13] "GET /auth/logout HTTP/1.1" 302 -
+2017-08-27 16:21:13,358 : INFO : _internal : _log : 127.0.0.1 - - [27/Aug/2017 16:21:13] "GET / HTTP/1.1" 200 -
+2017-08-27 16:21:19,997 : INFO : _internal : _log : 127.0.0.1 - - [27/Aug/2017 16:21:19] "GET /blog/115 HTTP/1.1" 200 -
+2017-08-27 16:21:57,584 : INFO : _internal : _log : 127.0.0.1 - - [27/Aug/2017 16:21:57] "GET /auth/login HTTP/1.1" 200 -
+2017-08-27 16:22:02,419 : INFO : _internal : _log : 127.0.0.1 - - [27/Aug/2017 16:22:02] "POST /auth/login HTTP/1.1" 302 -
+2017-08-27 16:22:02,448 : INFO : _internal : _log : 127.0.0.1 - - [27/Aug/2017 16:22:02] "GET / HTTP/1.1" 200 -
+2017-08-27 16:22:46,197 : INFO : _internal : _log : 127.0.0.1 - - [27/Aug/2017 16:22:46] "GET /auth/logout HTTP/1.1" 302 -
+2017-08-27 16:22:46,245 : INFO : _internal : _log : 127.0.0.1 - - [27/Aug/2017 16:22:46] "GET / HTTP/1.1" 200 -
+2017-08-27 16:22:52,474 : INFO : _internal : _log : 127.0.0.1 - - [27/Aug/2017 16:22:52] "GET /manage-blog HTTP/1.1" 302 -
+2017-08-27 16:22:52,492 : INFO : _internal : _log : 127.0.0.1 - - [27/Aug/2017 16:22:52] "GET /auth/login?next=%2Fmanage-blog HTTP/1.1" 200 -
+2017-08-27 16:22:57,666 : INFO : _internal : _log : 127.0.0.1 - - [27/Aug/2017 16:22:57] "POST /auth/login?next=%2Fmanage-blog HTTP/1.1" 302 -
+2017-08-27 16:22:57,682 : INFO : _internal : _log : 127.0.0.1 - - [27/Aug/2017 16:22:57] "GET /manage-blog HTTP/1.1" 200 -
+2017-08-27 16:22:59,855 : INFO : _internal : _log : 127.0.0.1 - - [27/Aug/2017 16:22:59] "GET / HTTP/1.1" 200 -
+2017-08-27 16:26:19,079 : INFO : _internal : _log : 127.0.0.1 - - [27/Aug/2017 16:26:19] "GET /auth/logout HTTP/1.1" 302 -
+2017-08-27 16:26:19,137 : INFO : _internal : _log : 127.0.0.1 - - [27/Aug/2017 16:26:19] "GET / HTTP/1.1" 200 -
+2017-08-27 16:26:20,260 : INFO : _internal : _log : 127.0.0.1 - - [27/Aug/2017 16:26:20] "GET /about HTTP/1.1" 200 -
+2017-08-27 16:28:34,550 : INFO : _internal : _log : 127.0.0.1 - - [27/Aug/2017 16:28:34] "GET / HTTP/1.1" 200 -
+2017-08-27 16:28:37,605 : INFO : _internal : _log : 127.0.0.1 - - [27/Aug/2017 16:28:37] "GET /blog/115 HTTP/1.1" 200 -
+2017-08-27 16:28:44,136 : INFO : _internal : _log : 127.0.0.1 - - [27/Aug/2017 16:28:44] "GET /auth/login HTTP/1.1" 200 -
+2017-08-27 16:30:03,826 : INFO : _internal : _log : 127.0.0.1 - - [27/Aug/2017 16:30:03] "GET /blog/115 HTTP/1.1" 200 -
+2017-08-27 16:30:24,617 : INFO : _internal : _log : 127.0.0.1 - - [27/Aug/2017 16:30:24] "GET /auth/login HTTP/1.1" 200 -
+2017-08-27 16:31:58,257 : INFO : _internal : _log : 127.0.0.1 - - [27/Aug/2017 16:31:58] "GET / HTTP/1.1" 200 -
+2017-08-27 16:32:46,554 : INFO : _internal : _log : 127.0.0.1 - - [27/Aug/2017 16:32:46] "GET /about HTTP/1.1" 200 -
+2017-08-27 16:32:52,795 : INFO : _internal : _log : 127.0.0.1 - - [27/Aug/2017 16:32:52] "GET / HTTP/1.1" 200 -
+2017-08-27 16:32:55,103 : INFO : _internal : _log : 127.0.0.1 - - [27/Aug/2017 16:32:55] "GET /auth/login HTTP/1.1" 200 -
+2017-08-27 16:33:00,236 : INFO : _internal : _log : 127.0.0.1 - - [27/Aug/2017 16:33:00] "GET /auth/login HTTP/1.1" 200 -
+2017-08-27 16:33:07,695 : INFO : _internal : _log : 127.0.0.1 - - [27/Aug/2017 16:33:07] "POST /auth/login HTTP/1.1" 302 -
+2017-08-27 16:33:07,725 : INFO : _internal : _log : 127.0.0.1 - - [27/Aug/2017 16:33:07] "GET / HTTP/1.1" 200 -
+2017-08-27 16:33:10,125 : INFO : _internal : _log : 127.0.0.1 - - [27/Aug/2017 16:33:10] "GET /auth/change-password HTTP/1.1" 500 -
+2017-08-27 16:33:10,148 : INFO : _internal : _log : 127.0.0.1 - - [27/Aug/2017 16:33:10] "GET /auth/change-password?__debugger__=yes&cmd=resource&f=style.css HTTP/1.1" 200 -
+2017-08-27 16:33:10,149 : INFO : _internal : _log : 127.0.0.1 - - [27/Aug/2017 16:33:10] "GET /auth/change-password?__debugger__=yes&cmd=resource&f=jquery.js HTTP/1.1" 200 -
+2017-08-27 16:33:10,151 : INFO : _internal : _log : 127.0.0.1 - - [27/Aug/2017 16:33:10] "GET /auth/change-password?__debugger__=yes&cmd=resource&f=debugger.js HTTP/1.1" 200 -
+2017-08-27 16:33:10,221 : INFO : _internal : _log : 127.0.0.1 - - [27/Aug/2017 16:33:10] "GET /auth/change-password?__debugger__=yes&cmd=resource&f=console.png HTTP/1.1" 200 -
+2017-08-27 16:33:10,276 : INFO : _internal : _log : 127.0.0.1 - - [27/Aug/2017 16:33:10] "GET /auth/change-password?__debugger__=yes&cmd=resource&f=console.png HTTP/1.1" 200 -
+2017-08-27 16:33:19,471 : INFO : _internal : _log : 127.0.0.1 - - [27/Aug/2017 16:33:19] "GET /blog/116 HTTP/1.1" 200 -
+2017-08-27 16:33:28,249 : INFO : _internal : _log : 127.0.0.1 - - [27/Aug/2017 16:33:28] "GET /manage-blog HTTP/1.1" 200 -
+2017-08-27 16:33:33,362 : INFO : _internal : _log : 127.0.0.1 - - [27/Aug/2017 16:33:33] "GET /delete/118 HTTP/1.1" 302 -
+2017-08-27 16:33:33,402 : INFO : _internal : _log : 127.0.0.1 - - [27/Aug/2017 16:33:33] "GET /manage-blog HTTP/1.1" 200 -
+2017-08-27 16:33:35,163 : INFO : _internal : _log : 127.0.0.1 - - [27/Aug/2017 16:33:35] "GET /delete/117 HTTP/1.1" 302 -
+2017-08-27 16:33:35,206 : INFO : _internal : _log : 127.0.0.1 - - [27/Aug/2017 16:33:35] "GET /manage-blog HTTP/1.1" 200 -
+2017-08-27 16:33:39,744 : INFO : _internal : _log : 127.0.0.1 - - [27/Aug/2017 16:33:39] "GET / HTTP/1.1" 200 -
+2017-08-27 16:33:43,958 : INFO : _internal : _log : 127.0.0.1 - - [27/Aug/2017 16:33:43] "GET /manage-blog HTTP/1.1" 200 -
+2017-08-27 16:33:46,293 : INFO : _internal : _log : 127.0.0.1 - - [27/Aug/2017 16:33:46] "GET /delete/116 HTTP/1.1" 302 -
+2017-08-27 16:33:46,331 : INFO : _internal : _log : 127.0.0.1 - - [27/Aug/2017 16:33:46] "GET /manage-blog HTTP/1.1" 200 -
+2017-08-27 16:33:48,295 : INFO : _internal : _log : 127.0.0.1 - - [27/Aug/2017 16:33:48] "GET / HTTP/1.1" 200 -
+2017-08-27 16:33:50,498 : INFO : _internal : _log : 127.0.0.1 - - [27/Aug/2017 16:33:50] "GET /blog/115 HTTP/1.1" 200 -
+2017-08-27 16:33:56,977 : INFO : _internal : _log : 127.0.0.1 - - [27/Aug/2017 16:33:56] "GET / HTTP/1.1" 200 -
+2017-08-27 16:36:44,983 : INFO : _internal : _log : 127.0.0.1 - - [27/Aug/2017 16:36:44] "GET /manage-blog HTTP/1.1" 200 -
+2017-08-27 16:36:46,657 : INFO : _internal : _log : 127.0.0.1 - - [27/Aug/2017 16:36:46] "GET /manage-comment HTTP/1.1" 200 -
+2017-08-27 16:36:51,860 : INFO : _internal : _log : 127.0.0.1 - - [27/Aug/2017 16:36:51] "GET /manage-comment HTTP/1.1" 200 -
+2017-08-27 16:38:52,735 : INFO : _internal : _log :  * Detected change in '/home/xuzuoyang/mygit/MyBlog/app/main/views.py', reloading
+2017-08-27 16:38:52,846 : INFO : _internal : _log :  * Restarting with stat
+2017-08-27 16:38:53,350 : WARNING : _internal : _log :  * Debugger is active!
+2017-08-27 16:38:53,350 : INFO : _internal : _log :  * Debugger PIN: 269-707-563
+2017-08-27 16:39:01,854 : INFO : _internal : _log : 127.0.0.1 - - [27/Aug/2017 16:39:01] "GET /manage-comment HTTP/1.1" 200 -
+2017-08-27 16:39:04,090 : INFO : _internal : _log : 127.0.0.1 - - [27/Aug/2017 16:39:04] "GET /manage-comment HTTP/1.1" 200 -
+2017-08-27 16:39:26,897 : INFO : _internal : _log : 127.0.0.1 - - [27/Aug/2017 16:39:26] "GET /manage-comment HTTP/1.1" 200 -
+2017-08-27 16:40:40,550 : INFO : _internal : _log :  * Detected change in '/home/xuzuoyang/mygit/MyBlog/app/main/views.py', reloading
+2017-08-27 16:40:40,635 : INFO : _internal : _log :  * Restarting with stat
+2017-08-27 16:40:41,134 : WARNING : _internal : _log :  * Debugger is active!
+2017-08-27 16:40:41,135 : INFO : _internal : _log :  * Debugger PIN: 269-707-563
+2017-08-27 16:40:45,136 : INFO : _internal : _log : 127.0.0.1 - - [27/Aug/2017 16:40:45] "GET /manage-comment HTTP/1.1" 200 -
+2017-08-27 16:40:47,257 : INFO : _internal : _log : 127.0.0.1 - - [27/Aug/2017 16:40:47] "GET /manage-comment HTTP/1.1" 200 -
+2017-08-27 16:41:01,099 : INFO : _internal : _log : 127.0.0.1 - - [27/Aug/2017 16:41:01] "GET /manage-comment?page=2 HTTP/1.1" 200 -
+2017-08-27 16:41:02,764 : INFO : _internal : _log : 127.0.0.1 - - [27/Aug/2017 16:41:02] "GET /manage-comment?page=3 HTTP/1.1" 200 -
+2017-08-27 16:41:04,583 : INFO : _internal : _log : 127.0.0.1 - - [27/Aug/2017 16:41:04] "GET /manage-comment?page=1 HTTP/1.1" 200 -
+2017-08-27 16:41:42,637 : INFO : _internal : _log : 127.0.0.1 - - [27/Aug/2017 16:41:42] "GET /manage-blog HTTP/1.1" 200 -
+2017-08-27 16:41:47,603 : INFO : _internal : _log : 127.0.0.1 - - [27/Aug/2017 16:41:47] "GET /delete/112 HTTP/1.1" 405 -
+2017-08-27 16:42:04,399 : INFO : _internal : _log : 127.0.0.1 - - [27/Aug/2017 16:42:04] "GET /blog/112 HTTP/1.1" 200 -
+2017-08-27 16:42:08,225 : INFO : _internal : _log : 127.0.0.1 - - [27/Aug/2017 16:42:08] "GET /blog/109 HTTP/1.1" 200 -
+2017-08-27 16:42:14,614 : INFO : _internal : _log : 127.0.0.1 - - [27/Aug/2017 16:42:14] "GET /delete/112 HTTP/1.1" 405 -
+                                                                                                                                                                                                                                                                                                                                                                                 2017-08-27 16:57:23,854 : INFO : _internal : _log :  * Running on http://127.0.0.1:5000/ (Press CTRL+C to quit)
+2017-08-27 16:57:23,871 : INFO : _internal : _log :  * Restarting with stat
+2017-08-27 16:57:24,387 : WARNING : _internal : _log :  * Debugger is active!
+2017-08-27 16:57:24,413 : INFO : _internal : _log :  * Debugger PIN: 269-707-563
+2017-08-27 16:57:45,576 : INFO : _internal : _log : 127.0.0.1 - - [27/Aug/2017 16:57:45] "GET /manage-blog HTTP/1.1" 200 -
+2017-08-27 16:57:46,784 : INFO : _internal : _log : 127.0.0.1 - - [27/Aug/2017 16:57:46] "GET /favicon.ico HTTP/1.1" 404 -
+2017-08-27 16:57:47,898 : INFO : _internal : _log : 127.0.0.1 - - [27/Aug/2017 16:57:47] "GET /manage-blog HTTP/1.1" 200 -
+2017-08-27 16:57:54,849 : INFO : _internal : _log : 127.0.0.1 - - [27/Aug/2017 16:57:54] "GET /blog/112 HTTP/1.1" 200 -
+2017-08-27 16:57:59,898 : INFO : _internal : _log : 127.0.0.1 - - [27/Aug/2017 16:57:59] "GET /blog/114 HTTP/1.1" 200 -
+2017-08-27 16:58:12,643 : INFO : _internal : _log : 127.0.0.1 - - [27/Aug/2017 16:58:12] "GET /static/css/bootstrap.min.css.map HTTP/1.1" 404 -
+2017-08-27 16:58:28,800 : INFO : _internal : _log : 127.0.0.1 - - [27/Aug/2017 16:58:28] "GET /manage-blog HTTP/1.1" 200 -
+2017-08-27 16:58:31,523 : INFO : _internal : _log : 127.0.0.1 - - [27/Aug/2017 16:58:31] "POST /delete-blog/114 HTTP/1.1" 302 -
+2017-08-27 16:58:31,567 : INFO : _internal : _log : 127.0.0.1 - - [27/Aug/2017 16:58:31] "GET /manage-blog HTTP/1.1" 200 -
+2017-08-27 16:58:39,517 : INFO : _internal : _log : 127.0.0.1 - - [27/Aug/2017 16:58:39] "GET /manage-blog HTTP/1.1" 200 -
+2017-08-27 16:58:44,376 : INFO : _internal : _log : 127.0.0.1 - - [27/Aug/2017 16:58:44] "GET /blog/107 HTTP/1.1" 200 -
+2017-08-27 17:00:13,854 : INFO : _internal : _log :  * Detected change in '/home/xuzuoyang/mygit/MyBlog/app/main/views.py', reloading
+2017-08-27 17:00:13,961 : INFO : _internal : _log :  * Restarting with stat
+2017-08-27 17:00:14,479 : WARNING : _internal : _log :  * Debugger is active!
+2017-08-27 17:00:14,480 : INFO : _internal : _log :  * Debugger PIN: 269-707-563
+2017-08-27 17:00:17,482 : INFO : _internal : _log : 127.0.0.1 - - [27/Aug/2017 17:00:17] "GET /manage-blog HTTP/1.1" 200 -
+2017-08-27 17:00:19,644 : INFO : _internal : _log : 127.0.0.1 - - [27/Aug/2017 17:00:19] "POST /delete-blog/107 HTTP/1.1" 200 -
+2017-08-27 17:00:19,689 : INFO : _internal : _log : 127.0.0.1 - - [27/Aug/2017 17:00:19] "GET /manage-blog?blog_id=107 HTTP/1.1" 200 -
+2017-08-27 17:00:24,407 : INFO : _internal : _log : 127.0.0.1 - - [27/Aug/2017 17:00:24] "GET /blog/106 HTTP/1.1" 200 -
+2017-08-27 17:00:27,675 : INFO : _internal : _log : 127.0.0.1 - - [27/Aug/2017 17:00:27] "GET /manage-blog?page=2 HTTP/1.1" 200 -
+2017-08-27 17:00:31,105 : INFO : _internal : _log : 127.0.0.1 - - [27/Aug/2017 17:00:31] "POST /delete-blog/12 HTTP/1.1" 200 -
+2017-08-27 17:00:31,129 : INFO : _internal : _log : 127.0.0.1 - - [27/Aug/2017 17:00:31] "GET /manage-blog?blog_id=12 HTTP/1.1" 200 -
+2017-08-27 17:00:38,992 : INFO : _internal : _log : 127.0.0.1 - - [27/Aug/2017 17:00:38] "POST /delete-blog/106 HTTP/1.1" 200 -
+2017-08-27 17:00:39,021 : INFO : _internal : _log : 127.0.0.1 - - [27/Aug/2017 17:00:39] "GET /manage-blog?blog_id=106 HTTP/1.1" 200 -
+2017-08-27 17:00:41,015 : INFO : _internal : _log : 127.0.0.1 - - [27/Aug/2017 17:00:41] "GET /blog/104 HTTP/1.1" 200 -
+2017-08-27 17:01:12,305 : INFO : _internal : _log :  * Detected change in '/home/xuzuoyang/mygit/MyBlog/app/main/views.py', reloading
+2017-08-27 17:01:12,405 : INFO : _internal : _log :  * Restarting with stat
+2017-08-27 17:01:12,924 : WARNING : _internal : _log :  * Debugger is active!
+2017-08-27 17:01:12,924 : INFO : _internal : _log :  * Debugger PIN: 269-707-563
+2017-08-27 17:03:43,034 : INFO : _internal : _log : 127.0.0.1 - - [27/Aug/2017 17:03:43] "GET /manage-comment HTTP/1.1" 200 -
+2017-08-27 17:03:45,300 : INFO : _internal : _log : 127.0.0.1 - - [27/Aug/2017 17:03:45] "POST /delete-comment/8 HTTP/1.1" 200 -
+2017-08-27 17:03:45,386 : INFO : _internal : _log : 127.0.0.1 - - [27/Aug/2017 17:03:45] "GET / HTTP/1.1" 200 -
+2017-08-27 17:04:12,988 : INFO : _internal : _log : 127.0.0.1 - - [27/Aug/2017 17:04:12] "GET /manage-blog HTTP/1.1" 200 -
+2017-08-27 17:04:14,140 : INFO : _internal : _log : 127.0.0.1 - - [27/Aug/2017 17:04:14] "GET /manage-comment HTTP/1.1" 200 -
+2017-08-27 17:04:15,540 : INFO : _internal : _log : 127.0.0.1 - - [27/Aug/2017 17:04:15] "GET /manage-comment?page=2 HTTP/1.1" 200 -
+2017-08-27 17:04:21,798 : INFO : _internal : _log : 127.0.0.1 - - [27/Aug/2017 17:04:21] "GET /manage-comment?page=1 HTTP/1.1" 200 -
+2017-08-27 17:05:33,438 : INFO : _internal : _log : 127.0.0.1 - - [27/Aug/2017 17:05:33] "GET /static/css/bootstrap.min.css.map HTTP/1.1" 404 -
+2017-08-27 17:05:48,886 : INFO : _internal : _log : 127.0.0.1 - - [27/Aug/2017 17:05:48] "POST /delete-comment/7 HTTP/1.1" 200 -
+2017-08-27 17:05:48,943 : INFO : _internal : _log : 127.0.0.1 - - [27/Aug/2017 17:05:48] "GET / HTTP/1.1" 200 -
+2017-08-27 17:05:49,108 : INFO : _internal : _log : 127.0.0.1 - - [27/Aug/2017 17:05:49] "GET /static/css/bootstrap.min.css.map HTTP/1.1" 404 -
+2017-08-27 17:07:17,820 : INFO : _internal : _log : 127.0.0.1 - - [27/Aug/2017 17:07:17] "GET /manage-blog HTTP/1.1" 200 -
+2017-08-27 17:07:17,974 : INFO : _internal : _log : 127.0.0.1 - - [27/Aug/2017 17:07:17] "GET /static/css/bootstrap.min.css.map HTTP/1.1" 404 -
+2017-08-27 17:07:19,143 : INFO : _internal : _log : 127.0.0.1 - - [27/Aug/2017 17:07:19] "GET /manage-comment HTTP/1.1" 200 -
+2017-08-27 17:07:19,284 : INFO : _internal : _log : 127.0.0.1 - - [27/Aug/2017 17:07:19] "GET /static/css/bootstrap.min.css.map HTTP/1.1" 404 -
+2017-08-27 17:07:51,630 : INFO : _internal : _log :  * Detected change in '/home/xuzuoyang/mygit/MyBlog/app/main/views.py', reloading
+2017-08-27 17:07:51,726 : INFO : _internal : _log :  * Restarting with stat
+2017-08-27 17:07:52,232 : WARNING : _internal : _log :  * Debugger is active!
+2017-08-27 17:07:52,232 : INFO : _internal : _log :  * Debugger PIN: 269-707-563
+2017-08-27 17:08:01,020 : INFO : _internal : _log : 127.0.0.1 - - [27/Aug/2017 17:08:01] "POST /delete-comment/17 HTTP/1.1" 200 -
+2017-08-27 17:08:01,092 : INFO : _internal : _log : 127.0.0.1 - - [27/Aug/2017 17:08:01] "GET /manage-comment?comment_id=17 HTTP/1.1" 200 -
+2017-08-27 17:08:01,243 : INFO : _internal : _log : 127.0.0.1 - - [27/Aug/2017 17:08:01] "GET /static/css/bootstrap.min.css.map HTTP/1.1" 404 -
+2017-08-27 17:08:05,524 : INFO : _internal : _log : 127.0.0.1 - - [27/Aug/2017 17:08:05] "GET /manage-user HTTP/1.1" 200 -
+2017-08-27 17:10:02,008 : INFO : _internal : _log :  * Detected change in '/home/xuzuoyang/mygit/MyBlog/app/main/views.py', reloading
+2017-08-27 17:10:02,095 : INFO : _internal : _log :  * Restarting with stat
+2017-08-27 17:10:02,607 : WARNING : _internal : _log :  * Debugger is active!
+2017-08-27 17:10:02,608 : INFO : _internal : _log :  * Debugger PIN: 269-707-563
+2017-08-27 17:10:23,155 : INFO : _internal : _log : 127.0.0.1 - - [27/Aug/2017 17:10:23] "GET / HTTP/1.1" 200 -
+2017-08-27 17:35:57,040 : INFO : _internal : _log : 127.0.0.1 - - [27/Aug/2017 17:35:57] "GET / HTTP/1.1" 200 -
+2017-08-27 17:35:57,059 : INFO : _internal : _log : 127.0.0.1 - - [27/Aug/2017 17:35:57] "GET /static/css/bootstrap.min.css HTTP/1.1" 200 -
+2017-08-27 17:35:57,070 : INFO : _internal : _log : 127.0.0.1 - - [27/Aug/2017 17:35:57] "GET /static/font-awesome-4.7.0/css/font-awesome.min.css HTTP/1.1" 200 -
+2017-08-27 17:35:57,084 : INFO : _internal : _log : 127.0.0.1 - - [27/Aug/2017 17:35:57] "GET /static/css/carousel.css HTTP/1.1" 200 -
+2017-08-27 17:35:57,118 : INFO : _internal : _log : 127.0.0.1 - - [27/Aug/2017 17:35:57] "GET /static/pics/one.jpg HTTP/1.1" 200 -
+2017-08-27 17:35:57,121 : INFO : _internal : _log : 127.0.0.1 - - [27/Aug/2017 17:35:57] "GET /static/pics/mountain.jpg HTTP/1.1" 200 -
+2017-08-27 17:35:57,135 : INFO : _internal : _log : 127.0.0.1 - - [27/Aug/2017 17:35:57] "GET /static/pics/sunset.jpg HTTP/1.1" 200 -
+2017-08-27 17:35:57,151 : INFO : _internal : _log : 127.0.0.1 - - [27/Aug/2017 17:35:57] "GET /static/font-awesome-4.7.0/fonts/fontawesome-webfont.woff2?v=4.7.0 HTTP/1.1" 200 -
+2017-08-27 17:35:59,466 : INFO : _internal : _log : 127.0.0.1 - - [27/Aug/2017 17:35:59] "GET /about HTTP/1.1" 200 -
+2017-08-27 17:35:59,488 : INFO : _internal : _log : 127.0.0.1 - - [27/Aug/2017 17:35:59] "GET /static/css/comment.css HTTP/1.1" 200 -
+2017-08-27 17:35:59,490 : INFO : _internal : _log : 127.0.0.1 - - [27/Aug/2017 17:35:59] "GET /static/pics/portrait.jpg HTTP/1.1" 200 -
+2017-08-27 17:35:59,715 : INFO : _internal : _log : 127.0.0.1 - - [27/Aug/2017 17:35:59] "GET /favicon.ico HTTP/1.1" 404 -
+2017-08-27 17:36:01,111 : INFO : _internal : _log : 127.0.0.1 - - [27/Aug/2017 17:36:01] "GET / HTTP/1.1" 200 -
+2017-08-27 17:36:36,643 : INFO : _internal : _log : 127.0.0.1 - - [27/Aug/2017 17:36:36] "GET / HTTP/1.1" 200 -
+2017-08-27 17:36:36,655 : INFO : _internal : _log : 127.0.0.1 - - [27/Aug/2017 17:36:36] "GET /static/css/bootstrap.min.css HTTP/1.1" 200 -
+2017-08-27 17:36:36,658 : INFO : _internal : _log : 127.0.0.1 - - [27/Aug/2017 17:36:36] "GET /static/font-awesome-4.7.0/css/font-awesome.min.css HTTP/1.1" 200 -
+2017-08-27 17:36:36,660 : INFO : _internal : _log : 127.0.0.1 - - [27/Aug/2017 17:36:36] "GET /static/css/carousel.css HTTP/1.1" 200 -
+2017-08-27 17:36:36,699 : INFO : _internal : _log : 127.0.0.1 - - [27/Aug/2017 17:36:36] "GET /static/pics/three.jpg HTTP/1.1" 200 -
+2017-08-27 17:36:36,701 : INFO : _internal : _log : 127.0.0.1 - - [27/Aug/2017 17:36:36] "GET /static/pics/mountain.jpg HTTP/1.1" 200 -
+2017-08-27 17:36:36,704 : INFO : _internal : _log : 127.0.0.1 - - [27/Aug/2017 17:36:36] "GET /static/pics/two.jpg HTTP/1.1" 200 -
+2017-08-27 17:36:36,719 : INFO : _internal : _log : 127.0.0.1 - - [27/Aug/2017 17:36:36] "GET /static/font-awesome-4.7.0/fonts/fontawesome-webfont.woff2?v=4.7.0 HTTP/1.1" 200 -
+2017-08-27 17:37:25,062 : INFO : _internal : _log : 127.0.0.1 - - [27/Aug/2017 17:37:25] "GET / HTTP/1.1" 200 -
+2017-08-27 17:37:25,069 : INFO : _internal : _log : 127.0.0.1 - - [27/Aug/2017 17:37:25] "GET /static/css/bootstrap.min.css HTTP/1.1" 200 -
+2017-08-27 17:37:25,072 : INFO : _internal : _log : 127.0.0.1 - - [27/Aug/2017 17:37:25] "GET /static/font-awesome-4.7.0/css/font-awesome.min.css HTTP/1.1" 200 -
+2017-08-27 17:37:25,075 : INFO : _internal : _log : 127.0.0.1 - - [27/Aug/2017 17:37:25] "GET /static/css/carousel.css HTTP/1.1" 200 -
+2017-08-27 17:37:25,123 : INFO : _internal : _log : 127.0.0.1 - - [27/Aug/2017 17:37:25] "GET /static/pics/four.jpg HTTP/1.1" 200 -
+2017-08-27 17:37:25,127 : INFO : _internal : _log : 127.0.0.1 - - [27/Aug/2017 17:37:25] "GET /static/pics/mountain.jpg HTTP/1.1" 200 -
+2017-08-27 17:37:25,129 : INFO : _internal : _log : 127.0.0.1 - - [27/Aug/2017 17:37:25] "GET /static/pics/two.jpg HTTP/1.1" 200 -
+2017-08-27 17:37:25,150 : INFO : _internal : _log : 127.0.0.1 - - [27/Aug/2017 17:37:25] "GET /static/font-awesome-4.7.0/fonts/fontawesome-webfont.woff2?v=4.7.0 HTTP/1.1" 200 -
+2017-08-27 17:38:02,639 : INFO : _internal : _log : 127.0.0.1 - - [27/Aug/2017 17:38:02] "GET / HTTP/1.1" 200 -
+2017-08-27 17:38:02,646 : INFO : _internal : _log : 127.0.0.1 - - [27/Aug/2017 17:38:02] "GET /static/css/bootstrap.min.css HTTP/1.1" 200 -
+2017-08-27 17:38:02,649 : INFO : _internal : _log : 127.0.0.1 - - [27/Aug/2017 17:38:02] "GET /static/font-awesome-4.7.0/css/font-awesome.min.css HTTP/1.1" 200 -
+2017-08-27 17:38:02,651 : INFO : _internal : _log : 127.0.0.1 - - [27/Aug/2017 17:38:02] "GET /static/css/carousel.css HTTP/1.1" 200 -
+2017-08-27 17:38:02,695 : INFO : _internal : _log : 127.0.0.1 - - [27/Aug/2017 17:38:02] "GET /static/pics/four.jpg HTTP/1.1" 200 -
+2017-08-27 17:38:02,698 : INFO : _internal : _log : 127.0.0.1 - - [27/Aug/2017 17:38:02] "GET /static/pics/mountain.jpg HTTP/1.1" 200 -
+2017-08-27 17:38:02,701 : INFO : _internal : _log : 127.0.0.1 - - [27/Aug/2017 17:38:02] "GET /static/pics/five.jpg HTTP/1.1" 200 -
+2017-08-27 17:38:02,720 : INFO : _internal : _log : 127.0.0.1 - - [27/Aug/2017 17:38:02] "GET /static/font-awesome-4.7.0/fonts/fontawesome-webfont.woff2?v=4.7.0 HTTP/1.1" 200 -
+2017-08-27 17:39:27,397 : INFO : _internal : _log : 127.0.0.1 - - [27/Aug/2017 17:39:27] "GET / HTTP/1.1" 200 -
+2017-08-27 17:39:27,404 : INFO : _internal : _log : 127.0.0.1 - - [27/Aug/2017 17:39:27] "GET /static/css/bootstrap.min.css HTTP/1.1" 200 -
+2017-08-27 17:39:27,407 : INFO : _internal : _log : 127.0.0.1 - - [27/Aug/2017 17:39:27] "GET /static/font-awesome-4.7.0/css/font-awesome.min.css HTTP/1.1" 200 -
+2017-08-27 17:39:27,409 : INFO : _internal : _log : 127.0.0.1 - - [27/Aug/2017 17:39:27] "GET /static/css/carousel.css HTTP/1.1" 200 -
+2017-08-27 17:39:27,464 : INFO : _internal : _log : 127.0.0.1 - - [27/Aug/2017 17:39:27] "GET /static/pics/four.jpg HTTP/1.1" 200 -
+2017-08-27 17:39:27,467 : INFO : _internal : _log : 127.0.0.1 - - [27/Aug/2017 17:39:27] "GET /static/pics/mountain.jpg HTTP/1.1" 200 -
+2017-08-27 17:39:27,470 : INFO : _internal : _log : 127.0.0.1 - - [27/Aug/2017 17:39:27] "GET /static/pics/six.jpg HTTP/1.1" 200 -
+2017-08-27 17:39:27,472 : INFO : _internal : _log : 127.0.0.1 - - [27/Aug/2017 17:39:27] "GET /static/font-awesome-4.7.0/fonts/fontawesome-webfont.woff2?v=4.7.0 HTTP/1.1" 200 -
+2017-08-27 17:57:03,673 : INFO : _internal : _log :  * Detected change in '/home/xuzuoyang/mygit/MyBlog/app/models.py', reloading
+2017-08-27 17:57:03,774 : INFO : _internal : _log :  * Restarting with stat
+2017-08-27 17:57:04,288 : WARNING : _internal : _log :  * Debugger is active!
+2017-08-27 17:57:04,288 : INFO : _internal : _log :  * Debugger PIN: 269-707-563

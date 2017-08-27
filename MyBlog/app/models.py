@@ -138,6 +138,27 @@ class User(UserMixin, db.Model):
         return '{url}/{hash}?s={size}&d={default}&r={rating}'.format(url=url, hash=hash,
                                                                      size=size, default=default, rating=rating)
 
+    def is_thumbing_post(self, post):
+        return self.post_thumb_up.filter_by(post_id=post.id).first() is not None
+
+    def thumb_post(self, post):
+        logger.info('User {} is thumbing post {}.'.format(self.username, post.id))
+        if not self.is_thumbing_post(post):
+            t = PostThumbing(post_id=post.id, user_id=self.id)
+            db.session.add(t)
+
+    def is_thumbing_comment(self, comment):
+        return self.comment_thumb_up.filter_by(comment_id=comment.id).first() is not None
+
+    def thumb_comment(self, comment):
+        logger.info('User {} is thumbing comment {}.'.format(self.username, comment.id))
+        if not self.is_thumbing_comment(comment):
+            t = CommentThumbing(comment_id=comment.id, user_id=self.id)
+            db.session.add(t)
+        else:
+            t = CommentThumbing.query.filter_by(comment_id=comment.id, user_id=self.id).first()
+            db.session.delete(t)
+
     def __repr__(self):
         return 'User <%r>' % self.username
 
@@ -222,7 +243,7 @@ class Tag(db.Model):
         return self.tagging.filter_by(post_id=post.id).first() is not None
 
     def tag_post(self, post):
-        logger.info('Tagging post {}.'.format(post.id))
+        logger.info('Tagging post {} as {}.'.format(post.id, self.name))
         if not self.is_tagging(post):
             t = Tagging(post_id=post.id, tag_id=self.id)
             db.session.add(t)
@@ -270,7 +291,7 @@ class Message(db.Model):
     mysql_charset = 'utf-8'
 
     id = db.Column(db.Integer, primary_key=True)
-    title = db.Column(db.String(128))
-    body = db.Column(db.Text())
+    title = db.Column(db.String(128, collation='utf8'))
+    body = db.Column(db.Text(collation='utf8'))
     timestamp = db.Column(db.DateTime, default=datetime.utcnow)
     author_id = db.Column(db.Integer, db.ForeignKey('users.id'))

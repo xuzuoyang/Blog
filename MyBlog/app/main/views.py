@@ -3,7 +3,7 @@ from enum import Enum
 from .. import db
 from . import main
 from .forms import PostForm, CommentForm, MessageForm, ReplyForm
-from ..models import User, Post, Permission, Category, Comment, Tag, Tagging, Message
+from ..models import User, Post, Permission, Category, Comment, Tag, Tagging, Message, CommentThumbing
 from ..decorators import permission_required, admin_required
 from flask_login import login_required, current_user
 from flask import render_template, redirect, url_for, current_app, request, abort, jsonify
@@ -38,8 +38,6 @@ def index():
 
 
 @main.route('/about', methods=['GET', 'POST'])
-@login_required
-@permission_required(Permission.COMMENT)
 def about():
     """The about page which contains self introduction and message board.
     """
@@ -127,8 +125,7 @@ def blog(blog_id):
     categories = Category.query.all()
     tags = Tag.query.all()
     return render_template('blog.html', post=post, comment_form=comment_form,
-                           reply_form=reply_form, categories=categories,
-                           tags=tags, Comment=Comment)
+                           categories=categories, tags=tags, Comment=Comment)
 
 
 @main.route('/reply/<blog_id>', methods=['POST'])
@@ -148,18 +145,33 @@ def reply(blog_id):
     return jsonify(url=url_for('main.blog', blog_id=blog_id))
 
 
-@main.route('/thumb-up/<blog_id>', methods=['POST'])
+@main.route('/thumb-up-post/<blog_id>', methods=['POST'])
 @login_required
 @permission_required(Permission.COMMENT)
-def thumb_up(blog_id):
+def thumb_up_post(blog_id):
     """Interface of thumbing up a blog.
     """
     post = Post.query.filter_by(id=blog_id).first()
-    post.thumb_up += 1
-    logger.info('Thumbing up blog {} now.'.format(blog_id))
-    logger.info('Blog {} has {} thumbs up now.'.format(blog_id, post.thumb_up))
-    db.session.add(post)
+    user = current_user._get_current_object()
+    user.thumb_post(post)
+    logger.info('Blog {} has {} thumbs up now.'.format(blog_id, len(post.thumb_up.all())))
     return jsonify(url=url_for('main.blog', blog_id=post.id))
+
+
+@main.route('/thumb-up-comment/<blog_id>/<comment_id>', methods=['POST'])
+@login_required
+@permission_required(Permission.COMMENT)
+def thumb_up_comment(blog_id, comment_id):
+    """Interface of thumbing up or canceling a thumbup of a comment.
+    """
+    comment = Comment.query.filter_by(id=comment_id).first()
+    user = current_user._get_current_object()
+    user.thumb_comment(comment)
+    logger.info('Comment {} has {} thumbs up now.'.format(comment_id, len(comment.thumb_up.all())))
+    if CommentThumbing.query.filter_by(comment_id=comment.id, user_id=user.id).first():
+        return jsonify(status="changing red")
+    else:
+        return jsonify(status="changing grey")
 
 
 @main.route('/manage-blog')
@@ -274,7 +286,7 @@ def edit_blog(blog_id):
     return render_template('write_blog.html', form=json.dumps(form))
 
 
-@main.route('/delete/<blog_id>')
+@main.route('/delete-blog/<blog_id>', methods=['POST'])
 @login_required
 @admin_required
 def delete_blog(blog_id):
@@ -283,8 +295,23 @@ def delete_blog(blog_id):
     if not current_user.can(Permission.ADMINISTER):
         abort(403)
     post = Post.query.filter_by(id=blog_id).first_or_404()
+    logger.info('Deleting blog {}.'.format(blog_id))
     db.session.delete(post)
-    return redirect(url_for('main.manage_blog'))
+    return jsonify(url=url_for('main.manage_blog', blog_id=blog_id))
+
+
+@main.route('/delete-comment/<comment_id>', methods=['POST'])
+@login_required
+@admin_required
+def delete_comment(comment_id):
+    """Delete comment interface.
+    """
+    if not current_user.can(Permission.ADMINISTER):
+        abort(403)
+    comment = Comment.query.filter_by(id=comment_id).first_or_404()
+    logger.info('Deleting comment {}.'.format(comment_id))
+    db.session.delete(comment)
+    return jsonify(url=url_for('main.manage_comment', comment_id=comment_id))
 
 
 @main.route('/upload_img', methods=['POST'])

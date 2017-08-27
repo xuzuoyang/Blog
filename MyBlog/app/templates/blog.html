@@ -31,7 +31,7 @@
           <p>{{ post.body | safe }}</p>
           <ul class="list-inline">
               <li>
-                  <a id="thumb-up" href="javascript:void(0);" onclick="thumbup(this)"><i class="fa fa-thumbs-o-up fa-lg" aria-hidden="true"></i></a>
+                  <a id="thumb-up" href="javascript:void(0);" onclick="thumbuppost(this)"><i class="fa fa-thumbs-o-up fa-lg" aria-hidden="true"></i></a>
                   <span class="badge">{% if post.thumb_up %}
                           {{ post.thumb_up.all()|length }}
                   {% else %}
@@ -43,7 +43,10 @@
         </div>
         {% endif %}
 
-      <form class="form" method="post">
+        {% if current_user.is_anonymous %}
+        <a class="btn btn-primary" role="button" href="{{ url_for('auth.login') }}">Log in&comment</a>
+        {% else %}
+        <form class="form" method="post">
           <div class="form-group">
               {{ comment_form.hidden_tag() }}
               {{ wtf.form_field(comment_form.body) }}
@@ -51,15 +54,18 @@
           <div class="form-group">
               {{ wtf.form_field(comment_form.submit, button_map={'submit': 'btn btn-primary'}) }}
           </div>
-      </form>
+        </form>
+        {% endif %}
 
-      <hr>
 
-      <h4>Latest Comments</h4>
-      <br>
-      {% if post.comments %}
-      <ul class="media-list">
-          {% for comment in post.comments %}
+
+        <hr>
+
+        <h4>Latest Comments</h4>
+        <br>
+        {% if post.comments %}
+        <ul class="media-list">
+          {% for comment in post.comments if not comment.parent_id %}
           <div class="comment-container">
               <li class="media">
                   <div class="media-left media-top comment-avatar">
@@ -74,7 +80,9 @@
                             <li><span class="label label-primary">author</span></li>
                             <li><p>{{ moment(comment.timestamp).fromNow() }}</p></li>
                             <li class="pull-right">
-                                <a href=""><i class="fa fa-heart comment-icon-like" aria-hidden="true"></i></a>
+                                <a id="like" href="javascript:void(0);" onclick="thumbupcomment(this)">
+                                    <i id="{{ comment.id }}" class="fa fa-heart comment-icon-like" aria-hidden="true"></i>
+                                </a>
                                 <a id="reply" href="javascript:void(0);" onclick="reply(this)">
                                     <i class="fa fa-reply comment-icon-reply" aria-hidden="true">
                                         <span>{{ comment.id }}</span>
@@ -86,11 +94,14 @@
                     <div class="comment-content">{{ comment.body }}</div>
                   </div>
               </li>
+              {% if Comment.query.filter_by(parent_id=comment.id).first() %}
+              <hr>
+              {% endif %}
               <ul class="media-list reply-list">
                 {% for reply in Comment.query.filter_by(parent_id=comment.id).all() %}
                 <li class="media">
                   <div class="media-left media-top comment-avatar">
-                      <img class="media-object" src="{{ current_user.gravatar(size=50) }}" alt="">
+                      <img class="media-object" src="{{ reply.author.gravatar(size=50) }}" alt="">
                   </div>
                   <div class="media-body comment-box">
                       <div class="comment-head">
@@ -120,7 +131,7 @@
           </div>
           {% endfor %}
       </ul>
-      {% endif %}
+        {% endif %}
     </div>
 
     <div class="col-sm-3 col-sm-offset-1 col-md-3 col-md-offset-1 col-lg-3 col-lg-offset-1 blog-sidebar">
@@ -162,7 +173,7 @@
       <div class="modal-content">
         <div class="modal-header">
           <button type="button" class="close" data-dismiss="modal" aria-label="Close"><span aria-hidden="true">&times;</span></button>
-          <h4 class="modal-title" id="exampleModalLabel">Reply to: </h4>
+          <h4 class="modal-title" id="replyModalLabel"></h4>
         </div>
         <form class="form" method="post">
             <div class="modal-body">
@@ -172,6 +183,7 @@
             </div>
             <div class="modal-footer">
                 <div class="form-group">
+                    <button type="button" class="btn btn-warning" data-dismiss="modal">Close</button>
                     <input id="reply_submit" class="btn btn-primary" type="button" value="Submit">
                 </div>
             </div>
@@ -180,22 +192,48 @@
     </div>
   </div>
 
+  <div class="modal fade" id="loginModal" tabindex="-1" role="dialog" aria-labelledby="exampleModalLabel">
+    <div class="modal-dialog" role="document">
+      <div class="modal-content">
+        <div class="modal-header">
+          <button type="button" class="close" data-dismiss="modal" aria-label="Close"><span aria-hidden="true">&times;</span></button>
+          <h4 class="modal-title" id="exampleModalLabel">Excuse me but...</h4>
+        </div>
+        <div class="modal-body">
+            <p>You need to log in first ^_^</p>
+        </div>
+        <div class="modal-footer">
+            <button type="button" class="btn btn-warning" data-dismiss="modal">Close</button>
+            <a class="btn btn-primary" role="button" href="{{ url_for('auth.login') }}">Log in</a>
+        </div>
+      </div>
+    </div>
+  </div>
 </div>
 {% endblock %}
 
 {% block scripts %}
 <script>
+// check like status of comments
+{% if not current_user.is_anonymous %}
+{% for comment in post.comments if not comment.parent_id and current_user.is_thumbing_comment(comment) %}
+    icon = $("#"+{{comment.id}});
+    icon.css("color", "#FF0000");
+{% endfor %}
+{% endif %}
+
 blog_id = {{ post.id|safe }};
-url = "/thumb-up/"+blog_id;
-function thumbup(object){
-    data = {id: blog_id};
+function thumbuppost(object){
+    {% if current_user.is_anonymous %}
+        $("#loginModal").modal();
+        return;
+    {% endif %}
+    url = "/thumb-up-post/"+blog_id;
     $.ajax({
         type: "POST",
         url: url,
-        data: data,
         success: function(data, textStatus){
             if (data.url) {
-                // alert(data.url);
                 window.location = data.url;
             } else {
                 window.location = "/";
@@ -208,12 +246,51 @@ function thumbup(object){
         dataType: "json"
     })
 };
-url = "/reply/"+blog_id;
+function thumbupcomment(object){
+    {% if current_user.is_anonymous %}
+        $("#loginModal").modal();
+        return;
+    {% endif %}
+    comment_id = $(object).find("i").attr("id");
+    url = "/thumb-up-comment/"+blog_id+"/"+comment_id;
+    $.ajax({
+        type: "POST",
+        url: url,
+        success: function(data, textStatus){
+            icon = $("#"+comment_id);
+            if(data.status=="changing red"){
+                icon.css("color", "#FF0000");
+                icon.hover(function(){
+                    icon.css("color", "#FF0000")
+                }, function(){
+                    icon.css("color", "#FF0000")
+                })
+            }else{
+                icon.css("color", "#A6A6A6");
+                icon.hover(function(){
+                    icon.css("color", "#FF0000")
+                }, function(){
+                    icon.css("color", "#A6A6A6")
+                })
+            }
+        },
+        error: function(xhr, error){
+            // alert(xhr.responseText);
+            // alert(xhr.status);
+        },
+        dataType: "json"
+    });
+};
 function reply(object){
+    {% if current_user.is_anonymous %}
+        $("#loginModal").modal();
+        return;
+    {% endif %}
     parent_id = $(object).find("span").text();
     $('#reply_submit').click(function() {
         content = $('#reply_content').val();
         data = {parent_id: parent_id, content: content};
+        url = "/reply/"+blog_id;
         $.ajax({
           type: "POST",
           url: url,
@@ -227,12 +304,14 @@ function reply(object){
             }
           },
           error: function (xhr, error) {
-            alert(xhr.responseText);
-            alert(xhr.status);
+            // alert(xhr.responseText);
+            // alert(xhr.status);
           },
           dataType: "json"
         });
     });
+    author = $(object).parent().siblings().find("h5").text();
+    $('#replyModalLabel').text("Reply to "+author+":");
     $('#replyModal').modal();
 };
 </script>

@@ -37,7 +37,7 @@
                 <td>{{ post.timestamp }}</td>
                 <td>
                     <a href="{{ url_for('main.edit_blog', blog_id=post.id) }}"><i class="icon-edit">Edit</i></a>
-                    <a href="{{ url_for('main.delete_blog', blog_id=post.id) }}"><i class="icon-trash">Delete</i></a>
+                    <a id="{{ post.id }}" href="javascript:void(0);" onclick="delete_blog(this)"><i class="icon-trash">Delete</i></a>
                 </td>
             </tr>
             {% endfor %}
@@ -52,4 +52,27 @@
     {% endif %}
 </div>
 
+{% endblock %}
+{% block scripts %}
+<script type="text/javascript">
+function delete_blog(object){
+    blog_id = $(object).attr("id");
+    $.ajax({
+        type: "POST",
+        url: "/delete-blog/"+blog_id,
+        success: function(data, textStatus){
+            if (data.url) {
+                window.location = data.url;
+            } else {
+                window.location = "/";
+            }
+        },
+        error: function(xhr, error){
+            alert(xhr.responseText);
+            alert(xhr.status);
+        },
+        dataType: "json"
+    })
+}
+</script>
 {% endblock %}

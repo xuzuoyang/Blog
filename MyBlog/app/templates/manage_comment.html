@@ -31,7 +31,11 @@
                 <td>{{ comment.author.username }}</td>
                 <td>{{ comment.body }}</td>
                 <td>{{ comment.timestamp }}</td>
-                <td><a href=""><i class="icon-trash">Delete</i></a></td>
+                <td>
+                    <a id="{{ comment.id }}" href="javascript:void(0);" onclick="delete_comment(this)">
+                        <i class="icon-trash">Delete</i>
+                    </a>
+                </td>
             </tr>
             {% endfor %}
         </tbody>
@@ -45,4 +49,27 @@
     {% endif %}
 </div>
 
+{% endblock %}
+{% block scripts %}
+<script type="text/javascript">
+function delete_comment(object){
+    comment_id = $(object).attr("id");
+    $.ajax({
+        type: "POST",
+        url: "/delete-comment/"+comment_id,
+        success: function(data, textStatus){
+            if (data.url) {
+                window.location = data.url;
+            } else {
+                window.location = "/";
+            }
+        },
+        error: function(xhr, error){
+            alert(xhr.responseText);
+            alert(xhr.status);
+        },
+        dataType: "json"
+    })
+}
+</script>
 {% endblock %}
