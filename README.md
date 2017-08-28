@@ -1,16 +1,16 @@
-WebBlog作为学习廖雪峰老师网站上python教程实战的记录。
-基本原样使用了廖老师的代码，完善了一些小bug并且调通了整个流程。
-前端改动：改用了vue2版本，重写了pagination的部分。
- 
------
+## MyBlog: Personal Tech Blog 
+![test](https://img.shields.io/badge/framework-flask0.12-brightgreen.svg)
+![](https://img.shields.io/badge/frontend-bootstrap3-green.svg)
+![](https://img.shields.io/badge/database-mysql5.7-blue.svg)
 
-WebBlog2作为学习<<Flask Web开发:基于Python的Web应用开发实战>>的记录。
-基本原样使用了书中的代码，之后再进行重构。
+### WebBlog & WebBlog2
+WebBlog作为学习廖雪峰老师网站上python教程实战的记录。基本原样使用了廖老师的代码, 完善了一些小bug, 改用了vue2版本，重写了pagination的部分。  
+WebBlog2作为学习<<Flask Web开发:基于Python的Web应用开发实战>>的记录。基本原样使用了书中的代码。
 
------
+### Introduction
+MyBlog作为个人博客项目, 基于flask&bootstrap&mysql开发, 在阿里云服务器上搭建, 通过fabric&nginx&supervisor部署和运行, 目前域名备案准备中.
 
-MyBlog作为自己开发博客的记录，WebBlog2的重构目标将放到这里实现
-进度更新：
+### Progress
 * <del>完成前端页面的开发（Bootstrap）和基本框架的搭建（Flask）。</del>
 * <del>完成基本用户注册登录功能。</del>
 * <del>完成博客的创建、编辑和评论功能。</del>
@@ -24,13 +24,17 @@ MyBlog作为自己开发博客的记录，WebBlog2的重构目标将放到这里
 * <del>优化UI,增加shadow-box效果;</del>
 * <del>用户权限划分:匿名可以访问主页和博客详情页;查看About页&留言&评论需要登陆;写博客和后台管理需要管理员权限.</del>
 * <del>完成后台tinymce editor的图片上传功能,博客图片统一上传到阿里云OSS.</del>
+* <del>完成评论功能, 包括点赞和回复部分, 完善博客的用户单次点赞限制.</del>
+* <del>修改用户权限:匿名可以查看About页;留言评论和回复需要点击登陆.</del>
 
-待完善：
-* 评论和留言的UI优化.
-* 留言的管理页面.
+### To Do List(priority high to low)
+* 测试用例 & 代码分析
+* RESTFUL API
+* 文章的Archive
+* 用户管理系统:修改&重置密码;其他
 * 评论之间的回复功能
 * @用户功能 & 被@用户的提醒功能
-* 用户访问登陆使用Oauth2.0
-* 按照RESTFUL API改写后端接口。
 
------
+### Discuss
+Email: xzyduoduo@126.com  
+QQ: 895982459
