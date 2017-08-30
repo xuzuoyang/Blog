@@ -3798,3 +3798,151 @@
 2017-08-29 11:37:04,300 : INFO : _internal : _log : 127.0.0.1 - - [29/Aug/2017 11:37:04] "GET /static/pics/five.jpg HTTP/1.1" 200 -
 2017-08-29 11:37:04,336 : INFO : _internal : _log : 127.0.0.1 - - [29/Aug/2017 11:37:04] "GET /static/font-awesome-4.7.0/fonts/fontawesome-webfont.woff2?v=4.7.0 HTTP/1.1" 200 -
 2017-08-29 11:37:05,493 : INFO : _internal : _log : 127.0.0.1 - - [29/Aug/2017 11:37:05] "GET /static/pics/myblog.ico HTTP/1.1" 200 -
+2017-08-29 14:52:43,472 : INFO : _internal : _log :  * Running on http://127.0.0.1:5000/ (Press CTRL+C to quit)
+2017-08-29 14:52:43,473 : INFO : _internal : _log :  * Restarting with stat
+2017-08-29 14:52:43,981 : WARNING : _internal : _log :  * Debugger is active!
+2017-08-29 14:52:43,982 : INFO : _internal : _log :  * Debugger PIN: 269-707-563
+2017-08-29 14:53:20,114 : INFO : _internal : _log : 127.0.0.1 - - [29/Aug/2017 14:53:20] "GET / HTTP/1.1" 200 -
+2017-08-29 14:53:32,169 : INFO : _internal : _log : 127.0.0.1 - - [29/Aug/2017 14:53:32] "GET /?page=2 HTTP/1.1" 200 -
+2017-08-29 14:56:45,879 : INFO : _internal : _log : 127.0.0.1 - - [29/Aug/2017 14:56:45] "GET / HTTP/1.1" 200 -
+2017-08-29 14:56:47,477 : INFO : _internal : _log : 127.0.0.1 - - [29/Aug/2017 14:56:47] "GET /manage-blog HTTP/1.1" 200 -
+2017-08-29 14:56:49,252 : INFO : _internal : _log : 127.0.0.1 - - [29/Aug/2017 14:56:49] "GET /write-blog HTTP/1.1" 200 -
+2017-08-29 14:56:49,260 : INFO : _internal : _log : 127.0.0.1 - - [29/Aug/2017 14:56:49] "GET /static/css/bootstrap-tagsinput.css HTTP/1.1" 200 -
+2017-08-29 14:56:49,263 : INFO : _internal : _log : 127.0.0.1 - - [29/Aug/2017 14:56:49] "GET /static/js/bootstrap-tagsinput.js HTTP/1.1" 200 -
+2017-08-29 14:57:29,071 : INFO : _internal : _log : 127.0.0.1 - - [29/Aug/2017 14:57:29] "POST /write-blog HTTP/1.1" 200 -
+2017-08-29 14:57:29,117 : INFO : _internal : _log : 127.0.0.1 - - [29/Aug/2017 14:57:29] "GET /manage-blog HTTP/1.1" 200 -
+2017-08-29 14:57:30,552 : INFO : _internal : _log : 127.0.0.1 - - [29/Aug/2017 14:57:30] "GET /blog/116 HTTP/1.1" 200 -
+2017-08-29 14:57:30,560 : INFO : _internal : _log : 127.0.0.1 - - [29/Aug/2017 14:57:30] "GET /static/css/comment.css HTTP/1.1" 200 -
+2017-08-29 14:57:36,233 : INFO : _internal : _log : 127.0.0.1 - - [29/Aug/2017 14:57:36] "GET /edit/116 HTTP/1.1" 200 -
+2017-08-29 14:57:47,405 : INFO : _internal : _log : 127.0.0.1 - - [29/Aug/2017 14:57:47] "GET /blog/116 HTTP/1.1" 200 -
+2017-08-29 14:57:51,553 : INFO : _internal : _log : 127.0.0.1 - - [29/Aug/2017 14:57:51] "GET / HTTP/1.1" 200 -
+2017-08-29 14:58:18,813 : INFO : _internal : _log : 127.0.0.1 - - [29/Aug/2017 14:58:18] "GET /manage-blog HTTP/1.1" 200 -
+2017-08-29 14:58:24,770 : INFO : _internal : _log : 127.0.0.1 - - [29/Aug/2017 14:58:24] "GET /edit/116 HTTP/1.1" 200 -
+2017-08-29 14:58:50,139 : INFO : _internal : _log : 127.0.0.1 - - [29/Aug/2017 14:58:50] "POST /edit/116 HTTP/1.1" 200 -
+2017-08-29 14:58:50,187 : INFO : _internal : _log : 127.0.0.1 - - [29/Aug/2017 14:58:50] "GET /manage-blog HTTP/1.1" 200 -
+2017-08-29 14:58:51,447 : INFO : _internal : _log : 127.0.0.1 - - [29/Aug/2017 14:58:51] "GET /blog/116 HTTP/1.1" 200 -
+2017-08-29 14:59:03,830 : INFO : _internal : _log : 127.0.0.1 - - [29/Aug/2017 14:59:03] "GET /manage-blog HTTP/1.1" 200 -
+2017-08-29 14:59:05,411 : INFO : _internal : _log : 127.0.0.1 - - [29/Aug/2017 14:59:05] "GET /edit/116 HTTP/1.1" 200 -
+2017-08-29 15:05:48,524 : INFO : _internal : _log : 127.0.0.1 - - [29/Aug/2017 15:05:48] "POST /edit/116 HTTP/1.1" 200 -
+2017-08-29 15:05:48,560 : INFO : _internal : _log : 127.0.0.1 - - [29/Aug/2017 15:05:48] "GET /manage-blog HTTP/1.1" 200 -
+2017-08-29 15:05:50,049 : INFO : _internal : _log : 127.0.0.1 - - [29/Aug/2017 15:05:50] "GET /blog/116 HTTP/1.1" 200 -
+2017-08-29 15:05:57,607 : INFO : _internal : _log : 127.0.0.1 - - [29/Aug/2017 15:05:57] "GET /edit/116 HTTP/1.1" 200 -
+2017-08-29 15:08:49,412 : INFO : _internal : _log :  * Running on http://127.0.0.1:5000/ (Press CTRL+C to quit)
+2017-08-29 15:08:49,412 : INFO : _internal : _log :  * Restarting with stat
+2017-08-29 15:08:49,917 : WARNING : _internal : _log :  * Debugger is active!
+2017-08-29 15:08:49,917 : INFO : _internal : _log :  * Debugger PIN: 269-707-563
+2017-08-29 15:08:55,397 : INFO : _internal : _log : 127.0.0.1 - - [29/Aug/2017 15:08:55] "GET / HTTP/1.1" 200 -
+2017-08-29 15:08:57,036 : INFO : _internal : _log : 127.0.0.1 - - [29/Aug/2017 15:08:57] "GET /manage-blog HTTP/1.1" 200 -
+2017-08-29 15:08:59,093 : INFO : _internal : _log : 127.0.0.1 - - [29/Aug/2017 15:08:59] "GET /edit/116 HTTP/1.1" 200 -
+2017-08-29 15:15:22,373 : INFO : _internal : _log : 127.0.0.1 - - [29/Aug/2017 15:15:22] "POST /edit/116 HTTP/1.1" 200 -
+2017-08-29 15:15:22,404 : INFO : _internal : _log : 127.0.0.1 - - [29/Aug/2017 15:15:22] "GET /manage-blog HTTP/1.1" 200 -
+2017-08-29 15:15:23,934 : INFO : _internal : _log : 127.0.0.1 - - [29/Aug/2017 15:15:23] "GET /blog/116 HTTP/1.1" 200 -
+2017-08-29 15:19:45,388 : INFO : _internal : _log :  * Running on http://127.0.0.1:5000/ (Press CTRL+C to quit)
+2017-08-29 15:19:45,389 : INFO : _internal : _log :  * Restarting with stat
+2017-08-29 15:19:45,886 : WARNING : _internal : _log :  * Debugger is active!
+2017-08-29 15:19:45,886 : INFO : _internal : _log :  * Debugger PIN: 269-707-563
+2017-08-29 15:19:49,598 : INFO : _internal : _log : 127.0.0.1 - - [29/Aug/2017 15:19:49] "GET /manage-blog HTTP/1.1" 200 -
+2017-08-29 15:19:49,827 : INFO : _internal : _log : 127.0.0.1 - - [29/Aug/2017 15:19:49] "GET /static/pics/myblog.ico HTTP/1.1" 200 -
+2017-08-29 15:19:50,682 : INFO : _internal : _log : 127.0.0.1 - - [29/Aug/2017 15:19:50] "GET /write-blog HTTP/1.1" 200 -
+2017-08-29 15:20:12,860 : INFO : _internal : _log : 127.0.0.1 - - [29/Aug/2017 15:20:12] "GET /edit/116 HTTP/1.1" 200 -
+2017-08-29 15:33:27,465 : INFO : _internal : _log : 127.0.0.1 - - [29/Aug/2017 15:33:27] "POST /edit/116 HTTP/1.1" 200 -
+2017-08-29 15:33:27,482 : INFO : _internal : _log : 127.0.0.1 - - [29/Aug/2017 15:33:27] "GET /manage-blog HTTP/1.1" 200 -
+2017-08-29 15:33:29,776 : INFO : _internal : _log : 127.0.0.1 - - [29/Aug/2017 15:33:29] "GET /blog/108 HTTP/1.1" 200 -
+2017-08-29 15:33:55,309 : INFO : _internal : _log : 127.0.0.1 - - [29/Aug/2017 15:33:55] "GET /manage-blog HTTP/1.1" 200 -
+2017-08-29 15:33:58,004 : INFO : _internal : _log : 127.0.0.1 - - [29/Aug/2017 15:33:58] "GET /write-blog HTTP/1.1" 200 -
+2017-08-30 10:32:39,853 : INFO : _internal : _log :  * Running on http://127.0.0.1:5000/ (Press CTRL+C to quit)
+2017-08-30 10:32:39,854 : INFO : _internal : _log :  * Restarting with stat
+2017-08-30 10:32:40,342 : WARNING : _internal : _log :  * Debugger is active!
+2017-08-30 10:32:40,342 : INFO : _internal : _log :  * Debugger PIN: 269-707-563
+2017-08-30 10:32:52,847 : INFO : _internal : _log : 127.0.0.1 - - [30/Aug/2017 10:32:52] "GET / HTTP/1.1" 200 -
+2017-08-30 10:32:52,853 : INFO : _internal : _log : 127.0.0.1 - - [30/Aug/2017 10:32:52] "GET /static/css/bootstrap.min.css HTTP/1.1" 200 -
+2017-08-30 10:32:52,855 : INFO : _internal : _log : 127.0.0.1 - - [30/Aug/2017 10:32:52] "GET /static/font-awesome-4.7.0/css/font-awesome.min.css HTTP/1.1" 200 -
+2017-08-30 10:32:52,858 : INFO : _internal : _log : 127.0.0.1 - - [30/Aug/2017 10:32:52] "GET /static/css/carousel.css HTTP/1.1" 200 -
+2017-08-30 10:32:52,912 : INFO : _internal : _log : 127.0.0.1 - - [30/Aug/2017 10:32:52] "GET /static/pics/one.jpg HTTP/1.1" 200 -
+2017-08-30 10:32:52,914 : INFO : _internal : _log : 127.0.0.1 - - [30/Aug/2017 10:32:52] "GET /static/pics/two.jpg HTTP/1.1" 200 -
+2017-08-30 10:32:52,917 : INFO : _internal : _log : 127.0.0.1 - - [30/Aug/2017 10:32:52] "GET /static/pics/three.jpg HTTP/1.1" 200 -
+2017-08-30 10:32:52,919 : INFO : _internal : _log : 127.0.0.1 - - [30/Aug/2017 10:32:52] "GET /static/pics/four.jpg HTTP/1.1" 200 -
+2017-08-30 10:32:52,921 : INFO : _internal : _log : 127.0.0.1 - - [30/Aug/2017 10:32:52] "GET /static/pics/five.jpg HTTP/1.1" 200 -
+2017-08-30 10:32:52,985 : INFO : _internal : _log : 127.0.0.1 - - [30/Aug/2017 10:32:52] "GET /static/font-awesome-4.7.0/fonts/fontawesome-webfont.woff2?v=4.7.0 HTTP/1.1" 200 -
+2017-08-30 10:32:55,063 : INFO : _internal : _log : 127.0.0.1 - - [30/Aug/2017 10:32:55] "GET /manage-blog HTTP/1.1" 200 -
+2017-08-30 10:32:59,400 : INFO : _internal : _log : 127.0.0.1 - - [30/Aug/2017 10:32:59] "GET /edit/115 HTTP/1.1" 200 -
+2017-08-30 10:32:59,408 : INFO : _internal : _log : 127.0.0.1 - - [30/Aug/2017 10:32:59] "GET /static/css/bootstrap-tagsinput.css HTTP/1.1" 200 -
+2017-08-30 10:32:59,411 : INFO : _internal : _log : 127.0.0.1 - - [30/Aug/2017 10:32:59] "GET /static/js/bootstrap-tagsinput.js HTTP/1.1" 200 -
+2017-08-30 11:51:51,588 : INFO : _internal : _log :  * Detected change in '/home/xuzuoyang/mygit/MyBlog/app/models.py', reloading
+2017-08-30 11:51:51,690 : INFO : _internal : _log :  * Restarting with stat
+2017-08-30 11:51:52,413 : WARNING : _internal : _log :  * Debugger is active!
+2017-08-30 11:51:52,413 : INFO : _internal : _log :  * Debugger PIN: 269-707-563
+2017-08-30 11:53:02,240 : INFO : _internal : _log :  * Detected change in '/home/xuzuoyang/mygit/MyBlog/app/main/views.py', reloading
+2017-08-30 11:53:02,317 : INFO : _internal : _log :  * Restarting with stat
+2017-08-30 11:53:02,811 : WARNING : _internal : _log :  * Debugger is active!
+2017-08-30 11:53:02,811 : INFO : _internal : _log :  * Debugger PIN: 269-707-563
+2017-08-30 11:53:26,033 : INFO : _internal : _log : 127.0.0.1 - - [30/Aug/2017 11:53:26] "GET / HTTP/1.1" 200 -
+2017-08-30 11:53:30,503 : INFO : _internal : _log : 127.0.0.1 - - [30/Aug/2017 11:53:30] "GET /manage-blog HTTP/1.1" 200 -
+2017-08-30 11:53:36,110 : INFO : _internal : _log : 127.0.0.1 - - [30/Aug/2017 11:53:36] "GET /edit/116 HTTP/1.1" 200 -
+2017-08-30 11:53:40,457 : INFO : _internal : _log : 127.0.0.1 - - [30/Aug/2017 11:53:40] "GET / HTTP/1.1" 200 -
+2017-08-30 11:54:03,532 : INFO : _internal : _log : 127.0.0.1 - - [30/Aug/2017 11:54:03] "GET /search-tag/test HTTP/1.1" 200 -
+2017-08-30 11:54:15,533 : INFO : _internal : _log : 127.0.0.1 - - [30/Aug/2017 11:54:15] "GET /search-tag/thumbup HTTP/1.1" 200 -
+2017-08-30 11:54:18,045 : INFO : _internal : _log : 127.0.0.1 - - [30/Aug/2017 11:54:18] "GET /manage-blog HTTP/1.1" 200 -
+2017-08-30 11:54:20,697 : INFO : _internal : _log : 127.0.0.1 - - [30/Aug/2017 11:54:20] "GET /edit/115 HTTP/1.1" 200 -
+2017-08-30 11:54:32,727 : INFO : _internal : _log : 127.0.0.1 - - [30/Aug/2017 11:54:32] "POST /edit/115 HTTP/1.1" 500 -
+2017-08-30 11:56:08,082 : INFO : _internal : _log :  * Detected change in '/home/xuzuoyang/mygit/MyBlog/app/models.py', reloading
+2017-08-30 11:56:08,185 : INFO : _internal : _log :  * Restarting with stat
+2017-08-30 11:56:08,679 : WARNING : _internal : _log :  * Debugger is active!
+2017-08-30 11:56:08,680 : INFO : _internal : _log :  * Debugger PIN: 269-707-563
+2017-08-30 11:56:15,005 : INFO : _internal : _log : 127.0.0.1 - - [30/Aug/2017 11:56:15] "POST /edit/115 HTTP/1.1" 200 -
+2017-08-30 11:56:15,040 : INFO : _internal : _log : 127.0.0.1 - - [30/Aug/2017 11:56:15] "GET /manage-blog HTTP/1.1" 200 -
+2017-08-30 11:56:17,897 : INFO : _internal : _log : 127.0.0.1 - - [30/Aug/2017 11:56:17] "GET /blog/115 HTTP/1.1" 200 -
+2017-08-30 11:56:17,907 : INFO : _internal : _log : 127.0.0.1 - - [30/Aug/2017 11:56:17] "GET /static/css/comment.css HTTP/1.1" 200 -
+2017-08-30 11:56:18,202 : INFO : _internal : _log : 127.0.0.1 - - [30/Aug/2017 11:56:18] "GET /static/pics/myblog.ico HTTP/1.1" 200 -
+2017-08-30 11:56:37,563 : INFO : _internal : _log : 127.0.0.1 - - [30/Aug/2017 11:56:37] "GET / HTTP/1.1" 200 -
+2017-08-30 11:56:46,865 : INFO : _internal : _log : 127.0.0.1 - - [30/Aug/2017 11:56:46] "GET /manage-blog HTTP/1.1" 200 -
+2017-08-30 11:56:57,826 : INFO : _internal : _log : 127.0.0.1 - - [30/Aug/2017 11:56:57] "GET /edit/115 HTTP/1.1" 200 -
+2017-08-30 11:57:03,977 : INFO : _internal : _log : 127.0.0.1 - - [30/Aug/2017 11:57:03] "POST /edit/115 HTTP/1.1" 200 -
+2017-08-30 11:57:04,028 : INFO : _internal : _log : 127.0.0.1 - - [30/Aug/2017 11:57:04] "GET /manage-blog HTTP/1.1" 200 -
+2017-08-30 11:57:06,444 : INFO : _internal : _log : 127.0.0.1 - - [30/Aug/2017 11:57:06] "GET /blog/115 HTTP/1.1" 200 -
+2017-08-30 12:12:16,988 : INFO : _internal : _log : 127.0.0.1 - - [30/Aug/2017 12:12:16] "GET /manage-blog HTTP/1.1" 200 -
+2017-08-30 12:12:20,286 : INFO : _internal : _log : 127.0.0.1 - - [30/Aug/2017 12:12:20] "GET /edit/116 HTTP/1.1" 200 -
+2017-08-30 12:12:26,857 : INFO : _internal : _log : 127.0.0.1 - - [30/Aug/2017 12:12:26] "POST /edit/116 HTTP/1.1" 200 -
+2017-08-30 12:12:26,901 : INFO : _internal : _log : 127.0.0.1 - - [30/Aug/2017 12:12:26] "GET /manage-blog HTTP/1.1" 200 -
+2017-08-30 12:12:30,318 : INFO : _internal : _log : 127.0.0.1 - - [30/Aug/2017 12:12:30] "GET /blog/116 HTTP/1.1" 200 -
+2017-08-30 12:12:41,564 : INFO : _internal : _log : 127.0.0.1 - - [30/Aug/2017 12:12:41] "POST /delete-blog/116 HTTP/1.1" 200 -
+2017-08-30 12:12:41,611 : INFO : _internal : _log : 127.0.0.1 - - [30/Aug/2017 12:12:41] "GET /manage-blog?blog_id=116 HTTP/1.1" 200 -
+2017-08-30 12:18:52,184 : INFO : _internal : _log :  * Detected change in '/home/xuzuoyang/mygit/MyBlog/app/models.py', reloading
+2017-08-30 12:18:52,300 : INFO : _internal : _log :  * Restarting with stat
+2017-08-30 12:18:53,045 : WARNING : _internal : _log :  * Debugger is active!
+2017-08-30 12:18:53,046 : INFO : _internal : _log :  * Debugger PIN: 269-707-563
+2017-08-30 12:26:34,181 : INFO : _internal : _log :  * Running on http://127.0.0.1:5000/ (Press CTRL+C to quit)
+2017-08-30 12:26:34,181 : INFO : _internal : _log :  * Restarting with stat
+2017-08-30 12:26:34,684 : WARNING : _internal : _log :  * Debugger is active!
+2017-08-30 12:26:34,684 : INFO : _internal : _log :  * Debugger PIN: 269-707-563
+2017-08-30 12:26:39,485 : INFO : _internal : _log : 127.0.0.1 - - [30/Aug/2017 12:26:39] "GET /manage-blog?blog_id=116 HTTP/1.1" 200 -
+2017-08-30 12:26:39,992 : INFO : _internal : _log : 127.0.0.1 - - [30/Aug/2017 12:26:39] "GET /static/pics/myblog.ico HTTP/1.1" 200 -
+2017-08-30 12:26:41,316 : INFO : _internal : _log : 127.0.0.1 - - [30/Aug/2017 12:26:41] "GET / HTTP/1.1" 200 -
+2017-08-30 12:26:41,327 : INFO : _internal : _log : 127.0.0.1 - - [30/Aug/2017 12:26:41] "GET /static/pics/one.jpg HTTP/1.1" 200 -
+2017-08-30 12:26:41,331 : INFO : _internal : _log : 127.0.0.1 - - [30/Aug/2017 12:26:41] "GET /static/pics/two.jpg HTTP/1.1" 200 -
+2017-08-30 12:26:41,336 : INFO : _internal : _log : 127.0.0.1 - - [30/Aug/2017 12:26:41] "GET /static/pics/three.jpg HTTP/1.1" 200 -
+2017-08-30 12:26:41,340 : INFO : _internal : _log : 127.0.0.1 - - [30/Aug/2017 12:26:41] "GET /static/pics/four.jpg HTTP/1.1" 200 -
+2017-08-30 12:26:41,345 : INFO : _internal : _log : 127.0.0.1 - - [30/Aug/2017 12:26:41] "GET /static/pics/five.jpg HTTP/1.1" 200 -
+2017-08-30 12:26:52,016 : INFO : _internal : _log : 127.0.0.1 - - [30/Aug/2017 12:26:52] "GET /manage-blog HTTP/1.1" 200 -
+2017-08-30 12:27:00,482 : INFO : _internal : _log : 127.0.0.1 - - [30/Aug/2017 12:27:00] "GET /blog/109 HTTP/1.1" 200 -
+2017-08-30 12:27:04,176 : INFO : _internal : _log : 127.0.0.1 - - [30/Aug/2017 12:27:04] "POST /delete-blog/109 HTTP/1.1" 200 -
+2017-08-30 12:27:04,226 : INFO : _internal : _log : 127.0.0.1 - - [30/Aug/2017 12:27:04] "GET /manage-blog?blog_id=109 HTTP/1.1" 200 -
+2017-08-30 12:27:07,097 : INFO : _internal : _log : 127.0.0.1 - - [30/Aug/2017 12:27:07] "GET / HTTP/1.1" 200 -
+2017-08-30 12:27:11,752 : INFO : _internal : _log : 127.0.0.1 - - [30/Aug/2017 12:27:11] "GET /manage-blog HTTP/1.1" 200 -
+2017-08-30 12:27:15,390 : INFO : _internal : _log : 127.0.0.1 - - [30/Aug/2017 12:27:15] "GET /edit/115 HTTP/1.1" 200 -
+2017-08-30 12:27:21,253 : INFO : _internal : _log : 127.0.0.1 - - [30/Aug/2017 12:27:21] "POST /edit/115 HTTP/1.1" 200 -
+2017-08-30 12:27:21,273 : INFO : _internal : _log : 127.0.0.1 - - [30/Aug/2017 12:27:21] "GET /manage-blog HTTP/1.1" 200 -
+2017-08-30 12:27:23,099 : INFO : _internal : _log : 127.0.0.1 - - [30/Aug/2017 12:27:23] "GET /blog/115 HTTP/1.1" 200 -
+2017-08-30 12:27:25,843 : INFO : _internal : _log : 127.0.0.1 - - [30/Aug/2017 12:27:25] "GET / HTTP/1.1" 200 -
+2017-08-30 12:27:31,976 : INFO : _internal : _log : 127.0.0.1 - - [30/Aug/2017 12:27:31] "GET /manage-blog HTTP/1.1" 200 -
+2017-08-30 12:27:37,936 : INFO : _internal : _log : 127.0.0.1 - - [30/Aug/2017 12:27:37] "GET /blog/112 HTTP/1.1" 200 -
+2017-08-30 12:27:40,564 : INFO : _internal : _log : 127.0.0.1 - - [30/Aug/2017 12:27:40] "GET /blog/115 HTTP/1.1" 200 -
+2017-08-30 12:27:46,006 : INFO : _internal : _log : 127.0.0.1 - - [30/Aug/2017 12:27:46] "GET /edit/115 HTTP/1.1" 200 -
+2017-08-30 12:27:58,032 : INFO : _internal : _log : 127.0.0.1 - - [30/Aug/2017 12:27:58] "POST /edit/115 HTTP/1.1" 200 -
+2017-08-30 12:27:58,078 : INFO : _internal : _log : 127.0.0.1 - - [30/Aug/2017 12:27:58] "GET /manage-blog HTTP/1.1" 200 -
+2017-08-30 12:28:00,949 : INFO : _internal : _log : 127.0.0.1 - - [30/Aug/2017 12:28:00] "GET / HTTP/1.1" 200 -
+2017-08-30 12:28:05,119 : INFO : _internal : _log : 127.0.0.1 - - [30/Aug/2017 12:28:05] "GET /manage-blog HTTP/1.1" 200 -
+2017-08-30 12:28:06,963 : INFO : _internal : _log : 127.0.0.1 - - [30/Aug/2017 12:28:06] "GET /blog/115 HTTP/1.1" 200 -
+2017-08-30 12:28:11,819 : INFO : _internal : _log : 127.0.0.1 - - [30/Aug/2017 12:28:11] "POST /delete-blog/115 HTTP/1.1" 200 -
+2017-08-30 12:28:11,841 : INFO : _internal : _log : 127.0.0.1 - - [30/Aug/2017 12:28:11] "GET /manage-blog?blog_id=115 HTTP/1.1" 200 -
+2017-08-30 12:28:14,875 : INFO : _internal : _log : 127.0.0.1 - - [30/Aug/2017 12:28:14] "GET / HTTP/1.1" 200 -

@@ -248,6 +248,20 @@ class Tag(db.Model):
             t = Tagging(post_id=post.id, tag_id=self.id)
             db.session.add(t)
 
+    def untag_post(self, post):
+        logger.info('Untagging post {} as {}.'.format(post.id, self.name))
+        if self.is_tagging(post):
+            t = Tagging.query.filter_by(post_id=post.id, tag_id=self.id).first()
+            db.session.delete(t)
+
+    @staticmethod
+    def clean_tag():
+        logger.info('Cleaning tags...')
+        for tag in Tag.query.all():
+            if tag.tagging.first() is None:
+                db.session.delete(tag)
+        logger.info('Cleaning tags done.')
+
 
 class Category(db.Model):
     __tablename__ = 'categories'

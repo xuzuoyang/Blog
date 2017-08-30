@@ -275,8 +275,23 @@ def edit_blog(blog_id):
         category = Category.query.filter_by(name=category).first().id
         post.category_id = category
 
-        # tags = request.values.get('tags', 5)
-        # logging.warning('tags: %s' % tags)
+        # untag all the old tags first
+        for old_tag in list(map(lambda x: x.tag, post.tagging.all())):
+            old_tag.untag_post(post)
+
+        tags = form.get('tags', type=str, default=None).strip().split(',')
+        # add new tag if not exist; tag current post
+        if tags and len(tags[0]) > 0:
+            for new_tag in tags:
+                new_tag = new_tag.lower()
+                if not Tag.query.filter_by(name=new_tag).first():
+                    db.session.add(Tag(name=new_tag))
+                    db.session.commit()
+                t = Tag.query.filter_by(name=new_tag).first()
+                t.tag_post(post)
+
+        # do a tag clean
+        Tag.clean_tag()
 
         db.session.add(post)
         return jsonify({'url': url_for('main.manage_blog')})
@@ -297,6 +312,10 @@ def delete_blog(blog_id):
     post = Post.query.filter_by(id=blog_id).first_or_404()
     logger.info('Deleting blog {}.'.format(blog_id))
     db.session.delete(post)
+
+    # do a tag clean
+    Tag.clean_tag()
+    
     return jsonify(url=url_for('main.manage_blog', blog_id=blog_id))
 
 
