@@ -26,6 +26,8 @@ MyBlog作为个人博客项目, 基于flask&bootstrap&mysql开发, 在阿里云�
 * <del>完成后台tinymce editor的图片上传功能,博客图片统一上传到阿里云OSS.</del>
 * <del>完成评论功能, 包括点赞和回复部分, 完善博客的用户单次点赞限制.</del>
 * <del>修改用户权限:匿名可以查看About页;留言评论和回复需要点击登陆.</del>
+* <del>编辑器增加markdown语法操作.</del>
+* <del>标签增加修改功能, 在博客编辑和删除之后增加标签清理, 去掉无效标签.</del>
 
 ### To Do List(priority high to low)
 * 测试用例 & 代码分析
