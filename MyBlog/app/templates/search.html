@@ -30,7 +30,7 @@
                     <h2 class="blog-post-title">{{ post.title }}</h2>
                     <p class="blog-post-meta">
                         <i class="fa fa-calendar" aria-hidden="true"></i>
-                        written: {{ moment(post.timestamp).fromNow() }} & last edit: {{ moment(post.last_edit).fromNow() }}
+                        written: {{ moment(post.timestamp).calendar() }} & last edit: {{ moment(post.last_edit).calendar() }}
                     </p>
                     <p>{{ post.body | safe }}</p>
                   </div>

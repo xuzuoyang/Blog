@@ -42,7 +42,7 @@ def create_app(config_name):
             },
             'h2': {
                 'class': 'logging.StreamHandler',
-                'level': 'DEBUG',
+                'level': 'INFO',
                 'formatter': 'default'
             }
         },
@@ -51,7 +51,7 @@ def create_app(config_name):
             'handlers': ['h1', 'h2']
         }
     })
-    logging.getLogger('root').info('logger initialization & configuration done.')
+    logging.getLogger().info('logger initialization & configuration done.')
 
     bootstrap.init_app(app)
     db.init_app(app)

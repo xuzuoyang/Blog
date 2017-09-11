@@ -149,3 +149,16 @@ li.tag {
     margin-top: 10px;
     margin-bottom: 10px;
 }
+
+/*to make image in blog responsive*/
+.blog img {
+    max-width: 100%;
+    width: 100%;
+    height: auto;
+}
+
+/*to make link in blog responsive*/
+.blog blockquote {
+    word-wrap: break-word;
+    word-break: normal; 
+}

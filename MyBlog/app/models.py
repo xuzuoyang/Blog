@@ -8,7 +8,7 @@ from flask_login import UserMixin, AnonymousUserMixin
 from . import db, login_manager
 from flask import current_app, request
 
-logger = logging.getLogger('root')
+logger = logging.getLogger()
 
 
 class Permission:
@@ -225,7 +225,7 @@ class Post(db.Model):
 
     def refresh(self):
         logger.info('Editing blog {}.'.format(self.id))
-        last_edit = datetime.utcnow()
+        self.last_edit = datetime.utcnow()
         db.session.add(self)
 
 

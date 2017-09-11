@@ -9,7 +9,11 @@ from flask_login import login_required, current_user
 from flask import render_template, redirect, url_for, current_app, request, abort, jsonify
 from app.utils.file_manage import OssClient
 
-logger = logging.getLogger('root')
+logger = logging.getLogger()
+
+@main.before_app_first_request
+def before_first_request():
+    logger.info('Start processing request by user {}.'.format(current_user))
 
 
 @main.route('/')
@@ -275,6 +279,9 @@ def edit_blog(blog_id):
         category = Category.query.filter_by(name=category).first().id
         post.category_id = category
 
+        # update last_edit Column
+        post.refresh()
+
         # untag all the old tags first
         for old_tag in list(map(lambda x: x.tag, post.tagging.all())):
             old_tag.untag_post(post)
@@ -315,7 +322,7 @@ def delete_blog(blog_id):
 
     # do a tag clean
     Tag.clean_tag()
-    
+
     return jsonify(url=url_for('main.manage_blog', blog_id=blog_id))
 
 
