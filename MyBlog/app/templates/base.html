@@ -99,7 +99,7 @@
         <!-- <div class="container"> -->
         <footer class="blog-footer">
             <hr>
-            <p class="pull-right"><a href="#">Back to top</a></p>
+            <p class="scrollToTop pull-right"><a href="#">Back to top</a></p>
             <p><a href="http://v3.bootcss.com/" target="_blank">Supported by Bootstrap</a></p>
         </footer>
         <!-- </div> -->
@@ -111,6 +111,12 @@
     <!-- Placed at the end of the document so the pages load faster -->
     <script src="https://cdn.bootcss.com/jquery/1.12.4/jquery.min.js"></script>
     <script src="https://cdn.bootcss.com/bootstrap/3.3.7/js/bootstrap.min.js"></script>
+    <script type="text/javascript">
+        $('.scrollToTop').click(function(){
+            $('html, body').animate({scrollTop : 0},800);
+            return false;
+        });
+    </script>
     {{ moment.include_moment() }}
     {% block scripts %}{% endblock %}
 

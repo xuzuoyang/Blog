@@ -124,7 +124,7 @@ def blog(blog_id):
         author = current_user._get_current_object()
         comment = Comment(body=body, author=author, post=post)
         db.session.add(comment)
-        return redirect(url_for('main.blog', blog_id=blog_id))
+        return redirect(url_for('main.blog', blog_id=blog_id, _anchor='comment'))
     logger.info('Visiting detail page of blog {}.'.format(blog_id))
     categories = Category.query.all()
     tags = Tag.query.all()

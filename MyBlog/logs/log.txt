@@ -4305,3 +4305,1397 @@
 2017-09-11 14:15:20,966 : INFO : __init__ : create_app : logger initialization & configuration done.
 2017-09-11 14:15:21,059 : WARNING : _internal : _log :  * Debugger is active!
 2017-09-11 14:15:21,060 : INFO : _internal : _log :  * Debugger PIN: 269-707-563
+2017-09-14 16:30:00,440 : INFO : __init__ : create_app : logger initialization & configuration done.
+2017-09-14 16:30:01,257 : INFO : _internal : _log :  * Running on http://127.0.0.1:5000/ (Press CTRL+C to quit)
+2017-09-14 16:30:01,270 : INFO : _internal : _log :  * Restarting with stat
+2017-09-14 16:30:01,690 : INFO : __init__ : create_app : logger initialization & configuration done.
+2017-09-14 16:30:01,780 : WARNING : _internal : _log :  * Debugger is active!
+2017-09-14 16:30:01,814 : INFO : _internal : _log :  * Debugger PIN: 269-707-563
+2017-09-14 16:30:13,663 : INFO : views : before_first_request : Start processing request by user <app.models.AnonymousUser object at 0x7f6bc4fb54a8>.
+2017-09-14 16:30:13,663 : INFO : views : index : Visiting home at page 1.
+2017-09-14 16:30:14,324 : INFO : _internal : _log : 127.0.0.1 - - [14/Sep/2017 16:30:14] "GET / HTTP/1.1" 200 -
+2017-09-14 16:30:14,349 : INFO : _internal : _log : 127.0.0.1 - - [14/Sep/2017 16:30:14] "GET /static/css/bootstrap.min.css HTTP/1.1" 200 -
+2017-09-14 16:30:14,360 : INFO : _internal : _log : 127.0.0.1 - - [14/Sep/2017 16:30:14] "GET /static/font-awesome-4.7.0/css/font-awesome.min.css HTTP/1.1" 200 -
+2017-09-14 16:30:14,370 : INFO : _internal : _log : 127.0.0.1 - - [14/Sep/2017 16:30:14] "GET /static/css/carousel.css HTTP/1.1" 200 -
+2017-09-14 16:30:14,375 : INFO : _internal : _log : 127.0.0.1 - - [14/Sep/2017 16:30:14] "GET /static/pics/one.jpg HTTP/1.1" 200 -
+2017-09-14 16:30:14,382 : INFO : _internal : _log : 127.0.0.1 - - [14/Sep/2017 16:30:14] "GET /static/pics/two.jpg HTTP/1.1" 200 -
+2017-09-14 16:30:14,387 : INFO : _internal : _log : 127.0.0.1 - - [14/Sep/2017 16:30:14] "GET /static/pics/three.jpg HTTP/1.1" 200 -
+2017-09-14 16:30:14,399 : INFO : _internal : _log : 127.0.0.1 - - [14/Sep/2017 16:30:14] "GET /static/pics/four.jpg HTTP/1.1" 200 -
+2017-09-14 16:30:14,402 : INFO : _internal : _log : 127.0.0.1 - - [14/Sep/2017 16:30:14] "GET /static/pics/five.jpg HTTP/1.1" 200 -
+2017-09-14 16:30:14,483 : INFO : _internal : _log : 127.0.0.1 - - [14/Sep/2017 16:30:14] "GET /static/font-awesome-4.7.0/fonts/fontawesome-webfont.woff2?v=4.7.0 HTTP/1.1" 200 -
+2017-09-14 16:31:24,496 : INFO : views : blog : Visiting detail page of blog 113.
+2017-09-14 16:31:24,641 : INFO : _internal : _log : 127.0.0.1 - - [14/Sep/2017 16:31:24] "GET /blog/113 HTTP/1.1" 200 -
+2017-09-14 16:31:24,664 : INFO : _internal : _log : 127.0.0.1 - - [14/Sep/2017 16:31:24] "GET /static/css/comment.css HTTP/1.1" 200 -
+2017-09-14 17:00:26,640 : INFO : views : login : Visiting login page.
+2017-09-14 17:00:26,663 : INFO : _internal : _log : 127.0.0.1 - - [14/Sep/2017 17:00:26] "GET /auth/login HTTP/1.1" 200 -
+2017-09-14 17:00:26,698 : INFO : _internal : _log : 127.0.0.1 - - [14/Sep/2017 17:00:26] "GET /static/css/signin.css HTTP/1.1" 200 -
+2017-09-14 17:00:26,711 : INFO : _internal : _log : 127.0.0.1 - - [14/Sep/2017 17:00:26] "GET /static/js/jquery.min.js HTTP/1.1" 200 -
+2017-09-14 17:00:27,223 : INFO : _internal : _log : 127.0.0.1 - - [14/Sep/2017 17:00:27] "GET /favicon.ico HTTP/1.1" 404 -
+2017-09-14 17:00:33,940 : INFO : views : login : Visiting login page.
+2017-09-14 17:00:34,028 : INFO : views : login : zuoyang login successfully.
+2017-09-14 17:00:34,033 : INFO : _internal : _log : 127.0.0.1 - - [14/Sep/2017 17:00:34] "POST /auth/login HTTP/1.1" 302 -
+2017-09-14 17:00:34,041 : INFO : views : index : Visiting home at page 1.
+2017-09-14 17:00:34,096 : INFO : models : gravatar : Generating gravatar url for User <'zuoyang'>.
+2017-09-14 17:00:34,134 : INFO : _internal : _log : 127.0.0.1 - - [14/Sep/2017 17:00:34] "GET / HTTP/1.1" 200 -
+2017-09-14 17:00:36,258 : INFO : views : blog : Visiting detail page of blog 113.
+2017-09-14 17:00:36,261 : INFO : models : gravatar : Generating gravatar url for User <'zuoyang'>.
+2017-09-14 17:00:36,279 : INFO : _internal : _log : 127.0.0.1 - - [14/Sep/2017 17:00:36] "GET /blog/113 HTTP/1.1" 200 -
+2017-09-14 17:00:54,541 : INFO : models : thumb_post : User zuoyang is thumbing post 113.
+2017-09-14 17:00:54,581 : INFO : views : thumb_up_post : Blog 113 has 1 thumbs up now.
+2017-09-14 17:00:54,621 : INFO : _internal : _log : 127.0.0.1 - - [14/Sep/2017 17:00:54] "POST /thumb-up-post/113 HTTP/1.1" 200 -
+2017-09-14 17:00:54,649 : INFO : views : blog : Visiting detail page of blog 113.
+2017-09-14 17:00:54,653 : INFO : models : gravatar : Generating gravatar url for User <'zuoyang'>.
+2017-09-14 17:00:54,674 : INFO : _internal : _log : 127.0.0.1 - - [14/Sep/2017 17:00:54] "GET /blog/113 HTTP/1.1" 200 -
+2017-09-14 17:07:56,516 : INFO : views : blog : Submitting a new comment.
+2017-09-14 17:07:56,562 : INFO : _internal : _log : 127.0.0.1 - - [14/Sep/2017 17:07:56] "POST /blog/113 HTTP/1.1" 302 -
+2017-09-14 17:07:56,568 : INFO : views : blog : Visiting detail page of blog 113.
+2017-09-14 17:07:56,571 : INFO : models : gravatar : Generating gravatar url for User <'zuoyang'>.
+2017-09-14 17:07:56,580 : INFO : models : gravatar : Generating gravatar url for User <'zuoyang'>.
+2017-09-14 17:07:56,603 : INFO : _internal : _log : 127.0.0.1 - - [14/Sep/2017 17:07:56] "GET /blog/113 HTTP/1.1" 200 -
+2017-09-14 17:08:05,984 : INFO : models : thumb_comment : User zuoyang is thumbing comment 17.
+2017-09-14 17:08:06,005 : INFO : views : thumb_up_comment : Comment 17 has 1 thumbs up now.
+2017-09-14 17:08:06,031 : INFO : _internal : _log : 127.0.0.1 - - [14/Sep/2017 17:08:06] "POST /thumb-up-comment/113/17 HTTP/1.1" 200 -
+2017-09-14 17:08:09,700 : INFO : models : thumb_comment : User zuoyang is thumbing comment 17.
+2017-09-14 17:08:09,744 : INFO : views : thumb_up_comment : Comment 17 has 0 thumbs up now.
+2017-09-14 17:08:09,790 : INFO : _internal : _log : 127.0.0.1 - - [14/Sep/2017 17:08:09] "POST /thumb-up-comment/113/17 HTTP/1.1" 200 -
+2017-09-14 17:16:03,017 : INFO : __init__ : create_app : logger initialization & configuration done.
+2017-09-14 17:16:03,185 : INFO : _internal : _log :  * Running on http://127.0.0.1:5000/ (Press CTRL+C to quit)
+2017-09-14 17:16:03,186 : INFO : _internal : _log :  * Restarting with stat
+2017-09-14 17:16:03,601 : INFO : __init__ : create_app : logger initialization & configuration done.
+2017-09-14 17:16:03,693 : WARNING : _internal : _log :  * Debugger is active!
+2017-09-14 17:16:03,693 : INFO : _internal : _log :  * Debugger PIN: 269-707-563
+2017-09-14 17:16:09,053 : INFO : views : before_first_request : Start processing request by user User <'zuoyang'>.
+2017-09-14 17:16:09,058 : INFO : views : blog : Visiting detail page of blog 113.
+2017-09-14 17:16:09,155 : INFO : models : gravatar : Generating gravatar url for User <'zuoyang'>.
+2017-09-14 17:16:09,168 : INFO : models : gravatar : Generating gravatar url for User <'zuoyang'>.
+2017-09-14 17:16:09,182 : INFO : _internal : _log : 127.0.0.1 - - [14/Sep/2017 17:16:09] "GET /blog/113 HTTP/1.1" 200 -
+2017-09-14 17:16:09,555 : INFO : _internal : _log : 127.0.0.1 - - [14/Sep/2017 17:16:09] "GET /static/pics/myblog.ico HTTP/1.1" 200 -
+2017-09-14 17:16:22,474 : INFO : _internal : _log : 127.0.0.1 - - [14/Sep/2017 17:16:22] "POST /reply/113 HTTP/1.1" 200 -
+2017-09-14 17:16:27,462 : INFO : views : blog : Visiting detail page of blog 113.
+2017-09-14 17:16:27,465 : INFO : models : gravatar : Generating gravatar url for User <'zuoyang'>.
+2017-09-14 17:16:27,474 : INFO : models : gravatar : Generating gravatar url for User <'zuoyang'>.
+2017-09-14 17:16:27,478 : INFO : models : gravatar : Generating gravatar url for User <'zuoyang'>.
+2017-09-14 17:16:27,493 : INFO : _internal : _log : 127.0.0.1 - - [14/Sep/2017 17:16:27] "GET /blog/113 HTTP/1.1" 200 -
+2017-09-14 17:16:27,734 : INFO : _internal : _log : 127.0.0.1 - - [14/Sep/2017 17:16:27] "GET /static/pics/myblog.ico HTTP/1.1" 200 -
+2017-09-14 17:22:09,669 : INFO : _internal : _log :  * Detected change in '/home/xuzuoyang/mygit/MyBlog/app/main/views.py', reloading
+2017-09-14 17:22:09,764 : INFO : _internal : _log :  * Restarting with stat
+2017-09-14 17:22:10,185 : INFO : __init__ : create_app : logger initialization & configuration done.
+2017-09-14 17:22:10,292 : WARNING : _internal : _log :  * Debugger is active!
+2017-09-14 17:22:10,293 : INFO : _internal : _log :  * Debugger PIN: 269-707-563
+2017-09-14 17:22:14,834 : INFO : views : before_first_request : Start processing request by user User <'zuoyang'>.
+2017-09-14 17:22:14,837 : INFO : views : blog : Visiting detail page of blog 113.
+2017-09-14 17:22:14,906 : INFO : models : gravatar : Generating gravatar url for User <'zuoyang'>.
+2017-09-14 17:22:14,917 : INFO : models : gravatar : Generating gravatar url for User <'zuoyang'>.
+2017-09-14 17:22:14,919 : INFO : models : gravatar : Generating gravatar url for User <'zuoyang'>.
+2017-09-14 17:22:14,930 : INFO : _internal : _log : 127.0.0.1 - - [14/Sep/2017 17:22:14] "GET /blog/113 HTTP/1.1" 200 -
+2017-09-14 17:22:15,317 : INFO : _internal : _log : 127.0.0.1 - - [14/Sep/2017 17:22:15] "GET /static/pics/myblog.ico HTTP/1.1" 200 -
+2017-09-14 17:22:28,435 : INFO : views : blog : Submitting a new comment.
+2017-09-14 17:22:28,491 : INFO : _internal : _log : 127.0.0.1 - - [14/Sep/2017 17:22:28] "POST /blog/113 HTTP/1.1" 302 -
+2017-09-14 17:22:28,501 : INFO : views : blog : Visiting detail page of blog 113.
+2017-09-14 17:22:28,505 : INFO : models : gravatar : Generating gravatar url for User <'zuoyang'>.
+2017-09-14 17:22:28,515 : INFO : models : gravatar : Generating gravatar url for User <'zuoyang'>.
+2017-09-14 17:22:28,517 : INFO : models : gravatar : Generating gravatar url for User <'zuoyang'>.
+2017-09-14 17:22:28,518 : INFO : models : gravatar : Generating gravatar url for User <'zuoyang'>.
+2017-09-14 17:22:28,558 : INFO : _internal : _log : 127.0.0.1 - - [14/Sep/2017 17:22:28] "GET /blog/113 HTTP/1.1" 200 -
+2017-09-14 17:22:58,554 : INFO : __init__ : create_app : logger initialization & configuration done.
+2017-09-14 17:22:58,645 : INFO : _internal : _log :  * Running on http://127.0.0.1:5000/ (Press CTRL+C to quit)
+2017-09-14 17:22:58,646 : INFO : _internal : _log :  * Restarting with stat
+2017-09-14 17:22:59,062 : INFO : __init__ : create_app : logger initialization & configuration done.
+2017-09-14 17:22:59,157 : WARNING : _internal : _log :  * Debugger is active!
+2017-09-14 17:22:59,158 : INFO : _internal : _log :  * Debugger PIN: 269-707-563
+2017-09-14 17:23:02,305 : INFO : views : before_first_request : Start processing request by user User <'zuoyang'>.
+2017-09-14 17:23:02,309 : INFO : views : blog : Visiting detail page of blog 113.
+2017-09-14 17:23:02,379 : INFO : models : gravatar : Generating gravatar url for User <'zuoyang'>.
+2017-09-14 17:23:02,389 : INFO : models : gravatar : Generating gravatar url for User <'zuoyang'>.
+2017-09-14 17:23:02,391 : INFO : models : gravatar : Generating gravatar url for User <'zuoyang'>.
+2017-09-14 17:23:02,391 : INFO : models : gravatar : Generating gravatar url for User <'zuoyang'>.
+2017-09-14 17:23:02,407 : INFO : _internal : _log : 127.0.0.1 - - [14/Sep/2017 17:23:02] "GET /blog/113 HTTP/1.1" 200 -
+2017-09-14 17:23:02,644 : INFO : _internal : _log : 127.0.0.1 - - [14/Sep/2017 17:23:02] "GET /static/pics/myblog.ico HTTP/1.1" 200 -
+2017-09-14 17:23:03,470 : INFO : views : blog : Visiting detail page of blog 113.
+2017-09-14 17:23:03,476 : INFO : models : gravatar : Generating gravatar url for User <'zuoyang'>.
+2017-09-14 17:23:03,490 : INFO : models : gravatar : Generating gravatar url for User <'zuoyang'>.
+2017-09-14 17:23:03,494 : INFO : models : gravatar : Generating gravatar url for User <'zuoyang'>.
+2017-09-14 17:23:03,494 : INFO : models : gravatar : Generating gravatar url for User <'zuoyang'>.
+2017-09-14 17:23:03,536 : INFO : _internal : _log : 127.0.0.1 - - [14/Sep/2017 17:23:03] "GET /blog/113 HTTP/1.1" 200 -
+2017-09-14 17:23:03,637 : INFO : _internal : _log : 127.0.0.1 - - [14/Sep/2017 17:23:03] "GET /static/pics/myblog.ico HTTP/1.1" 200 -
+2017-09-14 17:23:14,587 : INFO : _internal : _log : 127.0.0.1 - - [14/Sep/2017 17:23:14] "POST /reply/113 HTTP/1.1" 200 -
+2017-09-14 17:23:21,524 : INFO : views : blog : Visiting detail page of blog 113.
+2017-09-14 17:23:21,529 : INFO : models : gravatar : Generating gravatar url for User <'zuoyang'>.
+2017-09-14 17:23:21,539 : INFO : models : gravatar : Generating gravatar url for User <'zuoyang'>.
+2017-09-14 17:23:21,543 : INFO : models : gravatar : Generating gravatar url for User <'zuoyang'>.
+2017-09-14 17:23:21,544 : INFO : models : gravatar : Generating gravatar url for User <'zuoyang'>.
+2017-09-14 17:23:21,550 : INFO : models : gravatar : Generating gravatar url for User <'zuoyang'>.
+2017-09-14 17:23:21,569 : INFO : _internal : _log : 127.0.0.1 - - [14/Sep/2017 17:23:21] "GET /blog/113 HTTP/1.1" 200 -
+2017-09-14 17:23:21,805 : INFO : _internal : _log : 127.0.0.1 - - [14/Sep/2017 17:23:21] "GET /static/pics/myblog.ico HTTP/1.1" 200 -
+2017-09-14 17:23:26,319 : INFO : views : blog : Visiting detail page of blog 113.
+2017-09-14 17:23:26,323 : INFO : models : gravatar : Generating gravatar url for User <'zuoyang'>.
+2017-09-14 17:23:26,333 : INFO : models : gravatar : Generating gravatar url for User <'zuoyang'>.
+2017-09-14 17:23:26,336 : INFO : models : gravatar : Generating gravatar url for User <'zuoyang'>.
+2017-09-14 17:23:26,336 : INFO : models : gravatar : Generating gravatar url for User <'zuoyang'>.
+2017-09-14 17:23:26,339 : INFO : models : gravatar : Generating gravatar url for User <'zuoyang'>.
+2017-09-14 17:23:26,356 : INFO : _internal : _log : 127.0.0.1 - - [14/Sep/2017 17:23:26] "GET /blog/113 HTTP/1.1" 200 -
+2017-09-14 17:23:26,472 : INFO : _internal : _log : 127.0.0.1 - - [14/Sep/2017 17:23:26] "GET /static/pics/myblog.ico HTTP/1.1" 200 -
+2017-09-14 17:24:16,660 : INFO : views : blog : Submitting a new comment.
+2017-09-14 17:24:16,694 : INFO : _internal : _log : 127.0.0.1 - - [14/Sep/2017 17:24:16] "POST /blog/113 HTTP/1.1" 302 -
+2017-09-14 17:24:16,700 : INFO : views : blog : Visiting detail page of blog 113.
+2017-09-14 17:24:16,702 : INFO : models : gravatar : Generating gravatar url for User <'zuoyang'>.
+2017-09-14 17:24:16,709 : INFO : models : gravatar : Generating gravatar url for User <'zuoyang'>.
+2017-09-14 17:24:16,711 : INFO : models : gravatar : Generating gravatar url for User <'zuoyang'>.
+2017-09-14 17:24:16,711 : INFO : models : gravatar : Generating gravatar url for User <'zuoyang'>.
+2017-09-14 17:24:16,713 : INFO : models : gravatar : Generating gravatar url for User <'zuoyang'>.
+2017-09-14 17:24:16,713 : INFO : models : gravatar : Generating gravatar url for User <'zuoyang'>.
+2017-09-14 17:24:16,731 : INFO : _internal : _log : 127.0.0.1 - - [14/Sep/2017 17:24:16] "GET /blog/113 HTTP/1.1" 200 -
+2017-09-14 17:24:30,529 : INFO : _internal : _log : 127.0.0.1 - - [14/Sep/2017 17:24:30] "POST /reply/113 HTTP/1.1" 200 -
+2017-09-14 17:31:47,031 : INFO : views : blog : Visiting detail page of blog 113.
+2017-09-14 17:31:47,038 : INFO : models : gravatar : Generating gravatar url for User <'zuoyang'>.
+2017-09-14 17:31:47,051 : INFO : models : gravatar : Generating gravatar url for User <'zuoyang'>.
+2017-09-14 17:31:47,055 : INFO : models : gravatar : Generating gravatar url for User <'zuoyang'>.
+2017-09-14 17:31:47,056 : INFO : models : gravatar : Generating gravatar url for User <'zuoyang'>.
+2017-09-14 17:31:47,059 : INFO : models : gravatar : Generating gravatar url for User <'zuoyang'>.
+2017-09-14 17:31:47,059 : INFO : models : gravatar : Generating gravatar url for User <'zuoyang'>.
+2017-09-14 17:31:47,062 : INFO : models : gravatar : Generating gravatar url for User <'zuoyang'>.
+2017-09-14 17:31:47,079 : INFO : _internal : _log : 127.0.0.1 - - [14/Sep/2017 17:31:47] "GET /blog/113 HTTP/1.1" 200 -
+2017-09-14 17:31:47,501 : INFO : _internal : _log : 127.0.0.1 - - [14/Sep/2017 17:31:47] "GET /static/pics/myblog.ico HTTP/1.1" 200 -
+2017-09-14 17:31:55,191 : INFO : views : blog : Submitting a new comment.
+2017-09-14 17:31:55,225 : INFO : _internal : _log : 127.0.0.1 - - [14/Sep/2017 17:31:55] "POST /blog/113 HTTP/1.1" 302 -
+2017-09-14 17:31:55,234 : INFO : views : blog : Visiting detail page of blog 113.
+2017-09-14 17:31:55,237 : INFO : models : gravatar : Generating gravatar url for User <'zuoyang'>.
+2017-09-14 17:31:55,248 : INFO : models : gravatar : Generating gravatar url for User <'zuoyang'>.
+2017-09-14 17:31:55,250 : INFO : models : gravatar : Generating gravatar url for User <'zuoyang'>.
+2017-09-14 17:31:55,250 : INFO : models : gravatar : Generating gravatar url for User <'zuoyang'>.
+2017-09-14 17:31:55,252 : INFO : models : gravatar : Generating gravatar url for User <'zuoyang'>.
+2017-09-14 17:31:55,252 : INFO : models : gravatar : Generating gravatar url for User <'zuoyang'>.
+2017-09-14 17:31:55,255 : INFO : models : gravatar : Generating gravatar url for User <'zuoyang'>.
+2017-09-14 17:31:55,256 : INFO : models : gravatar : Generating gravatar url for User <'zuoyang'>.
+2017-09-14 17:31:55,273 : INFO : _internal : _log : 127.0.0.1 - - [14/Sep/2017 17:31:55] "GET /blog/113 HTTP/1.1" 200 -
+2017-09-14 17:44:29,279 : INFO : __init__ : create_app : logger initialization & configuration done.
+2017-09-14 17:44:29,371 : INFO : _internal : _log :  * Running on http://127.0.0.1:5000/ (Press CTRL+C to quit)
+2017-09-14 17:44:29,372 : INFO : _internal : _log :  * Restarting with stat
+2017-09-14 17:44:29,787 : INFO : __init__ : create_app : logger initialization & configuration done.
+2017-09-14 17:44:29,881 : WARNING : _internal : _log :  * Debugger is active!
+2017-09-14 17:44:29,881 : INFO : _internal : _log :  * Debugger PIN: 269-707-563
+2017-09-14 17:44:41,773 : INFO : views : before_first_request : Start processing request by user User <'zuoyang'>.
+2017-09-14 17:44:41,774 : INFO : views : manage_blog : Visiting blog manage page 1.
+2017-09-14 17:44:41,804 : INFO : models : gravatar : Generating gravatar url for User <'zuoyang'>.
+2017-09-14 17:44:41,808 : INFO : _internal : _log : 127.0.0.1 - - [14/Sep/2017 17:44:41] "GET /manage-blog HTTP/1.1" 200 -
+2017-09-14 17:44:43,264 : INFO : views : manage_comment : Visiting comment manage page 1.
+2017-09-14 17:44:43,302 : INFO : models : gravatar : Generating gravatar url for User <'zuoyang'>.
+2017-09-14 17:44:43,304 : INFO : _internal : _log : 127.0.0.1 - - [14/Sep/2017 17:44:43] "GET /manage-comment HTTP/1.1" 200 -
+2017-09-14 17:44:45,364 : INFO : views : delete_comment : Deleting comment 23.
+2017-09-14 17:44:45,415 : INFO : _internal : _log : 127.0.0.1 - - [14/Sep/2017 17:44:45] "POST /delete-comment/23 HTTP/1.1" 200 -
+2017-09-14 17:44:45,426 : INFO : views : manage_comment : Visiting comment manage page 1.
+2017-09-14 17:44:45,432 : INFO : models : gravatar : Generating gravatar url for User <'zuoyang'>.
+2017-09-14 17:44:45,434 : INFO : _internal : _log : 127.0.0.1 - - [14/Sep/2017 17:44:45] "GET /manage-comment?comment_id=23 HTTP/1.1" 200 -
+2017-09-14 17:44:46,400 : INFO : views : delete_comment : Deleting comment 22.
+2017-09-14 17:44:46,484 : INFO : _internal : _log : 127.0.0.1 - - [14/Sep/2017 17:44:46] "POST /delete-comment/22 HTTP/1.1" 200 -
+2017-09-14 17:44:46,492 : INFO : views : manage_comment : Visiting comment manage page 1.
+2017-09-14 17:44:46,498 : INFO : models : gravatar : Generating gravatar url for User <'zuoyang'>.
+2017-09-14 17:44:46,500 : INFO : _internal : _log : 127.0.0.1 - - [14/Sep/2017 17:44:46] "GET /manage-comment?comment_id=22 HTTP/1.1" 200 -
+2017-09-14 17:44:47,352 : INFO : views : delete_comment : Deleting comment 21.
+2017-09-14 17:44:47,410 : INFO : _internal : _log : 127.0.0.1 - - [14/Sep/2017 17:44:47] "POST /delete-comment/21 HTTP/1.1" 200 -
+2017-09-14 17:44:47,420 : INFO : views : manage_comment : Visiting comment manage page 1.
+2017-09-14 17:44:47,426 : INFO : models : gravatar : Generating gravatar url for User <'zuoyang'>.
+2017-09-14 17:44:47,429 : INFO : _internal : _log : 127.0.0.1 - - [14/Sep/2017 17:44:47] "GET /manage-comment?comment_id=21 HTTP/1.1" 200 -
+2017-09-14 17:44:49,997 : INFO : views : delete_comment : Deleting comment 20.
+2017-09-14 17:44:50,053 : INFO : _internal : _log : 127.0.0.1 - - [14/Sep/2017 17:44:50] "POST /delete-comment/20 HTTP/1.1" 200 -
+2017-09-14 17:44:50,078 : INFO : views : manage_comment : Visiting comment manage page 1.
+2017-09-14 17:44:50,090 : INFO : models : gravatar : Generating gravatar url for User <'zuoyang'>.
+2017-09-14 17:44:50,094 : INFO : _internal : _log : 127.0.0.1 - - [14/Sep/2017 17:44:50] "GET /manage-comment?comment_id=20 HTTP/1.1" 200 -
+2017-09-14 17:44:51,458 : INFO : views : delete_comment : Deleting comment 19.
+2017-09-14 17:44:51,503 : INFO : _internal : _log : 127.0.0.1 - - [14/Sep/2017 17:44:51] "POST /delete-comment/19 HTTP/1.1" 200 -
+2017-09-14 17:44:51,514 : INFO : views : manage_comment : Visiting comment manage page 1.
+2017-09-14 17:44:51,522 : INFO : models : gravatar : Generating gravatar url for User <'zuoyang'>.
+2017-09-14 17:44:51,526 : INFO : _internal : _log : 127.0.0.1 - - [14/Sep/2017 17:44:51] "GET /manage-comment?comment_id=19 HTTP/1.1" 200 -
+2017-09-14 17:44:55,149 : INFO : views : manage_blog : Visiting blog manage page 1.
+2017-09-14 17:44:55,199 : INFO : models : gravatar : Generating gravatar url for User <'zuoyang'>.
+2017-09-14 17:44:55,207 : INFO : _internal : _log : 127.0.0.1 - - [14/Sep/2017 17:44:55] "GET /manage-blog HTTP/1.1" 200 -
+2017-09-14 17:44:58,702 : INFO : views : blog : Visiting detail page of blog 113.
+2017-09-14 17:44:58,782 : INFO : models : gravatar : Generating gravatar url for User <'zuoyang'>.
+2017-09-14 17:44:58,791 : INFO : models : gravatar : Generating gravatar url for User <'zuoyang'>.
+2017-09-14 17:44:58,795 : INFO : models : gravatar : Generating gravatar url for User <'zuoyang'>.
+2017-09-14 17:44:58,805 : INFO : _internal : _log : 127.0.0.1 - - [14/Sep/2017 17:44:58] "GET /blog/113 HTTP/1.1" 200 -
+2017-09-14 17:45:06,859 : INFO : _internal : _log : 127.0.0.1 - - [14/Sep/2017 17:45:06] "POST /reply/113 HTTP/1.1" 200 -
+2017-09-14 17:45:17,844 : INFO : views : blog : Visiting detail page of blog 113.
+2017-09-14 17:45:17,852 : INFO : models : gravatar : Generating gravatar url for User <'zuoyang'>.
+2017-09-14 17:45:17,872 : INFO : models : gravatar : Generating gravatar url for User <'zuoyang'>.
+2017-09-14 17:45:17,877 : INFO : models : gravatar : Generating gravatar url for User <'zuoyang'>.
+2017-09-14 17:45:17,877 : INFO : models : gravatar : Generating gravatar url for User <'zuoyang'>.
+2017-09-14 17:45:17,891 : INFO : _internal : _log : 127.0.0.1 - - [14/Sep/2017 17:45:17] "GET /blog/113 HTTP/1.1" 200 -
+2017-09-14 17:45:18,120 : INFO : _internal : _log : 127.0.0.1 - - [14/Sep/2017 17:45:18] "GET /static/pics/myblog.ico HTTP/1.1" 200 -
+2017-09-14 17:48:44,043 : INFO : views : blog : Visiting detail page of blog 113.
+2017-09-14 17:48:44,086 : INFO : models : gravatar : Generating gravatar url for User <'zuoyang'>.
+2017-09-14 17:48:44,091 : INFO : models : gravatar : Generating gravatar url for User <'zuoyang'>.
+2017-09-14 17:48:44,093 : INFO : models : gravatar : Generating gravatar url for User <'zuoyang'>.
+2017-09-14 17:48:44,093 : INFO : models : gravatar : Generating gravatar url for User <'zuoyang'>.
+2017-09-14 17:48:44,104 : INFO : _internal : _log : 127.0.0.1 - - [14/Sep/2017 17:48:44] "GET /blog/113 HTTP/1.1" 200 -
+2017-09-14 17:48:44,343 : INFO : _internal : _log : 127.0.0.1 - - [14/Sep/2017 17:48:44] "GET /static/pics/myblog.ico HTTP/1.1" 200 -
+2017-09-14 17:49:00,636 : INFO : _internal : _log : 127.0.0.1 - - [14/Sep/2017 17:49:00] "POST /reply/113 HTTP/1.1" 200 -
+2017-09-14 17:49:12,210 : INFO : __init__ : create_app : logger initialization & configuration done.
+2017-09-14 17:49:12,309 : INFO : _internal : _log :  * Running on http://127.0.0.1:5000/ (Press CTRL+C to quit)
+2017-09-14 17:49:12,310 : INFO : _internal : _log :  * Restarting with stat
+2017-09-14 17:49:12,725 : INFO : __init__ : create_app : logger initialization & configuration done.
+2017-09-14 17:49:12,818 : WARNING : _internal : _log :  * Debugger is active!
+2017-09-14 17:49:12,819 : INFO : _internal : _log :  * Debugger PIN: 269-707-563
+2017-09-14 17:49:14,450 : INFO : views : before_first_request : Start processing request by user User <'zuoyang'>.
+2017-09-14 17:49:14,453 : INFO : views : blog : Visiting detail page of blog 113.
+2017-09-14 17:49:14,524 : INFO : models : gravatar : Generating gravatar url for User <'zuoyang'>.
+2017-09-14 17:49:14,534 : INFO : models : gravatar : Generating gravatar url for User <'zuoyang'>.
+2017-09-14 17:49:14,536 : INFO : models : gravatar : Generating gravatar url for User <'zuoyang'>.
+2017-09-14 17:49:14,537 : INFO : models : gravatar : Generating gravatar url for User <'zuoyang'>.
+2017-09-14 17:49:14,537 : INFO : models : gravatar : Generating gravatar url for User <'zuoyang'>.
+2017-09-14 17:49:14,547 : INFO : _internal : _log : 127.0.0.1 - - [14/Sep/2017 17:49:14] "GET /blog/113 HTTP/1.1" 200 -
+2017-09-14 17:49:14,781 : INFO : _internal : _log : 127.0.0.1 - - [14/Sep/2017 17:49:14] "GET /static/pics/myblog.ico HTTP/1.1" 200 -
+2017-09-14 17:49:18,568 : INFO : views : manage_blog : Visiting blog manage page 1.
+2017-09-14 17:49:18,594 : INFO : models : gravatar : Generating gravatar url for User <'zuoyang'>.
+2017-09-14 17:49:18,599 : INFO : _internal : _log : 127.0.0.1 - - [14/Sep/2017 17:49:18] "GET /manage-blog HTTP/1.1" 200 -
+2017-09-14 17:49:20,279 : INFO : views : manage_comment : Visiting comment manage page 1.
+2017-09-14 17:49:20,306 : INFO : models : gravatar : Generating gravatar url for User <'zuoyang'>.
+2017-09-14 17:49:20,310 : INFO : _internal : _log : 127.0.0.1 - - [14/Sep/2017 17:49:20] "GET /manage-comment HTTP/1.1" 200 -
+2017-09-14 17:49:21,569 : INFO : views : delete_comment : Deleting comment 25.
+2017-09-14 17:49:21,651 : INFO : _internal : _log : 127.0.0.1 - - [14/Sep/2017 17:49:21] "POST /delete-comment/25 HTTP/1.1" 200 -
+2017-09-14 17:49:21,658 : INFO : views : manage_comment : Visiting comment manage page 1.
+2017-09-14 17:49:21,664 : INFO : models : gravatar : Generating gravatar url for User <'zuoyang'>.
+2017-09-14 17:49:21,666 : INFO : _internal : _log : 127.0.0.1 - - [14/Sep/2017 17:49:21] "GET /manage-comment?comment_id=25 HTTP/1.1" 200 -
+2017-09-14 17:49:22,225 : INFO : views : delete_comment : Deleting comment 24.
+2017-09-14 17:49:22,293 : INFO : _internal : _log : 127.0.0.1 - - [14/Sep/2017 17:49:22] "POST /delete-comment/24 HTTP/1.1" 200 -
+2017-09-14 17:49:22,300 : INFO : views : manage_comment : Visiting comment manage page 1.
+2017-09-14 17:49:22,306 : INFO : models : gravatar : Generating gravatar url for User <'zuoyang'>.
+2017-09-14 17:49:22,308 : INFO : _internal : _log : 127.0.0.1 - - [14/Sep/2017 17:49:22] "GET /manage-comment?comment_id=24 HTTP/1.1" 200 -
+2017-09-14 17:49:23,165 : INFO : views : delete_comment : Deleting comment 18.
+2017-09-14 17:49:23,219 : INFO : _internal : _log : 127.0.0.1 - - [14/Sep/2017 17:49:23] "POST /delete-comment/18 HTTP/1.1" 200 -
+2017-09-14 17:49:23,243 : INFO : views : manage_comment : Visiting comment manage page 1.
+2017-09-14 17:49:23,254 : INFO : models : gravatar : Generating gravatar url for User <'zuoyang'>.
+2017-09-14 17:49:23,260 : INFO : _internal : _log : 127.0.0.1 - - [14/Sep/2017 17:49:23] "GET /manage-comment?comment_id=18 HTTP/1.1" 200 -
+2017-09-14 17:49:24,494 : INFO : views : manage_blog : Visiting blog manage page 1.
+2017-09-14 17:49:24,509 : INFO : models : gravatar : Generating gravatar url for User <'zuoyang'>.
+2017-09-14 17:49:24,517 : INFO : _internal : _log : 127.0.0.1 - - [14/Sep/2017 17:49:24] "GET /manage-blog HTTP/1.1" 200 -
+2017-09-14 17:49:25,451 : INFO : views : blog : Visiting detail page of blog 113.
+2017-09-14 17:49:25,459 : INFO : models : gravatar : Generating gravatar url for User <'zuoyang'>.
+2017-09-14 17:49:25,482 : INFO : models : gravatar : Generating gravatar url for User <'zuoyang'>.
+2017-09-14 17:49:25,503 : INFO : _internal : _log : 127.0.0.1 - - [14/Sep/2017 17:49:25] "GET /blog/113 HTTP/1.1" 200 -
+2017-09-14 17:49:41,491 : INFO : _internal : _log : 127.0.0.1 - - [14/Sep/2017 17:49:41] "POST /reply/113 HTTP/1.1" 200 -
+2017-09-14 17:49:58,762 : INFO : views : blog : Visiting detail page of blog 113.
+2017-09-14 17:49:58,766 : INFO : models : gravatar : Generating gravatar url for User <'zuoyang'>.
+2017-09-14 17:49:58,778 : INFO : models : gravatar : Generating gravatar url for User <'zuoyang'>.
+2017-09-14 17:49:58,782 : INFO : models : gravatar : Generating gravatar url for User <'zuoyang'>.
+2017-09-14 17:49:58,796 : INFO : _internal : _log : 127.0.0.1 - - [14/Sep/2017 17:49:58] "GET /blog/113 HTTP/1.1" 200 -
+2017-09-14 17:50:08,012 : INFO : views : blog : Submitting a new comment.
+2017-09-14 17:50:08,041 : INFO : _internal : _log : 127.0.0.1 - - [14/Sep/2017 17:50:08] "POST /blog/113 HTTP/1.1" 302 -
+2017-09-14 17:50:08,048 : INFO : views : blog : Visiting detail page of blog 113.
+2017-09-14 17:50:08,051 : INFO : models : gravatar : Generating gravatar url for User <'zuoyang'>.
+2017-09-14 17:50:08,062 : INFO : models : gravatar : Generating gravatar url for User <'zuoyang'>.
+2017-09-14 17:50:08,067 : INFO : models : gravatar : Generating gravatar url for User <'zuoyang'>.
+2017-09-14 17:50:08,067 : INFO : models : gravatar : Generating gravatar url for User <'zuoyang'>.
+2017-09-14 17:50:08,083 : INFO : _internal : _log : 127.0.0.1 - - [14/Sep/2017 17:50:08] "GET /blog/113 HTTP/1.1" 200 -
+2017-09-14 17:50:43,065 : INFO : _internal : _log :  * Detected change in '/home/xuzuoyang/mygit/MyBlog/app/main/views.py', reloading
+2017-09-14 17:50:43,176 : INFO : _internal : _log :  * Restarting with stat
+2017-09-14 17:50:43,589 : INFO : __init__ : create_app : logger initialization & configuration done.
+2017-09-14 17:50:43,683 : WARNING : _internal : _log :  * Debugger is active!
+2017-09-14 17:50:43,683 : INFO : _internal : _log :  * Debugger PIN: 269-707-563
+2017-09-14 17:50:49,740 : INFO : __init__ : create_app : logger initialization & configuration done.
+2017-09-14 17:50:49,831 : INFO : _internal : _log :  * Running on http://127.0.0.1:5000/ (Press CTRL+C to quit)
+2017-09-14 17:50:49,832 : INFO : _internal : _log :  * Restarting with stat
+2017-09-14 17:50:50,245 : INFO : __init__ : create_app : logger initialization & configuration done.
+2017-09-14 17:50:50,337 : WARNING : _internal : _log :  * Debugger is active!
+2017-09-14 17:50:50,338 : INFO : _internal : _log :  * Debugger PIN: 269-707-563
+2017-09-14 17:50:54,739 : INFO : views : before_first_request : Start processing request by user User <'zuoyang'>.
+2017-09-14 17:50:54,742 : INFO : views : blog : Visiting detail page of blog 113.
+2017-09-14 17:50:54,809 : INFO : models : gravatar : Generating gravatar url for User <'zuoyang'>.
+2017-09-14 17:50:54,818 : INFO : models : gravatar : Generating gravatar url for User <'zuoyang'>.
+2017-09-14 17:50:54,822 : INFO : models : gravatar : Generating gravatar url for User <'zuoyang'>.
+2017-09-14 17:50:54,822 : INFO : models : gravatar : Generating gravatar url for User <'zuoyang'>.
+2017-09-14 17:50:54,841 : INFO : _internal : _log : 127.0.0.1 - - [14/Sep/2017 17:50:54] "GET /blog/113 HTTP/1.1" 200 -
+2017-09-14 17:50:54,946 : INFO : _internal : _log : 127.0.0.1 - - [14/Sep/2017 17:50:54] "GET /static/pics/myblog.ico HTTP/1.1" 200 -
+2017-09-14 17:51:04,591 : INFO : views : blog : Submitting a new comment.
+2017-09-14 17:51:04,631 : INFO : _internal : _log : 127.0.0.1 - - [14/Sep/2017 17:51:04] "POST /blog/113 HTTP/1.1" 302 -
+2017-09-14 17:51:04,636 : INFO : views : blog : Visiting detail page of blog 113.
+2017-09-14 17:51:04,638 : INFO : models : gravatar : Generating gravatar url for User <'zuoyang'>.
+2017-09-14 17:51:04,645 : INFO : models : gravatar : Generating gravatar url for User <'zuoyang'>.
+2017-09-14 17:51:04,647 : INFO : models : gravatar : Generating gravatar url for User <'zuoyang'>.
+2017-09-14 17:51:04,648 : INFO : models : gravatar : Generating gravatar url for User <'zuoyang'>.
+2017-09-14 17:51:04,649 : INFO : models : gravatar : Generating gravatar url for User <'zuoyang'>.
+2017-09-14 17:51:04,689 : INFO : _internal : _log : 127.0.0.1 - - [14/Sep/2017 17:51:04] "GET /blog/113 HTTP/1.1" 200 -
+2017-09-14 17:52:02,422 : INFO : _internal : _log :  * Detected change in '/home/xuzuoyang/mygit/MyBlog/app/main/views.py', reloading
+2017-09-14 17:52:02,527 : INFO : _internal : _log :  * Restarting with stat
+2017-09-14 17:52:02,943 : INFO : __init__ : create_app : logger initialization & configuration done.
+2017-09-14 17:52:03,038 : WARNING : _internal : _log :  * Debugger is active!
+2017-09-14 17:52:03,038 : INFO : _internal : _log :  * Debugger PIN: 269-707-563
+2017-09-14 17:52:05,795 : INFO : views : before_first_request : Start processing request by user User <'zuoyang'>.
+2017-09-14 17:52:05,798 : INFO : views : blog : Visiting detail page of blog 113.
+2017-09-14 17:52:05,869 : INFO : models : gravatar : Generating gravatar url for User <'zuoyang'>.
+2017-09-14 17:52:05,880 : INFO : models : gravatar : Generating gravatar url for User <'zuoyang'>.
+2017-09-14 17:52:05,882 : INFO : models : gravatar : Generating gravatar url for User <'zuoyang'>.
+2017-09-14 17:52:05,882 : INFO : models : gravatar : Generating gravatar url for User <'zuoyang'>.
+2017-09-14 17:52:05,883 : INFO : models : gravatar : Generating gravatar url for User <'zuoyang'>.
+2017-09-14 17:52:05,902 : INFO : _internal : _log : 127.0.0.1 - - [14/Sep/2017 17:52:05] "GET /blog/113 HTTP/1.1" 200 -
+2017-09-14 17:52:06,136 : INFO : _internal : _log : 127.0.0.1 - - [14/Sep/2017 17:52:06] "GET /static/pics/myblog.ico HTTP/1.1" 200 -
+2017-09-14 17:52:14,157 : INFO : views : blog : Submitting a new comment.
+2017-09-14 17:52:14,232 : INFO : _internal : _log : 127.0.0.1 - - [14/Sep/2017 17:52:14] "POST /blog/113 HTTP/1.1" 302 -
+2017-09-14 17:52:14,252 : INFO : views : blog : Visiting detail page of blog 113.
+2017-09-14 17:52:14,259 : INFO : models : gravatar : Generating gravatar url for User <'zuoyang'>.
+2017-09-14 17:52:14,273 : INFO : models : gravatar : Generating gravatar url for User <'zuoyang'>.
+2017-09-14 17:52:14,277 : INFO : models : gravatar : Generating gravatar url for User <'zuoyang'>.
+2017-09-14 17:52:14,277 : INFO : models : gravatar : Generating gravatar url for User <'zuoyang'>.
+2017-09-14 17:52:14,280 : INFO : models : gravatar : Generating gravatar url for User <'zuoyang'>.
+2017-09-14 17:52:14,282 : INFO : models : gravatar : Generating gravatar url for User <'zuoyang'>.
+2017-09-14 17:52:14,324 : INFO : _internal : _log : 127.0.0.1 - - [14/Sep/2017 17:52:14] "GET /blog/113 HTTP/1.1" 200 -
+2017-09-14 17:52:19,104 : INFO : views : blog : Visiting detail page of blog 113.
+2017-09-14 17:52:19,108 : INFO : models : gravatar : Generating gravatar url for User <'zuoyang'>.
+2017-09-14 17:52:19,119 : INFO : models : gravatar : Generating gravatar url for User <'zuoyang'>.
+2017-09-14 17:52:19,122 : INFO : models : gravatar : Generating gravatar url for User <'zuoyang'>.
+2017-09-14 17:52:19,122 : INFO : models : gravatar : Generating gravatar url for User <'zuoyang'>.
+2017-09-14 17:52:19,125 : INFO : models : gravatar : Generating gravatar url for User <'zuoyang'>.
+2017-09-14 17:52:19,128 : INFO : models : gravatar : Generating gravatar url for User <'zuoyang'>.
+2017-09-14 17:52:19,150 : INFO : _internal : _log : 127.0.0.1 - - [14/Sep/2017 17:52:19] "GET /blog/113 HTTP/1.1" 200 -
+2017-09-14 17:52:19,256 : INFO : _internal : _log : 127.0.0.1 - - [14/Sep/2017 17:52:19] "GET /static/pics/myblog.ico HTTP/1.1" 200 -
+2017-09-14 17:52:31,843 : INFO : __init__ : create_app : logger initialization & configuration done.
+2017-09-14 17:52:31,935 : INFO : _internal : _log :  * Running on http://127.0.0.1:5000/ (Press CTRL+C to quit)
+2017-09-14 17:52:31,935 : INFO : _internal : _log :  * Restarting with stat
+2017-09-14 17:52:32,355 : INFO : __init__ : create_app : logger initialization & configuration done.
+2017-09-14 17:52:32,449 : WARNING : _internal : _log :  * Debugger is active!
+2017-09-14 17:52:32,449 : INFO : _internal : _log :  * Debugger PIN: 269-707-563
+2017-09-14 17:52:35,409 : INFO : views : before_first_request : Start processing request by user User <'zuoyang'>.
+2017-09-14 17:52:35,413 : INFO : views : blog : Visiting detail page of blog 113.
+2017-09-14 17:52:35,489 : INFO : models : gravatar : Generating gravatar url for User <'zuoyang'>.
+2017-09-14 17:52:35,499 : INFO : models : gravatar : Generating gravatar url for User <'zuoyang'>.
+2017-09-14 17:52:35,502 : INFO : models : gravatar : Generating gravatar url for User <'zuoyang'>.
+2017-09-14 17:52:35,502 : INFO : models : gravatar : Generating gravatar url for User <'zuoyang'>.
+2017-09-14 17:52:35,503 : INFO : models : gravatar : Generating gravatar url for User <'zuoyang'>.
+2017-09-14 17:52:35,505 : INFO : models : gravatar : Generating gravatar url for User <'zuoyang'>.
+2017-09-14 17:52:35,526 : INFO : _internal : _log : 127.0.0.1 - - [14/Sep/2017 17:52:35] "GET /blog/113 HTTP/1.1" 200 -
+2017-09-14 17:52:35,627 : INFO : _internal : _log : 127.0.0.1 - - [14/Sep/2017 17:52:35] "GET /static/pics/myblog.ico HTTP/1.1" 200 -
+2017-09-14 17:52:41,522 : INFO : views : blog : Submitting a new comment.
+2017-09-14 17:52:41,562 : INFO : _internal : _log : 127.0.0.1 - - [14/Sep/2017 17:52:41] "POST /blog/113 HTTP/1.1" 302 -
+2017-09-14 17:52:41,569 : INFO : views : blog : Visiting detail page of blog 113.
+2017-09-14 17:52:41,572 : INFO : models : gravatar : Generating gravatar url for User <'zuoyang'>.
+2017-09-14 17:52:41,581 : INFO : models : gravatar : Generating gravatar url for User <'zuoyang'>.
+2017-09-14 17:52:41,611 : INFO : models : gravatar : Generating gravatar url for User <'zuoyang'>.
+2017-09-14 17:52:41,611 : INFO : models : gravatar : Generating gravatar url for User <'zuoyang'>.
+2017-09-14 17:52:41,613 : INFO : models : gravatar : Generating gravatar url for User <'zuoyang'>.
+2017-09-14 17:52:41,615 : INFO : models : gravatar : Generating gravatar url for User <'zuoyang'>.
+2017-09-14 17:52:41,616 : INFO : models : gravatar : Generating gravatar url for User <'zuoyang'>.
+2017-09-14 17:52:41,636 : INFO : _internal : _log : 127.0.0.1 - - [14/Sep/2017 17:52:41] "GET /blog/113 HTTP/1.1" 200 -
+2017-09-14 17:52:55,085 : INFO : views : blog : Submitting a new comment.
+2017-09-14 17:52:55,124 : INFO : _internal : _log : 127.0.0.1 - - [14/Sep/2017 17:52:55] "POST /blog/113 HTTP/1.1" 302 -
+2017-09-14 17:52:55,132 : INFO : views : blog : Visiting detail page of blog 113.
+2017-09-14 17:52:55,135 : INFO : models : gravatar : Generating gravatar url for User <'zuoyang'>.
+2017-09-14 17:52:55,146 : INFO : models : gravatar : Generating gravatar url for User <'zuoyang'>.
+2017-09-14 17:52:55,149 : INFO : models : gravatar : Generating gravatar url for User <'zuoyang'>.
+2017-09-14 17:52:55,149 : INFO : models : gravatar : Generating gravatar url for User <'zuoyang'>.
+2017-09-14 17:52:55,153 : INFO : models : gravatar : Generating gravatar url for User <'zuoyang'>.
+2017-09-14 17:52:55,155 : INFO : models : gravatar : Generating gravatar url for User <'zuoyang'>.
+2017-09-14 17:52:55,157 : INFO : models : gravatar : Generating gravatar url for User <'zuoyang'>.
+2017-09-14 17:52:55,160 : INFO : models : gravatar : Generating gravatar url for User <'zuoyang'>.
+2017-09-14 17:52:55,185 : INFO : _internal : _log : 127.0.0.1 - - [14/Sep/2017 17:52:55] "GET /blog/113 HTTP/1.1" 200 -
+2017-09-14 17:53:04,269 : INFO : views : manage_blog : Visiting blog manage page 1.
+2017-09-14 17:53:04,295 : INFO : models : gravatar : Generating gravatar url for User <'zuoyang'>.
+2017-09-14 17:53:04,301 : INFO : _internal : _log : 127.0.0.1 - - [14/Sep/2017 17:53:04] "GET /manage-blog HTTP/1.1" 200 -
+2017-09-14 17:53:08,113 : INFO : views : manage_comment : Visiting comment manage page 1.
+2017-09-14 17:53:08,137 : INFO : models : gravatar : Generating gravatar url for User <'zuoyang'>.
+2017-09-14 17:53:08,140 : INFO : _internal : _log : 127.0.0.1 - - [14/Sep/2017 17:53:08] "GET /manage-comment HTTP/1.1" 200 -
+2017-09-14 17:53:09,466 : INFO : views : delete_comment : Deleting comment 31.
+2017-09-14 17:53:09,553 : INFO : _internal : _log : 127.0.0.1 - - [14/Sep/2017 17:53:09] "POST /delete-comment/31 HTTP/1.1" 200 -
+2017-09-14 17:53:09,561 : INFO : views : manage_comment : Visiting comment manage page 1.
+2017-09-14 17:53:09,568 : INFO : models : gravatar : Generating gravatar url for User <'zuoyang'>.
+2017-09-14 17:53:09,570 : INFO : _internal : _log : 127.0.0.1 - - [14/Sep/2017 17:53:09] "GET /manage-comment?comment_id=31 HTTP/1.1" 200 -
+2017-09-14 17:53:10,200 : INFO : views : delete_comment : Deleting comment 30.
+2017-09-14 17:53:10,255 : INFO : _internal : _log : 127.0.0.1 - - [14/Sep/2017 17:53:10] "POST /delete-comment/30 HTTP/1.1" 200 -
+2017-09-14 17:53:10,267 : INFO : views : manage_comment : Visiting comment manage page 1.
+2017-09-14 17:53:10,276 : INFO : models : gravatar : Generating gravatar url for User <'zuoyang'>.
+2017-09-14 17:53:10,279 : INFO : _internal : _log : 127.0.0.1 - - [14/Sep/2017 17:53:10] "GET /manage-comment?comment_id=30 HTTP/1.1" 200 -
+2017-09-14 17:53:10,783 : INFO : views : delete_comment : Deleting comment 29.
+2017-09-14 17:53:10,838 : INFO : _internal : _log : 127.0.0.1 - - [14/Sep/2017 17:53:10] "POST /delete-comment/29 HTTP/1.1" 200 -
+2017-09-14 17:53:10,852 : INFO : views : manage_comment : Visiting comment manage page 1.
+2017-09-14 17:53:10,859 : INFO : models : gravatar : Generating gravatar url for User <'zuoyang'>.
+2017-09-14 17:53:10,862 : INFO : _internal : _log : 127.0.0.1 - - [14/Sep/2017 17:53:10] "GET /manage-comment?comment_id=29 HTTP/1.1" 200 -
+2017-09-14 17:53:12,272 : INFO : views : delete_comment : Deleting comment 28.
+2017-09-14 17:53:12,322 : INFO : _internal : _log : 127.0.0.1 - - [14/Sep/2017 17:53:12] "POST /delete-comment/28 HTTP/1.1" 200 -
+2017-09-14 17:53:12,330 : INFO : views : manage_comment : Visiting comment manage page 1.
+2017-09-14 17:53:12,338 : INFO : models : gravatar : Generating gravatar url for User <'zuoyang'>.
+2017-09-14 17:53:12,341 : INFO : _internal : _log : 127.0.0.1 - - [14/Sep/2017 17:53:12] "GET /manage-comment?comment_id=28 HTTP/1.1" 200 -
+2017-09-14 17:53:13,639 : INFO : views : delete_comment : Deleting comment 27.
+2017-09-14 17:53:13,689 : INFO : _internal : _log : 127.0.0.1 - - [14/Sep/2017 17:53:13] "POST /delete-comment/27 HTTP/1.1" 200 -
+2017-09-14 17:53:13,700 : INFO : views : manage_comment : Visiting comment manage page 1.
+2017-09-14 17:53:13,707 : INFO : models : gravatar : Generating gravatar url for User <'zuoyang'>.
+2017-09-14 17:53:13,709 : INFO : _internal : _log : 127.0.0.1 - - [14/Sep/2017 17:53:13] "GET /manage-comment?comment_id=27 HTTP/1.1" 200 -
+2017-09-14 17:53:14,687 : INFO : views : delete_comment : Deleting comment 26.
+2017-09-14 17:53:14,749 : INFO : _internal : _log : 127.0.0.1 - - [14/Sep/2017 17:53:14] "POST /delete-comment/26 HTTP/1.1" 200 -
+2017-09-14 17:53:14,775 : INFO : views : manage_comment : Visiting comment manage page 1.
+2017-09-14 17:53:14,783 : INFO : models : gravatar : Generating gravatar url for User <'zuoyang'>.
+2017-09-14 17:53:14,788 : INFO : _internal : _log : 127.0.0.1 - - [14/Sep/2017 17:53:14] "GET /manage-comment?comment_id=26 HTTP/1.1" 200 -
+2017-09-14 17:53:16,351 : INFO : views : manage_blog : Visiting blog manage page 1.
+2017-09-14 17:53:16,366 : INFO : models : gravatar : Generating gravatar url for User <'zuoyang'>.
+2017-09-14 17:53:16,374 : INFO : _internal : _log : 127.0.0.1 - - [14/Sep/2017 17:53:16] "GET /manage-blog HTTP/1.1" 200 -
+2017-09-14 17:53:17,295 : INFO : views : blog : Visiting detail page of blog 113.
+2017-09-14 17:53:17,304 : INFO : models : gravatar : Generating gravatar url for User <'zuoyang'>.
+2017-09-14 17:53:17,321 : INFO : models : gravatar : Generating gravatar url for User <'zuoyang'>.
+2017-09-14 17:53:17,339 : INFO : _internal : _log : 127.0.0.1 - - [14/Sep/2017 17:53:17] "GET /blog/113 HTTP/1.1" 200 -
+2017-09-14 17:58:46,707 : INFO : _internal : _log :  * Detected change in '/home/xuzuoyang/mygit/MyBlog/app/main/views.py', reloading
+2017-09-14 17:58:46,811 : INFO : _internal : _log :  * Restarting with stat
+2017-09-14 17:58:47,227 : INFO : __init__ : create_app : logger initialization & configuration done.
+2017-09-14 17:58:47,319 : WARNING : _internal : _log :  * Debugger is active!
+2017-09-14 17:58:47,320 : INFO : _internal : _log :  * Debugger PIN: 269-707-563
+2017-09-14 17:58:52,380 : INFO : views : before_first_request : Start processing request by user User <'zuoyang'>.
+2017-09-14 17:58:52,384 : INFO : views : blog : Visiting detail page of blog 113.
+2017-09-14 17:58:52,452 : INFO : models : gravatar : Generating gravatar url for User <'zuoyang'>.
+2017-09-14 17:58:52,465 : INFO : models : gravatar : Generating gravatar url for User <'zuoyang'>.
+2017-09-14 17:58:52,477 : INFO : _internal : _log : 127.0.0.1 - - [14/Sep/2017 17:58:52] "GET /blog/113 HTTP/1.1" 200 -
+2017-09-14 17:58:52,875 : INFO : _internal : _log : 127.0.0.1 - - [14/Sep/2017 17:58:52] "GET /static/pics/myblog.ico HTTP/1.1" 200 -
+2017-09-14 17:59:04,802 : INFO : _internal : _log : 127.0.0.1 - - [14/Sep/2017 17:59:04] "POST /reply/113 HTTP/1.1" 200 -
+2017-09-14 17:59:06,677 : INFO : views : blog : Visiting detail page of blog 113.
+2017-09-14 17:59:06,681 : INFO : models : gravatar : Generating gravatar url for User <'zuoyang'>.
+2017-09-14 17:59:06,691 : INFO : models : gravatar : Generating gravatar url for User <'zuoyang'>.
+2017-09-14 17:59:06,694 : INFO : models : gravatar : Generating gravatar url for User <'zuoyang'>.
+2017-09-14 17:59:06,708 : INFO : _internal : _log : 127.0.0.1 - - [14/Sep/2017 17:59:06] "GET /blog/113 HTTP/1.1" 200 -
+2017-09-14 18:00:02,397 : INFO : _internal : _log :  * Detected change in '/home/xuzuoyang/mygit/MyBlog/app/main/views.py', reloading
+2017-09-14 18:00:02,504 : INFO : _internal : _log :  * Restarting with stat
+2017-09-14 18:00:02,927 : INFO : __init__ : create_app : logger initialization & configuration done.
+2017-09-14 18:00:03,023 : WARNING : _internal : _log :  * Debugger is active!
+2017-09-14 18:00:03,024 : INFO : _internal : _log :  * Debugger PIN: 269-707-563
+2017-09-14 18:00:04,926 : INFO : views : before_first_request : Start processing request by user User <'zuoyang'>.
+2017-09-14 18:00:04,929 : INFO : views : blog : Visiting detail page of blog 113.
+2017-09-14 18:00:04,999 : INFO : models : gravatar : Generating gravatar url for User <'zuoyang'>.
+2017-09-14 18:00:05,013 : INFO : models : gravatar : Generating gravatar url for User <'zuoyang'>.
+2017-09-14 18:00:05,015 : INFO : models : gravatar : Generating gravatar url for User <'zuoyang'>.
+2017-09-14 18:00:05,026 : INFO : _internal : _log : 127.0.0.1 - - [14/Sep/2017 18:00:05] "GET /blog/113 HTTP/1.1" 200 -
+2017-09-14 18:00:05,258 : INFO : _internal : _log : 127.0.0.1 - - [14/Sep/2017 18:00:05] "GET /static/pics/myblog.ico HTTP/1.1" 200 -
+2017-09-14 18:00:13,516 : INFO : _internal : _log : 127.0.0.1 - - [14/Sep/2017 18:00:13] "POST /reply/113 HTTP/1.1" 200 -
+2017-09-14 18:00:27,208 : INFO : views : blog : Visiting detail page of blog 113.
+2017-09-14 18:00:27,216 : INFO : models : gravatar : Generating gravatar url for User <'zuoyang'>.
+2017-09-14 18:00:27,231 : INFO : models : gravatar : Generating gravatar url for User <'zuoyang'>.
+2017-09-14 18:00:27,235 : INFO : models : gravatar : Generating gravatar url for User <'zuoyang'>.
+2017-09-14 18:00:27,235 : INFO : models : gravatar : Generating gravatar url for User <'zuoyang'>.
+2017-09-14 18:00:27,252 : INFO : _internal : _log : 127.0.0.1 - - [14/Sep/2017 18:00:27] "GET /blog/113 HTTP/1.1" 200 -
+2017-09-14 18:00:27,485 : INFO : _internal : _log : 127.0.0.1 - - [14/Sep/2017 18:00:27] "GET /static/pics/myblog.ico HTTP/1.1" 200 -
+2017-09-14 18:17:55,154 : INFO : _internal : _log :  * Detected change in '/home/xuzuoyang/mygit/MyBlog/app/main/views.py', reloading
+2017-09-14 18:17:55,255 : INFO : _internal : _log :  * Restarting with stat
+2017-09-14 18:17:55,754 : INFO : __init__ : create_app : logger initialization & configuration done.
+2017-09-14 18:17:55,888 : WARNING : _internal : _log :  * Debugger is active!
+2017-09-14 18:17:55,889 : INFO : _internal : _log :  * Debugger PIN: 269-707-563
+2017-09-14 18:17:58,352 : INFO : __init__ : create_app : logger initialization & configuration done.
+2017-09-14 18:17:58,445 : INFO : _internal : _log :  * Running on http://127.0.0.1:5000/ (Press CTRL+C to quit)
+2017-09-14 18:17:58,445 : INFO : _internal : _log :  * Restarting with stat
+2017-09-14 18:17:58,865 : INFO : __init__ : create_app : logger initialization & configuration done.
+2017-09-14 18:17:58,962 : WARNING : _internal : _log :  * Debugger is active!
+2017-09-14 18:17:58,962 : INFO : _internal : _log :  * Debugger PIN: 269-707-563
+2017-09-14 18:18:05,311 : INFO : views : before_first_request : Start processing request by user User <'zuoyang'>.
+2017-09-14 18:18:05,314 : INFO : views : blog : Visiting detail page of blog 113.
+2017-09-14 18:18:05,383 : INFO : models : gravatar : Generating gravatar url for User <'zuoyang'>.
+2017-09-14 18:18:05,394 : INFO : models : gravatar : Generating gravatar url for User <'zuoyang'>.
+2017-09-14 18:18:05,396 : INFO : models : gravatar : Generating gravatar url for User <'zuoyang'>.
+2017-09-14 18:18:05,396 : INFO : models : gravatar : Generating gravatar url for User <'zuoyang'>.
+2017-09-14 18:18:05,408 : INFO : _internal : _log : 127.0.0.1 - - [14/Sep/2017 18:18:05] "GET /blog/113 HTTP/1.1" 200 -
+2017-09-14 18:18:05,788 : INFO : _internal : _log : 127.0.0.1 - - [14/Sep/2017 18:18:05] "GET /static/pics/myblog.ico HTTP/1.1" 200 -
+2017-09-14 18:18:09,332 : INFO : views : index : Visiting home at page 1.
+2017-09-14 18:18:09,382 : INFO : models : gravatar : Generating gravatar url for User <'zuoyang'>.
+2017-09-14 18:18:09,402 : INFO : _internal : _log : 127.0.0.1 - - [14/Sep/2017 18:18:09] "GET / HTTP/1.1" 200 -
+2017-09-14 18:18:11,202 : INFO : views : blog : Visiting detail page of blog 113.
+2017-09-14 18:18:11,208 : INFO : models : gravatar : Generating gravatar url for User <'zuoyang'>.
+2017-09-14 18:18:11,244 : INFO : models : gravatar : Generating gravatar url for User <'zuoyang'>.
+2017-09-14 18:18:11,246 : INFO : models : gravatar : Generating gravatar url for User <'zuoyang'>.
+2017-09-14 18:18:11,246 : INFO : models : gravatar : Generating gravatar url for User <'zuoyang'>.
+2017-09-14 18:18:11,258 : INFO : _internal : _log : 127.0.0.1 - - [14/Sep/2017 18:18:11] "GET /blog/113 HTTP/1.1" 200 -
+2017-09-14 18:18:18,607 : INFO : _internal : _log : 127.0.0.1 - - [14/Sep/2017 18:18:18] "POST /reply/113 HTTP/1.1" 200 -
+2017-09-14 18:18:18,655 : INFO : views : blog : Visiting detail page of blog 113.
+2017-09-14 18:18:18,660 : INFO : models : gravatar : Generating gravatar url for User <'zuoyang'>.
+2017-09-14 18:18:18,669 : INFO : models : gravatar : Generating gravatar url for User <'zuoyang'>.
+2017-09-14 18:18:18,673 : INFO : models : gravatar : Generating gravatar url for User <'zuoyang'>.
+2017-09-14 18:18:18,673 : INFO : models : gravatar : Generating gravatar url for User <'zuoyang'>.
+2017-09-14 18:18:18,673 : INFO : models : gravatar : Generating gravatar url for User <'zuoyang'>.
+2017-09-14 18:18:18,685 : INFO : _internal : _log : 127.0.0.1 - - [14/Sep/2017 18:18:18] "GET /blog/113 HTTP/1.1" 200 -
+2017-09-14 18:18:40,352 : INFO : __init__ : create_app : logger initialization & configuration done.
+2017-09-14 18:18:40,449 : INFO : _internal : _log :  * Running on http://127.0.0.1:5000/ (Press CTRL+C to quit)
+2017-09-14 18:18:40,450 : INFO : _internal : _log :  * Restarting with stat
+2017-09-14 18:18:40,870 : INFO : __init__ : create_app : logger initialization & configuration done.
+2017-09-14 18:18:40,964 : WARNING : _internal : _log :  * Debugger is active!
+2017-09-14 18:18:40,964 : INFO : _internal : _log :  * Debugger PIN: 269-707-563
+2017-09-14 18:18:48,092 : INFO : views : before_first_request : Start processing request by user User <'zuoyang'>.
+2017-09-14 18:18:48,095 : INFO : views : blog : Visiting detail page of blog 113.
+2017-09-14 18:18:48,165 : INFO : models : gravatar : Generating gravatar url for User <'zuoyang'>.
+2017-09-14 18:18:48,176 : INFO : models : gravatar : Generating gravatar url for User <'zuoyang'>.
+2017-09-14 18:18:48,178 : INFO : models : gravatar : Generating gravatar url for User <'zuoyang'>.
+2017-09-14 18:18:48,178 : INFO : models : gravatar : Generating gravatar url for User <'zuoyang'>.
+2017-09-14 18:18:48,178 : INFO : models : gravatar : Generating gravatar url for User <'zuoyang'>.
+2017-09-14 18:18:48,190 : INFO : _internal : _log : 127.0.0.1 - - [14/Sep/2017 18:18:48] "GET /blog/113 HTTP/1.1" 200 -
+2017-09-14 18:18:54,695 : INFO : _internal : _log : 127.0.0.1 - - [14/Sep/2017 18:18:54] "POST /reply/113 HTTP/1.1" 200 -
+2017-09-14 18:18:54,723 : INFO : views : blog : Visiting detail page of blog 113.
+2017-09-14 18:18:54,728 : INFO : models : gravatar : Generating gravatar url for User <'zuoyang'>.
+2017-09-14 18:18:54,737 : INFO : models : gravatar : Generating gravatar url for User <'zuoyang'>.
+2017-09-14 18:18:54,740 : INFO : models : gravatar : Generating gravatar url for User <'zuoyang'>.
+2017-09-14 18:18:54,741 : INFO : models : gravatar : Generating gravatar url for User <'zuoyang'>.
+2017-09-14 18:18:54,741 : INFO : models : gravatar : Generating gravatar url for User <'zuoyang'>.
+2017-09-14 18:18:54,741 : INFO : models : gravatar : Generating gravatar url for User <'zuoyang'>.
+2017-09-14 18:18:54,757 : INFO : _internal : _log : 127.0.0.1 - - [14/Sep/2017 18:18:54] "GET /blog/113 HTTP/1.1" 200 -
+2017-09-14 18:19:21,468 : INFO : __init__ : create_app : logger initialization & configuration done.
+2017-09-14 18:19:21,559 : INFO : _internal : _log :  * Running on http://127.0.0.1:5000/ (Press CTRL+C to quit)
+2017-09-14 18:19:21,560 : INFO : _internal : _log :  * Restarting with stat
+2017-09-14 18:19:21,989 : INFO : __init__ : create_app : logger initialization & configuration done.
+2017-09-14 18:19:22,083 : WARNING : _internal : _log :  * Debugger is active!
+2017-09-14 18:19:22,083 : INFO : _internal : _log :  * Debugger PIN: 269-707-563
+2017-09-14 18:19:26,929 : INFO : views : before_first_request : Start processing request by user User <'zuoyang'>.
+2017-09-14 18:19:26,931 : INFO : views : manage_blog : Visiting blog manage page 1.
+2017-09-14 18:19:26,953 : INFO : models : gravatar : Generating gravatar url for User <'zuoyang'>.
+2017-09-14 18:19:26,957 : INFO : _internal : _log : 127.0.0.1 - - [14/Sep/2017 18:19:26] "GET /manage-blog HTTP/1.1" 200 -
+2017-09-14 18:19:29,862 : INFO : views : manage_comment : Visiting comment manage page 1.
+2017-09-14 18:19:29,885 : INFO : models : gravatar : Generating gravatar url for User <'zuoyang'>.
+2017-09-14 18:19:29,888 : INFO : _internal : _log : 127.0.0.1 - - [14/Sep/2017 18:19:29] "GET /manage-comment HTTP/1.1" 200 -
+2017-09-14 18:19:31,291 : INFO : views : delete_comment : Deleting comment 35.
+2017-09-14 18:19:31,355 : INFO : _internal : _log : 127.0.0.1 - - [14/Sep/2017 18:19:31] "POST /delete-comment/35 HTTP/1.1" 200 -
+2017-09-14 18:19:31,370 : INFO : views : manage_comment : Visiting comment manage page 1.
+2017-09-14 18:19:31,379 : INFO : models : gravatar : Generating gravatar url for User <'zuoyang'>.
+2017-09-14 18:19:31,383 : INFO : _internal : _log : 127.0.0.1 - - [14/Sep/2017 18:19:31] "GET /manage-comment?comment_id=35 HTTP/1.1" 200 -
+2017-09-14 18:19:31,925 : INFO : views : delete_comment : Deleting comment 34.
+2017-09-14 18:19:31,996 : INFO : _internal : _log : 127.0.0.1 - - [14/Sep/2017 18:19:31] "POST /delete-comment/34 HTTP/1.1" 200 -
+2017-09-14 18:19:32,004 : INFO : views : manage_comment : Visiting comment manage page 1.
+2017-09-14 18:19:32,009 : INFO : models : gravatar : Generating gravatar url for User <'zuoyang'>.
+2017-09-14 18:19:32,011 : INFO : _internal : _log : 127.0.0.1 - - [14/Sep/2017 18:19:32] "GET /manage-comment?comment_id=34 HTTP/1.1" 200 -
+2017-09-14 18:19:33,432 : INFO : views : delete_comment : Deleting comment 33.
+2017-09-14 18:19:33,473 : INFO : _internal : _log : 127.0.0.1 - - [14/Sep/2017 18:19:33] "POST /delete-comment/33 HTTP/1.1" 200 -
+2017-09-14 18:19:33,483 : INFO : views : manage_comment : Visiting comment manage page 1.
+2017-09-14 18:19:33,489 : INFO : models : gravatar : Generating gravatar url for User <'zuoyang'>.
+2017-09-14 18:19:33,492 : INFO : _internal : _log : 127.0.0.1 - - [14/Sep/2017 18:19:33] "GET /manage-comment?comment_id=33 HTTP/1.1" 200 -
+2017-09-14 18:19:34,418 : INFO : views : delete_comment : Deleting comment 32.
+2017-09-14 18:19:34,474 : INFO : _internal : _log : 127.0.0.1 - - [14/Sep/2017 18:19:34] "POST /delete-comment/32 HTTP/1.1" 200 -
+2017-09-14 18:19:34,499 : INFO : views : manage_comment : Visiting comment manage page 1.
+2017-09-14 18:19:34,507 : INFO : models : gravatar : Generating gravatar url for User <'zuoyang'>.
+2017-09-14 18:19:34,513 : INFO : _internal : _log : 127.0.0.1 - - [14/Sep/2017 18:19:34] "GET /manage-comment?comment_id=32 HTTP/1.1" 200 -
+2017-09-14 18:19:35,787 : INFO : views : manage_blog : Visiting blog manage page 1.
+2017-09-14 18:19:35,794 : INFO : models : gravatar : Generating gravatar url for User <'zuoyang'>.
+2017-09-14 18:19:35,799 : INFO : _internal : _log : 127.0.0.1 - - [14/Sep/2017 18:19:35] "GET /manage-blog HTTP/1.1" 200 -
+2017-09-14 18:19:36,882 : INFO : views : blog : Visiting detail page of blog 113.
+2017-09-14 18:19:36,972 : INFO : models : gravatar : Generating gravatar url for User <'zuoyang'>.
+2017-09-14 18:19:36,980 : INFO : models : gravatar : Generating gravatar url for User <'zuoyang'>.
+2017-09-14 18:19:36,993 : INFO : _internal : _log : 127.0.0.1 - - [14/Sep/2017 18:19:36] "GET /blog/113 HTTP/1.1" 200 -
+2017-09-14 18:19:54,006 : INFO : _internal : _log : 127.0.0.1 - - [14/Sep/2017 18:19:54] "POST /reply/113 HTTP/1.1" 200 -
+2017-09-14 18:19:58,513 : INFO : views : blog : Visiting detail page of blog 113.
+2017-09-14 18:19:58,524 : INFO : models : gravatar : Generating gravatar url for User <'zuoyang'>.
+2017-09-14 18:19:58,540 : INFO : models : gravatar : Generating gravatar url for User <'zuoyang'>.
+2017-09-14 18:19:58,544 : INFO : models : gravatar : Generating gravatar url for User <'zuoyang'>.
+2017-09-14 18:19:58,562 : INFO : _internal : _log : 127.0.0.1 - - [14/Sep/2017 18:19:58] "GET /blog/113 HTTP/1.1" 200 -
+2017-09-14 18:19:58,674 : INFO : _internal : _log : 127.0.0.1 - - [14/Sep/2017 18:19:58] "GET /static/pics/myblog.ico HTTP/1.1" 200 -
+2017-09-14 18:22:04,909 : INFO : _internal : _log :  * Detected change in '/home/xuzuoyang/mygit/MyBlog/app/main/views.py', reloading
+2017-09-14 18:22:05,018 : INFO : _internal : _log :  * Restarting with stat
+2017-09-14 18:22:05,427 : INFO : __init__ : create_app : logger initialization & configuration done.
+2017-09-14 18:22:05,520 : WARNING : _internal : _log :  * Debugger is active!
+2017-09-14 18:22:05,521 : INFO : _internal : _log :  * Debugger PIN: 269-707-563
+2017-09-14 18:22:07,282 : INFO : __init__ : create_app : logger initialization & configuration done.
+2017-09-14 18:22:07,372 : INFO : _internal : _log :  * Running on http://127.0.0.1:5000/ (Press CTRL+C to quit)
+2017-09-14 18:22:07,372 : INFO : _internal : _log :  * Restarting with stat
+2017-09-14 18:22:07,775 : INFO : __init__ : create_app : logger initialization & configuration done.
+2017-09-14 18:22:07,869 : WARNING : _internal : _log :  * Debugger is active!
+2017-09-14 18:22:07,869 : INFO : _internal : _log :  * Debugger PIN: 269-707-563
+2017-09-14 18:22:17,754 : INFO : views : before_first_request : Start processing request by user User <'zuoyang'>.
+2017-09-14 18:22:17,754 : INFO : views : index : Visiting home at page 1.
+2017-09-14 18:22:17,786 : INFO : models : gravatar : Generating gravatar url for User <'zuoyang'>.
+2017-09-14 18:22:17,805 : INFO : _internal : _log : 127.0.0.1 - - [14/Sep/2017 18:22:17] "GET / HTTP/1.1" 200 -
+2017-09-14 18:22:19,965 : INFO : views : blog : Visiting detail page of blog 113.
+2017-09-14 18:22:20,046 : INFO : models : gravatar : Generating gravatar url for User <'zuoyang'>.
+2017-09-14 18:22:20,054 : INFO : models : gravatar : Generating gravatar url for User <'zuoyang'>.
+2017-09-14 18:22:20,056 : INFO : models : gravatar : Generating gravatar url for User <'zuoyang'>.
+2017-09-14 18:22:20,091 : INFO : _internal : _log : 127.0.0.1 - - [14/Sep/2017 18:22:20] "GET /blog/113 HTTP/1.1" 200 -
+2017-09-14 18:22:26,562 : INFO : _internal : _log : 127.0.0.1 - - [14/Sep/2017 18:22:26] "POST /reply/113 HTTP/1.1" 200 -
+2017-09-14 18:31:26,108 : INFO : _internal : _log :  * Detected change in '/home/xuzuoyang/mygit/MyBlog/app/main/views.py', reloading
+2017-09-14 18:31:26,219 : INFO : _internal : _log :  * Restarting with stat
+2017-09-14 18:31:26,663 : INFO : __init__ : create_app : logger initialization & configuration done.
+2017-09-14 18:31:26,760 : WARNING : _internal : _log :  * Debugger is active!
+2017-09-14 18:31:26,761 : INFO : _internal : _log :  * Debugger PIN: 269-707-563
+2017-09-14 18:31:46,505 : INFO : __init__ : create_app : logger initialization & configuration done.
+2017-09-14 18:31:46,597 : INFO : _internal : _log :  * Running on http://127.0.0.1:5000/ (Press CTRL+C to quit)
+2017-09-14 18:31:46,597 : INFO : _internal : _log :  * Restarting with stat
+2017-09-14 18:31:47,007 : INFO : __init__ : create_app : logger initialization & configuration done.
+2017-09-14 18:31:47,099 : WARNING : _internal : _log :  * Debugger is active!
+2017-09-14 18:31:47,099 : INFO : _internal : _log :  * Debugger PIN: 269-707-563
+2017-09-14 18:31:56,829 : INFO : views : before_first_request : Start processing request by user User <'zuoyang'>.
+2017-09-14 18:31:56,829 : INFO : views : index : Visiting home at page 1.
+2017-09-14 18:31:56,861 : INFO : models : gravatar : Generating gravatar url for User <'zuoyang'>.
+2017-09-14 18:31:56,878 : INFO : _internal : _log : 127.0.0.1 - - [14/Sep/2017 18:31:56] "GET / HTTP/1.1" 200 -
+2017-09-14 18:31:58,878 : INFO : views : blog : Visiting detail page of blog 113.
+2017-09-14 18:31:58,950 : INFO : models : gravatar : Generating gravatar url for User <'zuoyang'>.
+2017-09-14 18:31:58,959 : INFO : models : gravatar : Generating gravatar url for User <'zuoyang'>.
+2017-09-14 18:31:58,963 : INFO : models : gravatar : Generating gravatar url for User <'zuoyang'>.
+2017-09-14 18:31:58,963 : INFO : models : gravatar : Generating gravatar url for User <'zuoyang'>.
+2017-09-14 18:31:59,001 : INFO : _internal : _log : 127.0.0.1 - - [14/Sep/2017 18:31:59] "GET /blog/113 HTTP/1.1" 200 -
+2017-09-14 18:32:07,271 : INFO : _internal : _log : 127.0.0.1 - - [14/Sep/2017 18:32:07] "POST /reply/113 HTTP/1.1" 200 -
+2017-09-14 18:32:19,519 : INFO : views : blog : Visiting detail page of blog 113.
+2017-09-14 18:32:19,527 : INFO : models : gravatar : Generating gravatar url for User <'zuoyang'>.
+2017-09-14 18:32:19,546 : INFO : models : gravatar : Generating gravatar url for User <'zuoyang'>.
+2017-09-14 18:32:19,550 : INFO : models : gravatar : Generating gravatar url for User <'zuoyang'>.
+2017-09-14 18:32:19,551 : INFO : models : gravatar : Generating gravatar url for User <'zuoyang'>.
+2017-09-14 18:32:19,551 : INFO : models : gravatar : Generating gravatar url for User <'zuoyang'>.
+2017-09-14 18:32:19,567 : INFO : _internal : _log : 127.0.0.1 - - [14/Sep/2017 18:32:19] "GET /blog/113 HTTP/1.1" 200 -
+2017-09-14 18:32:19,803 : INFO : _internal : _log : 127.0.0.1 - - [14/Sep/2017 18:32:19] "GET /static/pics/myblog.ico HTTP/1.1" 200 -
+2017-09-14 18:34:39,172 : INFO : __init__ : create_app : logger initialization & configuration done.
+2017-09-14 18:34:39,261 : INFO : _internal : _log :  * Running on http://127.0.0.1:5000/ (Press CTRL+C to quit)
+2017-09-14 18:34:39,262 : INFO : _internal : _log :  * Restarting with stat
+2017-09-14 18:34:39,670 : INFO : __init__ : create_app : logger initialization & configuration done.
+2017-09-14 18:34:39,763 : WARNING : _internal : _log :  * Debugger is active!
+2017-09-14 18:34:39,763 : INFO : _internal : _log :  * Debugger PIN: 269-707-563
+2017-09-14 18:34:46,586 : INFO : views : before_first_request : Start processing request by user User <'zuoyang'>.
+2017-09-14 18:34:46,586 : INFO : views : index : Visiting home at page 1.
+2017-09-14 18:34:46,618 : INFO : models : gravatar : Generating gravatar url for User <'zuoyang'>.
+2017-09-14 18:34:46,638 : INFO : _internal : _log : 127.0.0.1 - - [14/Sep/2017 18:34:46] "GET / HTTP/1.1" 200 -
+2017-09-14 18:34:48,292 : INFO : views : blog : Visiting detail page of blog 113.
+2017-09-14 18:34:48,368 : INFO : models : gravatar : Generating gravatar url for User <'zuoyang'>.
+2017-09-14 18:34:48,377 : INFO : models : gravatar : Generating gravatar url for User <'zuoyang'>.
+2017-09-14 18:34:48,380 : INFO : models : gravatar : Generating gravatar url for User <'zuoyang'>.
+2017-09-14 18:34:48,380 : INFO : models : gravatar : Generating gravatar url for User <'zuoyang'>.
+2017-09-14 18:34:48,380 : INFO : models : gravatar : Generating gravatar url for User <'zuoyang'>.
+2017-09-14 18:34:48,415 : INFO : _internal : _log : 127.0.0.1 - - [14/Sep/2017 18:34:48] "GET /blog/113 HTTP/1.1" 200 -
+2017-09-14 18:34:57,089 : INFO : _internal : _log : 127.0.0.1 - - [14/Sep/2017 18:34:57] "POST /reply/113 HTTP/1.1" 200 -
+2017-09-14 18:34:57,128 : INFO : views : blog : Visiting detail page of blog 113.
+2017-09-14 18:34:57,132 : INFO : models : gravatar : Generating gravatar url for User <'zuoyang'>.
+2017-09-14 18:34:57,141 : INFO : models : gravatar : Generating gravatar url for User <'zuoyang'>.
+2017-09-14 18:34:57,144 : INFO : models : gravatar : Generating gravatar url for User <'zuoyang'>.
+2017-09-14 18:34:57,144 : INFO : models : gravatar : Generating gravatar url for User <'zuoyang'>.
+2017-09-14 18:34:57,145 : INFO : models : gravatar : Generating gravatar url for User <'zuoyang'>.
+2017-09-14 18:34:57,145 : INFO : models : gravatar : Generating gravatar url for User <'zuoyang'>.
+2017-09-14 18:34:57,156 : INFO : _internal : _log : 127.0.0.1 - - [14/Sep/2017 18:34:57] "GET /blog/113 HTTP/1.1" 200 -
+2017-09-14 18:35:15,024 : INFO : views : blog : Submitting a new comment.
+2017-09-14 18:35:15,075 : INFO : _internal : _log : 127.0.0.1 - - [14/Sep/2017 18:35:15] "POST /blog/113 HTTP/1.1" 302 -
+2017-09-14 18:35:15,095 : INFO : views : blog : Visiting detail page of blog 113.
+2017-09-14 18:35:15,102 : INFO : models : gravatar : Generating gravatar url for User <'zuoyang'>.
+2017-09-14 18:35:15,113 : INFO : models : gravatar : Generating gravatar url for User <'zuoyang'>.
+2017-09-14 18:35:15,116 : INFO : models : gravatar : Generating gravatar url for User <'zuoyang'>.
+2017-09-14 18:35:15,116 : INFO : models : gravatar : Generating gravatar url for User <'zuoyang'>.
+2017-09-14 18:35:15,117 : INFO : models : gravatar : Generating gravatar url for User <'zuoyang'>.
+2017-09-14 18:35:15,117 : INFO : models : gravatar : Generating gravatar url for User <'zuoyang'>.
+2017-09-14 18:35:15,117 : INFO : models : gravatar : Generating gravatar url for User <'zuoyang'>.
+2017-09-14 18:35:15,136 : INFO : _internal : _log : 127.0.0.1 - - [14/Sep/2017 18:35:15] "GET /blog/113 HTTP/1.1" 200 -
+2017-09-14 18:35:21,002 : INFO : views : blog : Submitting a new comment.
+2017-09-14 18:35:21,068 : INFO : _internal : _log : 127.0.0.1 - - [14/Sep/2017 18:35:21] "POST /blog/113 HTTP/1.1" 302 -
+2017-09-14 18:35:21,087 : INFO : views : blog : Visiting detail page of blog 113.
+2017-09-14 18:35:21,096 : INFO : models : gravatar : Generating gravatar url for User <'zuoyang'>.
+2017-09-14 18:35:21,112 : INFO : models : gravatar : Generating gravatar url for User <'zuoyang'>.
+2017-09-14 18:35:21,116 : INFO : models : gravatar : Generating gravatar url for User <'zuoyang'>.
+2017-09-14 18:35:21,116 : INFO : models : gravatar : Generating gravatar url for User <'zuoyang'>.
+2017-09-14 18:35:21,116 : INFO : models : gravatar : Generating gravatar url for User <'zuoyang'>.
+2017-09-14 18:35:21,117 : INFO : models : gravatar : Generating gravatar url for User <'zuoyang'>.
+2017-09-14 18:35:21,117 : INFO : models : gravatar : Generating gravatar url for User <'zuoyang'>.
+2017-09-14 18:35:21,120 : INFO : models : gravatar : Generating gravatar url for User <'zuoyang'>.
+2017-09-14 18:35:21,139 : INFO : _internal : _log : 127.0.0.1 - - [14/Sep/2017 18:35:21] "GET /blog/113 HTTP/1.1" 200 -
+2017-09-14 18:35:29,090 : INFO : views : blog : Submitting a new comment.
+2017-09-14 18:35:29,253 : INFO : _internal : _log : 127.0.0.1 - - [14/Sep/2017 18:35:29] "POST /blog/113 HTTP/1.1" 302 -
+2017-09-14 18:35:29,273 : INFO : views : blog : Visiting detail page of blog 113.
+2017-09-14 18:35:29,280 : INFO : models : gravatar : Generating gravatar url for User <'zuoyang'>.
+2017-09-14 18:35:29,293 : INFO : models : gravatar : Generating gravatar url for User <'zuoyang'>.
+2017-09-14 18:35:29,296 : INFO : models : gravatar : Generating gravatar url for User <'zuoyang'>.
+2017-09-14 18:35:29,296 : INFO : models : gravatar : Generating gravatar url for User <'zuoyang'>.
+2017-09-14 18:35:29,297 : INFO : models : gravatar : Generating gravatar url for User <'zuoyang'>.
+2017-09-14 18:35:29,297 : INFO : models : gravatar : Generating gravatar url for User <'zuoyang'>.
+2017-09-14 18:35:29,297 : INFO : models : gravatar : Generating gravatar url for User <'zuoyang'>.
+2017-09-14 18:35:29,301 : INFO : models : gravatar : Generating gravatar url for User <'zuoyang'>.
+2017-09-14 18:35:29,303 : INFO : models : gravatar : Generating gravatar url for User <'zuoyang'>.
+2017-09-14 18:35:29,322 : INFO : _internal : _log : 127.0.0.1 - - [14/Sep/2017 18:35:29] "GET /blog/113 HTTP/1.1" 200 -
+2017-09-14 18:36:01,065 : INFO : _internal : _log : 127.0.0.1 - - [14/Sep/2017 18:36:01] "POST /reply/113 HTTP/1.1" 200 -
+2017-09-14 18:36:01,099 : INFO : _internal : _log : 127.0.0.1 - - [14/Sep/2017 18:36:01] "POST /reply/113 HTTP/1.1" 200 -
+2017-09-14 18:36:01,104 : INFO : views : blog : Visiting detail page of blog 113.
+2017-09-14 18:36:01,106 : INFO : models : gravatar : Generating gravatar url for User <'zuoyang'>.
+2017-09-14 18:36:01,115 : INFO : models : gravatar : Generating gravatar url for User <'zuoyang'>.
+2017-09-14 18:36:01,119 : INFO : models : gravatar : Generating gravatar url for User <'zuoyang'>.
+2017-09-14 18:36:01,119 : INFO : models : gravatar : Generating gravatar url for User <'zuoyang'>.
+2017-09-14 18:36:01,119 : INFO : models : gravatar : Generating gravatar url for User <'zuoyang'>.
+2017-09-14 18:36:01,120 : INFO : models : gravatar : Generating gravatar url for User <'zuoyang'>.
+2017-09-14 18:36:01,120 : INFO : models : gravatar : Generating gravatar url for User <'zuoyang'>.
+2017-09-14 18:36:01,120 : INFO : models : gravatar : Generating gravatar url for User <'zuoyang'>.
+2017-09-14 18:36:01,120 : INFO : models : gravatar : Generating gravatar url for User <'zuoyang'>.
+2017-09-14 18:36:01,122 : INFO : models : gravatar : Generating gravatar url for User <'zuoyang'>.
+2017-09-14 18:36:01,124 : INFO : models : gravatar : Generating gravatar url for User <'zuoyang'>.
+2017-09-14 18:36:01,142 : INFO : _internal : _log : 127.0.0.1 - - [14/Sep/2017 18:36:01] "GET /blog/113 HTTP/1.1" 200 -
+2017-09-14 18:36:01,148 : INFO : views : blog : Visiting detail page of blog 113.
+2017-09-14 18:36:01,149 : INFO : models : gravatar : Generating gravatar url for User <'zuoyang'>.
+2017-09-14 18:36:01,155 : INFO : models : gravatar : Generating gravatar url for User <'zuoyang'>.
+2017-09-14 18:36:01,157 : INFO : models : gravatar : Generating gravatar url for User <'zuoyang'>.
+2017-09-14 18:36:01,157 : INFO : models : gravatar : Generating gravatar url for User <'zuoyang'>.
+2017-09-14 18:36:01,157 : INFO : models : gravatar : Generating gravatar url for User <'zuoyang'>.
+2017-09-14 18:36:01,157 : INFO : models : gravatar : Generating gravatar url for User <'zuoyang'>.
+2017-09-14 18:36:01,158 : INFO : models : gravatar : Generating gravatar url for User <'zuoyang'>.
+2017-09-14 18:36:01,158 : INFO : models : gravatar : Generating gravatar url for User <'zuoyang'>.
+2017-09-14 18:36:01,158 : INFO : models : gravatar : Generating gravatar url for User <'zuoyang'>.
+2017-09-14 18:36:01,160 : INFO : models : gravatar : Generating gravatar url for User <'zuoyang'>.
+2017-09-14 18:36:01,162 : INFO : models : gravatar : Generating gravatar url for User <'zuoyang'>.
+2017-09-14 18:36:01,180 : INFO : _internal : _log : 127.0.0.1 - - [14/Sep/2017 18:36:01] "GET /blog/113 HTTP/1.1" 200 -
+2017-09-14 18:36:10,934 : INFO : _internal : _log : 127.0.0.1 - - [14/Sep/2017 18:36:10] "POST /reply/113 HTTP/1.1" 200 -
+2017-09-14 18:36:10,970 : INFO : views : blog : Visiting detail page of blog 113.
+2017-09-14 18:36:10,975 : INFO : models : gravatar : Generating gravatar url for User <'zuoyang'>.
+2017-09-14 18:36:10,984 : INFO : models : gravatar : Generating gravatar url for User <'zuoyang'>.
+2017-09-14 18:36:10,986 : INFO : models : gravatar : Generating gravatar url for User <'zuoyang'>.
+2017-09-14 18:36:10,986 : INFO : models : gravatar : Generating gravatar url for User <'zuoyang'>.
+2017-09-14 18:36:10,986 : INFO : models : gravatar : Generating gravatar url for User <'zuoyang'>.
+2017-09-14 18:36:10,986 : INFO : models : gravatar : Generating gravatar url for User <'zuoyang'>.
+2017-09-14 18:36:10,987 : INFO : models : gravatar : Generating gravatar url for User <'zuoyang'>.
+2017-09-14 18:36:10,987 : INFO : models : gravatar : Generating gravatar url for User <'zuoyang'>.
+2017-09-14 18:36:10,987 : INFO : models : gravatar : Generating gravatar url for User <'zuoyang'>.
+2017-09-14 18:36:10,990 : INFO : models : gravatar : Generating gravatar url for User <'zuoyang'>.
+2017-09-14 18:36:10,993 : INFO : models : gravatar : Generating gravatar url for User <'zuoyang'>.
+2017-09-14 18:36:10,993 : INFO : models : gravatar : Generating gravatar url for User <'zuoyang'>.
+2017-09-14 18:36:11,015 : INFO : _internal : _log : 127.0.0.1 - - [14/Sep/2017 18:36:11] "GET /blog/113 HTTP/1.1" 200 -
+2017-09-14 18:36:24,320 : INFO : _internal : _log : 127.0.0.1 - - [14/Sep/2017 18:36:24] "POST /reply/113 HTTP/1.1" 200 -
+2017-09-14 18:36:24,341 : INFO : views : blog : Visiting detail page of blog 113.
+2017-09-14 18:36:24,345 : INFO : models : gravatar : Generating gravatar url for User <'zuoyang'>.
+2017-09-14 18:36:24,354 : INFO : models : gravatar : Generating gravatar url for User <'zuoyang'>.
+2017-09-14 18:36:24,357 : INFO : models : gravatar : Generating gravatar url for User <'zuoyang'>.
+2017-09-14 18:36:24,357 : INFO : models : gravatar : Generating gravatar url for User <'zuoyang'>.
+2017-09-14 18:36:24,357 : INFO : models : gravatar : Generating gravatar url for User <'zuoyang'>.
+2017-09-14 18:36:24,357 : INFO : models : gravatar : Generating gravatar url for User <'zuoyang'>.
+2017-09-14 18:36:24,357 : INFO : models : gravatar : Generating gravatar url for User <'zuoyang'>.
+2017-09-14 18:36:24,357 : INFO : models : gravatar : Generating gravatar url for User <'zuoyang'>.
+2017-09-14 18:36:24,357 : INFO : models : gravatar : Generating gravatar url for User <'zuoyang'>.
+2017-09-14 18:36:24,358 : INFO : models : gravatar : Generating gravatar url for User <'zuoyang'>.
+2017-09-14 18:36:24,360 : INFO : models : gravatar : Generating gravatar url for User <'zuoyang'>.
+2017-09-14 18:36:24,362 : INFO : models : gravatar : Generating gravatar url for User <'zuoyang'>.
+2017-09-14 18:36:24,363 : INFO : models : gravatar : Generating gravatar url for User <'zuoyang'>.
+2017-09-14 18:36:24,382 : INFO : _internal : _log : 127.0.0.1 - - [14/Sep/2017 18:36:24] "GET /blog/113 HTTP/1.1" 200 -
+2017-09-14 18:36:30,628 : INFO : views : manage_blog : Visiting blog manage page 1.
+2017-09-14 18:36:30,660 : INFO : models : gravatar : Generating gravatar url for User <'zuoyang'>.
+2017-09-14 18:36:30,666 : INFO : _internal : _log : 127.0.0.1 - - [14/Sep/2017 18:36:30] "GET /manage-blog HTTP/1.1" 200 -
+2017-09-14 18:36:31,935 : INFO : views : manage_comment : Visiting comment manage page 1.
+2017-09-14 18:36:31,959 : INFO : models : gravatar : Generating gravatar url for User <'zuoyang'>.
+2017-09-14 18:36:31,963 : INFO : _internal : _log : 127.0.0.1 - - [14/Sep/2017 18:36:31] "GET /manage-comment HTTP/1.1" 200 -
+2017-09-14 18:36:33,753 : INFO : views : delete_comment : Deleting comment 46.
+2017-09-14 18:36:33,812 : INFO : _internal : _log : 127.0.0.1 - - [14/Sep/2017 18:36:33] "POST /delete-comment/46 HTTP/1.1" 200 -
+2017-09-14 18:36:33,822 : INFO : views : manage_comment : Visiting comment manage page 1.
+2017-09-14 18:36:33,829 : INFO : models : gravatar : Generating gravatar url for User <'zuoyang'>.
+2017-09-14 18:36:33,831 : INFO : _internal : _log : 127.0.0.1 - - [14/Sep/2017 18:36:33] "GET /manage-comment?comment_id=46 HTTP/1.1" 200 -
+2017-09-14 18:36:34,351 : INFO : views : delete_comment : Deleting comment 45.
+2017-09-14 18:36:34,422 : INFO : _internal : _log : 127.0.0.1 - - [14/Sep/2017 18:36:34] "POST /delete-comment/45 HTTP/1.1" 200 -
+2017-09-14 18:36:34,447 : INFO : views : manage_comment : Visiting comment manage page 1.
+2017-09-14 18:36:34,459 : INFO : models : gravatar : Generating gravatar url for User <'zuoyang'>.
+2017-09-14 18:36:34,462 : INFO : _internal : _log : 127.0.0.1 - - [14/Sep/2017 18:36:34] "GET /manage-comment?comment_id=45 HTTP/1.1" 200 -
+2017-09-14 18:36:34,791 : INFO : views : delete_comment : Deleting comment 43.
+2017-09-14 18:36:34,857 : INFO : _internal : _log : 127.0.0.1 - - [14/Sep/2017 18:36:34] "POST /delete-comment/43 HTTP/1.1" 200 -
+2017-09-14 18:36:34,864 : INFO : views : manage_comment : Visiting comment manage page 1.
+2017-09-14 18:36:34,868 : INFO : models : gravatar : Generating gravatar url for User <'zuoyang'>.
+2017-09-14 18:36:34,870 : INFO : _internal : _log : 127.0.0.1 - - [14/Sep/2017 18:36:34] "GET /manage-comment?comment_id=43 HTTP/1.1" 200 -
+2017-09-14 18:36:35,371 : INFO : views : delete_comment : Deleting comment 44.
+2017-09-14 18:36:35,408 : INFO : _internal : _log : 127.0.0.1 - - [14/Sep/2017 18:36:35] "POST /delete-comment/44 HTTP/1.1" 200 -
+2017-09-14 18:36:35,437 : INFO : views : manage_comment : Visiting comment manage page 1.
+2017-09-14 18:36:35,448 : INFO : models : gravatar : Generating gravatar url for User <'zuoyang'>.
+2017-09-14 18:36:35,451 : INFO : _internal : _log : 127.0.0.1 - - [14/Sep/2017 18:36:35] "GET /manage-comment?comment_id=44 HTTP/1.1" 200 -
+2017-09-14 18:36:35,781 : INFO : views : delete_comment : Deleting comment 42.
+2017-09-14 18:36:35,833 : INFO : _internal : _log : 127.0.0.1 - - [14/Sep/2017 18:36:35] "POST /delete-comment/42 HTTP/1.1" 200 -
+2017-09-14 18:36:35,847 : INFO : views : manage_comment : Visiting comment manage page 1.
+2017-09-14 18:36:35,856 : INFO : models : gravatar : Generating gravatar url for User <'zuoyang'>.
+2017-09-14 18:36:35,858 : INFO : _internal : _log : 127.0.0.1 - - [14/Sep/2017 18:36:35] "GET /manage-comment?comment_id=42 HTTP/1.1" 200 -
+2017-09-14 18:36:36,213 : INFO : views : delete_comment : Deleting comment 41.
+2017-09-14 18:36:36,268 : INFO : _internal : _log : 127.0.0.1 - - [14/Sep/2017 18:36:36] "POST /delete-comment/41 HTTP/1.1" 200 -
+2017-09-14 18:36:36,285 : INFO : views : manage_comment : Visiting comment manage page 1.
+2017-09-14 18:36:36,294 : INFO : models : gravatar : Generating gravatar url for User <'zuoyang'>.
+2017-09-14 18:36:36,297 : INFO : _internal : _log : 127.0.0.1 - - [14/Sep/2017 18:36:36] "GET /manage-comment?comment_id=41 HTTP/1.1" 200 -
+2017-09-14 18:36:36,693 : INFO : views : delete_comment : Deleting comment 40.
+2017-09-14 18:36:36,752 : INFO : _internal : _log : 127.0.0.1 - - [14/Sep/2017 18:36:36] "POST /delete-comment/40 HTTP/1.1" 200 -
+2017-09-14 18:36:36,777 : INFO : views : manage_comment : Visiting comment manage page 1.
+2017-09-14 18:36:36,788 : INFO : models : gravatar : Generating gravatar url for User <'zuoyang'>.
+2017-09-14 18:36:36,791 : INFO : _internal : _log : 127.0.0.1 - - [14/Sep/2017 18:36:36] "GET /manage-comment?comment_id=40 HTTP/1.1" 200 -
+2017-09-14 18:36:40,021 : INFO : views : delete_comment : Deleting comment 39.
+2017-09-14 18:36:40,069 : INFO : _internal : _log : 127.0.0.1 - - [14/Sep/2017 18:36:40] "POST /delete-comment/39 HTTP/1.1" 200 -
+2017-09-14 18:36:40,093 : INFO : views : manage_comment : Visiting comment manage page 1.
+2017-09-14 18:36:40,112 : INFO : models : gravatar : Generating gravatar url for User <'zuoyang'>.
+2017-09-14 18:36:40,116 : INFO : _internal : _log : 127.0.0.1 - - [14/Sep/2017 18:36:40] "GET /manage-comment?comment_id=39 HTTP/1.1" 200 -
+2017-09-14 18:36:41,252 : INFO : views : delete_comment : Deleting comment 38.
+2017-09-14 18:36:41,293 : INFO : _internal : _log : 127.0.0.1 - - [14/Sep/2017 18:36:41] "POST /delete-comment/38 HTTP/1.1" 200 -
+2017-09-14 18:36:41,304 : INFO : views : manage_comment : Visiting comment manage page 1.
+2017-09-14 18:36:41,312 : INFO : models : gravatar : Generating gravatar url for User <'zuoyang'>.
+2017-09-14 18:36:41,316 : INFO : _internal : _log : 127.0.0.1 - - [14/Sep/2017 18:36:41] "GET /manage-comment?comment_id=38 HTTP/1.1" 200 -
+2017-09-14 18:36:42,590 : INFO : views : delete_comment : Deleting comment 37.
+2017-09-14 18:36:42,636 : INFO : _internal : _log : 127.0.0.1 - - [14/Sep/2017 18:36:42] "POST /delete-comment/37 HTTP/1.1" 200 -
+2017-09-14 18:36:42,649 : INFO : views : manage_comment : Visiting comment manage page 1.
+2017-09-14 18:36:42,656 : INFO : models : gravatar : Generating gravatar url for User <'zuoyang'>.
+2017-09-14 18:36:42,659 : INFO : _internal : _log : 127.0.0.1 - - [14/Sep/2017 18:36:42] "GET /manage-comment?comment_id=37 HTTP/1.1" 200 -
+2017-09-14 18:36:43,420 : INFO : views : delete_comment : Deleting comment 36.
+2017-09-14 18:36:43,462 : INFO : _internal : _log : 127.0.0.1 - - [14/Sep/2017 18:36:43] "POST /delete-comment/36 HTTP/1.1" 200 -
+2017-09-14 18:36:43,489 : INFO : views : manage_comment : Visiting comment manage page 1.
+2017-09-14 18:36:43,500 : INFO : models : gravatar : Generating gravatar url for User <'zuoyang'>.
+2017-09-14 18:36:43,506 : INFO : _internal : _log : 127.0.0.1 - - [14/Sep/2017 18:36:43] "GET /manage-comment?comment_id=36 HTTP/1.1" 200 -
+2017-09-14 18:36:46,118 : INFO : views : manage_blog : Visiting blog manage page 1.
+2017-09-14 18:36:46,134 : INFO : models : gravatar : Generating gravatar url for User <'zuoyang'>.
+2017-09-14 18:36:46,145 : INFO : _internal : _log : 127.0.0.1 - - [14/Sep/2017 18:36:46] "GET /manage-blog HTTP/1.1" 200 -
+2017-09-14 18:36:47,241 : INFO : views : blog : Visiting detail page of blog 113.
+2017-09-14 18:36:47,243 : INFO : models : gravatar : Generating gravatar url for User <'zuoyang'>.
+2017-09-14 18:36:47,248 : INFO : models : gravatar : Generating gravatar url for User <'zuoyang'>.
+2017-09-14 18:36:47,262 : INFO : _internal : _log : 127.0.0.1 - - [14/Sep/2017 18:36:47] "GET /blog/113 HTTP/1.1" 200 -
+2017-09-14 18:43:15,813 : INFO : views : blog : Visiting detail page of blog 113.
+2017-09-14 18:43:15,835 : INFO : models : gravatar : Generating gravatar url for User <'zuoyang'>.
+2017-09-14 18:43:15,842 : INFO : models : gravatar : Generating gravatar url for User <'zuoyang'>.
+2017-09-14 18:43:15,853 : INFO : _internal : _log : 127.0.0.1 - - [14/Sep/2017 18:43:15] "GET /blog/113 HTTP/1.1" 200 -
+2017-09-14 18:43:16,100 : INFO : _internal : _log : 127.0.0.1 - - [14/Sep/2017 18:43:16] "GET /static/pics/myblog.ico HTTP/1.1" 200 -
+2017-09-14 18:43:21,770 : INFO : _internal : _log : 127.0.0.1 - - [14/Sep/2017 18:43:21] "POST /reply/113 HTTP/1.1" 200 -
+2017-09-14 18:43:21,816 : INFO : views : blog : Visiting detail page of blog 113.
+2017-09-14 18:43:21,821 : INFO : models : gravatar : Generating gravatar url for User <'zuoyang'>.
+2017-09-14 18:43:21,830 : INFO : models : gravatar : Generating gravatar url for User <'zuoyang'>.
+2017-09-14 18:43:21,833 : INFO : models : gravatar : Generating gravatar url for User <'zuoyang'>.
+2017-09-14 18:43:21,846 : INFO : _internal : _log : 127.0.0.1 - - [14/Sep/2017 18:43:21] "GET /blog/113 HTTP/1.1" 200 -
+2017-09-14 18:48:44,429 : INFO : __init__ : create_app : logger initialization & configuration done.
+2017-09-14 18:48:44,519 : INFO : _internal : _log :  * Running on http://127.0.0.1:5000/ (Press CTRL+C to quit)
+2017-09-14 18:48:44,520 : INFO : _internal : _log :  * Restarting with stat
+2017-09-14 18:48:44,936 : INFO : __init__ : create_app : logger initialization & configuration done.
+2017-09-14 18:48:45,027 : WARNING : _internal : _log :  * Debugger is active!
+2017-09-14 18:48:45,027 : INFO : _internal : _log :  * Debugger PIN: 269-707-563
+2017-09-14 18:48:51,248 : INFO : views : before_first_request : Start processing request by user User <'zuoyang'>.
+2017-09-14 18:48:51,248 : INFO : views : index : Visiting home at page 1.
+2017-09-14 18:48:51,285 : INFO : models : gravatar : Generating gravatar url for User <'zuoyang'>.
+2017-09-14 18:48:51,304 : INFO : _internal : _log : 127.0.0.1 - - [14/Sep/2017 18:48:51] "GET / HTTP/1.1" 200 -
+2017-09-14 18:48:52,761 : INFO : views : blog : Visiting detail page of blog 113.
+2017-09-14 18:48:52,837 : INFO : models : gravatar : Generating gravatar url for User <'zuoyang'>.
+2017-09-14 18:48:52,844 : INFO : models : gravatar : Generating gravatar url for User <'zuoyang'>.
+2017-09-14 18:48:52,847 : INFO : models : gravatar : Generating gravatar url for User <'zuoyang'>.
+2017-09-14 18:48:52,886 : INFO : _internal : _log : 127.0.0.1 - - [14/Sep/2017 18:48:52] "GET /blog/113 HTTP/1.1" 200 -
+2017-09-14 18:48:57,628 : INFO : _internal : _log : 127.0.0.1 - - [14/Sep/2017 18:48:57] "POST /reply/113 HTTP/1.1" 200 -
+2017-09-14 18:48:57,668 : INFO : views : blog : Visiting detail page of blog 113.
+2017-09-14 18:48:57,671 : INFO : models : gravatar : Generating gravatar url for User <'zuoyang'>.
+2017-09-14 18:48:57,679 : INFO : models : gravatar : Generating gravatar url for User <'zuoyang'>.
+2017-09-14 18:48:57,682 : INFO : models : gravatar : Generating gravatar url for User <'zuoyang'>.
+2017-09-14 18:48:57,682 : INFO : models : gravatar : Generating gravatar url for User <'zuoyang'>.
+2017-09-14 18:48:57,694 : INFO : _internal : _log : 127.0.0.1 - - [14/Sep/2017 18:48:57] "GET /blog/113 HTTP/1.1" 200 -
+2017-09-14 18:50:43,299 : INFO : __init__ : create_app : logger initialization & configuration done.
+2017-09-14 18:50:43,391 : INFO : _internal : _log :  * Running on http://127.0.0.1:5000/ (Press CTRL+C to quit)
+2017-09-14 18:50:43,391 : INFO : _internal : _log :  * Restarting with stat
+2017-09-14 18:50:43,798 : INFO : __init__ : create_app : logger initialization & configuration done.
+2017-09-14 18:50:43,888 : WARNING : _internal : _log :  * Debugger is active!
+2017-09-14 18:50:43,889 : INFO : _internal : _log :  * Debugger PIN: 269-707-563
+2017-09-14 18:53:38,629 : INFO : __init__ : create_app : logger initialization & configuration done.
+2017-09-14 18:53:38,720 : INFO : _internal : _log :  * Running on http://127.0.0.1:5000/ (Press CTRL+C to quit)
+2017-09-14 18:53:38,720 : INFO : _internal : _log :  * Restarting with stat
+2017-09-14 18:53:39,130 : INFO : __init__ : create_app : logger initialization & configuration done.
+2017-09-14 18:53:39,222 : WARNING : _internal : _log :  * Debugger is active!
+2017-09-14 18:53:39,223 : INFO : _internal : _log :  * Debugger PIN: 269-707-563
+2017-09-14 18:53:45,977 : INFO : views : before_first_request : Start processing request by user User <'zuoyang'>.
+2017-09-14 18:53:45,980 : INFO : views : blog : Visiting detail page of blog 113.
+2017-09-14 18:53:46,048 : INFO : models : gravatar : Generating gravatar url for User <'zuoyang'>.
+2017-09-14 18:53:46,060 : INFO : models : gravatar : Generating gravatar url for User <'zuoyang'>.
+2017-09-14 18:53:46,063 : INFO : models : gravatar : Generating gravatar url for User <'zuoyang'>.
+2017-09-14 18:53:46,063 : INFO : models : gravatar : Generating gravatar url for User <'zuoyang'>.
+2017-09-14 18:53:46,074 : INFO : _internal : _log : 127.0.0.1 - - [14/Sep/2017 18:53:46] "GET /blog/113 HTTP/1.1" 200 -
+2017-09-14 18:53:52,175 : INFO : _internal : _log : 127.0.0.1 - - [14/Sep/2017 18:53:52] "POST /reply/113 HTTP/1.1" 200 -
+2017-09-14 18:53:52,219 : INFO : views : blog : Visiting detail page of blog 113.
+2017-09-14 18:53:52,224 : INFO : models : gravatar : Generating gravatar url for User <'zuoyang'>.
+2017-09-14 18:53:52,233 : INFO : models : gravatar : Generating gravatar url for User <'zuoyang'>.
+2017-09-14 18:53:52,236 : INFO : models : gravatar : Generating gravatar url for User <'zuoyang'>.
+2017-09-14 18:53:52,236 : INFO : models : gravatar : Generating gravatar url for User <'zuoyang'>.
+2017-09-14 18:53:52,236 : INFO : models : gravatar : Generating gravatar url for User <'zuoyang'>.
+2017-09-14 18:53:52,249 : INFO : _internal : _log : 127.0.0.1 - - [14/Sep/2017 18:53:52] "GET /blog/113 HTTP/1.1" 200 -
+2017-09-14 18:55:47,541 : INFO : __init__ : create_app : logger initialization & configuration done.
+2017-09-14 18:55:47,630 : INFO : _internal : _log :  * Running on http://127.0.0.1:5000/ (Press CTRL+C to quit)
+2017-09-14 18:55:47,631 : INFO : _internal : _log :  * Restarting with stat
+2017-09-14 18:55:48,047 : INFO : __init__ : create_app : logger initialization & configuration done.
+2017-09-14 18:55:48,141 : WARNING : _internal : _log :  * Debugger is active!
+2017-09-14 18:55:48,141 : INFO : _internal : _log :  * Debugger PIN: 269-707-563
+2017-09-14 18:55:53,084 : INFO : views : before_first_request : Start processing request by user User <'zuoyang'>.
+2017-09-14 18:55:53,084 : INFO : views : index : Visiting home at page 1.
+2017-09-14 18:55:53,117 : INFO : models : gravatar : Generating gravatar url for User <'zuoyang'>.
+2017-09-14 18:55:53,137 : INFO : _internal : _log : 127.0.0.1 - - [14/Sep/2017 18:55:53] "GET / HTTP/1.1" 200 -
+2017-09-14 18:55:55,237 : INFO : views : blog : Visiting detail page of blog 113.
+2017-09-14 18:55:55,317 : INFO : models : gravatar : Generating gravatar url for User <'zuoyang'>.
+2017-09-14 18:55:55,326 : INFO : models : gravatar : Generating gravatar url for User <'zuoyang'>.
+2017-09-14 18:55:55,329 : INFO : models : gravatar : Generating gravatar url for User <'zuoyang'>.
+2017-09-14 18:55:55,330 : INFO : models : gravatar : Generating gravatar url for User <'zuoyang'>.
+2017-09-14 18:55:55,330 : INFO : models : gravatar : Generating gravatar url for User <'zuoyang'>.
+2017-09-14 18:55:55,366 : INFO : _internal : _log : 127.0.0.1 - - [14/Sep/2017 18:55:55] "GET /blog/113 HTTP/1.1" 200 -
+2017-09-14 18:56:02,130 : INFO : _internal : _log : 127.0.0.1 - - [14/Sep/2017 18:56:02] "POST /reply/113 HTTP/1.1" 200 -
+2017-09-14 18:56:02,175 : INFO : views : blog : Visiting detail page of blog 113.
+2017-09-14 18:56:02,180 : INFO : models : gravatar : Generating gravatar url for User <'zuoyang'>.
+2017-09-14 18:56:02,190 : INFO : models : gravatar : Generating gravatar url for User <'zuoyang'>.
+2017-09-14 18:56:02,192 : INFO : models : gravatar : Generating gravatar url for User <'zuoyang'>.
+2017-09-14 18:56:02,192 : INFO : models : gravatar : Generating gravatar url for User <'zuoyang'>.
+2017-09-14 18:56:02,192 : INFO : models : gravatar : Generating gravatar url for User <'zuoyang'>.
+2017-09-14 18:56:02,193 : INFO : models : gravatar : Generating gravatar url for User <'zuoyang'>.
+2017-09-14 18:56:02,204 : INFO : _internal : _log : 127.0.0.1 - - [14/Sep/2017 18:56:02] "GET /blog/113 HTTP/1.1" 200 -
+2017-09-14 18:58:06,188 : INFO : __init__ : create_app : logger initialization & configuration done.
+2017-09-14 18:58:06,281 : INFO : _internal : _log :  * Running on http://127.0.0.1:5000/ (Press CTRL+C to quit)
+2017-09-14 18:58:06,282 : INFO : _internal : _log :  * Restarting with stat
+2017-09-14 18:58:06,704 : INFO : __init__ : create_app : logger initialization & configuration done.
+2017-09-14 18:58:06,801 : WARNING : _internal : _log :  * Debugger is active!
+2017-09-14 18:58:06,801 : INFO : _internal : _log :  * Debugger PIN: 269-707-563
+2017-09-14 18:58:12,344 : INFO : views : before_first_request : Start processing request by user User <'zuoyang'>.
+2017-09-14 18:58:12,345 : INFO : views : index : Visiting home at page 1.
+2017-09-14 18:58:12,379 : INFO : models : gravatar : Generating gravatar url for User <'zuoyang'>.
+2017-09-14 18:58:12,400 : INFO : _internal : _log : 127.0.0.1 - - [14/Sep/2017 18:58:12] "GET / HTTP/1.1" 200 -
+2017-09-14 18:58:14,202 : INFO : views : blog : Visiting detail page of blog 113.
+2017-09-14 18:58:14,275 : INFO : models : gravatar : Generating gravatar url for User <'zuoyang'>.
+2017-09-14 18:58:14,283 : INFO : models : gravatar : Generating gravatar url for User <'zuoyang'>.
+2017-09-14 18:58:14,286 : INFO : models : gravatar : Generating gravatar url for User <'zuoyang'>.
+2017-09-14 18:58:14,286 : INFO : models : gravatar : Generating gravatar url for User <'zuoyang'>.
+2017-09-14 18:58:14,287 : INFO : models : gravatar : Generating gravatar url for User <'zuoyang'>.
+2017-09-14 18:58:14,287 : INFO : models : gravatar : Generating gravatar url for User <'zuoyang'>.
+2017-09-14 18:58:14,320 : INFO : _internal : _log : 127.0.0.1 - - [14/Sep/2017 18:58:14] "GET /blog/113 HTTP/1.1" 200 -
+2017-09-14 18:59:05,455 : INFO : _internal : _log : 127.0.0.1 - - [14/Sep/2017 18:59:05] "POST /reply/113 HTTP/1.1" 200 -
+2017-09-14 18:59:05,530 : INFO : _internal : _log : 127.0.0.1 - - [14/Sep/2017 18:59:05] "POST /reply/113 HTTP/1.1" 200 -
+2017-09-14 18:59:05,549 : INFO : views : blog : Visiting detail page of blog 113.
+2017-09-14 18:59:05,559 : INFO : models : gravatar : Generating gravatar url for User <'zuoyang'>.
+2017-09-14 18:59:05,591 : INFO : models : gravatar : Generating gravatar url for User <'zuoyang'>.
+2017-09-14 18:59:05,599 : INFO : models : gravatar : Generating gravatar url for User <'zuoyang'>.
+2017-09-14 18:59:05,600 : INFO : models : gravatar : Generating gravatar url for User <'zuoyang'>.
+2017-09-14 18:59:05,600 : INFO : models : gravatar : Generating gravatar url for User <'zuoyang'>.
+2017-09-14 18:59:05,601 : INFO : models : gravatar : Generating gravatar url for User <'zuoyang'>.
+2017-09-14 18:59:05,601 : INFO : models : gravatar : Generating gravatar url for User <'zuoyang'>.
+2017-09-14 18:59:05,602 : INFO : models : gravatar : Generating gravatar url for User <'zuoyang'>.
+2017-09-14 18:59:05,628 : INFO : _internal : _log : 127.0.0.1 - - [14/Sep/2017 18:59:05] "GET /blog/113 HTTP/1.1" 200 -
+2017-09-14 18:59:05,636 : INFO : views : blog : Visiting detail page of blog 113.
+2017-09-14 18:59:05,639 : INFO : models : gravatar : Generating gravatar url for User <'zuoyang'>.
+2017-09-14 18:59:05,648 : INFO : models : gravatar : Generating gravatar url for User <'zuoyang'>.
+2017-09-14 18:59:05,651 : INFO : models : gravatar : Generating gravatar url for User <'zuoyang'>.
+2017-09-14 18:59:05,651 : INFO : models : gravatar : Generating gravatar url for User <'zuoyang'>.
+2017-09-14 18:59:05,651 : INFO : models : gravatar : Generating gravatar url for User <'zuoyang'>.
+2017-09-14 18:59:05,652 : INFO : models : gravatar : Generating gravatar url for User <'zuoyang'>.
+2017-09-14 18:59:05,652 : INFO : models : gravatar : Generating gravatar url for User <'zuoyang'>.
+2017-09-14 18:59:05,652 : INFO : models : gravatar : Generating gravatar url for User <'zuoyang'>.
+2017-09-14 18:59:05,665 : INFO : _internal : _log : 127.0.0.1 - - [14/Sep/2017 18:59:05] "GET /blog/113 HTTP/1.1" 200 -
+2017-09-14 18:59:13,765 : INFO : _internal : _log : 127.0.0.1 - - [14/Sep/2017 18:59:13] "POST /reply/113 HTTP/1.1" 200 -
+2017-09-14 18:59:13,810 : INFO : views : blog : Visiting detail page of blog 113.
+2017-09-14 18:59:13,814 : INFO : models : gravatar : Generating gravatar url for User <'zuoyang'>.
+2017-09-14 18:59:13,823 : INFO : models : gravatar : Generating gravatar url for User <'zuoyang'>.
+2017-09-14 18:59:13,825 : INFO : models : gravatar : Generating gravatar url for User <'zuoyang'>.
+2017-09-14 18:59:13,826 : INFO : models : gravatar : Generating gravatar url for User <'zuoyang'>.
+2017-09-14 18:59:13,826 : INFO : models : gravatar : Generating gravatar url for User <'zuoyang'>.
+2017-09-14 18:59:13,826 : INFO : models : gravatar : Generating gravatar url for User <'zuoyang'>.
+2017-09-14 18:59:13,827 : INFO : models : gravatar : Generating gravatar url for User <'zuoyang'>.
+2017-09-14 18:59:13,827 : INFO : models : gravatar : Generating gravatar url for User <'zuoyang'>.
+2017-09-14 18:59:13,827 : INFO : models : gravatar : Generating gravatar url for User <'zuoyang'>.
+2017-09-14 18:59:13,840 : INFO : _internal : _log : 127.0.0.1 - - [14/Sep/2017 18:59:13] "GET /blog/113 HTTP/1.1" 200 -
+2017-09-14 18:59:52,856 : INFO : views : manage_blog : Visiting blog manage page 1.
+2017-09-14 18:59:52,885 : INFO : models : gravatar : Generating gravatar url for User <'zuoyang'>.
+2017-09-14 18:59:52,891 : INFO : _internal : _log : 127.0.0.1 - - [14/Sep/2017 18:59:52] "GET /manage-blog HTTP/1.1" 200 -
+2017-09-14 18:59:55,209 : INFO : views : manage_comment : Visiting comment manage page 1.
+2017-09-14 18:59:55,229 : INFO : models : gravatar : Generating gravatar url for User <'zuoyang'>.
+2017-09-14 18:59:55,231 : INFO : _internal : _log : 127.0.0.1 - - [14/Sep/2017 18:59:55] "GET /manage-comment HTTP/1.1" 200 -
+2017-09-14 18:59:57,197 : INFO : views : delete_comment : Deleting comment 53.
+2017-09-14 18:59:57,258 : INFO : _internal : _log : 127.0.0.1 - - [14/Sep/2017 18:59:57] "POST /delete-comment/53 HTTP/1.1" 200 -
+2017-09-14 18:59:57,283 : INFO : views : manage_comment : Visiting comment manage page 1.
+2017-09-14 18:59:57,292 : INFO : models : gravatar : Generating gravatar url for User <'zuoyang'>.
+2017-09-14 18:59:57,294 : INFO : _internal : _log : 127.0.0.1 - - [14/Sep/2017 18:59:57] "GET /manage-comment?comment_id=53 HTTP/1.1" 200 -
+2017-09-14 18:59:57,626 : INFO : views : delete_comment : Deleting comment 51.
+2017-09-14 18:59:57,699 : INFO : _internal : _log : 127.0.0.1 - - [14/Sep/2017 18:59:57] "POST /delete-comment/51 HTTP/1.1" 200 -
+2017-09-14 18:59:57,706 : INFO : views : manage_comment : Visiting comment manage page 1.
+2017-09-14 18:59:57,712 : INFO : models : gravatar : Generating gravatar url for User <'zuoyang'>.
+2017-09-14 18:59:57,713 : INFO : _internal : _log : 127.0.0.1 - - [14/Sep/2017 18:59:57] "GET /manage-comment?comment_id=51 HTTP/1.1" 200 -
+2017-09-14 18:59:58,033 : INFO : views : delete_comment : Deleting comment 52.
+2017-09-14 18:59:58,076 : INFO : _internal : _log : 127.0.0.1 - - [14/Sep/2017 18:59:58] "POST /delete-comment/52 HTTP/1.1" 200 -
+2017-09-14 18:59:58,095 : INFO : views : manage_comment : Visiting comment manage page 1.
+2017-09-14 18:59:58,105 : INFO : models : gravatar : Generating gravatar url for User <'zuoyang'>.
+2017-09-14 18:59:58,108 : INFO : _internal : _log : 127.0.0.1 - - [14/Sep/2017 18:59:58] "GET /manage-comment?comment_id=52 HTTP/1.1" 200 -
+2017-09-14 18:59:58,466 : INFO : views : delete_comment : Deleting comment 50.
+2017-09-14 18:59:58,510 : INFO : _internal : _log : 127.0.0.1 - - [14/Sep/2017 18:59:58] "POST /delete-comment/50 HTTP/1.1" 200 -
+2017-09-14 18:59:58,522 : INFO : views : manage_comment : Visiting comment manage page 1.
+2017-09-14 18:59:58,530 : INFO : models : gravatar : Generating gravatar url for User <'zuoyang'>.
+2017-09-14 18:59:58,533 : INFO : _internal : _log : 127.0.0.1 - - [14/Sep/2017 18:59:58] "GET /manage-comment?comment_id=50 HTTP/1.1" 200 -
+2017-09-14 19:00:00,041 : INFO : views : delete_comment : Deleting comment 49.
+2017-09-14 19:00:00,085 : INFO : _internal : _log : 127.0.0.1 - - [14/Sep/2017 19:00:00] "POST /delete-comment/49 HTTP/1.1" 200 -
+2017-09-14 19:00:00,096 : INFO : views : manage_comment : Visiting comment manage page 1.
+2017-09-14 19:00:00,105 : INFO : models : gravatar : Generating gravatar url for User <'zuoyang'>.
+2017-09-14 19:00:00,110 : INFO : _internal : _log : 127.0.0.1 - - [14/Sep/2017 19:00:00] "GET /manage-comment?comment_id=49 HTTP/1.1" 200 -
+2017-09-14 19:00:00,482 : INFO : views : delete_comment : Deleting comment 48.
+2017-09-14 19:00:00,536 : INFO : _internal : _log : 127.0.0.1 - - [14/Sep/2017 19:00:00] "POST /delete-comment/48 HTTP/1.1" 200 -
+2017-09-14 19:00:00,556 : INFO : views : manage_comment : Visiting comment manage page 1.
+2017-09-14 19:00:00,569 : INFO : models : gravatar : Generating gravatar url for User <'zuoyang'>.
+2017-09-14 19:00:00,576 : INFO : _internal : _log : 127.0.0.1 - - [14/Sep/2017 19:00:00] "GET /manage-comment?comment_id=48 HTTP/1.1" 200 -
+2017-09-14 19:00:01,168 : INFO : views : delete_comment : Deleting comment 47.
+2017-09-14 19:00:01,204 : INFO : _internal : _log : 127.0.0.1 - - [14/Sep/2017 19:00:01] "POST /delete-comment/47 HTTP/1.1" 200 -
+2017-09-14 19:00:01,229 : INFO : views : manage_comment : Visiting comment manage page 1.
+2017-09-14 19:00:01,239 : INFO : models : gravatar : Generating gravatar url for User <'zuoyang'>.
+2017-09-14 19:00:01,245 : INFO : _internal : _log : 127.0.0.1 - - [14/Sep/2017 19:00:01] "GET /manage-comment?comment_id=47 HTTP/1.1" 200 -
+2017-09-14 19:00:02,434 : INFO : views : manage_blog : Visiting blog manage page 1.
+2017-09-14 19:00:02,447 : INFO : models : gravatar : Generating gravatar url for User <'zuoyang'>.
+2017-09-14 19:00:02,455 : INFO : _internal : _log : 127.0.0.1 - - [14/Sep/2017 19:00:02] "GET /manage-blog HTTP/1.1" 200 -
+2017-09-14 19:00:03,764 : INFO : views : blog : Visiting detail page of blog 113.
+2017-09-14 19:00:03,766 : INFO : models : gravatar : Generating gravatar url for User <'zuoyang'>.
+2017-09-14 19:00:03,773 : INFO : models : gravatar : Generating gravatar url for User <'zuoyang'>.
+2017-09-14 19:00:03,788 : INFO : _internal : _log : 127.0.0.1 - - [14/Sep/2017 19:00:03] "GET /blog/113 HTTP/1.1" 200 -
+2017-09-14 19:00:48,395 : INFO : __init__ : create_app : logger initialization & configuration done.
+2017-09-14 19:00:48,486 : INFO : _internal : _log :  * Running on http://127.0.0.1:5000/ (Press CTRL+C to quit)
+2017-09-14 19:00:48,487 : INFO : _internal : _log :  * Restarting with stat
+2017-09-14 19:00:48,899 : INFO : __init__ : create_app : logger initialization & configuration done.
+2017-09-14 19:00:48,992 : WARNING : _internal : _log :  * Debugger is active!
+2017-09-14 19:00:48,993 : INFO : _internal : _log :  * Debugger PIN: 269-707-563
+2017-09-14 19:00:51,433 : INFO : views : before_first_request : Start processing request by user User <'zuoyang'>.
+2017-09-14 19:00:51,434 : INFO : views : index : Visiting home at page 1.
+2017-09-14 19:00:51,466 : INFO : models : gravatar : Generating gravatar url for User <'zuoyang'>.
+2017-09-14 19:00:51,485 : INFO : _internal : _log : 127.0.0.1 - - [14/Sep/2017 19:00:51] "GET / HTTP/1.1" 200 -
+2017-09-14 19:00:53,348 : INFO : views : blog : Visiting detail page of blog 113.
+2017-09-14 19:00:53,421 : INFO : models : gravatar : Generating gravatar url for User <'zuoyang'>.
+2017-09-14 19:00:53,430 : INFO : models : gravatar : Generating gravatar url for User <'zuoyang'>.
+2017-09-14 19:00:53,466 : INFO : _internal : _log : 127.0.0.1 - - [14/Sep/2017 19:00:53] "GET /blog/113 HTTP/1.1" 200 -
+2017-09-14 19:01:03,973 : INFO : _internal : _log : 127.0.0.1 - - [14/Sep/2017 19:01:03] "POST /reply/113 HTTP/1.1" 200 -
+2017-09-14 19:01:04,010 : INFO : views : blog : Visiting detail page of blog 113.
+2017-09-14 19:01:04,014 : INFO : models : gravatar : Generating gravatar url for User <'zuoyang'>.
+2017-09-14 19:01:04,024 : INFO : models : gravatar : Generating gravatar url for User <'zuoyang'>.
+2017-09-14 19:01:04,028 : INFO : models : gravatar : Generating gravatar url for User <'zuoyang'>.
+2017-09-14 19:01:04,041 : INFO : _internal : _log : 127.0.0.1 - - [14/Sep/2017 19:01:04] "GET /blog/113 HTTP/1.1" 200 -
+2017-09-14 19:09:55,987 : INFO : __init__ : create_app : logger initialization & configuration done.
+2017-09-14 19:09:56,079 : INFO : _internal : _log :  * Running on http://127.0.0.1:5000/ (Press CTRL+C to quit)
+2017-09-14 19:09:56,079 : INFO : _internal : _log :  * Restarting with stat
+2017-09-14 19:09:56,505 : INFO : __init__ : create_app : logger initialization & configuration done.
+2017-09-14 19:09:56,601 : WARNING : _internal : _log :  * Debugger is active!
+2017-09-14 19:09:56,601 : INFO : _internal : _log :  * Debugger PIN: 269-707-563
+2017-09-14 19:10:04,456 : INFO : views : before_first_request : Start processing request by user User <'zuoyang'>.
+2017-09-14 19:10:04,459 : INFO : views : blog : Visiting detail page of blog 113.
+2017-09-14 19:10:04,527 : INFO : models : gravatar : Generating gravatar url for User <'zuoyang'>.
+2017-09-14 19:10:04,537 : INFO : models : gravatar : Generating gravatar url for User <'zuoyang'>.
+2017-09-14 19:10:04,539 : INFO : models : gravatar : Generating gravatar url for User <'zuoyang'>.
+2017-09-14 19:10:04,550 : INFO : _internal : _log : 127.0.0.1 - - [14/Sep/2017 19:10:04] "GET /blog/113 HTTP/1.1" 200 -
+2017-09-14 19:10:18,258 : INFO : _internal : _log : 127.0.0.1 - - [14/Sep/2017 19:10:18] "POST /reply/113 HTTP/1.1" 200 -
+2017-09-14 19:10:18,301 : INFO : views : blog : Visiting detail page of blog 113.
+2017-09-14 19:10:18,306 : INFO : models : gravatar : Generating gravatar url for User <'zuoyang'>.
+2017-09-14 19:10:18,315 : INFO : models : gravatar : Generating gravatar url for User <'zuoyang'>.
+2017-09-14 19:10:18,318 : INFO : models : gravatar : Generating gravatar url for User <'zuoyang'>.
+2017-09-14 19:10:18,318 : INFO : models : gravatar : Generating gravatar url for User <'zuoyang'>.
+2017-09-14 19:10:18,329 : INFO : _internal : _log : 127.0.0.1 - - [14/Sep/2017 19:10:18] "GET /blog/113 HTTP/1.1" 200 -
+2017-09-14 19:14:57,597 : INFO : __init__ : create_app : logger initialization & configuration done.
+2017-09-14 19:14:57,687 : INFO : _internal : _log :  * Running on http://127.0.0.1:5000/ (Press CTRL+C to quit)
+2017-09-14 19:14:57,687 : INFO : _internal : _log :  * Restarting with stat
+2017-09-14 19:14:58,101 : INFO : __init__ : create_app : logger initialization & configuration done.
+2017-09-14 19:14:58,195 : WARNING : _internal : _log :  * Debugger is active!
+2017-09-14 19:14:58,195 : INFO : _internal : _log :  * Debugger PIN: 269-707-563
+2017-09-14 19:15:03,767 : INFO : views : before_first_request : Start processing request by user User <'zuoyang'>.
+2017-09-14 19:15:03,770 : INFO : views : blog : Visiting detail page of blog 113.
+2017-09-14 19:15:03,836 : INFO : models : gravatar : Generating gravatar url for User <'zuoyang'>.
+2017-09-14 19:15:03,846 : INFO : models : gravatar : Generating gravatar url for User <'zuoyang'>.
+2017-09-14 19:15:03,849 : INFO : models : gravatar : Generating gravatar url for User <'zuoyang'>.
+2017-09-14 19:15:03,849 : INFO : models : gravatar : Generating gravatar url for User <'zuoyang'>.
+2017-09-14 19:15:03,860 : INFO : _internal : _log : 127.0.0.1 - - [14/Sep/2017 19:15:03] "GET /blog/113 HTTP/1.1" 200 -
+2017-09-14 19:16:17,167 : INFO : __init__ : create_app : logger initialization & configuration done.
+2017-09-14 19:16:17,257 : INFO : _internal : _log :  * Running on http://127.0.0.1:5000/ (Press CTRL+C to quit)
+2017-09-14 19:16:17,257 : INFO : _internal : _log :  * Restarting with stat
+2017-09-14 19:16:17,668 : INFO : __init__ : create_app : logger initialization & configuration done.
+2017-09-14 19:16:17,765 : WARNING : _internal : _log :  * Debugger is active!
+2017-09-14 19:16:17,765 : INFO : _internal : _log :  * Debugger PIN: 269-707-563
+2017-09-14 19:16:20,853 : INFO : views : before_first_request : Start processing request by user User <'zuoyang'>.
+2017-09-14 19:16:20,856 : INFO : views : blog : Visiting detail page of blog 113.
+2017-09-14 19:16:20,924 : INFO : models : gravatar : Generating gravatar url for User <'zuoyang'>.
+2017-09-14 19:16:20,933 : INFO : models : gravatar : Generating gravatar url for User <'zuoyang'>.
+2017-09-14 19:16:20,936 : INFO : models : gravatar : Generating gravatar url for User <'zuoyang'>.
+2017-09-14 19:16:20,936 : INFO : models : gravatar : Generating gravatar url for User <'zuoyang'>.
+2017-09-14 19:16:20,949 : INFO : _internal : _log : 127.0.0.1 - - [14/Sep/2017 19:16:20] "GET /blog/113 HTTP/1.1" 200 -
+2017-09-14 19:16:21,310 : INFO : _internal : _log : 127.0.0.1 - - [14/Sep/2017 19:16:21] "GET /static/pics/myblog.ico HTTP/1.1" 200 -
+2017-09-14 19:16:25,268 : INFO : csrf : validate_csrf_token : The CSRF token is missing.
+2017-09-14 19:16:25,268 : INFO : views : blog : Visiting detail page of blog 113.
+2017-09-14 19:16:25,270 : INFO : models : gravatar : Generating gravatar url for User <'zuoyang'>.
+2017-09-14 19:16:25,276 : INFO : models : gravatar : Generating gravatar url for User <'zuoyang'>.
+2017-09-14 19:16:25,278 : INFO : models : gravatar : Generating gravatar url for User <'zuoyang'>.
+2017-09-14 19:16:25,279 : INFO : models : gravatar : Generating gravatar url for User <'zuoyang'>.
+2017-09-14 19:16:25,289 : INFO : _internal : _log : 127.0.0.1 - - [14/Sep/2017 19:16:25] "POST /blog/113 HTTP/1.1" 200 -
+2017-09-14 19:26:53,490 : INFO : __init__ : create_app : logger initialization & configuration done.
+2017-09-14 19:26:53,579 : INFO : _internal : _log :  * Running on http://127.0.0.1:5000/ (Press CTRL+C to quit)
+2017-09-14 19:26:53,579 : INFO : _internal : _log :  * Restarting with stat
+2017-09-14 19:26:53,978 : INFO : __init__ : create_app : logger initialization & configuration done.
+2017-09-14 19:26:54,068 : WARNING : _internal : _log :  * Debugger is active!
+2017-09-14 19:26:54,068 : INFO : _internal : _log :  * Debugger PIN: 269-707-563
+2017-09-14 19:27:01,627 : INFO : views : before_first_request : Start processing request by user User <'zuoyang'>.
+2017-09-14 19:27:01,627 : INFO : views : index : Visiting home at page 1.
+2017-09-14 19:27:01,658 : INFO : models : gravatar : Generating gravatar url for User <'zuoyang'>.
+2017-09-14 19:27:01,678 : INFO : _internal : _log : 127.0.0.1 - - [14/Sep/2017 19:27:01] "GET / HTTP/1.1" 200 -
+2017-09-14 19:27:03,534 : INFO : views : blog : Visiting detail page of blog 113.
+2017-09-14 19:27:03,621 : INFO : models : gravatar : Generating gravatar url for User <'zuoyang'>.
+2017-09-14 19:27:03,630 : INFO : models : gravatar : Generating gravatar url for User <'zuoyang'>.
+2017-09-14 19:27:03,633 : INFO : models : gravatar : Generating gravatar url for User <'zuoyang'>.
+2017-09-14 19:27:03,633 : INFO : models : gravatar : Generating gravatar url for User <'zuoyang'>.
+2017-09-14 19:27:03,668 : INFO : _internal : _log : 127.0.0.1 - - [14/Sep/2017 19:27:03] "GET /blog/113 HTTP/1.1" 200 -
+2017-09-14 19:27:10,655 : INFO : _internal : _log : 127.0.0.1 - - [14/Sep/2017 19:27:10] "POST /reply/113 HTTP/1.1" 200 -
+2017-09-14 19:27:10,700 : INFO : views : blog : Visiting detail page of blog 113.
+2017-09-14 19:27:10,703 : INFO : models : gravatar : Generating gravatar url for User <'zuoyang'>.
+2017-09-14 19:27:10,713 : INFO : models : gravatar : Generating gravatar url for User <'zuoyang'>.
+2017-09-14 19:27:10,716 : INFO : models : gravatar : Generating gravatar url for User <'zuoyang'>.
+2017-09-14 19:27:10,717 : INFO : models : gravatar : Generating gravatar url for User <'zuoyang'>.
+2017-09-14 19:27:10,717 : INFO : models : gravatar : Generating gravatar url for User <'zuoyang'>.
+2017-09-14 19:27:10,729 : INFO : _internal : _log : 127.0.0.1 - - [14/Sep/2017 19:27:10] "GET /blog/113 HTTP/1.1" 200 -
+2017-09-14 19:28:35,408 : INFO : __init__ : create_app : logger initialization & configuration done.
+2017-09-14 19:28:35,498 : INFO : _internal : _log :  * Running on http://127.0.0.1:5000/ (Press CTRL+C to quit)
+2017-09-14 19:28:35,498 : INFO : _internal : _log :  * Restarting with stat
+2017-09-14 19:28:35,898 : INFO : __init__ : create_app : logger initialization & configuration done.
+2017-09-14 19:28:35,989 : WARNING : _internal : _log :  * Debugger is active!
+2017-09-14 19:28:35,989 : INFO : _internal : _log :  * Debugger PIN: 269-707-563
+2017-09-14 19:28:43,820 : INFO : views : before_first_request : Start processing request by user User <'zuoyang'>.
+2017-09-14 19:28:43,820 : INFO : views : index : Visiting home at page 1.
+2017-09-14 19:28:43,852 : INFO : models : gravatar : Generating gravatar url for User <'zuoyang'>.
+2017-09-14 19:28:43,872 : INFO : _internal : _log : 127.0.0.1 - - [14/Sep/2017 19:28:43] "GET / HTTP/1.1" 200 -
+2017-09-14 19:28:45,905 : INFO : views : blog : Visiting detail page of blog 113.
+2017-09-14 19:28:45,986 : INFO : models : gravatar : Generating gravatar url for User <'zuoyang'>.
+2017-09-14 19:28:45,994 : INFO : models : gravatar : Generating gravatar url for User <'zuoyang'>.
+2017-09-14 19:28:45,997 : INFO : models : gravatar : Generating gravatar url for User <'zuoyang'>.
+2017-09-14 19:28:45,997 : INFO : models : gravatar : Generating gravatar url for User <'zuoyang'>.
+2017-09-14 19:28:45,997 : INFO : models : gravatar : Generating gravatar url for User <'zuoyang'>.
+2017-09-14 19:28:46,033 : INFO : _internal : _log : 127.0.0.1 - - [14/Sep/2017 19:28:46] "GET /blog/113 HTTP/1.1" 200 -
+2017-09-14 19:28:53,370 : INFO : _internal : _log : 127.0.0.1 - - [14/Sep/2017 19:28:53] "POST /reply/113 HTTP/1.1" 200 -
+2017-09-14 19:28:53,413 : INFO : views : blog : Visiting detail page of blog 113.
+2017-09-14 19:28:53,417 : INFO : models : gravatar : Generating gravatar url for User <'zuoyang'>.
+2017-09-14 19:28:53,425 : INFO : models : gravatar : Generating gravatar url for User <'zuoyang'>.
+2017-09-14 19:28:53,428 : INFO : models : gravatar : Generating gravatar url for User <'zuoyang'>.
+2017-09-14 19:28:53,428 : INFO : models : gravatar : Generating gravatar url for User <'zuoyang'>.
+2017-09-14 19:28:53,428 : INFO : models : gravatar : Generating gravatar url for User <'zuoyang'>.
+2017-09-14 19:28:53,428 : INFO : models : gravatar : Generating gravatar url for User <'zuoyang'>.
+2017-09-14 19:28:53,440 : INFO : _internal : _log : 127.0.0.1 - - [14/Sep/2017 19:28:53] "GET /blog/113 HTTP/1.1" 200 -
+2017-09-14 19:33:41,196 : INFO : __init__ : create_app : logger initialization & configuration done.
+2017-09-14 19:33:41,286 : INFO : _internal : _log :  * Running on http://127.0.0.1:5000/ (Press CTRL+C to quit)
+2017-09-14 19:33:41,287 : INFO : _internal : _log :  * Restarting with stat
+2017-09-14 19:33:41,694 : INFO : __init__ : create_app : logger initialization & configuration done.
+2017-09-14 19:33:41,786 : WARNING : _internal : _log :  * Debugger is active!
+2017-09-14 19:33:41,786 : INFO : _internal : _log :  * Debugger PIN: 269-707-563
+2017-09-14 19:33:54,055 : INFO : views : before_first_request : Start processing request by user User <'zuoyang'>.
+2017-09-14 19:33:54,055 : INFO : views : index : Visiting home at page 1.
+2017-09-14 19:33:54,089 : INFO : models : gravatar : Generating gravatar url for User <'zuoyang'>.
+2017-09-14 19:33:54,108 : INFO : _internal : _log : 127.0.0.1 - - [14/Sep/2017 19:33:54] "GET / HTTP/1.1" 200 -
+2017-09-14 19:33:55,923 : INFO : views : blog : Visiting detail page of blog 113.
+2017-09-14 19:33:55,993 : INFO : models : gravatar : Generating gravatar url for User <'zuoyang'>.
+2017-09-14 19:33:56,001 : INFO : models : gravatar : Generating gravatar url for User <'zuoyang'>.
+2017-09-14 19:33:56,005 : INFO : models : gravatar : Generating gravatar url for User <'zuoyang'>.
+2017-09-14 19:33:56,005 : INFO : models : gravatar : Generating gravatar url for User <'zuoyang'>.
+2017-09-14 19:33:56,005 : INFO : models : gravatar : Generating gravatar url for User <'zuoyang'>.
+2017-09-14 19:33:56,005 : INFO : models : gravatar : Generating gravatar url for User <'zuoyang'>.
+2017-09-14 19:33:56,046 : INFO : _internal : _log : 127.0.0.1 - - [14/Sep/2017 19:33:56] "GET /blog/113 HTTP/1.1" 200 -
+2017-09-14 19:34:02,557 : INFO : csrf : validate_csrf_token : The CSRF token is missing.
+2017-09-14 19:34:02,558 : INFO : views : blog : Visiting detail page of blog 113.
+2017-09-14 19:34:02,563 : INFO : models : gravatar : Generating gravatar url for User <'zuoyang'>.
+2017-09-14 19:34:02,574 : INFO : models : gravatar : Generating gravatar url for User <'zuoyang'>.
+2017-09-14 19:34:02,577 : INFO : models : gravatar : Generating gravatar url for User <'zuoyang'>.
+2017-09-14 19:34:02,577 : INFO : models : gravatar : Generating gravatar url for User <'zuoyang'>.
+2017-09-14 19:34:02,577 : INFO : models : gravatar : Generating gravatar url for User <'zuoyang'>.
+2017-09-14 19:34:02,577 : INFO : models : gravatar : Generating gravatar url for User <'zuoyang'>.
+2017-09-14 19:34:02,590 : INFO : _internal : _log : 127.0.0.1 - - [14/Sep/2017 19:34:02] "POST /blog/113 HTTP/1.1" 200 -
+2017-09-14 19:37:49,328 : INFO : __init__ : create_app : logger initialization & configuration done.
+2017-09-14 19:37:49,420 : INFO : _internal : _log :  * Running on http://127.0.0.1:5000/ (Press CTRL+C to quit)
+2017-09-14 19:37:49,420 : INFO : _internal : _log :  * Restarting with stat
+2017-09-14 19:37:49,836 : INFO : __init__ : create_app : logger initialization & configuration done.
+2017-09-14 19:37:49,928 : WARNING : _internal : _log :  * Debugger is active!
+2017-09-14 19:37:49,929 : INFO : _internal : _log :  * Debugger PIN: 269-707-563
+2017-09-14 19:37:57,338 : INFO : views : before_first_request : Start processing request by user User <'zuoyang'>.
+2017-09-14 19:37:57,338 : INFO : views : index : Visiting home at page 1.
+2017-09-14 19:37:57,370 : INFO : models : gravatar : Generating gravatar url for User <'zuoyang'>.
+2017-09-14 19:37:57,392 : INFO : _internal : _log : 127.0.0.1 - - [14/Sep/2017 19:37:57] "GET / HTTP/1.1" 200 -
+2017-09-14 19:37:59,040 : INFO : views : blog : Visiting detail page of blog 113.
+2017-09-14 19:37:59,114 : INFO : models : gravatar : Generating gravatar url for User <'zuoyang'>.
+2017-09-14 19:37:59,123 : INFO : models : gravatar : Generating gravatar url for User <'zuoyang'>.
+2017-09-14 19:37:59,126 : INFO : models : gravatar : Generating gravatar url for User <'zuoyang'>.
+2017-09-14 19:37:59,126 : INFO : models : gravatar : Generating gravatar url for User <'zuoyang'>.
+2017-09-14 19:37:59,126 : INFO : models : gravatar : Generating gravatar url for User <'zuoyang'>.
+2017-09-14 19:37:59,126 : INFO : models : gravatar : Generating gravatar url for User <'zuoyang'>.
+2017-09-14 19:37:59,160 : INFO : _internal : _log : 127.0.0.1 - - [14/Sep/2017 19:37:59] "GET /blog/113 HTTP/1.1" 200 -
+2017-09-14 19:42:02,416 : INFO : __init__ : create_app : logger initialization & configuration done.
+2017-09-14 19:42:02,504 : INFO : _internal : _log :  * Running on http://127.0.0.1:5000/ (Press CTRL+C to quit)
+2017-09-14 19:42:02,505 : INFO : _internal : _log :  * Restarting with stat
+2017-09-14 19:42:02,908 : INFO : __init__ : create_app : logger initialization & configuration done.
+2017-09-14 19:42:03,000 : WARNING : _internal : _log :  * Debugger is active!
+2017-09-14 19:42:03,000 : INFO : _internal : _log :  * Debugger PIN: 269-707-563
+2017-09-14 19:42:10,986 : INFO : views : before_first_request : Start processing request by user User <'zuoyang'>.
+2017-09-14 19:42:10,987 : INFO : views : index : Visiting home at page 1.
+2017-09-14 19:42:11,019 : INFO : models : gravatar : Generating gravatar url for User <'zuoyang'>.
+2017-09-14 19:42:11,038 : INFO : _internal : _log : 127.0.0.1 - - [14/Sep/2017 19:42:11] "GET / HTTP/1.1" 200 -
+2017-09-14 19:42:12,617 : INFO : views : blog : Visiting detail page of blog 113.
+2017-09-14 19:42:12,705 : INFO : models : gravatar : Generating gravatar url for User <'zuoyang'>.
+2017-09-14 19:42:12,714 : INFO : models : gravatar : Generating gravatar url for User <'zuoyang'>.
+2017-09-14 19:42:12,717 : INFO : models : gravatar : Generating gravatar url for User <'zuoyang'>.
+2017-09-14 19:42:12,717 : INFO : models : gravatar : Generating gravatar url for User <'zuoyang'>.
+2017-09-14 19:42:12,717 : INFO : models : gravatar : Generating gravatar url for User <'zuoyang'>.
+2017-09-14 19:42:12,717 : INFO : models : gravatar : Generating gravatar url for User <'zuoyang'>.
+2017-09-14 19:42:12,753 : INFO : _internal : _log : 127.0.0.1 - - [14/Sep/2017 19:42:12] "GET /blog/113 HTTP/1.1" 200 -
+2017-09-14 19:45:54,914 : INFO : __init__ : create_app : logger initialization & configuration done.
+2017-09-14 19:45:55,004 : INFO : _internal : _log :  * Running on http://127.0.0.1:5000/ (Press CTRL+C to quit)
+2017-09-14 19:45:55,004 : INFO : _internal : _log :  * Restarting with stat
+2017-09-14 19:45:55,417 : INFO : __init__ : create_app : logger initialization & configuration done.
+2017-09-14 19:45:55,511 : WARNING : _internal : _log :  * Debugger is active!
+2017-09-14 19:45:55,511 : INFO : _internal : _log :  * Debugger PIN: 269-707-563
+2017-09-14 19:46:01,698 : INFO : views : before_first_request : Start processing request by user User <'zuoyang'>.
+2017-09-14 19:46:01,698 : INFO : views : index : Visiting home at page 1.
+2017-09-14 19:46:01,730 : INFO : models : gravatar : Generating gravatar url for User <'zuoyang'>.
+2017-09-14 19:46:01,750 : INFO : _internal : _log : 127.0.0.1 - - [14/Sep/2017 19:46:01] "GET / HTTP/1.1" 200 -
+2017-09-14 19:46:03,881 : INFO : views : blog : Visiting detail page of blog 113.
+2017-09-14 19:46:03,949 : INFO : models : gravatar : Generating gravatar url for User <'zuoyang'>.
+2017-09-14 19:46:03,958 : INFO : models : gravatar : Generating gravatar url for User <'zuoyang'>.
+2017-09-14 19:46:03,961 : INFO : models : gravatar : Generating gravatar url for User <'zuoyang'>.
+2017-09-14 19:46:03,961 : INFO : models : gravatar : Generating gravatar url for User <'zuoyang'>.
+2017-09-14 19:46:03,962 : INFO : models : gravatar : Generating gravatar url for User <'zuoyang'>.
+2017-09-14 19:46:03,962 : INFO : models : gravatar : Generating gravatar url for User <'zuoyang'>.
+2017-09-14 19:46:03,995 : INFO : _internal : _log : 127.0.0.1 - - [14/Sep/2017 19:46:03] "GET /blog/113 HTTP/1.1" 200 -
+2017-09-14 19:46:19,577 : INFO : _internal : _log : 127.0.0.1 - - [14/Sep/2017 19:46:19] "POST /reply/113 HTTP/1.1" 200 -
+2017-09-14 19:46:19,598 : INFO : views : blog : Visiting detail page of blog 113.
+2017-09-14 19:46:19,602 : INFO : models : gravatar : Generating gravatar url for User <'zuoyang'>.
+2017-09-14 19:46:19,612 : INFO : models : gravatar : Generating gravatar url for User <'zuoyang'>.
+2017-09-14 19:46:19,614 : INFO : models : gravatar : Generating gravatar url for User <'zuoyang'>.
+2017-09-14 19:46:19,614 : INFO : models : gravatar : Generating gravatar url for User <'zuoyang'>.
+2017-09-14 19:46:19,614 : INFO : models : gravatar : Generating gravatar url for User <'zuoyang'>.
+2017-09-14 19:46:19,614 : INFO : models : gravatar : Generating gravatar url for User <'zuoyang'>.
+2017-09-14 19:46:19,615 : INFO : models : gravatar : Generating gravatar url for User <'zuoyang'>.
+2017-09-14 19:46:19,628 : INFO : _internal : _log : 127.0.0.1 - - [14/Sep/2017 19:46:19] "GET /blog/113 HTTP/1.1" 200 -
+2017-09-14 19:47:18,787 : INFO : models : gravatar : Generating gravatar url for User <'zuoyang'>.
+2017-09-14 19:47:18,788 : INFO : _internal : _log : 127.0.0.1 - - [14/Sep/2017 19:47:18] "GET /static/css/bootstrap.min.css.map HTTP/1.1" 404 -
+2017-09-14 19:49:28,292 : INFO : models : gravatar : Generating gravatar url for User <'zuoyang'>.
+2017-09-14 19:49:28,293 : INFO : _internal : _log : 127.0.0.1 - - [14/Sep/2017 19:49:28] "GET /static/css/bootstrap.min.css.map HTTP/1.1" 404 -
+2017-09-14 19:50:42,984 : INFO : __init__ : create_app : logger initialization & configuration done.
+2017-09-14 19:50:43,073 : INFO : _internal : _log :  * Running on http://127.0.0.1:5000/ (Press CTRL+C to quit)
+2017-09-14 19:50:43,074 : INFO : _internal : _log :  * Restarting with stat
+2017-09-14 19:50:43,492 : INFO : __init__ : create_app : logger initialization & configuration done.
+2017-09-14 19:50:43,584 : WARNING : _internal : _log :  * Debugger is active!
+2017-09-14 19:50:43,584 : INFO : _internal : _log :  * Debugger PIN: 269-707-563
+2017-09-14 19:50:49,517 : INFO : views : before_first_request : Start processing request by user User <'zuoyang'>.
+2017-09-14 19:50:49,521 : INFO : views : blog : Visiting detail page of blog 113.
+2017-09-14 19:50:49,592 : INFO : models : gravatar : Generating gravatar url for User <'zuoyang'>.
+2017-09-14 19:50:49,603 : INFO : models : gravatar : Generating gravatar url for User <'zuoyang'>.
+2017-09-14 19:50:49,605 : INFO : models : gravatar : Generating gravatar url for User <'zuoyang'>.
+2017-09-14 19:50:49,605 : INFO : models : gravatar : Generating gravatar url for User <'zuoyang'>.
+2017-09-14 19:50:49,606 : INFO : models : gravatar : Generating gravatar url for User <'zuoyang'>.
+2017-09-14 19:50:49,606 : INFO : models : gravatar : Generating gravatar url for User <'zuoyang'>.
+2017-09-14 19:50:49,606 : INFO : models : gravatar : Generating gravatar url for User <'zuoyang'>.
+2017-09-14 19:50:49,618 : INFO : _internal : _log : 127.0.0.1 - - [14/Sep/2017 19:50:49] "GET /blog/113 HTTP/1.1" 200 -
+2017-09-14 19:50:49,880 : INFO : _internal : _log : 127.0.0.1 - - [14/Sep/2017 19:50:49] "GET /static/pics/myblog.ico HTTP/1.1" 200 -
+2017-09-14 19:52:52,815 : INFO : views : about : Visiting about page.
+2017-09-14 19:52:52,851 : INFO : models : gravatar : Generating gravatar url for User <'zuoyang'>.
+2017-09-14 19:52:52,880 : INFO : models : gravatar : Generating gravatar url for User <'xzy'>.
+2017-09-14 19:52:52,882 : INFO : models : gravatar : Generating gravatar url for User <'duoduo'>.
+2017-09-14 19:52:52,882 : INFO : models : gravatar : Generating gravatar url for User <'zuoyang'>.
+2017-09-14 19:52:52,882 : INFO : models : gravatar : Generating gravatar url for User <'zuoyang'>.
+2017-09-14 19:52:52,883 : INFO : _internal : _log : 127.0.0.1 - - [14/Sep/2017 19:52:52] "GET /about HTTP/1.1" 200 -
+2017-09-14 19:52:52,904 : INFO : _internal : _log : 127.0.0.1 - - [14/Sep/2017 19:52:52] "GET /static/pics/portrait.jpg HTTP/1.1" 200 -
+2017-09-14 19:53:07,854 : INFO : views : index : Visiting home at page 1.
+2017-09-14 19:53:07,904 : INFO : models : gravatar : Generating gravatar url for User <'zuoyang'>.
+2017-09-14 19:53:07,943 : INFO : _internal : _log : 127.0.0.1 - - [14/Sep/2017 19:53:07] "GET / HTTP/1.1" 200 -
+2017-09-14 19:53:09,973 : INFO : views : blog : Visiting detail page of blog 113.
+2017-09-14 19:53:10,015 : INFO : models : gravatar : Generating gravatar url for User <'zuoyang'>.
+2017-09-14 19:53:10,021 : INFO : models : gravatar : Generating gravatar url for User <'zuoyang'>.
+2017-09-14 19:53:10,025 : INFO : models : gravatar : Generating gravatar url for User <'zuoyang'>.
+2017-09-14 19:53:10,025 : INFO : models : gravatar : Generating gravatar url for User <'zuoyang'>.
+2017-09-14 19:53:10,026 : INFO : models : gravatar : Generating gravatar url for User <'zuoyang'>.
+2017-09-14 19:53:10,026 : INFO : models : gravatar : Generating gravatar url for User <'zuoyang'>.
+2017-09-14 19:53:10,026 : INFO : models : gravatar : Generating gravatar url for User <'zuoyang'>.
+2017-09-14 19:53:10,037 : INFO : _internal : _log : 127.0.0.1 - - [14/Sep/2017 19:53:10] "GET /blog/113 HTTP/1.1" 200 -
+2017-09-14 19:53:25,999 : INFO : _internal : _log : 127.0.0.1 - - [14/Sep/2017 19:53:25] "POST /reply/113 HTTP/1.1" 200 -
+2017-09-14 19:53:26,045 : INFO : views : blog : Visiting detail page of blog 113.
+2017-09-14 19:53:26,050 : INFO : models : gravatar : Generating gravatar url for User <'zuoyang'>.
+2017-09-14 19:53:26,060 : INFO : models : gravatar : Generating gravatar url for User <'zuoyang'>.
+2017-09-14 19:53:26,063 : INFO : models : gravatar : Generating gravatar url for User <'zuoyang'>.
+2017-09-14 19:53:26,063 : INFO : models : gravatar : Generating gravatar url for User <'zuoyang'>.
+2017-09-14 19:53:26,063 : INFO : models : gravatar : Generating gravatar url for User <'zuoyang'>.
+2017-09-14 19:53:26,063 : INFO : models : gravatar : Generating gravatar url for User <'zuoyang'>.
+2017-09-14 19:53:26,063 : INFO : models : gravatar : Generating gravatar url for User <'zuoyang'>.
+2017-09-14 19:53:26,063 : INFO : models : gravatar : Generating gravatar url for User <'zuoyang'>.
+2017-09-14 19:53:26,076 : INFO : _internal : _log : 127.0.0.1 - - [14/Sep/2017 19:53:26] "GET /blog/113 HTTP/1.1" 200 -
+2017-09-14 19:53:41,577 : INFO : views : manage_blog : Visiting blog manage page 1.
+2017-09-14 19:53:41,589 : INFO : models : gravatar : Generating gravatar url for User <'zuoyang'>.
+2017-09-14 19:53:41,594 : INFO : _internal : _log : 127.0.0.1 - - [14/Sep/2017 19:53:41] "GET /manage-blog HTTP/1.1" 200 -
+2017-09-14 19:53:42,883 : INFO : views : manage_comment : Visiting comment manage page 1.
+2017-09-14 19:53:42,911 : INFO : models : gravatar : Generating gravatar url for User <'zuoyang'>.
+2017-09-14 19:53:42,914 : INFO : _internal : _log : 127.0.0.1 - - [14/Sep/2017 19:53:42] "GET /manage-comment HTTP/1.1" 200 -
+2017-09-14 19:53:45,395 : INFO : views : delete_comment : Deleting comment 59.
+2017-09-14 19:53:45,469 : INFO : _internal : _log : 127.0.0.1 - - [14/Sep/2017 19:53:45] "POST /delete-comment/59 HTTP/1.1" 200 -
+2017-09-14 19:53:45,482 : INFO : views : manage_comment : Visiting comment manage page 1.
+2017-09-14 19:53:45,488 : INFO : models : gravatar : Generating gravatar url for User <'zuoyang'>.
+2017-09-14 19:53:45,490 : INFO : _internal : _log : 127.0.0.1 - - [14/Sep/2017 19:53:45] "GET /manage-comment?comment_id=59 HTTP/1.1" 200 -
+2017-09-14 19:53:45,872 : INFO : views : delete_comment : Deleting comment 58.
+2017-09-14 19:53:46,021 : INFO : _internal : _log : 127.0.0.1 - - [14/Sep/2017 19:53:46] "POST /delete-comment/58 HTTP/1.1" 200 -
+2017-09-14 19:53:46,047 : INFO : views : manage_comment : Visiting comment manage page 1.
+2017-09-14 19:53:46,061 : INFO : models : gravatar : Generating gravatar url for User <'zuoyang'>.
+2017-09-14 19:53:46,064 : INFO : _internal : _log : 127.0.0.1 - - [14/Sep/2017 19:53:46] "GET /manage-comment?comment_id=58 HTTP/1.1" 200 -
+2017-09-14 19:53:46,496 : INFO : views : delete_comment : Deleting comment 57.
+2017-09-14 19:53:46,563 : INFO : _internal : _log : 127.0.0.1 - - [14/Sep/2017 19:53:46] "POST /delete-comment/57 HTTP/1.1" 200 -
+2017-09-14 19:53:46,571 : INFO : views : manage_comment : Visiting comment manage page 1.
+2017-09-14 19:53:46,577 : INFO : models : gravatar : Generating gravatar url for User <'zuoyang'>.
+2017-09-14 19:53:46,579 : INFO : _internal : _log : 127.0.0.1 - - [14/Sep/2017 19:53:46] "GET /manage-comment?comment_id=57 HTTP/1.1" 200 -
+2017-09-14 19:53:47,881 : INFO : views : delete_comment : Deleting comment 56.
+2017-09-14 19:53:47,940 : INFO : _internal : _log : 127.0.0.1 - - [14/Sep/2017 19:53:47] "POST /delete-comment/56 HTTP/1.1" 200 -
+2017-09-14 19:53:47,967 : INFO : views : manage_comment : Visiting comment manage page 1.
+2017-09-14 19:53:47,979 : INFO : models : gravatar : Generating gravatar url for User <'zuoyang'>.
+2017-09-14 19:53:47,983 : INFO : _internal : _log : 127.0.0.1 - - [14/Sep/2017 19:53:47] "GET /manage-comment?comment_id=56 HTTP/1.1" 200 -
+2017-09-14 19:53:48,560 : INFO : views : delete_comment : Deleting comment 55.
+2017-09-14 19:53:48,606 : INFO : _internal : _log : 127.0.0.1 - - [14/Sep/2017 19:53:48] "POST /delete-comment/55 HTTP/1.1" 200 -
+2017-09-14 19:53:48,618 : INFO : views : manage_comment : Visiting comment manage page 1.
+2017-09-14 19:53:48,623 : INFO : models : gravatar : Generating gravatar url for User <'zuoyang'>.
+2017-09-14 19:53:48,625 : INFO : _internal : _log : 127.0.0.1 - - [14/Sep/2017 19:53:48] "GET /manage-comment?comment_id=55 HTTP/1.1" 200 -
+2017-09-14 19:53:49,312 : INFO : views : delete_comment : Deleting comment 54.
+2017-09-14 19:53:49,357 : INFO : _internal : _log : 127.0.0.1 - - [14/Sep/2017 19:53:49] "POST /delete-comment/54 HTTP/1.1" 200 -
+2017-09-14 19:53:49,370 : INFO : views : manage_comment : Visiting comment manage page 1.
+2017-09-14 19:53:49,380 : INFO : models : gravatar : Generating gravatar url for User <'zuoyang'>.
+2017-09-14 19:53:49,385 : INFO : _internal : _log : 127.0.0.1 - - [14/Sep/2017 19:53:49] "GET /manage-comment?comment_id=54 HTTP/1.1" 200 -
+2017-09-14 19:53:51,200 : INFO : views : index : Visiting home at page 1.
+2017-09-14 19:53:51,235 : INFO : models : gravatar : Generating gravatar url for User <'zuoyang'>.
+2017-09-14 19:53:51,259 : INFO : _internal : _log : 127.0.0.1 - - [14/Sep/2017 19:53:51] "GET / HTTP/1.1" 200 -
+2017-09-14 19:53:53,758 : INFO : views : blog : Visiting detail page of blog 113.
+2017-09-14 19:53:53,767 : INFO : models : gravatar : Generating gravatar url for User <'zuoyang'>.
+2017-09-14 19:53:53,784 : INFO : models : gravatar : Generating gravatar url for User <'zuoyang'>.
+2017-09-14 19:53:53,803 : INFO : _internal : _log : 127.0.0.1 - - [14/Sep/2017 19:53:53] "GET /blog/113 HTTP/1.1" 200 -
+2017-09-14 19:53:59,871 : INFO : views : blog : Visiting detail page of blog 112.
+2017-09-14 19:53:59,877 : INFO : models : gravatar : Generating gravatar url for User <'zuoyang'>.
+2017-09-14 19:53:59,902 : INFO : _internal : _log : 127.0.0.1 - - [14/Sep/2017 19:53:59] "GET /blog/112 HTTP/1.1" 200 -
+2017-09-14 20:01:48,339 : INFO : __init__ : create_app : logger initialization & configuration done.
+2017-09-14 20:01:48,428 : INFO : _internal : _log :  * Running on http://127.0.0.1:5000/ (Press CTRL+C to quit)
+2017-09-14 20:01:48,428 : INFO : _internal : _log :  * Restarting with stat
+2017-09-14 20:01:48,839 : INFO : __init__ : create_app : logger initialization & configuration done.
+2017-09-14 20:01:48,934 : WARNING : _internal : _log :  * Debugger is active!
+2017-09-14 20:01:48,935 : INFO : _internal : _log :  * Debugger PIN: 269-707-563
+2017-09-14 20:01:52,597 : INFO : views : before_first_request : Start processing request by user User <'zuoyang'>.
+2017-09-14 20:01:52,601 : INFO : views : blog : Visiting detail page of blog 112.
+2017-09-14 20:01:52,668 : INFO : models : gravatar : Generating gravatar url for User <'zuoyang'>.
+2017-09-14 20:01:52,686 : INFO : _internal : _log : 127.0.0.1 - - [14/Sep/2017 20:01:52] "GET /blog/112 HTTP/1.1" 200 -
+2017-09-14 20:01:52,940 : INFO : _internal : _log : 127.0.0.1 - - [14/Sep/2017 20:01:52] "GET /static/pics/myblog.ico HTTP/1.1" 200 -
+2017-09-14 20:01:56,631 : INFO : models : thumb_post : User zuoyang is thumbing post 112.
+2017-09-14 20:01:56,653 : INFO : views : thumb_up_post : Blog 112 has 1 thumbs up now.
+2017-09-14 20:01:56,721 : INFO : _internal : _log : 127.0.0.1 - - [14/Sep/2017 20:01:56] "POST /thumb-up-post/112 HTTP/1.1" 200 -
+2017-09-14 20:01:56,738 : INFO : views : blog : Visiting detail page of blog 112.
+2017-09-14 20:01:56,743 : INFO : models : gravatar : Generating gravatar url for User <'zuoyang'>.
+2017-09-14 20:01:56,792 : INFO : _internal : _log : 127.0.0.1 - - [14/Sep/2017 20:01:56] "GET /blog/112 HTTP/1.1" 200 -
+2017-09-14 20:04:24,151 : INFO : views : blog : Visiting detail page of blog 112.
+2017-09-14 20:04:24,200 : INFO : models : gravatar : Generating gravatar url for User <'zuoyang'>.
+2017-09-14 20:04:24,216 : INFO : _internal : _log : 127.0.0.1 - - [14/Sep/2017 20:04:24] "GET /blog/112 HTTP/1.1" 200 -
+2017-09-14 20:04:24,440 : INFO : _internal : _log : 127.0.0.1 - - [14/Sep/2017 20:04:24] "GET /static/pics/myblog.ico HTTP/1.1" 200 -
+2017-09-14 20:04:25,978 : INFO : models : thumb_post : User zuoyang is thumbing post 112.
+2017-09-14 20:04:25,997 : INFO : views : thumb_up_post : Blog 112 has 1 thumbs up now.
+2017-09-14 20:04:25,999 : INFO : _internal : _log : 127.0.0.1 - - [14/Sep/2017 20:04:25] "POST /thumb-up-post/112 HTTP/1.1" 200 -
+2017-09-14 20:04:26,019 : INFO : views : blog : Visiting detail page of blog 112.
+2017-09-14 20:04:26,022 : INFO : models : gravatar : Generating gravatar url for User <'zuoyang'>.
+2017-09-14 20:04:26,042 : INFO : _internal : _log : 127.0.0.1 - - [14/Sep/2017 20:04:26] "GET /blog/112 HTTP/1.1" 200 -
+2017-09-14 20:04:30,159 : INFO : models : thumb_post : User zuoyang is thumbing post 112.
+2017-09-14 20:04:30,178 : INFO : views : thumb_up_post : Blog 112 has 1 thumbs up now.
+2017-09-14 20:04:30,180 : INFO : _internal : _log : 127.0.0.1 - - [14/Sep/2017 20:04:30] "POST /thumb-up-post/112 HTTP/1.1" 200 -
+2017-09-14 20:04:30,198 : INFO : views : blog : Visiting detail page of blog 112.
+2017-09-14 20:04:30,200 : INFO : models : gravatar : Generating gravatar url for User <'zuoyang'>.
+2017-09-14 20:04:30,220 : INFO : _internal : _log : 127.0.0.1 - - [14/Sep/2017 20:04:30] "GET /blog/112 HTTP/1.1" 200 -
+2017-09-14 20:04:33,200 : INFO : views : index : Visiting home at page 1.
+2017-09-14 20:04:33,249 : INFO : models : gravatar : Generating gravatar url for User <'zuoyang'>.
+2017-09-14 20:04:33,268 : INFO : _internal : _log : 127.0.0.1 - - [14/Sep/2017 20:04:33] "GET / HTTP/1.1" 200 -
+2017-09-14 20:04:36,520 : INFO : views : blog : Visiting detail page of blog 108.
+2017-09-14 20:04:36,522 : INFO : models : gravatar : Generating gravatar url for User <'zuoyang'>.
+2017-09-14 20:04:36,527 : INFO : models : gravatar : Generating gravatar url for User <'zuoyang'>.
+2017-09-14 20:04:36,530 : INFO : models : gravatar : Generating gravatar url for User <'zuoyang'>.
+2017-09-14 20:04:36,548 : INFO : _internal : _log : 127.0.0.1 - - [14/Sep/2017 20:04:36] "GET /blog/108 HTTP/1.1" 200 -
+2017-09-14 20:04:39,313 : INFO : models : thumb_post : User zuoyang is thumbing post 108.
+2017-09-14 20:04:39,317 : INFO : views : thumb_up_post : Blog 108 has 1 thumbs up now.
+2017-09-14 20:04:39,346 : INFO : _internal : _log : 127.0.0.1 - - [14/Sep/2017 20:04:39] "POST /thumb-up-post/108 HTTP/1.1" 200 -
+2017-09-14 20:04:39,356 : INFO : views : blog : Visiting detail page of blog 108.
+2017-09-14 20:04:39,358 : INFO : models : gravatar : Generating gravatar url for User <'zuoyang'>.
+2017-09-14 20:04:39,364 : INFO : models : gravatar : Generating gravatar url for User <'zuoyang'>.
+2017-09-14 20:04:39,366 : INFO : models : gravatar : Generating gravatar url for User <'zuoyang'>.
+2017-09-14 20:04:39,383 : INFO : _internal : _log : 127.0.0.1 - - [14/Sep/2017 20:04:39] "GET /blog/108 HTTP/1.1" 200 -
+2017-09-14 20:04:43,789 : INFO : models : thumb_post : User zuoyang is thumbing post 108.
+2017-09-14 20:04:43,793 : INFO : views : thumb_up_post : Blog 108 has 1 thumbs up now.
+2017-09-14 20:04:43,794 : INFO : _internal : _log : 127.0.0.1 - - [14/Sep/2017 20:04:43] "POST /thumb-up-post/108 HTTP/1.1" 200 -
+2017-09-14 20:04:43,805 : INFO : views : blog : Visiting detail page of blog 108.
+2017-09-14 20:04:43,807 : INFO : models : gravatar : Generating gravatar url for User <'zuoyang'>.
+2017-09-14 20:04:43,814 : INFO : models : gravatar : Generating gravatar url for User <'zuoyang'>.
+2017-09-14 20:04:43,815 : INFO : models : gravatar : Generating gravatar url for User <'zuoyang'>.
+2017-09-14 20:04:43,832 : INFO : _internal : _log : 127.0.0.1 - - [14/Sep/2017 20:04:43] "GET /blog/108 HTTP/1.1" 200 -
+2017-09-14 20:04:52,046 : INFO : views : blog : Visiting detail page of blog 113.
+2017-09-14 20:04:52,054 : INFO : models : gravatar : Generating gravatar url for User <'zuoyang'>.
+2017-09-14 20:04:52,071 : INFO : models : gravatar : Generating gravatar url for User <'zuoyang'>.
+2017-09-14 20:04:52,090 : INFO : _internal : _log : 127.0.0.1 - - [14/Sep/2017 20:04:52] "GET /blog/113 HTTP/1.1" 200 -
+2017-09-14 20:05:56,842 : INFO : __init__ : create_app : logger initialization & configuration done.
+2017-09-14 20:05:56,933 : INFO : _internal : _log :  * Running on http://127.0.0.1:5000/ (Press CTRL+C to quit)
+2017-09-14 20:05:56,934 : INFO : _internal : _log :  * Restarting with stat
+2017-09-14 20:05:57,346 : INFO : __init__ : create_app : logger initialization & configuration done.
+2017-09-14 20:05:57,440 : WARNING : _internal : _log :  * Debugger is active!
+2017-09-14 20:05:57,440 : INFO : _internal : _log :  * Debugger PIN: 269-707-563
+2017-09-14 20:06:00,130 : INFO : views : before_first_request : Start processing request by user User <'zuoyang'>.
+2017-09-14 20:06:00,134 : INFO : views : blog : Visiting detail page of blog 113.
+2017-09-14 20:06:00,201 : INFO : models : gravatar : Generating gravatar url for User <'zuoyang'>.
+2017-09-14 20:06:00,211 : INFO : models : gravatar : Generating gravatar url for User <'zuoyang'>.
+2017-09-14 20:06:00,227 : INFO : _internal : _log : 127.0.0.1 - - [14/Sep/2017 20:06:00] "GET /blog/113 HTTP/1.1" 200 -
+2017-09-14 20:06:00,455 : INFO : _internal : _log : 127.0.0.1 - - [14/Sep/2017 20:06:00] "GET /static/pics/myblog.ico HTTP/1.1" 200 -
+2017-09-14 20:06:06,607 : INFO : _internal : _log : 127.0.0.1 - - [14/Sep/2017 20:06:06] "POST /reply/113 HTTP/1.1" 200 -
+2017-09-14 20:06:06,646 : INFO : views : blog : Visiting detail page of blog 113.
+2017-09-14 20:06:06,649 : INFO : models : gravatar : Generating gravatar url for User <'zuoyang'>.
+2017-09-14 20:06:06,658 : INFO : models : gravatar : Generating gravatar url for User <'zuoyang'>.
+2017-09-14 20:06:06,661 : INFO : models : gravatar : Generating gravatar url for User <'zuoyang'>.
+2017-09-14 20:06:06,702 : INFO : _internal : _log : 127.0.0.1 - - [14/Sep/2017 20:06:06] "GET /blog/113 HTTP/1.1" 200 -
+2017-09-14 20:06:56,228 : INFO : views : blog : Visiting detail page of blog 113.
+2017-09-14 20:06:56,257 : INFO : models : gravatar : Generating gravatar url for User <'zuoyang'>.
+2017-09-14 20:06:56,262 : INFO : models : gravatar : Generating gravatar url for User <'zuoyang'>.
+2017-09-14 20:06:56,264 : INFO : models : gravatar : Generating gravatar url for User <'zuoyang'>.
+2017-09-14 20:06:56,277 : INFO : _internal : _log : 127.0.0.1 - - [14/Sep/2017 20:06:56] "GET /blog/113 HTTP/1.1" 200 -
+2017-09-14 20:06:56,591 : INFO : _internal : _log : 127.0.0.1 - - [14/Sep/2017 20:06:56] "GET /static/pics/myblog.ico HTTP/1.1" 200 -
+2017-09-14 20:07:09,568 : INFO : views : index : Visiting home at page 1.
+2017-09-14 20:07:09,620 : INFO : models : gravatar : Generating gravatar url for User <'zuoyang'>.
+2017-09-14 20:07:09,642 : INFO : _internal : _log : 127.0.0.1 - - [14/Sep/2017 20:07:09] "GET / HTTP/1.1" 200 -
