@@ -28,6 +28,8 @@ MyBlog作为个人博客项目, 基于flask&bootstrap&mysql开发, 在阿里云�
 * <del>修改用户权限:匿名可以查看About页;留言评论和回复需要点击登陆.</del>
 * <del>编辑器增加markdown语法操作.</del>
 * <del>标签增加修改功能, 在博客编辑和删除之后增加标签清理, 去掉无效标签.</del>
+* <del>debug原来博客更新时间的刷新，在页面显示上改用更直观的calendar函数.</del>
+* <del>完善原先页面图片和链接超出div的bug，现在图片为responsive而链接也可以自动换行.</del>
 
 ### To Do List(priority high to low)
 * 测试用例 & 代码分析
