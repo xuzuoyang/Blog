@@ -41,6 +41,7 @@ MyBlog作为个人博客项目, 基于flask&bootstrap&mysql开发, 在阿里云�
 * @用户功能 & 被@用户的提醒功能
 
 ### IP address for the site(Still testing)
+http://47.94.11.212/
 
 ### Discuss
 Email: xzyduoduo@126.com  
