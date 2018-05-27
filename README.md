@@ -3,14 +3,10 @@
 ![](https://img.shields.io/badge/frontend-bootstrap3-green.svg)
 ![](https://img.shields.io/badge/database-mysql5.7-blue.svg)
 
-### WebBlog & WebBlog2
-WebBlog作为学习廖雪峰老师网站上python教程实战的记录。基本原样使用了廖老师的代码, 完善了一些小bug, 改用了vue2版本，重写了pagination的部分。  
-WebBlog2作为学习<<Flask Web开发:基于Python的Web应用开发实战>>的记录。基本原样使用了书中的代码。
-
 ### Introduction
-MyBlog作为个人博客项目, 基于flask&bootstrap&mysql开发, 在阿里云服务器上搭建, 通过fabric&nginx&supervisor部署和运行, 目前域名备案准备中.
+基于flask&bootstrap&mysql开发, 通过fabric&nginx&supervisor部署和运行.
 
-### Progress
+### Roadmap
 * <del>完成前端页面的开发（Bootstrap）和基本框架的搭建（Flask）。</del>
 * <del>完成基本用户注册登录功能。</del>
 * <del>完成博客的创建、编辑和评论功能。</del>
@@ -32,7 +28,7 @@ MyBlog作为个人博客项目, 基于flask&bootstrap&mysql开发, 在阿里云�
 * <del>完善原先页面图片和链接超出div的bug，现在图片为responsive而链接也可以自动换行.</del>
 * <del>backtotop增加animation;评论和点赞的功能优化，会留在固定的位置，不会再跳到页首.</del>
 
-### To Do List(priority high to low)
+### Todo
 * 测试用例 & 代码分析
 * RESTFUL API
 * 文章的Archive
